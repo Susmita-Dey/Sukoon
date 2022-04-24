@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(1, 118, 165);
+}
+
+header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(/images/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: rgb(208, 255, 0);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.contain {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image {
+  display: inline;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-weight: 900;
+  font-size: xx-large;
+}
+
+#subtitle {
+  color: rgb(1, 4, 19);
+}
+
+h2 {
+  color: rgb(151, 6, 74);
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-decoration: dotted;
+}
+
+hr {
+  border: none;
+  border-top: 3px double #333;
+  color: #333;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+hr:after {
+  background: #fff;
+  content: "§";
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+}
+
+u {
+  color: rgb(0, 37, 71);
+}
+
+u:hover {
+  color: rgb(0, 88, 170);
+}
+
+#music {
+  margin-top: 0;
+  background-size: cover;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 20px;
+  margin: 2rem;
+}
+
+.card {
+  background-color: wheat;
+  display: grid;
+  grid-template-rows: min-content 180px 1fr;
+  margin-bottom: 2rem;
+  box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card h3 {
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.card button {
+  text-align: center;
+  padding: 0.5rem;
+  background-color: rgb(89, 0, 255);
+  color: white;
+  border-radius: 40px;
+  margin-left: 5rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: purple;
+}
+
+#audiobooks {
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* FOOTER */
+footer {
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  color: #fff;
+  padding: 100px 0 30px;
+  font-size: 13px;
+  line-height: 20px;
+}
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.col {
+  flex-basis: 25%;
+  padding: 5px;
+}
+.col:nth-child(2),
+.col:nth-child(3),
+.col:nth-child(5),
+.col:nth-child(4) {
+  flex-basis: 5%;
+}
+.logo {
+  width: 80px;
+  margin-bottom: 30px;
+}
+
+.col h3 {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.email-id {
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+.social-menu ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+.social-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+
+.social-menu ul {
+  display: flex;
+  text-align: center;
+}
+.social-menu ul li {
+  display: block;
+  color: #000;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  line-height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.copyright {
+  text-align: center;
+}
+.underline {
+  width: 100%;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+}
+.underline span {
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100%;
+  }
+}
