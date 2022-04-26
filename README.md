@@ -8,7 +8,7 @@ The one step solution to get relief from your stress.
 Live a stress-free life.
 
 ## 🔎 Problem it Solves:
-- Gives mental peace
+- Gives mental peace 🧘‍♀️
 - Reduce stress
 - Refreshes mood
 - Entertain people
