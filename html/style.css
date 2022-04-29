@@ -4,7 +4,9 @@
 * {
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-image: url("images/flower-background.webp");
   background-repeat: no-repeat;
@@ -95,7 +97,6 @@ h3 {
     width: 0;
   }
 }
-
 
 @media (max-width: 500px) {
   h1 {
