@@ -51,9 +51,6 @@ Live a stress-free life.
 <td align="center"><a href="https://github.com/Susmita-Dey"><img src="https://avatars.githubusercontent.com/u/79099734?v=4" width="100px;" alt=""/><br /><sub><b>Susmita Dey</b></sub></a></td>
   </tr>
 </table>
-
-
-<p>this is the dummy text ignore it.</p>
 ---
 
 <p align="center">
