@@ -21,7 +21,7 @@ body {
 header {
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(/images/banner.jpg);
+    url(/images/landing-page-image.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
