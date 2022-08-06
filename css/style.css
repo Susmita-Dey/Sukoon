@@ -151,6 +151,7 @@ a {
 }
 
 .content h1 {
+  margin-top: 4rem;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 100;
