@@ -181,6 +181,13 @@ margin: 2rem;
     width: 100%;
     height: 100%;
   }
+  #articles h1{
+    padding-top: 80px;
+  }
+  #subtitle{
+   float: left;
+  }
+ 
   .center {
     position: absolute;
     font-size: 10px;
@@ -274,6 +281,7 @@ margin: 2rem;
 
 
   }
+ 
   .contain image{
     width: 100%;
     height: 100%;
@@ -293,6 +301,17 @@ margin: 2rem;
       float: top;
       bottom: 30px;
 
+  }
+  #title{
+    font-size: 25px;
+    text-align: end;
+  }
+  #subtitle{
+    float: inline-end;
+    text-align: left;
+    width: 100%;
+    
+    
   }
   .intro{
     float: left;
