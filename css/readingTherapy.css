@@ -161,7 +161,7 @@ margin: 2rem;
 
     
     
-@media  screen and (max-width:500px) {
+@media  screen and (min-width:700px) and (max-width:1023px) {
   .nav-links ul li{
     display: block;
     padding: 6px 10px;
@@ -169,6 +169,7 @@ margin: 2rem;
 }
 .navbar{
   height: 180px;
+  
 }
   .contain{
     display: block;
@@ -297,28 +298,37 @@ margin: 2rem;
   }
   .center iframe{
       height: 50px;
-      width: 60 px;
+      width: 50px;
       float: top;
       bottom: 30px;
-      margin-left: 70px;
+     
+      
 
   }
   #title{
     font-size: 20px;
     text-align: end;
-    transform: translateX(-120px);
+  
+    
+    
   }
   #subtitle{
     float: inline-end;
     text-align: left;
     width: 100%;
     color:black;
-    transform: translateX(70px);
-    margin-top: -60px;
+    background-color: bisque;
     
     
     
     
+    
+    
+    
+  }
+  #articles h1{
+    padding-top: 3rem;
+
   }
   .intro{
     float: left;
