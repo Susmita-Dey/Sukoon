@@ -324,6 +324,7 @@ margin: 2rem;
     display: block;
     align-items: center;
     margin-bottom: 2rem;
+    border: 1px solid black;
 
   }
   
@@ -361,6 +362,7 @@ margin: 2rem;
     width: 100%;
     align-items: center;
     margin-bottom: 2rem;
+    border: 1px solid black;
     
   }
   .videos1{
