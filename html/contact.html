@@ -1,56 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel ="icon" href="/images/favicon-enhanced.png">
+    <link rel="icon" href="/images/favicon-enhanced.png">
     <title>Sukoon</title>
-    <link rel="stylesheet" href="css/contact.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
     <!-- Contact Us Section -->
     <section id="contact">
-      <div class="form-container">
-        <h1>Contact Us</h1>
-        <p>
-          Feel free to reach us for any problem or feedback.<br />We'll reach
-          you out soon!!!
-        </p>
-        <form action="mailto:sukoon665@gmail.com" class="form">
-          <div class="form-group">
-            <label for="name" class="sr-only">Name</label>
-            <input type="text" id="name" name="name" placeholder="Name" />
-          </div>
+        <div class="form-container">
+            <div class="header">
+                <h1>Contact Us</h1>
+                <p>
+                    Feel free to reach us for any problem or feedback.<br />We'll reach
+                    out to you soon!!!
+                </p>
+            </div>
+            <form action="mailto:sukoon665@gmail.com" class="form">
 
-          <div class="form-group">
-            <label for="subject" class="sr-only">Subject</label>
-            <input
-              type="text"
-              id="subject"
-              name="email"
-              placeholder="Subject"
-            />
-          </div>
+                <div class="form-floating mb-3">
+                    <input type="name" class="name form-control" id="floatingInput" placeholder="Name">
+                    <label for="name" required>Name</label>
+                </div>
 
-          <div class="form-group">
-            <label for="email" class="sr-only">Email</label>
-            <input type="email" id="email" name="email" placeholder="Email" />
-          </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="email form-control" id="floatingInput" placeholder="Email id" >
+                    <label for="email" required>Email Id</label>
+                </div>
 
-          <div class="form-group">
-            <label for="message" class="sr-only">Example textarea</label>
-            <textarea id="message" rows="4"></textarea>
-          </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="subject form-control" id="floatingInput" placeholder="Subject" >
+                    <label for="subject" required>Subject</label>
+                </div>
 
-          <div class="form-group">
-            <a href="mailto:sukoon665@gmail.com"
-              ><button class="btn">Submit</button></a
-            >
-          </div>
-          <p><a href="/index.html">Go Back</a></p>
-        </form>
-      </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="suggestion form-control" id="floatingInput" placeholder="Suggestion">
+                    <label for="suggestion" required>Suggestions</label>
+                </div>
+
+            </form>
+            <a class="atag" href="mailto:sukoon665@gmail.com"><button class="btn">Submit</button></a>
+            <p><a class="atag" href="/index.html">&#8592; Go Back</a></p>
+        </div>
     </section>
-  </body>
+</body>
+
 </html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
