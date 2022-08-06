@@ -296,18 +296,25 @@ margin: 2rem;
     text-align: center;
     color: black;
   }
+  .intro{
+    float: left;
+    transform: translateX(-160px);
+    transform: translateY(-160px);
+  }
   .center iframe{
       height: 50px;
       width: 50px;
       float: top;
       bottom: 30px;
+      
      
       
 
   }
   #title{
-    font-size: 20px;
+    font-size: 25px;
     text-align: end;
+
   
     
     
@@ -318,16 +325,9 @@ margin: 2rem;
     width: 100%;
     color:black;
     background-color: bisque;
-    
-    
-    
-    
-    
-    
-    
-  }
+     }
   #articles h1{
-    padding-top: 3rem;
+    padding-top: 80%;
 
   }
   .intro{
