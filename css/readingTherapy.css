@@ -1,162 +1,258 @@
 .navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color:skyblue;
-    height: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:skyblue;
+  height: 140px;
 }
 .nav-links ul li{
-    display: inline-block;
-    padding: 6px 10px;
-    position: relative;
+  display: inline-block;
+  padding: 6px 10px;
+  position: relative;
 }
 .nav-links{
-    text-align: right;
-    flex: auto;
+  text-align: right;
+  flex: auto;
 
 }
 .icon{
-    border-radius: 50px;
-    height: 130px;
-    width: 100%;
-    border-radius: 2px solid aqua;
+  border-radius: 50px;
+  height: 130px;
+  width: 100%;
+  border-radius: 2px solid aqua;
 }
 
 .nav-links ul li a {
-    color:white;
-    text-decoration: none;
-    font-size: 23px;
+  color:white;
+  text-decoration: none;
+  font-size: 23px;
+}
+.nav-links ul li  :hover {
+  color:grey;
+  transition: 0.5s;
+  text-decoration: underline;
+  z-index: -1;
+}
+.contain{
+  position:relative;
+  text-align: center;
+  color: white;
+}
+.center{
+  position: absolute;
+  top: 5%;
+  left: 30%;
+  text-align: center;
+  color: black;
+}
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-weight: 900;
+  font-size: xx-large;
+}
+#subtitle {
+  color: rgb(1, 4, 19);
+}
+
+h2 {
+  color: rgb(151, 6, 74);
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-decoration: dotted;
+}
+.inspiration {
+  display: flex;
+  height: 380px;
+  width: 25%;
+}
+.stress{
+  display: flex;
+  height: 380px;
+  width: 25%;
+}
+.books{
+  display: flex;
+  justify-content: left;
+  height: 400px;
+  width: 100%;
+}
+.q{
+  border: 1px solid black;
+}
+.b{
+  width: 25%;
+  height: 400px;
+  justify-content: center;
+  border: 1px solid black;
+}
+.videos{
+  display: flex;
+  width: 100%;
+}
+.v{
+  border-radius: 50px;
+  border:1px solid black;
+}
+ #quotes
+{
+  background-image: url("https://th.bing.com/th/id/R.1283438707688fc3e13d6a558c970d3b?rik=bA%2f1t08u8NvLLg&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f5%2f3%2ff%2f361970.jpg&ehk=1HIDc44rxobTxuBWrY%2fZzhBGm4wNivJPVGdr3mFi73g%3d&risl=&pid=ImgRaw&r=0");
+}
+#articles
+{
+  background-image: url("https://th.bing.com/th/id/OIP.Tk3V9IHyZXVTvzGJ3S36rwHaIZ?pid=ImgDet&rs=1");
+  background-size: cover;
+}
+#summary{
+  background-image: url("https://th.bing.com/th/id/OIP.xn_R80bD2HfMLlDs-IBv0wHaEo?w=299&h=187&c=7&r=0&o=5&pid=1.7");
+}
+.cards{
+  background-image:url("https://wallpaperaccess.com/full/250769.png") ;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+margin: 2rem;
+
+}
+
+  .card {
+      background-color:honeydew;
+      display: grid;
+      grid-template-rows: min-content 180px 1fr;
+      margin-bottom: 2rem;
+      box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.2);
+    }
+    .card img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    .card h3{
+      text-align: center;
+      color: mediumvioletred;
+      margin: auto;
+    }
+    .card p{
+      text-align: center;
+      color: midnightblue;
+      padding: auto;
+    }
+    .card button {
+      text-align: center;
+      padding: 0.5rem;
+      background-color:paleturquoise;
+      color:black;
+      border-radius: 60px;
+      margin-left: 5rem;
+      margin-top: 0.5rem;
+      cursor: pointer;
+    }
+    .card button:hover {
+      background-color:lightblue;
+    }
+    .books{
+      justify-content: center;
+      align-items: center;
+    }
+    
+@media  screen and (max-width:700px) {
+  .nav-links ul li{
+    display: block;
+    padding: 6px 10px;
+    position: relative;
+}
+.navbar{
+  height: 170px;
+}
+  .contain{
+    display: block;
+    width: 100%;
+    height: auto;
+
+
   }
-  .nav-links ul li  :hover {
-    color:grey;
-    transition: 0.5s;
-    text-decoration: underline;
-    z-index: -1;
+  .contain image{
+    width: 100%;
+    height: 100%;
   }
-  .container{
-    position:relative;
-    text-align: center;
-    color: white;
-  }
-  .center{
+  .center {
     position: absolute;
-    top: 50%;
-    left: 30%;
+    font-size: 10px;
+    top: 5%;
+    right:  20%;
+    bottom: 30px;
     text-align: center;
     color: black;
   }
-  h1 {
-    font-size: 50px;
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    font-weight: 900;
-    font-size: xx-large;
+  .center iframe{
+      height: 50px;
+      width: 50px;
+      float: top;
+      bottom: 30px;
+
   }
-  #subtitle {
-    color: rgb(1, 4, 19);
+  .intro{
+    float: left;
+    transform: translateX(-180px);
+    transform: translateY(-160px);
   }
-  
-  h2 {
-    color: rgb(151, 6, 74);
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    text-decoration: dotted;
-  }
-  .inspiration {
-    display: flex;
-    height: 380px;
-    width: 25%;
-  }
-  .stress{
-    display: flex;
-    height: 380px;
-    width: 25%;
-  }
-  .books{
-    display: flex;
-    justify-content: left;
-    height: 400px;
+  .playlist iframe{
     width: 100%;
-  }
-  .q{
-    border: 1px solid black;
-  }
-  .b{
-    width: 25%;
-    height: 400px;
-    justify-content: center;
-    border: 1px solid black;
-  }
-  .videos{
-    display: flex;
-    width: 100%;
-  }
-  .v{
-    border-radius: 50px;
-    border:1px solid black;
-  }
-   #quotes
-  {
-    background-image: url("https://th.bing.com/th/id/R.1283438707688fc3e13d6a558c970d3b?rik=bA%2f1t08u8NvLLg&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f5%2f3%2ff%2f361970.jpg&ehk=1HIDc44rxobTxuBWrY%2fZzhBGm4wNivJPVGdr3mFi73g%3d&risl=&pid=ImgRaw&r=0");
-  }
-  #articles
-  {
-    background-image: url("https://th.bing.com/th/id/OIP.Tk3V9IHyZXVTvzGJ3S36rwHaIZ?pid=ImgDet&rs=1");
-    background-size: cover;
-  }
-  #summary{
-    background-image: url("https://th.bing.com/th/id/OIP.xn_R80bD2HfMLlDs-IBv0wHaEo?w=299&h=187&c=7&r=0&o=5&pid=1.7");
-  }
-  .cards{
-    background-image:url("https://wallpaperaccess.com/full/250769.png") ;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 20px;
-  margin: 2rem;
+    display: block;
+    align-items: center;
+    margin-bottom: 2rem;
 
   }
   
-    .card {
-        background-color:honeydew;
-        display: grid;
-        grid-template-rows: min-content 180px 1fr;
-        margin-bottom: 2rem;
-        box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.2);
-      }
-      .card img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-      }
-      .card h3{
-        text-align: center;
-        color: mediumvioletred;
-        margin: auto;
-      }
-      .card p{
-        text-align: center;
-        color: midnightblue;
-        padding: auto;
-      }
-      .card button {
-        text-align: center;
-        padding: 0.5rem;
-        background-color:paleturquoise;
-        color:black;
-        border-radius: 60px;
-        margin-left: 5rem;
-        margin-top: 0.5rem;
-        cursor: pointer;
-      }
-      .card button:hover {
-        background-color:lightblue;
-      }
-      .books{
-        justify-content: center;
-        align-items: center;
-      }
-      
-  
+  .inspiration{
+    display: block;
+    align-items: center;
+  }
+  .inspiration img{
+    transform: translateX(150px);
+    height: auto;
+    width: 150px;
+  }
+  .q{
+    width: 100%;
+    height: auto;
+    align-self: center;
+
+  }
+  .stress1{
+    padding-top: 360px;
+  }
+  .stress{
+    display: flex;
+    width: 100%;
+    
+  }
+  .stress img{
+    width: 24%;
+    height: 160px;
+  }
+  .books{
+    display: block;
+  }
+  .books iframe{
+    width: 100%;
+    align-items: center;
+    margin-bottom: 2rem;
+    
+  }
+  .videos1{
+    margin-top: 400px;
+    padding-top: 970px;
+  }
+    .cards{
+      padding-top:100px;
+    }
+    #reading h1{
+      padding-top: 100px;
+    }
+
+}
