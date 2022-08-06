@@ -178,7 +178,8 @@ a {
 .content .hero-explore {
   display: inline-block;
   margin-top: 4rem;
-  padding: 1rem;
+  padding-left: 2rem; padding-right: 2rem;
+  padding-top: 0.5rem; padding-bottom: 0.5rem;
   font-size: 1.5rem;
   text-decoration: none;
   background-color: #FFFFFF;
