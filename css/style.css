@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 
 * {
   margin: 0;
@@ -21,7 +22,7 @@ body {
 header {
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(/images/banner.jpg);
+    url(/images/landing-page-image.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -150,28 +151,53 @@ a {
 }
 
 .content h1 {
-  font-size: 3rem;
+  margin-top: 4rem;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 3.75rem;
+  line-height: 4.563rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
 }
 
 .content h3 {
   margin-top: 2rem;
-  font-size: 14px;
   color: rgb(163, 158, 158);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+  color: #B4B4B4;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 }
 .content .hero-explore {
   display: inline-block;
   margin-top: 4rem;
-  padding: 1rem;
+  padding-left: 2rem; padding-right: 2rem;
+  padding-top: 0.5rem; padding-bottom: 0.5rem;
   font-size: 1.5rem;
   text-decoration: none;
-  background-color: aquamarine;
-  color: #f9004d;
-  border-radius: 2rem;
+  background-color: #FFFFFF;
+  color: #014D94;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: 3px solid;
+  border-image-source: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  linear-gradient(0deg, #014D94, #014D94);
   transition: 0.3s ease-in-out;
+
+
 }
 .content .hero-explore:hover {
-  background-color: #f9004d;
-  color: aqua;
+  background: #014D94;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
 }
 
 .hero-btn {
@@ -184,6 +210,9 @@ a {
   background: transparent;
   border-radius: 50px;
   cursor: pointer;
+
+
+  
 }
 
 .hero-btn:hover {
