@@ -365,48 +365,105 @@ h5 {
 }
 
 /* footer */
-.footer-container {
+.footer-container{
+  bottom: 0;
+  width: 100%;
+  height: 220px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   background-color: rgb(6, 16, 37);
 }
+
+.footer-container a:hover, footer a:focus {
+  color: #aaa;
+  text-decoration:none;
+  border-bottom:1px dotted #999;
+}
+
+
+@media (max-width: 1100px) {
+  .footer-container {
+    height: 600px;
+  }
+}
+
+@media (max-width: 730px) {
+  .footer-container {
+    height: 600px;
+    gap: 0.5rem;
+  }
+  .footer-container .col{
+    padding: 0rem;
+    height: 2px;
+  }
+  .footer-container p {
+    color: white;
+    margin-top: 1rem;
+  }
+
+}
+
 .footer-container p {
   color: white;
   margin-top: 1rem;
 }
+
 .footer-container .col {
   padding: 2.5rem;
 }
+
+@media (max-width: 413px) {
+  .footer-container {
+    height: 1000px;
+    gap: 0rem;
+  }
+  .footer-container .col{
+    padding: 1rem;
+    height: 2px;
+  }
+  .footer-container p {
+    color: white;
+    margin-top: 1rem;
+  }
+}
+
 .footer-container .col .email-id {
   word-wrap: break-word;
   text-decoration: underline;
 }
+
 .footer-container .col h3 {
-  color: #f9004d;
+  color: #900505;
   margin-bottom: 1rem;
 }
+
 .footer-container .col img {
   width: 100px;
   height: 100px;
 }
+
 .footer-container .col .sukoon {
   color: rgb(30, 240, 191);
   letter-spacing: 5px;
   margin-top: 1rem;
 }
+
 .footer-container .col .social-menu ul {
   display: flex;
   gap: 1rem;
 }
+
 .footer-container .col .social-menu ul a {
   color: aqua;
 }
+
 .footer-container .col ul li {
   list-style-type: none;
   text-align: left;
   margin-top: 0.75rem;
 }
+
 .footer-container .col ul li a {
   /* text-decoration: none; */
   color: rgb(255, 255, 255);
@@ -414,20 +471,20 @@ h5 {
 
 @media screen and (max-width: 650px) {
   .nav-links {
-     display: none;
+    display: none;
   }
 
   .logo {
-     width: 60px;
+    width: 60px;
   }
 
   .hamburger {
-     display: flex;
+    display: flex;
   }
 }
 
 @media screen and (min-width: 650px) {
   .menu.open {
-     display: none;
+    display: none;
   }
 }
