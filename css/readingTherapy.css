@@ -333,7 +333,7 @@ margin: 2rem;
     align-items: center;
   }
   .inspiration img{
-    transform: translateX(150px);
+    transform: translateX(130px);
     height: auto;
     width: 150px;
   }
