@@ -186,11 +186,8 @@ a {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   border: 3px solid;
-
-border-image-source: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-linear-gradient(0deg, #014D94, #014D94);
-
-
+  border-image-source: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  linear-gradient(0deg, #014D94, #014D94);
   transition: 0.3s ease-in-out;
 
 
