@@ -181,10 +181,19 @@ a {
   padding: 1rem;
   font-size: 1.5rem;
   text-decoration: none;
-  background-color: aquamarine;
-  color: #f9004d;
-  border-radius: 2rem;
+  background-color: #FFFFFF;
+  color: #014D94;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: 3px solid;
+
+border-image-source: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+linear-gradient(0deg, #014D94, #014D94);
+
+
   transition: 0.3s ease-in-out;
+
+
 }
 .content .hero-explore:hover {
   background-color: #f9004d;
@@ -201,6 +210,9 @@ a {
   background: transparent;
   border-radius: 50px;
   cursor: pointer;
+
+
+  
 }
 
 .hero-btn:hover {
