@@ -296,7 +296,7 @@ margin: 2rem;
     color: black;
   }
   .center iframe{
-      height: 50px;
+      height: 80px;
       width: 50px;
       float: top;
       bottom: 30px;
@@ -333,7 +333,7 @@ margin: 2rem;
     align-items: center;
   }
   .inspiration img{
-    transform: translateX(130px);
+    transform: translateX(120px);
     height: auto;
     width: 150px;
   }
