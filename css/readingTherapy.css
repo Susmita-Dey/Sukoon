@@ -300,17 +300,23 @@ margin: 2rem;
       width: 60 px;
       float: top;
       bottom: 30px;
+      margin-left: 70px;
 
   }
   #title{
-    font-size: 25px;
+    font-size: 20px;
     text-align: end;
+    transform: translateX(-120px);
   }
   #subtitle{
     float: inline-end;
     text-align: left;
     width: 100%;
-    background-color: bisque;
+    color:black;
+    transform: translateX(70px);
+    margin-top: -60px;
+    
+    
     
     
   }
