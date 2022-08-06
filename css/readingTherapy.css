@@ -158,7 +158,106 @@ margin: 2rem;
       justify-content: center;
       align-items: center;
     }
+
     
+    
+@media  screen and (max-width:500px) {
+  .nav-links ul li{
+    display: block;
+    padding: 6px 10px;
+    position: relative;
+}
+.navbar{
+  height: 180px;
+}
+  .contain{
+    display: block;
+    width: 100%;
+    height: auto;
+
+
+  }
+  .contain image{
+    width: 100%;
+    height: 100%;
+  }
+  .center {
+    position: absolute;
+    font-size: 10px;
+    top: 5%;
+    right:  20%;
+    bottom: 30px;
+    text-align: center;
+    color: black;
+  }
+  .center iframe{
+      height: 50px;
+      width: 50px;
+      float: top;
+      bottom: 30px;
+
+  }
+  .intro{
+    float: left;
+    transform: translateX(-180px);
+    transform: translateY(-160px);
+  }
+  .playlist iframe{
+    width: 100%;
+    display: block;
+    align-items: center;
+    margin-bottom: 2rem;
+
+  }
+  
+  .inspiration{
+    display: block;
+    align-items: center;
+  }
+  .inspiration img{
+    transform: translateX(150px);
+    height: auto;
+    width: 150px;
+  }
+  .q{
+    width: 100%;
+    height: auto;
+    align-self: center;
+
+  }
+  .stress1{
+    padding-top: 360px;
+  }
+  .stress{
+    display: flex;
+    width: 100%;
+    
+  }
+  .stress img{
+    width: 24%;
+    height: 160px;
+  }
+  .books{
+    display: block;
+  }
+  .books iframe{
+    width: 100%;
+    align-items: center;
+    margin-bottom: 2rem;
+    
+  }
+  .videos1{
+    margin-top: 400px;
+    padding-top: 970px;
+  }
+    .cards{
+      padding-top:100px;
+    }
+    #reading h1{
+      padding-top: 100px;
+    }
+
+}
 @media  screen and (max-width:700px) {
   .nav-links ul li{
     display: block;
@@ -166,7 +265,7 @@ margin: 2rem;
     position: relative;
 }
 .navbar{
-  height: 170px;
+  height: 180px;
 }
   .contain{
     display: block;
