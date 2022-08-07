@@ -72,7 +72,7 @@ header {
 a {
   color: white;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 20px;
 }
 
 .links li::after {
@@ -228,7 +228,8 @@ nav .fa {
 /* ABOUT SECTION */
 #about {
   /* background: #1c1c1c; */
-  background-color: #014d94;
+   background-color: #014d94;
+  
   width: 100%;
   padding: 5px 0px;
   padding-top: 30px;
@@ -253,10 +254,15 @@ nav .fa {
   padding: 3rem;
 }
 .card {
+  cursor: pointer;
   border: 2px solid red;
+  box-shadow: 1px 2px red, -0.5em 0 .9em black;
   text-align: center;
+  transition: 0.3s ease-in-out;
+  animation: slideIn 0.5s ease-in-out;
+  transform: translateY(-2.2rem); 
   padding: 2rem;
-  border-radius: 2rem;
+  border-radius: 3rem;
 }
 .card img {
   height: 200px;
@@ -264,7 +270,12 @@ nav .fa {
   border-radius: 90px;
 }
 .card img:hover {
-  border: 2px solid #f9004d;
+  /* border: 5px solid #f9004d; */
+  outline: 0px solid transparent;
+  padding: 3px 3px;
+  border: 2px solid red;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 h5 {
