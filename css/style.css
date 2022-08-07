@@ -425,7 +425,7 @@ h5 {
 
     position: absolute;
 
-    top: 12vh;
+    /* top: vh; */
     left: 3vh;
   }
 
