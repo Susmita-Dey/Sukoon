@@ -353,6 +353,7 @@ h5 {
   border: 1px solid black;
   padding: 0.5rem;
   border-radius: 0.5rem;
+  transition: 0.3s ease-in-out;
 }
 
 .responsive a:hover {
@@ -475,10 +476,104 @@ h5 {
   /* text-decoration: none; */
   color: rgb(255, 255, 255);
 }
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .responsive .round-image {
+    width: 300px;
+    height: 150px;
+  }
+
+  .content {
+
+    position: absolute;
+
+    /* top: vh; */
+    left: 3vh;
+  }
+
+  #about h3 {
+
+    margin-left: 6rem;
+
+  }
+
+  .card img {
+
+    border-radius: 25px;
+  }
+
+  .footer-container .col ul li {
+
+    text-align: center;
+
+  }
+
+  .footer-container {
+
+    text-align: center;
+  }
+
+  .footer-container .col .social-menu ul {
+
+    justify-content: center;
+  }
+}
 
 @media screen and (max-width: 650px) {
   .nav-links {
     display: none;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  header {
+
+    min-height: 100vh;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .menu.open {
+    display: none;
+  }
+}
+
+@media screen and (max-width:820px) and (min-width:600px) {
+  header {
+
+    min-height: 61vh;
+  }
+
+  .content {
+
+    position: absolute;
+    top: 19vh;
+    left: 3vh;
+  }
+
+  #about h3 {
+
+    margin-left: 20.5rem;
+
+  }
+
+  .card img {
+
+    border-radius: 25px;
+  }
+}
+/* @media screen and (max-width: 650px) {
+  .nav-links {
+     display: none;
   }
 
   .logo {
@@ -494,4 +589,4 @@ h5 {
   .menu.open {
     display: none;
   }
-}
+} */
