@@ -1,7 +1,7 @@
 # Sukoon 
-This is a stress-relieving website project made for the hackathon [Hackofiesta](https://hack.iiitl.ac.in/). 
+This is a stress-relieving website project created for the [Hackofiesta](https://hack.iiitl.ac.in/) hackathon. 
 This project is under the theme **Healthcare.**
-This was our first hackathon.
+It was our very first hackathon.
 
 ## 🕊 Our Tagline 
 The one step solution to get relief from your stress.
@@ -13,7 +13,7 @@ Live a stress-free life.
 - Refreshes mood
 - Entertain people
 - Motivate people
-- Help people to lead a healthy and succesful life.
+- Help people live a healthy and successful life.
 
 ## 💼 Our Services
 - Audio Therapy
