@@ -17,8 +17,25 @@
    .hidden{
      visibility: hidden;
    }
+   .back-top-wrap {
+     position: fixed;
+     bottom: 5rem;
+     right: 1rem;
+     background-color: #80F7D1;
+     padding: 1rem 1.2rem;
+     border-radius: 50%;
+   }
+   .fas.fa-arrow-up {
+     color: #00488F;
+   }
  </style>
 <body>
+
+  <!-- Back to top button -->
+  <div id="back-top-div" class="back-top-wrap">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
   <!-- Navbar and Hero Section -->
   <!-- <header>
     <nav>
@@ -45,11 +62,11 @@
       </h3>
     </div>
   </header> -->
-
   <header>
     <nav class="nav">
       <div class="">
-        <a href="index.html"><img src="logo.png" alt="Logo" class="logo" /></a>
+        <!-- <a href="index.html"><img src="logo.png" alt="Logo" class="logo" /></a> -->
+        <a class="navbar-brand" href="#!"> <img src="logo.png" alt="Logo" class="logo" /></a>
       </div>
 
       <div class="nav-links" id="navLinks">
@@ -77,7 +94,7 @@
     </div>
 
       <div class="content">
-        <h1>Welcome to <span>SUKOON</span> </h1>
+        <h1>Welcome to SUKOON</h1>
         <h3>The one step solution to get relief from your stress.<br />Live a
         stress-free life.</h3>
         <a href="#services" class="hero-explore">Explore</a>
@@ -150,7 +167,7 @@
       
         <div class="responsive audio">
           <div class="round-image">
-            <img src="https://cdn.pixabay.com/photo/2013/07/12/18/17/equalizer-153212__180.png"
+            <img src="./images/audio.png"
               alt="audio" loading="lazy"/>
           </div>
           <h2>Audio Therapy</h2>
@@ -164,21 +181,21 @@
 
         <div class="responsive reading">
           <div class="round-image">
-            <img  src="https://cdn.pixabay.com/photo/2017/06/10/16/22/coffee-2390136__180.jpg"
+            <img  src="./images/reading.png"
               alt="read" loading="lazy"/>
           </div>
           <h2 >Reading Therapy</h2>
           <p >
             Motivational quotes and books can help us to divert and change our mood.
           </p>
-          <a href="html/comingSoon.html">
-            Coming Soon
+          <a href="html/readingTherapy.html">
+            Let's Explore
           </a>
         </div>
 
         <div class="responsive yoga">
           <div class="round-image">
-            <img  src="https://cdn.pixabay.com/photo/2016/11/22/23/29/meditate-1851165__180.jpg"
+            <img  src="./images/yoga.png"
               alt="yoga"loading="lazy" />
           </div>
           <h2 >Yoga Therapy</h2>
@@ -192,7 +209,7 @@
 
         <div class="responsive laugh">
           <div class="round-image">
-            <img  src="https://cdn.pixabay.com/photo/2014/04/02/10/42/smiley-304294__180.png"
+            <img  src="./images/laughing.png"
               alt="laughing" />
           </div>
           <h2 >Laughing Therapy</h2>
@@ -206,7 +223,7 @@
 
         <div class="responsive talk">
           <div class="round-image">
-            <img  src="https://cdn.pixabay.com/photo/2014/06/05/22/27/minions-363019__180.jpg" loading="lazy"
+            <img  src="./images/talking.png" loading="lazy"
               alt="talking" />
           </div>
           <h2 >Talking Therapy</h2>
@@ -221,7 +238,7 @@
         <div class="responsive doctor">
           <div class="round-image">
             <img
-              src="https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460__180.png" alt="doctor" loading="lazy"/>
+              src="./images/doctor.png" alt="doctor" loading="lazy"/>
           </div>
           <h2 >Consult A Doctor</h2>
           <p >
