@@ -58,6 +58,8 @@ h1 {
 
 a {
   text-decoration: none;
+  display:flex;
+  margin:auto;
 }
 
 a .btn {
@@ -68,6 +70,12 @@ a .btn {
 }
 
 .atag {
+  text-decoration: none;
+  width:75px;
+}
+.tag{
+  width:60px;
+  margin:0 !important;
   text-decoration: none;
 }
 
