@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -16,17 +17,21 @@ body {
   -ms-flex-align: center;
   align-items: center;
   height: 100vh;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#6190e8),
-    to(#a7bfe8)
-  );
-  background: linear-gradient(90deg, #6190e8, #a7bfe8);
-  font-family: "Lato", sans-serif;
+  background: linear-gradient(45deg, rgba(6,6,148,1) 14%, rgba(255,255,240,1) 100%);
+  font-family: 'Roboto';
 }
-
+.form-container h1{
+  font-size: 30px;
+  font-weight: 900;
+}
+.form-container p{
+  padding-top: 6px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.form-container{
+  border-radius: 10px;
+}
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -66,14 +71,24 @@ body {
 }
 
 .btn {
-  color: white;
-  background: #6190e8;
-  border: 1px solid #6190e8;
-  padding: 0.5rem 1rem;
+  color: #fff;
+  border: 2px solid #060694 ;
+  padding: 0.6rem 1.2rem;
   cursor: pointer;
+  background-color:#060694;
+  border-radius: 6px;
+  font-size: 17px;
+
 }
 
 .btn:hover {
-  background: #a7bfe8;
-  border: 1px solid #a7bfe8;
+  background: #fff;;
+  border: 2px solid #060694;
+  color: #060694;
+  transition: 0.3s;
+}
+.back{
+  color:  #060694;
+  text-decoration: none;
+  font-size: 17px;
 }
