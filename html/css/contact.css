@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  text-align: center;
+  margin: auto;
+  flex-direction: column;
 }
 
 body {
@@ -17,21 +23,22 @@ body {
   -ms-flex-align: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(45deg, rgba(6,6,148,1) 14%, rgba(255,255,240,1) 100%);
-  font-family: 'Roboto';
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#6190e8),
+    to(#a7bfe8)
+  );
+  background: linear-gradient(90deg, #6190e8, #a7bfe8);
+  font-family: "Lato", sans-serif;
 }
-.form-container h1{
-  font-size: 30px;
+
+h1 {
+  font-size: 50px;
   font-weight: 900;
 }
-.form-container p{
-  padding-top: 6px;
-  font-size: 15px;
-  font-weight: 500;
-}
-.form-container{
-  border-radius: 10px;
-}
+
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -44,51 +51,37 @@ body {
 }
 
 .form-container {
-  text-align: center;
-  max-width: 600px;
   padding: 3rem 4rem;
+
   background-color: white;
 }
 
-.form-group {
-  margin: 1rem 0;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  outline: none;
-}
-
-.form-group input {
-  border: none;
-  border-bottom: 1px solid black;
-}
-
-.form-container textarea {
-  border: 1px solid black;
-  margin-top: 1rem;
-}
-
-.btn {
-  color: #fff;
-  border: 2px solid #060694 ;
-  padding: 0.6rem 1.2rem;
-  cursor: pointer;
-  background-color:#060694;
-  border-radius: 6px;
-  font-size: 17px;
-
-}
-
-.btn:hover {
-  background: #fff;;
-  border: 2px solid #060694;
-  color: #060694;
-  transition: 0.3s;
-}
-.back{
-  color:  #060694;
+a {
   text-decoration: none;
-  font-size: 17px;
+  display:flex;
+  margin:auto;
+}
+
+a .btn {
+  display: flex;
+  margin: auto;
+  border: 1px solid #014d94;
+  cursor: pointer;
+}
+
+.atag {
+  text-decoration: none;
+  width:75px;
+}
+.tag{
+  width:60px;
+  margin:0 !important;
+  text-decoration: none;
+}
+
+a .btn:hover {
+  text-decoration: none;
+  background: #014d94;
+  color: white;
+  border: 1px solid white;
 }
