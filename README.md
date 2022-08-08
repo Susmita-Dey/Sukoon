@@ -22,9 +22,10 @@ Live a stress-free life.
 - Laughing Therapy(Coming Soon)
 - Talking Therapy(Coming Soon)
 - Consult A Doctor
+![SukoonPNGlogo]()
 
 ## Our Logo
-<img src="https://user-images.githubusercontent.com/79099734/164956390-db8c55b0-ab15-4dfd-a600-d78f8b7a33f5.png" width=100px height=100px alt="logo">
+<img src="https://user-images.githubusercontent.com/98955085/183499822-5c62946e-b759-4bbe-ba83-18f1dc1e4212.png" width=100px height=100px alt="logo">
 
 ## 📸 Screenshots
 ![image](https://user-images.githubusercontent.com/79099734/164956203-bde29c84-d92e-4442-ae89-ed757dc61e78.png)
