@@ -88,7 +88,7 @@ a {
 .links li:hover::after {
   width: 100%;
 }
-#login-btn{
+#login-button{
  background-color: #ea097f;
  font-family: 'Montserrat',sans-serif;
  font-weight: 600;
@@ -106,7 +106,7 @@ a {
  -ms-transition: ease-out 0.4s;
  -o-transition: ease-out 0.4s;
 }
-#login-btn:hover{
+#login-button:hover{
   font-weight: 300;
   color: white;
   box-shadow: inset 122px 0 0 0 #0da1dc;
