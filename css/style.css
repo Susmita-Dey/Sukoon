@@ -597,13 +597,15 @@ h5 {
 .footer-container {
   bottom: 0;
   width: 100%;
-  height: 220px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   background-color: rgb(6, 16, 37);
 }
-
+.footer-container .col {
+  padding: 2.5rem;
+  flex-basis:20%;
+}
 .footer-container a:hover,
 footer a:focus {
   color: #aaa;
@@ -611,25 +613,28 @@ footer a:focus {
   border-bottom: 1px dotted #999;
 }
 
-@media (max-width: 1100px) {
-  .footer-container {
-    height: 600px;
-  }
-}
+
 
 @media (max-width: 730px) {
   .footer-container {
-    height: 600px;
     gap: 0.5rem;
   }
   .footer-container .col {
-    padding: 0rem;
-    height: 2px;
+    padding: 2rem;
+    flex-basis: 31%;
   }
   .footer-container p {
     color: white;
     margin-top: 1rem;
   }
+}
+@media (max-width: 600px) {
+ 
+  .footer-container .col {
+    padding: 1rem;
+    flex-basis: 100%;
+  }
+  
 }
 
 .footer-container p {
@@ -637,24 +642,7 @@ footer a:focus {
   margin-top: 1rem;
 }
 
-.footer-container .col {
-  padding: 2.5rem;
-}
 
-@media (max-width: 413px) {
-  .footer-container {
-    height: 1000px;
-    gap: 0rem;
-  }
-  .footer-container .col {
-    padding: 1rem;
-    height: 2px;
-  }
-  .footer-container p {
-    color: white;
-    margin-top: 1rem;
-  }
-}
 
 .footer-container .col .email-id {
   word-wrap: break-word;
@@ -696,7 +684,7 @@ footer a:focus {
   /* text-decoration: none; */
   color: rgb(255, 255, 255);
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .container {
     padding: 1rem;
   }
