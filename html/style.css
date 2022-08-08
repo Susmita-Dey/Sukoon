@@ -1,117 +1,183 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
 
-* {
-  box-sizing: border-box;
-}
-html {
-  scroll-behavior: smooth;
-}
-body {
-  background-image: url("images/flower-background.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  overflow: hidden;
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-h1 {
-  font-weight: normal;
-  font-size: 60px;
-  margin: 50px 40px;
-  animation: newYearText 3s infinite;
-  text-shadow: 2px 2px 4px #000000;
+body
+{
+    overflow-x: hidden;
+    background: #fff;
+    min-height: 100vh;
+}
+#header
+{
+    position: absolute;
+    align-items: center;
 }
 
-@keyframes newYearText {
-  0% {
-    color: yellow;
-  }
-  25% {
-    color: dodgerblue;
-  }
-  75% {
-    color: violet;
-  }
-  50% {
-    color: green;
-  }
-  100% {
-    color: crimson;
-  }
+/* Style the logo */
+#header .logo{
+    width: -30px;
+    height: 0%;
+    align-items: flex-start;
+    left:0%;
+    top:0%;
+
+/* Add a black background colour to the top nav */
+}
+.topnav{
+    background-color: #191970 ;
+    overflow: hidden;
 }
 
-.countdown {
-  margin-top: 5rem;
-  display: flex;
-  transform: scale(2);
+/* Style the links inside the nav bar */
+
+.topnav a{
+    float: right;
+    color: #FFFFE0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 0px;
 }
 
-.time {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 15px;
-  background-color: aliceblue;
-  padding: 1rem;
+/* Hover the tabs */
+.topnav a:hover,
+.topnav a.active{
+    background-color: #FFD700;
+    color:#191970;
 }
 
-.time h2 {
-  color: rgb(241, 47, 86);
-  text-shadow: 2px 2px 4px #000000;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1;
-  margin: 0 0 5px;
+/*styling therapy div */
+.therapy{
+    text-align: center;
+    align-items: center;
+    color: #FFD700;
+    font-size: medium;
+    padding: 70px 80px;
+    background-color:#191970;
+}
+.therapy h1{
+    align-items: center;
+}
+.therapy h2{
+    font-size: medium;
 }
 
-.text {
-  box-shadow: 5px 5px 3px rgb(143, 143, 143);
-  padding: 0.5rem;
-  color: rgb(89, 0, 255);
-  font-weight: 560;
-  border-radius: 5px;
+/*Styling buttons*/
+
+.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-h3 {
-  font-family: "The Nautigal", cursive;
-  font-size: 50px;
-  width: 22ch;
-  animation: typing 2s steps(22);
-  white-space: nowrap;
-  overflow: hidden;
+.buttons {
+    display: flex;
+    flex-direction: column;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
+.btn {
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 1.25rem;
+    position: relative;
+    margin: 32px;
 }
 
-@media (max-width: 500px) {
-  h1 {
-    font-size: 45px;
-  }
-  .time {
-    margin: 5px;
-    padding: 0.1rem;
-  }
-  .time h2 {
-    font-size: 12px;
-  }
-  .text {
-    font-size: 10px;
-    box-shadow: 5px 5px 3px rgb(143, 143, 143);
-    padding: 0.1rem;
-    border-radius: 1px;
-  }
-  h3 {
-    font-size: 25px;
-    width: 20ch;
-    animation: typing 1s steps(12);
-  }
+/*Button1*/
+
+.btn-1{
+    background: #FFD700;
+    color:#FFFFE0;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.btn-1::after, .btn-1::before{
+    content: "";
+    position:absolute;
+    opacity: 0.3;
+    background: #FFD700;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left:0;
+    bottom:0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+.btn-1:hover {
+    transform: translate(-12px, -12px);
+}
+
+.btn-1:hover::after {
+    transform: translate(6px, 6px);
+}
+
+.btn-1:hover::before {
+    transform: translate(12px, 12px);
+}
+
+/* Button-2 */
+
+.btn-2{
+    background: #FFD700;
+    color:#FFFFE0;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.btn-2::after, .btn-2::before{
+    content: "";
+    position:absolute;
+    opacity: 0.3;
+    background: #FFD700;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left:0;
+    bottom:0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+.btn-2:hover {
+    transform: translate(-12px, -12px);
+}
+
+.btn-2:hover::after {
+    transform: translate(6px, 6px);
+}
+
+.btn-2:hover::before {
+    transform: translate(12px, 12px);
+}
+
+.community
+{
+    text-align: center;
+    align-items: center;
+    color:#191970;
+    font-size: large;
+    font-weight: 400;
+    padding: 5% 5%;
+    background-color:#FFD700;
+}
+.about {
+    text-align: center;
+    align-items: center;
+    color: #FFD700;
+    font-size: medium;
+    padding: 70px 80px;
+    background-color:#191970;
 }
