@@ -359,10 +359,10 @@ h5 {
   color: #f9004d;
   cursor: pointer;
 }
-.pra button:hover{
- background-color: #f9004d;
- color: #fff;
- transition: 0.3s;
+.pra button:hover {
+  background-color: #f9004d;
+  color: #fff;
+  transition: 0.3s;
 }
 /* SERVICES SECTION */
 #services {
@@ -382,23 +382,29 @@ h5 {
   padding: 3rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 20px 100px;
 }
 
 .responsive {
   color: whitesmoke;
-  width: 30%;
+  margin: 2%;
+  width: 350px;
   border: 1px solid rgba(245, 245, 245, 0.146);
   border-radius: 1.5rem;
   text-align: center;
-  padding: 2rem;
+  background-color: rgb(0, 39, 55);
+  padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   align-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .responsive .round-image img {
-  width: 12rem;
+  width: 200px;
 }
 
 .responsive h2 {
@@ -406,9 +412,10 @@ h5 {
 }
 
 .responsive p {
-  width: 70%;
+  width: 80%;
   word-wrap: break-word;
   margin: 1rem auto;
+  font-weight: 500;
 }
 
 .responsive a {
@@ -419,6 +426,9 @@ h5 {
   padding: 0.5rem;
   border-radius: 0.5rem;
   transition: 0.3s ease-in-out;
+  width: 70%;
+  text-align: center;
+  font-weight: 700;
 }
 
 .responsive a:hover {
@@ -427,14 +437,48 @@ h5 {
   color: white;
   border-color: white;
 }
+.content-container {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 20px 20px;
+  }
+
+  .responsive .round-image img {
+    width: 160px;
+  }
+  .responsive {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container {
+    padding: 20px 20px;
+  }
+  .responsive .round-image img {
+    width: 140px;
+  }
+  .responsive {
+    width: 300px;
+  }
+  .responsive a {
+    font-size: 20px;
+  }
+}
 
 @media screen and (max-width: 700px) {
   .container {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .responsive {
-    width: 100%;
+    width: 350px;
   }
 }
 
