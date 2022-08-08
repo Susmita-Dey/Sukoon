@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url("/images/blue-shiny-bg.jpg");
+  background-color: #411530;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -22,6 +22,7 @@ body {
 }
 
 h1 {
+  font-family: 'Itim',cursive;
   color: white;
   font-weight: normal;
   font-size: 60px;
@@ -34,6 +35,7 @@ h1 {
 }
 
 
+
 h1:hover {
   color: #fdec6e;
   text-shadow:0px 0px 30px #fdec6e;
@@ -44,7 +46,7 @@ h1:hover {
 }
 
 h4 {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Itim',cursive;
   color: #fdec6e;
   font-size: 1.5rem;
 }
@@ -63,14 +65,20 @@ h4 {
   margin: 15px;
   background-color: aliceblue;
   padding: 1rem;
+  border: solid 7px;
+  border-color: black;
 }
 
 .time h2 {
+  font-family: 'Itim',cursive;
   color: rgb(14, 78, 131);
   font-weight: bold;
   font-size: 36px;
   line-height: 1;
   margin: 0 0 5px;
+}
+.handyman{
+  height: 207px;
 }
 
 .text {
@@ -81,14 +89,27 @@ h4 {
   border-radius: 5px;
 }
 
-h3 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+h3 a:hover{
+  color: #fdec6e;
+  text-shadow:0px 0px 30px #fdec6e;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.text small{
+  font-family: 'Itim',cursive;
+  font-weight: bold;
+}
+h3 a {
+  font-family: 'Itim',cursive;
   font-style:italic;
   font-size: 2em;
   animation: typing 2s steps(22);
   white-space: nowrap;
   overflow: hidden;
   color: white;
+  text-decoration: none;
 }
 
 @keyframes typing {
