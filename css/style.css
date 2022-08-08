@@ -318,8 +318,9 @@ nav .fa {
 }
 #about h2 {
   color: white;
-  font-size: 25px;
-  margin: 30px;
+  font-size: 35px;
+  margin: 20px 20px;
+  font-weight: 600;
   text-align: center;
   font-family: 'Montserrat';
 }
