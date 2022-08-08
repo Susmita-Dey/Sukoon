@@ -26,7 +26,7 @@ Live a stress-free life.
 
 ## Our Logo
 
-<img src="https://user-images.githubusercontent.com/98955085/183500401-e9273ee1-fe9b-45a6-a4a9-f844cc44426b.png" width=120px height=120px alt="logo">
+<img src="https://user-images.githubusercontent.com/98955085/183500401-e9273ee1-fe9b-45a6-a4a9-f844cc44426b.png" width=130px height=130px alt="logo">
 
 ## 📸 Screenshots
 ![image](https://user-images.githubusercontent.com/79099734/164956203-bde29c84-d92e-4442-ae89-ed757dc61e78.png)
