@@ -395,6 +395,7 @@ h5 {
   display: flex;
   flex-direction: column;
   align-content: space-between;
+  margin-top: 28px;
 }
 
 .responsive .round-image img {
@@ -714,13 +715,22 @@ footer a:focus {
   }
 
   #about h3 {
-    margin-left: 6rem;
+    margin-left: 1.5rem;
   }
 
   .card img {
     border-radius: 25px;
   }
-
+  #services h2{
+    margin-top: 70px;
+    text-align: center;
+  }
+  #services .round-image{
+     margin-left: 11.5%;
+  }
+  #services .responsive {
+    margin-top: 28px;
+  }
   .footer-container .col ul li {
     text-align: center;
   }
