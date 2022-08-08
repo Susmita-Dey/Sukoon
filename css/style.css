@@ -321,6 +321,7 @@ nav .fa {
   font-size: 50px;
   margin: 30px;
   text-align: center;
+  font-family: 'Montserrat';
 }
 #about h3 {
   color: white;
@@ -328,6 +329,8 @@ nav .fa {
   justify-content: center;
   margin-bottom: 2rem;
   text-decoration: underline;
+  font-family: 'Roboto';
+  font-weight: 400;
 }
 .box {
   display: grid;
