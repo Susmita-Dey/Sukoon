@@ -5,14 +5,14 @@
 }
 
 body {
-  background-color: rgb(1, 118, 165);
+  background-color: gray
 }
 
 header {
-  min-height: 100vh;
+  height: 17vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(/images/banner.jpg);
+    url(/images/background.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -297,4 +297,19 @@ hr {
   100% {
     left: 100%;
   }
+}
+.carousel-inner .carousel-item .d-block
+{
+  height: 83vh;
+}
+
+.carousel-inner .carousel-item .carousel-caption .heading{
+  font-size: 3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.carousel-inner .carousel-item .carousel-caption .para{
+  font-size: 1.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #000;
 }
