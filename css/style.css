@@ -311,7 +311,8 @@ nav .fa {
 }
 #about h3 {
   color: white;
-  margin-left: 3rem;
+  display: flex;
+  justify-content: center;
   margin-bottom: 2rem;
   text-decoration: underline;
 }
@@ -359,14 +360,18 @@ h5 {
 }
 
 .pra button {
-  padding: 0.75rem;
-  background-color: #daf0f8;
-  border-radius: 1rem;
-  border: none;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #f9004d;
+  background-color: #fff;
+  border-radius: 0.8rem;
   color: #f9004d;
   cursor: pointer;
 }
-
+.pra button:hover{
+ background-color: #f9004d;
+ color: #fff;
+ transition: 0.3s;
+}
 /* SERVICES SECTION */
 #services {
   background-color: #092e3c;
