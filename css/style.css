@@ -41,6 +41,7 @@ header {
   width: 100px;
 }
 
+
 /* .nav-links {
   flex: 1;
   text-align: right;
@@ -690,8 +691,8 @@ footer a:focus {
 }
 
 .footer-container .col img {
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 140px;
 }
 
 .footer-container .col .sukoon {
