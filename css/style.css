@@ -54,6 +54,7 @@ header {
   flex-direction: column;
   gap: 3px;
   cursor: pointer;
+  z-index: 200;
 }
 
 .hamburger span {
@@ -123,14 +124,16 @@ a {
 
 .menu.open {
   display: block;
-  width: 100%;
+  width: 80%;
+  height: 100%;
   position: absolute;
-  background-color: #fff;
-  top: 85px;
+  background-color: rgba(244, 124, 124, 0.970);
+  top: 0px;
   left: 0;
   padding: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
   animation: slideIn 0.5s ease-in-out;
+  z-index: 100;
 }
 
 @keyframes slideIn {
@@ -151,7 +154,8 @@ a {
 }
 
 .menu-link li {
-  padding-bottom: 1rem;
+  padding: 2rem;
+  font-weight: bolder;
 }
 
 .menu-link li:last-child {
@@ -162,6 +166,11 @@ a {
   color: rgba(0, 0, 0, 0.782);
   font-weight: bolder;
   font-size: 1rem;
+}
+.menu-link li a:hover{
+  z-index: 150;
+  color: #105e7d;
+  border-bottom: #011b24 1px solid;
 }
 
 .content {
@@ -761,13 +770,13 @@ footer a:focus {
   .nav-links {
     display: none;
   }
-
   .logo {
     width: 60px;
   }
 
   .hamburger {
     display: flex;
+    
   }
 
   header {
