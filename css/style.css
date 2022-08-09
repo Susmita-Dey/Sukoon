@@ -70,7 +70,7 @@ header {
   position: relative;
 }
 
-a {
+.links a {
   color: white;
   text-decoration: none;
   font-size: 20px;
@@ -89,10 +89,8 @@ a {
 .links li:hover::after {
   width: 100%;
 }
-.login-button{
+.login-button {
   padding: 0.65rem;
-  font-family: 'Montserrat',sans-serif;
-  font-weight: 500;
   border: none;
   background-color: #f9004d;
   box-shadow: inset 0 0 0 0 #0da1dc;
@@ -107,8 +105,16 @@ a {
   -ms-transition: ease-out 0.4s;
   -o-transition: ease-out 0.4s;
 }
-.login-button:hover{
+.login-button a {
+  text-decoration: none;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 500;
+  color: #000000;
+}
+.login-button a:hover{
   color: #ffffff;
+}
+.login-button:hover{
   box-shadow: inset 130px 0 0 0 #0da1dc;
 }
 .menu {
