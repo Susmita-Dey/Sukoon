@@ -318,16 +318,20 @@ nav .fa {
 }
 #about h2 {
   color: white;
-  font-size: 50px;
-  margin: 30px;
+  font-size: 35px;
+  margin: 20px 20px;
+  font-weight: 600;
   text-align: center;
+  font-family: 'Montserrat';
 }
 #about h3 {
   color: white;
   display: flex;
+  font-size:50px;
   justify-content: center;
   margin-bottom: 2rem;
-  text-decoration: underline;
+  font-family: 'Roboto';
+  font-weight: 400;
 }
 .box {
   display: grid;
