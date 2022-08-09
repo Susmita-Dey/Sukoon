@@ -19,7 +19,7 @@ header {
   background-size: cover;
 }
 
-section{
+section {
   margin: 2em;
 }
 
@@ -36,7 +36,7 @@ nav {
   backdrop-filter: blur(5px);
 }
 
-.audio-logo{
+.audio-logo {
   width: 80px;
   padding: 0;
   margin-top: -8px;
@@ -82,7 +82,7 @@ nav {
   z-index: 20;
 }
 
-.filter{
+.filter {
   position: absolute;
   top: 0;
   left: 0;
@@ -99,7 +99,7 @@ h1 {
   font-weight: 900;
 }
 
-.heading-span{
+.heading-span {
   color: cyan;
 }
 
@@ -115,31 +115,32 @@ h2 {
   margin-bottom: 1rem;
 }
 
-hr{
+hr {
   width: 90%;
   margin: 0 auto;
   border-color: #2b2c28;
 }
 
-.section-headings{
+.section-headings {
   font-size: 2.3rem;
   text-decoration: underline;
   text-underline-offset: 10px;
   margin: 3rem 0;
 }
 
-.container, #podcasts > .collection{
+.container,
+#podcasts>.collection {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.show{
+.show {
   margin-bottom: 1rem;
 }
 
-.playlist{
+.playlist {
   background-color: #2b2c28;
   padding: 0.75em;
   border-radius: 1em;
@@ -153,11 +154,16 @@ hr{
   margin: 2rem;
 }
 
-.content{
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0.5rem;
+  backdrop-filter: blur(15px) saturate(164%);
+  -webkit-backdrop-filter: blur(15px) saturate(164%);
+  background-color: rgba(255, 255, 255, 0.34);
+  border-radius: 1px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
 }
 
 .card {
@@ -197,7 +203,7 @@ hr{
   text-align: center;
   padding: 0.5rem 1.25rem;
   border-radius: 5px;
-  background-color: #339989;
+  /* background-color: #339989; */
   color: #040404;
   cursor: pointer;
   text-decoration: none;
@@ -207,3 +213,55 @@ hr{
   background-color: #7de2d1;
 }
 
+.btn {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 12px 27px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #999999;
+  background: #ffffff;
+  border: 3px solid #999999;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  -webkit-transition: ease-out 0.5s;
+  -moz-transition: ease-out 0.5s;
+}
+
+
+.btn.btn-border::after,
+.btn.btn-border::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    transition: .5s;
+}
+
+.btn.btn-border::after {
+    top: -9px;
+    left: -9px;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+
+.btn.btn-border::before {
+    bottom: -9px;
+    right: -9px;
+    border-bottom: 3px solid transparent;
+    border-right: 3px solid transparent;
+}
+
+.btn.btn-border:hover {
+    color: #222222;
+}
+
+.btn.btn-border:hover::after,
+.btn.btn-border:hover::before {
+    width: 30px;
+    height: 30px;
+    border-color: #222222;
+}
