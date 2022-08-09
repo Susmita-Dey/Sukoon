@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: #040404;
@@ -39,7 +42,6 @@ nav {
 .audio-logo {
   width: 80px;
   padding: 0;
-  margin-top: -8px;
 }
 
 .nav-links {
@@ -74,6 +76,17 @@ nav {
   width: 100%;
 }
 
+.hamburger {
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3px;
+  cursor: pointer;
+  z-index: 200;
+}
+
 .center {
   position: absolute;
   top: 50%;
@@ -82,7 +95,87 @@ nav {
   z-index: 20;
 }
 
-.filter {
+
+.menu {
+  display: none;
+  width: 100%;
+  position: absolute;
+  background-color: #fff;
+  top: 85px;
+  left: 0;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.open {
+  display: block;
+  width: 60%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(56,56,55, 1);
+  top: 0px;
+  left: 0;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  animation: slideIn 0.5s ease-in-out;
+  z-index: 100;
+}
+
+@media screen and (max-width: 650px) {
+  .nav-links {
+    display: none;
+  }
+  .audio-logo {
+    width: 60px;
+  }
+  .hamburger {
+    display: flex;
+  } 
+}
+
+@media screen and (min-width: 650px) {
+  .open{
+    display: none;
+  } 
+}
+
+@keyframes slideIn {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.menu-link {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu-link li {
+  padding: 2rem;
+  font-weight: bolder;
+}
+
+.menu-link li:last-child {
+  padding-bottom: 0;
+}
+
+.menu-link li a {
+  color: #fff;
+  font-weight: bolder;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.menu-link li a:hover{
+  color: cyan;
+}
+
+.filter{
   position: absolute;
   top: 0;
   left: 0;
@@ -109,10 +202,19 @@ h1 {
   font-size: 1.3rem;
 }
 
+@media(max-width: 650px){
+  h1{
+    font-size: 2.3rem;
+  }
+  #subtitle{
+    font-size: 1.1rem;
+  }
+}
+
 h2 {
   color: #dce1de;
   text-align: center;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 hr {
@@ -125,7 +227,7 @@ hr {
   font-size: 2.3rem;
   text-decoration: underline;
   text-underline-offset: 10px;
-  margin: 3rem 0;
+  margin: 3rem 0 2.5rem;
 }
 
 .container,
@@ -186,6 +288,12 @@ hr {
   text-align: center;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+@media(max-width: 390px){
+  .card h3{
+    font-size: 1.09rem;
+  }
 }
 
 .card p {
