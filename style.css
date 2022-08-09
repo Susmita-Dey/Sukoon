@@ -307,19 +307,20 @@ h5 {
   letter-spacing: 5px;
   margin-top: 1rem;
 }
+
 .footer-container .col .social-menu ul {
-  display: flex;
-  gap: 1rem;
-}
-.footer-container .col .social-menu ul a {
-  color: aqua;
-}
-.footer-container .col ul li {
-  list-style-type: none;
-  text-align: left;
-  margin-top: 0.75rem;
-}
-.footer-container .col ul li a {
-  /* text-decoration: none; */
-  color: rgb(255, 255, 255);
-}
+    display: flex;
+    gap: 1rem;
+  }
+  .footer-container .col .social-menu ul a {
+    color: aqua;
+  }
+  .footer-container .col ul li {
+    list-style-type: none;
+    text-align: left;
+    margin-top: 0.75rem;
+  }
+  .footer-container .col ul li a {
+    /* text-decoration: none; */
+    color: rgb(255, 255, 255);
+  }
