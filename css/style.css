@@ -7,10 +7,12 @@
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Poppins";
   transform: none;
 }
+
 /* 
 body {
   display: inline-block;
@@ -90,9 +92,11 @@ header {
 .links li:hover::after {
   width: 100%;
 }
+
 .login-button {
-  padding: 0.65rem;
+  /* padding: 0.65rem; */
   border: none;
+  cursor: pointer;
   background-color: #f9004d;
   box-shadow: inset 0 0 0 0 #0da1dc;
   border-radius: 4px;
@@ -106,18 +110,31 @@ header {
   -ms-transition: ease-out 0.4s;
   -o-transition: ease-out 0.4s;
 }
+
 .login-button a {
+  display: block;
   text-decoration: none;
-  font-family: 'Montserrat',sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   color: #000000;
+  height: 2.4rem;
+  width: 7.1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
-.login-button a:hover{
+
+.login-button a:hover {
   color: #ffffff;
+
 }
-.login-button:hover{
+
+.login-button:hover {
   box-shadow: inset 130px 0 0 0 #0da1dc;
 }
+
 .menu {
   display: none;
   width: 100%;
@@ -147,6 +164,7 @@ header {
   0% {
     top: -150px;
   }
+
   100% {
     top: 85px;
   }
@@ -174,7 +192,8 @@ header {
   font-weight: bolder;
   font-size: 1rem;
 }
-.menu-link li a:hover{
+
+.menu-link li a:hover {
   z-index: 150;
   color: #105e7d;
   border-bottom: #011b24 1px solid;
@@ -203,15 +222,15 @@ header {
   background-color: #ffffff;
 
   /* Create the gradient. */
-  background-image: linear-gradient(
-    45deg,
-    #fff 15.666%,
-    #0da1dc 16.333%,
-    #981a8e 33.333%,
-    #ea097f 50%,
-    #e12038 66.666%,
-    #f06f25 83.333% /* #323292 10.666% */
-  );
+  background-image: linear-gradient(45deg,
+      #fff 15.666%,
+      #0da1dc 16.333%,
+      #981a8e 33.333%,
+      #ea097f 50%,
+      #e12038 66.666%,
+      #f06f25 83.333%
+      /* #323292 10.666% */
+    );
 
   /* Set the background size and repeat properties. */
   background-size: 100%;
@@ -237,9 +256,11 @@ header {
   0% {
     background-size: 650%;
   }
+
   40% {
     background-size: 650%;
   }
+
   100% {
     background-size: 100%;
   }
@@ -251,9 +272,11 @@ header {
   0% {
     background-size: 100%;
   }
+
   80% {
     background-size: 650%;
   }
+
   100% {
     background-size: 650%;
   }
@@ -271,6 +294,7 @@ header {
   color: rgb(180, 217, 240);
   text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 }
+
 .content .hero-explore {
   display: inline-block;
   margin-top: 4rem;
@@ -285,14 +309,13 @@ header {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   border: 3px solid;
-  border-image-source: linear-gradient(
-      0deg,
+  border-image-source: linear-gradient(0deg,
       rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
-    ),
+      rgba(0, 0, 0, 0.2)),
     linear-gradient(0deg, #014d94, #014d94);
   transition: 0.3s ease-in-out;
 }
+
 .content .hero-explore:hover {
   background: #014d94;
   color: white;
@@ -332,6 +355,7 @@ nav .fa {
   padding-top: 30px;
   padding-bottom: 100px;
 }
+
 #about h2 {
   color: white;
   font-size: 35px;
@@ -340,21 +364,24 @@ nav .fa {
   text-align: center;
   font-family: 'Montserrat';
 }
+
 #about h3 {
   color: white;
   display: flex;
-  font-size:50px;
+  font-size: 50px;
   justify-content: center;
   margin-bottom: 2rem;
   font-family: 'Roboto';
   font-weight: 400;
 }
+
 .box {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   padding: 3rem;
 }
+
 .card {
   cursor: pointer;
   border: 2px solid red;
@@ -366,11 +393,13 @@ nav .fa {
   padding: 2rem;
   border-radius: 3rem;
 }
+
 .card img {
   height: 200px;
   width: 200px;
   border-radius: 90px;
 }
+
 .card img:hover {
   /* border: 5px solid #f9004d; */
   outline: 0px solid transparent;
@@ -385,6 +414,7 @@ h5 {
   font-size: 23px;
   margin-bottom: 15px;
 }
+
 .pra p {
   color: #fcfc;
   font-size: 16px;
@@ -400,11 +430,13 @@ h5 {
   color: #f9004d;
   cursor: pointer;
 }
-.pra button:hover{
- background-color: #f9004d;
- color: #fff;
- transition: 0.3s;
+
+.pra button:hover {
+  background-color: #f9004d;
+  color: #fff;
+  transition: 0.3s;
 }
+
 /* SERVICES SECTION */
 #services {
   background-color: #092e3c;
@@ -485,6 +517,7 @@ h5 {
   background-color: rgb(0, 39, 55);
   padding-bottom: 20px;
 }
+
 .faq_heading {
   padding-top: 40px;
   text-align: center;
@@ -492,6 +525,7 @@ h5 {
   color: white;
   width: 100%;
 }
+
 .faq_heading h1 {
   font-size: 50px;
 }
@@ -517,9 +551,11 @@ h5 {
   width: 100%;
   margin-bottom: 15px;
 }
+
 .accordion__item:last-child {
   margin-bottom: 0;
 }
+
 .accordion__title {
   display: block;
   position: relative;
@@ -555,9 +591,11 @@ h5 {
   transform-origin: 50% 50%;
   background-color: white;
 }
+
 .accordion__title.active .x7 .bmid {
   opacity: 0;
 }
+
 .accordion__title.active .x7 .bbot {
   width: 67%;
   bottom: 2px;
@@ -611,6 +649,7 @@ h5 {
 .bbot {
   width: 80%;
 }
+
 .x7 {
   transition: transform 0.3s ease-out;
   transform-origin: 60% 75%;
@@ -644,10 +683,12 @@ h5 {
   flex-wrap: wrap;
   background-color: rgb(6, 16, 37);
 }
+
 .footer-container .col {
   padding: 2.5rem;
-  flex-basis:20%;
+  flex-basis: 20%;
 }
+
 .footer-container a:hover,
 footer a:focus {
   color: #aaa;
@@ -661,22 +702,25 @@ footer a:focus {
   .footer-container {
     gap: 0.5rem;
   }
+
   .footer-container .col {
     padding: 2rem;
     flex-basis: 31%;
   }
+
   .footer-container p {
     color: white;
     margin-top: 1rem;
   }
 }
+
 @media (max-width: 600px) {
- 
+
   .footer-container .col {
     padding: 1rem;
     flex-basis: 100%;
   }
-  
+
 }
 
 .footer-container p {
@@ -726,6 +770,7 @@ footer a:focus {
   /* text-decoration: none; */
   color: rgb(255, 255, 255);
 }
+
 @media screen and (max-width: 600px) {
   .container {
     padding: 1rem;
@@ -750,16 +795,20 @@ footer a:focus {
   .card img {
     border-radius: 25px;
   }
-  #services h2{
+
+  #services h2 {
     margin-top: 70px;
     text-align: center;
   }
-  #services .round-image{
-     margin-left: 11.5%;
+
+  #services .round-image {
+    margin-left: 11.5%;
   }
+
   #services .responsive {
     margin-top: 28px;
   }
+
   .footer-container .col ul li {
     text-align: center;
   }
@@ -777,13 +826,14 @@ footer a:focus {
   .nav-links {
     display: none;
   }
+
   .logo {
     width: 60px;
   }
 
   .hamburger {
     display: flex;
-    
+
   }
 
   header {
@@ -817,21 +867,24 @@ footer a:focus {
   }
 }
 
-@media screen and (max-width: 880px) and (min-width: 700px){
-  #services .round-image img{
+@media screen and (max-width: 880px) and (min-width: 700px) {
+  #services .round-image img {
     width: 110%;
   }
 }
+
 @media screen and (max-width: 460px) {
-  #services .round-image img{
-  margin-right: 18%;
+  #services .round-image img {
+    margin-right: 18%;
   }
 }
+
 @media screen and (max-width: 390px) {
-  #services .round-image img{
-  margin-right: 25%;
+  #services .round-image img {
+    margin-right: 25%;
   }
 }
+
 /* @media screen and (max-width: 650px) {
   .nav-links {
      display: none;
