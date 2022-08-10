@@ -744,7 +744,8 @@ footer a:focus {
   }
 
   #about h3 {
-    margin-left: 1.5rem;
+    margin-left: 0rem;
+    text-align: center;
   }
 
   .card img {
@@ -809,7 +810,7 @@ footer a:focus {
   }
 
   #about h3 {
-    margin-left: 20.5rem;
+    margin-left: 0rem;
   }
 
   .card img {
