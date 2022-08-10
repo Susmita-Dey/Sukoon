@@ -32,13 +32,26 @@
         </ul>
       </div>
 
-      <i class="fa fa-bars" onclick="showmenu()"></i>
+      <div class="hamburger" id="ham">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
     <!-- Navbar Section Ends Here -->
+  
+    <div class="menu" id="menu">
+      <ul class="menu-link">
+        <li><a href="/index.html">HOME</a></li>
+            <li><a href="#music">MUSIC</a></li>
+            <li><a href="#podcasts">PODCASTS</a></li>
+            <li><a href="#audiobooks">AUDIOBOOKS</a></li>
+      </ul>
+    </div>
+    
 
     <!-- Header Section-->
     <header>
-      <div class="filter"></div>
       <div class="center"> 
         <h1 id="title">Welcome to Our <br><span class="heading-span">Audio Therapy</span></h1>
         <h3 id="subtitle">Listen to Music, Motivational Podcasts and Audiobooks <br> to gain some happiness, knowledge and also lighten your stress side by side.</h3>
@@ -399,7 +412,25 @@
           </div>
         </article>
       </div>
+      <!-- AudioBooks Section Ends Here -->
     </section>
-    <!-- AudioBooks Section Ends Here -->
+    <script>
+      const ham = document.getElementById("ham");
+const menu = document.getElementById("menu");
+
+const toggleMenu = () => {
+if (menu.classList.contains("open")) {
+  menu.classList.remove("open");
+  //   menu.style.display = "block";
+  console.log("open");
+} else {
+  menu.classList.add("open");
+  //   menu.style.display = "none";
+  console.log("close");
+}
+};
+
+ham.addEventListener("click", toggleMenu);
+  </script>
   </body>
 </html>
