@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
-
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
 * {
   margin: 0;
   padding: 0;
@@ -513,6 +514,107 @@ h5 {
   .responsive {
     width: 100%;
   }
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 50px 0px;
+  background-color: rgb(1, 36, 49);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  margin: 0;
+}
+.testimonials_heading {
+  padding: 20px 0px;
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+  width: 100%;
+}
+.testimonials_heading h1 {
+  font-size: 50px;
+}
+
+figure.testimonal-Card {
+  font-family: "Raleway", Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  color: #333;
+  text-align: left;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+figure.testimonal-Card * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+figure.testimonal-Card img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+figure.testimonal-Card blockquote {
+  position: relative;
+  background-color: #ffffff;
+  padding: 25px 50px 25px 50px;
+  font-size: 0.8em;
+  font-weight: 500;
+  text-align: left;
+  margin: 0;
+  line-height: 1.6em;
+  font-style: italic;
+}
+figure.testimonal-Card blockquote:before,
+figure.testimonal-Card blockquote:after {
+  font-family: "FontAwesome";
+  content: "\201C";
+  position: absolute;
+  font-size: 50px;
+  opacity: 0.3;
+  font-style: normal;
+}
+figure.testimonal-Card blockquote:before {
+  top: 25px;
+  left: 20px;
+}
+figure.testimonal-Card blockquote:after {
+  content: "\201D";
+  right: 20px;
+  bottom: 0;
+}
+figure.testimonal-Card .arrow {
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #ffffff;
+  margin: 0;
+  position: absolute;
+}
+figure.testimonal-Card .author {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 25px;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0;
+  text-transform: uppercase;
+}
+figure.testimonal-Card .author h5 {
+  opacity: 0.8;
+  color: #000000;
+  text-align: center;
+  margin: 0;
+  font-weight: 600;
 }
 
 /* faq section */
