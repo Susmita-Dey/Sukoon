@@ -43,7 +43,6 @@ header {
   width: 100px;
 }
 
-
 /* .nav-links {
   flex: 1;
   text-align: right;
@@ -114,7 +113,7 @@ header {
 .login-button a {
   display: block;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: #000000;
   height: 2.4rem;
@@ -123,12 +122,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .login-button a:hover {
   color: #ffffff;
-
 }
 
 .login-button:hover {
@@ -151,7 +148,7 @@ header {
   width: 80%;
   height: 100%;
   position: absolute;
-  background-color: rgba(244, 124, 124, 0.970);
+  background-color: rgba(244, 124, 124, 0.97);
   top: 0px;
   left: 0;
   padding: 30px;
@@ -222,15 +219,15 @@ header {
   background-color: #ffffff;
 
   /* Create the gradient. */
-  background-image: linear-gradient(45deg,
-      #fff 15.666%,
-      #0da1dc 16.333%,
-      #981a8e 33.333%,
-      #ea097f 50%,
-      #e12038 66.666%,
-      #f06f25 83.333%
-      /* #323292 10.666% */
-    );
+  background-image: linear-gradient(
+    45deg,
+    #fff 15.666%,
+    #0da1dc 16.333%,
+    #981a8e 33.333%,
+    #ea097f 50%,
+    #e12038 66.666%,
+    #f06f25 83.333% /* #323292 10.666% */
+  );
 
   /* Set the background size and repeat properties. */
   background-size: 100%;
@@ -309,9 +306,11 @@ header {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   border: 3px solid;
-  border-image-source: linear-gradient(0deg,
+  border-image-source: linear-gradient(
+      0deg,
       rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)),
+      rgba(0, 0, 0, 0.2)
+    ),
     linear-gradient(0deg, #014d94, #014d94);
   transition: 0.3s ease-in-out;
 }
@@ -348,7 +347,7 @@ nav .fa {
 /* ABOUT SECTION */
 #about {
   /* background: #1c1c1c; */
-  background-color: #014d94;
+  background-color: rgb(13, 50, 64);
 
   width: 100%;
   padding: 5px 0px;
@@ -358,21 +357,21 @@ nav .fa {
 
 #about h2 {
   color: white;
-  font-size: 35px;
+  font-size: 40px;
   margin: 20px 20px;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 #about h3 {
   color: white;
   display: flex;
-  font-size: 50px;
+  font-size: 35px;
   justify-content: center;
   margin-bottom: 2rem;
-  font-family: 'Roboto';
-  font-weight: 400;
+  font-family: "Roboto";
+  font-weight: 600;
 }
 
 .box {
@@ -384,20 +383,24 @@ nav .fa {
 
 .card {
   cursor: pointer;
-  border: 2px solid red;
-  box-shadow: 1px 2px red, -0.5em 0 0.9em black;
+  background: rgb(1, 59, 112);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   text-align: center;
   transition: 0.3s ease-in-out;
   animation: slideIn 0.5s ease-in-out;
   transform: translateY(-2.2rem);
-  padding: 2rem;
-  border-radius: 3rem;
+  padding: 20px;
+  border-radius: 20px;
+}
+.card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .card img {
   height: 200px;
   width: 200px;
-  border-radius: 90px;
+  border-radius: 50%;
 }
 
 .card img:hover {
@@ -696,8 +699,6 @@ footer a:focus {
   border-bottom: 1px dotted #999;
 }
 
-
-
 @media (max-width: 730px) {
   .footer-container {
     gap: 0.5rem;
@@ -715,20 +716,16 @@ footer a:focus {
 }
 
 @media (max-width: 600px) {
-
   .footer-container .col {
     padding: 1rem;
     flex-basis: 100%;
   }
-
 }
 
 .footer-container p {
   color: white;
   margin-top: 1rem;
 }
-
-
 
 .footer-container .col .email-id {
   word-wrap: break-word;
@@ -833,7 +830,6 @@ footer a:focus {
 
   .hamburger {
     display: flex;
-
   }
 
   header {
@@ -858,12 +854,9 @@ footer a:focus {
     left: 3vh;
   }
 
-  #about h3 {
-    margin-left: 20.5rem;
-  }
-
   .card img {
-    border-radius: 25px;
+    width: 150px;
+    height: 150px;
   }
 }
 
