@@ -15,15 +15,18 @@
        
         <form class="p-3 mt-3">
             <div class="form-field d-flex align-items-center">
-                <input type="text" name="email" id="email" placeholder="Email Address">
+                <input type="text" name="username" id="username" placeholder="username" required>
             </div>
             <div class="form-field d-flex align-items-center">
-                <input type="password" name="password" id="pwd" placeholder="Password">
+                <input type="email" name="email" id="email" placeholder="Email Address" required>
             </div>
             <div class="form-field d-flex align-items-center">
-                <input type="password" name="cpassword" id="cpwd" placeholder="Comfirm Password">
+                <input type="password" name="password" id="pwd" placeholder="Password" minlength="8" maxLength="30" required>
+            </div>
+            <div class="form-field d-flex align-items-center">
+                <input type="password" name="cpassword" id="cpwd" placeholder="Comfirm Password" minlength="8" maxLength="30" required>
             </div><br>
-            <button class="btn mt-3">Signup</button>
+            <button type="submit" class="btn mt-3">Signup</button>
         </form><br>
     </div>
 </body>
