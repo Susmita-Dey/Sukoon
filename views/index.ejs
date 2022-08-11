@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sukoon</title>
+  <link rel ="icon" href="/images/favicon-enhanced.png">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" text="text/CSS" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+ <style>
+   html{
+     scroll-behavior: smooth;
+   }
+   .hidden{
+     visibility: hidden;
+   }
+   .back-top-wrap {
+     position: fixed;
+     bottom: 5rem;
+     right: 1rem;
+     background-color: #80F7D1;
+     padding: 1rem 1.2rem;
+     border-radius: 50%;
+     cursor: pointer;
+     transition: .3s ease-in-out;
+   }
+
+   .back-top-wrap:hover{
+    background-color: #00a2ff;
+    color: #80F7D1;
+   }
+   .back-top-wrap:hover .fas.fa-arrow-up{
+    color: white;
+   }
+
+
+   .fas.fa-arrow-up {
+     color: #00488F;
+     transition: 0.3s ease-in-out;
+   }
+ </style>
+<body>
+
+  <!-- Back to top button -->
+  <div id="back-top-div" class="back-top-wrap">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <!-- Navbar and Hero Section -->
+  <!-- <header>
+    <nav>
+      <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo" /></a>
+
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hidemenu()"></i>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#services">SERVICES </a></li>
+          <li><a href="html/contact.html">CONTACT US </a></li>
+        </ul>
+      </div>
+
+      <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+
+    <div class="content">
+      <h1>Welcome to your very own SUKOON</h1>
+      <h3>
+        The one step solution to get relief from your stress.<br />Live a
+        stress-free life.
+      </h3>
+    </div>
+  </header> -->
+  <header>
+    <nav class="nav">
+      <div class="">
+        <!-- <a href="index.html"><img src="logo.png" alt="Logo" class="logo" /></a> -->
+        <a class="navbar-brand" href="#!"> <img src="logo.png" alt="Logo" class="logo" /></a>
+      </div>
+
+      <div class="nav-links" id="navLinks">
+        <ul class="links">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#services">SERVICES </a></li>
+          <li><a href="/contact">CONTACT US </a></li>
+        </ul>
+      </div>
+      <button class="login-button"><a href="/login" >SignUp / Login</a></button>
+      <div class="hamburger" id="ham">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <div class="menu" id="menu">
+      <ul class="menu-link">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES </a></li>
+        <li><a href="/contact">CONTACT US </a></li>
+      </ul>
+    </div>
+
+      <div class="content">
+        <h1>Welcome to SUKOON</h1>
+        <h3>The one step solution to get relief from your stress.<br />Live a
+        stress-free life!</h3>
+        <a href="#services" class="hero-explore">Explore</a>
+      </div>
+
+   </header>
+  <!-- About Section -->
+  <section id="about">
+
+        <h2>About Us</h2>
+        <h3>MEET OUR MEMBERS</h3>
+
+
+      <div class="box">
+
+        <div class="card">
+          <img src="/images/shayan.jpeg" alt="shayan" loading="lazy">
+          <h5>Shayan Pal</h5>
+          <div class="pra">
+            <p>Member</p>
+            <a href="https://bio.link/shayanpal"><button>Let's Connect</button></a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="/images/soumyadeep.jpeg" alt="soumyadeep"loading="lazy">
+          <h5>Soumyadeep Dhali</h5>
+          <div class="pra">
+            <p>Member</p>
+            <a href="https://soumyadeep.bio.link"><button>Let's Connect</button></a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="/images/susmita.jpg" alt=""loading="lazy">
+          <h5>Susmita Dey</h5>
+          <div class="pra">
+            <p>Head of The Team</p>
+            <a href="https://bio.link/susmitadey"><button>Let's Connect</button></a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="/images/chaitri.jpeg" alt="chaitri"loading="lazy">
+          <h5>Chaitri Saha Chowdhury</h5>
+          <div class="pra">
+            <p>Member</p>
+            <a href="https://bio.link/chaitri"><button>Let's Connect</button></a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="/images/sasanka.jpeg" alt="sasanka"loading="lazy">
+          <h5>Sasanka Kundu</h5>
+          <div class="pra">
+            <p>Member</p>
+            <a href="https://bio.link/sasankakundu"><button>Let's Connect</button></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" >
+    <h1>Our Services</h1>
+    <div class="container">
+
+        <div class="responsive audio">
+          <div class="round-image">
+            <img src="./images/audio.png"
+              alt="audio" loading="lazy"/>
+          </div>
+          <h2>Audio Therapy</h2>
+          <p >
+            Listening to music & other audio files often enlightens our mood.
+          </p>
+          <a href="/audioTherapy">
+            Let's Explore
+          </a>
+        </div>
+
+        <div class="responsive reading">
+          <div class="round-image">
+            <img  src="./images/reading.png"
+              alt="read" loading="lazy"/>
+          </div>
+          <h2 >Reading Therapy</h2>
+          <p >
+            Motivational quotes and books can help us to divert and change our mood.
+          </p>
+          <a href="/readingTherapy">
+            Let's Explore
+          </a>
+        </div>
+
+        <div class="responsive yoga">
+          <div class="round-image">
+            <img  src="./images/yoga.png"
+              alt="yoga"loading="lazy" />
+          </div>
+          <h2 >Yoga Therapy</h2>
+          <p >
+            Yoga and exercise plays a very important role in our lives.
+          </p>
+          <a href="/comingSoon">
+            Coming Soon
+          </a>
+        </div>
+
+        <div class="responsive laugh">
+          <div class="round-image">
+            <img  src="./images/laughing.png"
+              alt="laughing" />
+          </div>
+          <h2 >Laughing Therapy</h2>
+          <p >
+            Laughing is the only medicine which refreshes our mind.
+          </p>
+          <a href="/laughTherapy">
+            Let's Explore
+          </a>
+        </div>
+
+        <div class="responsive talk">
+          <div class="round-image">
+            <img  src="./images/talking.png" loading="lazy"
+              alt="talking" />
+          </div>
+          <h2 >Talking Therapy</h2>
+          <p>
+            A quick short conversation can often bring smile to our face.
+          </p>
+          <a href="/talkingTherapy">
+            Talking Therapy
+          </a>
+        </div>
+
+        <div class="responsive doctor">
+          <div class="round-image">
+            <img
+              src="./images/doctor.png" alt="doctor" loading="lazy"/>
+          </div>
+          <h2 >Consult A Doctor</h2>
+          <p >
+            If you're facing too much problem, you should consult a doctor.
+          </p>
+          <a href="https://www.practo.com/counselling-psychology" target="_blank">
+           Let's Explore
+          </a>
+        </div>
+      </div>
+  </section>
+
+  <!-- Faq section -->
+  <section class="faq">
+    <div class="faq_heading">
+      <h1>Frequently Asked Questions</h1>
+    </div>
+    <div class="wrap">
+      <ul class="accordion">
+        <li class="accordion__item">
+          <a class="accordion__title" href="javascript:void(0)"> Who are we and what do we do?
+            <div class="bmenu x7"><span class="btop"></span><span class="bmid"></span><span class="bbot"></span></div>
+          </a>
+          <p class="accordion__content">We are a team of open source contributors who have created this website "sukoon" with the aim
+            to provide a one step solution to get relief from stress. We hope that everyone can live a
+            stress free life with the help of sukoon
+        </li>
+        <li class="accordion__item">
+          <a class="accordion__title" href="javascript:void(0)">What all services do we provide?
+            <div class="bmenu x7"><span class="btop"></span><span class="bmid"></span><span class="bbot"></span></div>
+          </a>
+          <p class="accordion__content">We provide multiple services which are:
+          <br>
+          Audio Therapy
+          <br>
+          Reading Therapy
+          <br>
+          Yoga Therapy
+          <br>
+          Laughing Therapy
+          <br>
+          Talking Therapy
+          <br>
+          Consult A Doctor
+          </p>
+        </li>
+        <li class="accordion__item">
+          <a class="accordion__title" href="javascript:void(0)">How can you contact us?
+            <div class="bmenu x7"><span class="btop"></span><span class="bmid"></span><span class="bbot"></span></div>
+          </a>
+          <p class="accordion__content">You can contact us by emailing on sukoon665@gmail.com</p>
+        </li>
+        <li class="accordion__item">
+          <a class="accordion__title" href="javascript:void(0)">what is reading therapy?
+            <div class="bmenu x7"><span class="btop"></span><span class="bmid"></span><span class="bbot"></span></div>
+          </a>
+          <p class="accordion__content"> Reading therapy is a creative arts therapy that involves storytelling or the
+            reading of specific texts. It uses an individual's relationship to the content of
+            books and poetry and other written words as therapy.
+          </p>
+        </li>
+        <li class="accordion__item">
+          <a class="accordion__title" href="javascript:void(0)">what is audio therapy?
+            <div class="bmenu x7"><span class="btop"></span><span class="bmid"></span><span class="bbot"></span></div>
+          </a>
+          <p class="accordion__content">Audio Therapy uses sound, music and specialist instruments played in therapeutic ways,
+            combined with deep self-reflection techniques to improve health and wellbeing.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- footer start -->
+  <footer  >
+    <div class="footer-container">
+
+      <!--logo and info column-->
+      <div class="col">
+
+        <!--logo insert-->
+        <img src="images/footerlogo.png" alt="logo" class="footlogo">
+
+      </div>
+
+      <!--ADDRESS COLUMN-->
+
+      <div class="col">
+        <h3>ADDRESS <div class="underline"><span></span></div>
+        </h3>
+
+        <p>WEST BENGAL,INDIA</p>
+        <p class="email-id">sukoon665@gmail.com </p>
+      </div>
+
+      <!--HOME COLUMN-->
+      <div class="col">
+        <h3>HOME<div class="underline"><span></span></div>
+        </h3>
+        <ul>
+
+          <li><a href="#about">ABOUT US</a></li>
+          <li><a href="https://github.com/Susmita-Dey/Sukoon/blob/main/CODE_OF_CONDUCT.md">CODE OF CONDUCT</a></li>
+          <li><a href="https://github.com/Susmita-Dey/Sukoon">CONTRIBUTE</a></li>
+          <li><a href="https://www.buymeacoffee.com/susmitadey">DONATE</a></li>
+        </ul>
+      </div>
+
+
+      <!--OUR SERVICES COLUMN-->
+      <div class="col">
+        <h3>SERVICES<div class="underline"><span></span></div>
+        </h3>
+        <ul>
+
+          <li><a href="#services">AUDIO THERAPY</a></li>
+          <li><a href="#services">VIDEO THERAPY</a></li>
+          <li><a href="#services">YOGA THERAPY</a></li>
+          <li><a href="#services">READING THERAPY</a></li>
+          <li><a href="#services">TALKING THERAPY</a></li>
+        </ul>
+      </div>
+
+      <!--CONTACTS COLUMN-->
+
+      <div class="col">
+        <h3>CONTACTS <div class="underline"><span></span></div>
+        </h3>
+
+        <div class="social-menu">
+          <ul>
+            <!-- <li><i class="fab fa-facebook-f"></i> </li> -->
+            <a href="https://twitter.com/sukoon665"><li><i class="fab fa-twitter"></i> </li></a>
+            <a href="https://github.com/Susmita-Dey/Sukoon"><li><i class="fab fa-github"></i> </li></a>
+            <a href="https://www.linkedin.com/in/sukoon-web-820705238"><li><i class="fab fa-linkedin-in"></i></li></a>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

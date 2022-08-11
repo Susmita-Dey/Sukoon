@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/signup.css">
+	<link rel="stylesheet" type="text/css" href="html/css/signup.css">
 <!--     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 	<title>Signup</title>
 </head>
@@ -12,10 +12,10 @@
         <div class="logo">
            <h1>SignUp</h1>
         </div><br><br>
-       
-        <form class="p-3 mt-3">
+
+        <form action = "/signup" method="POST" class="p-3 mt-3">
             <div class="form-field d-flex align-items-center">
-                <input type="text" name="email" id="email" placeholder="Email Address">
+                <input type="email" name="email" id="email" placeholder="Email Address">
             </div>
             <div class="form-field d-flex align-items-center">
                 <input type="password" name="password" id="pwd" placeholder="Password">
@@ -23,7 +23,7 @@
             <div class="form-field d-flex align-items-center">
                 <input type="password" name="cpassword" id="cpwd" placeholder="Comfirm Password">
             </div><br>
-            <button class="btn mt-3">Signup</button>
+            <button type="submit" value="signup" class="btn mt-3">Signup</button>
         </form><br>
     </div>
 </body>

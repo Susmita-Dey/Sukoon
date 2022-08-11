@@ -1,0 +1,24 @@
+{
+  "name": "os-sukoon",
+  "version": "1.0.0",
+  "description": "This is a stress-relieving website project made for the hackathon [Hackofiesta](https://hack.iiitl.ac.in/). \r This project is under the theme **Healthcare.**\r This was our first hackathon.",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon src/app.js -e js,ejs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
