@@ -5,74 +5,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel ="icon" href="/images/favicon-enhanced.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap" rel="stylesheet">
     <title>Sukoon</title>
-    <link rel="stylesheet" href="/css/audio.css" />
+    <link rel="stylesheet" href="../css/audio.css" />
   </head>
+  <style>
+    .nature-sound{
+      text-align: center;
+      padding: 30px;
+    }
+  </style>
   <body>
-    <!-- Navbar and Hero Section -->
-  <header>
+    <!-- Navbar Section -->
     <nav>
-      <a href="index.html"><img src="/images/logo.png" alt="Logo" class="logo" /></a>
+      <a href="../index.html"><img class="audio-logo" src="../logo.png" alt="Logo"/></a>
 
       <div class="nav-links" id="navLinks">
         <i class="fa fa-times" onclick="hidemenu()"></i>
         <ul>
-          <li><a href="/index.html">HOME</a></li>
+          <li><a href="../index.html">HOME</a></li>
           <li><a href="#music">MUSIC</a></li>
           <li><a href="#podcasts">PODCASTS </a></li>
           <li><a href="#audiobooks">AUDIOBOOKS </a></li>
         </ul>
       </div>
 
-      <i class="fa fa-bars" onclick="showmenu()"></i>
+      <div class="hamburger" id="ham">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
+    <!-- Navbar Section Ends Here -->
+  
+    <div class="menu" id="menu">
+      <ul class="menu-link">
+        <li><a href="/index.html">HOME</a></li>
+            <li><a href="#music">MUSIC</a></li>
+            <li><a href="#podcasts">PODCASTS</a></li>
+            <li><a href="#audiobooks">AUDIOBOOKS</a></li>
+      </ul>
+    </div>
+    
 
-    <div class="contain">
-      <img class="image" src="https://images.pexels.com/photos/1037999/pexels-photo-1037999.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" style="width: 100%; height: 50%;">
+    <!-- Header Section-->
+    <header>
       <div class="center"> 
-        <h1 id="title">Welcome to Our <u>Audio Therapy</u></h1>
+        <h1 id="title">Welcome to Our <br><span class="heading-span">Audio Therapy</span></h1>
         <h3 id="subtitle">Listen to Music, Motivational Podcasts and Audiobooks <br> to gain some happiness, knowledge and also lighten your stress side by side.</h3>
       </div>
-  </header>
+    </header>
+    <!-- Header Section Ends here -->
 
+    <!-- Music Section-->
     <section id="music">
-      <h1>Music</h1>
-      <div class="collection">
-        <h2>Stress Relief Sounds</h2>
-        <div class="playlist">
-          <iframe
-            style="border-radius: 12px"
-            src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXe9gFZP0gtP?utm_source=generator"
-            width="100%"
-            height="380"
-            frameborder="0"
-            allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          ></iframe>
+      <h1 class="section-headings">Music</h1>
+      <div class="container">
+        <div class="collection">
+          <h2>Stress Relief Sounds</h2>
+          <div class="playlist">
+            <iframe
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXe9gFZP0gtP?utm_source=generator"
+              width="100%"
+              height="380"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            ></iframe>
+          </div>
         </div>
-      </div>
-      <div class="collection">
-        <h2>Peaceful Guitar</h2>
-        <div class="playlist">
-          <iframe
-            style="border-radius: 12px"
-            src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0jgyAiPl8Af?utm_source=generator"
-            width="100%"
-            height="380"
-            frameborder="0"
-            allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          ></iframe>
+        <div class="collection">
+          <h2>Peaceful Guitar</h2>
+          <div class="playlist">
+            <iframe
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0jgyAiPl8Af?utm_source=generator"
+              width="100%"
+              height="380"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            ></iframe>
+          </div>
+        </div>
+        <div class="collection">
+          <h2>Calm Nature Sounds</h2>
+          <div class="playlist">
+            <iframe
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO2pMckE?utm_source=generator"
+              width="100%"
+              height="380"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            ></iframe>
+          </div>
         </div>
       </div>
     </section>
+    <!-- Music Section Ends Here-->
+
     <hr />
+    
+    <!-- Podcasts Section-->
     <section id="podcasts">
-      <h1>Podcasts</h1>
+      <h1 class="section-headings">Podcasts</h1>
       <div class="collection">
         <div class="show">
           <iframe
-            style="border-radius: 12px"
+            
             src="https://open.spotify.com/embed/episode/4feTGTT8jp9e18w90mBtXc?utm_source=generator"
             width="100%"
             height="152"
@@ -83,7 +128,7 @@
         </div>
         <div class="show">
           <iframe
-            style="border-radius: 12px"
+            
             src="https://open.spotify.com/embed/show/5ZxgpIlnsT8kILxQItEQ5f?utm_source=generator"
             width="100%"
             height="152"
@@ -94,7 +139,7 @@
         </div>
         <div class="show">
           <iframe
-            style="border-radius: 12px"
+            
             src="https://open.spotify.com/embed/episode/4ahVo34YZsDDtCgXX5KS5P?utm_source=generator"
             width="100%"
             height="152"
@@ -105,7 +150,7 @@
         </div>
         <div class="show">
           <iframe
-            style="border-radius: 12px"
+            
             src="https://open.spotify.com/embed/episode/3ZvJ1jpxtjFIZ8sTghil7u?utm_source=generator"
             width="100%"
             height="152"
@@ -116,7 +161,7 @@
         </div>
         <div class="show">
           <iframe
-            style="border-radius: 12px"
+            
             src="https://open.spotify.com/embed/episode/0vEWGG6S1wL6IbxJsxb3sF?utm_source=generator"
             width="100%"
             height="152"
@@ -127,7 +172,7 @@
         </div>
         <div class="show">
           <iframe
-            style="border-radius: 12px"
+            
             src="https://open.spotify.com/embed/episode/0PLXymZ2KH89Ty2KGFpREP?utm_source=generator"
             width="100%"
             height="152"
@@ -138,7 +183,7 @@
         </div>
         <div class="show">
           <iframe
-            style="border-radius: 12px"
+            
             src="https://open.spotify.com/embed/episode/3qZRmQtsUgHyOVNmZzxxPw?utm_source=generator"
             width="100%"
             height="152"
@@ -149,7 +194,7 @@
         </div>
         <div class="show">
           <iframe
-            style="border-radius: 12px"
+            
             src="https://open.spotify.com/embed/episode/3rG0WSWKcQ4iEM4JkLQRGg?utm_source=generator"
             width="100%"
             height="152"
@@ -160,7 +205,7 @@
         </div>
         <div class="show">
           <iframe
-            style="border-radius: 12px"
+            
             src="https://open.spotify.com/embed/episode/2UmljSQsLNonJRZ88b2zfx?utm_source=generator"
             width="100%"
             height="152"
@@ -171,7 +216,7 @@
         </div>
         <div class="show">
           <iframe
-            style="border-radius: 12px"
+            
             src="https://open.spotify.com/embed/episode/24JEpPldCxgeqGprKO7kMI?utm_source=generator"
             width="100%"
             height="152"
@@ -182,7 +227,7 @@
         </div>
         <div class="show">
           <iframe
-            style="border-radius: 12px"
+            
             src="https://open.spotify.com/embed/episode/5nWxL1XA1Jr3C3aJLem5ZK?utm_source=generator"
             width="100%"
             height="152"
@@ -193,7 +238,7 @@
         </div>
         <div class="show">
           <iframe
-            style="border-radius: 12px"
+            
             src="https://open.spotify.com/embed/episode/06OxqMY33JiZ23Pxw8NmDs?utm_source=generator"
             width="100%"
             height="152"
@@ -204,7 +249,7 @@
         </div>
         <div class="show">
           <iframe
-            style="border-radius: 12px"
+            
             src="https://open.spotify.com/embed/episode/1496yN5qwJAwbLB30XzrvR?utm_source=generator"
             width="100%"
             height="152"
@@ -215,7 +260,7 @@
         </div>
         <div class="show">
           <iframe
-            style="border-radius: 12px"
+            
             src="https://open.spotify.com/embed/episode/54UlEUdnxJ96kGkrcskhGf?utm_source=generator"
             width="100%"
             height="152"
@@ -226,7 +271,7 @@
         </div>
         <div class="show">
           <iframe
-            style="border-radius: 12px"
+            
             src="https://open.spotify.com/embed/episode/6lbYN222AInVmmLj674vKB?utm_source=generator"
             width="100%"
             height="152"
@@ -237,7 +282,7 @@
         </div>
         <div class="show">
           <iframe
-            style="border-radius: 12px"
+            
             src="https://open.spotify.com/embed/episode/19XfB2nyuc1Uh3BservSyf?utm_source=generator"
             width="100%"
             height="152"
@@ -248,10 +293,13 @@
         </div>
       </div>
     </section>
+    <!-- Podcasts Section Ends Here -->
+
     <hr />
 
+    <!-- AudioBooks Section-->
     <section id="audiobooks">
-      <h1>Audiobooks</h1>
+      <h1 class="section-headings">Audiobooks</h1>
       <div class="cards">
         <article class="card">
           <img src="https://m.media-amazon.com/images/I/41wuB-s8vRL._SL300_.jpg" alt="Atomic Habits" />
@@ -260,7 +308,7 @@
             <p>
               Let's listen to the famous audiobook by James Clear.
             </p>
-            <a href="https://www.audible.in/pd/Atomic-Habits-Audiobook/B07J1PK5Q7?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare"><button>Play Now</button></a>
+            <a href="https://www.audible.in/pd/Atomic-Habits-Audiobook/B07J1PK5Q7?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare" class="btn btn-border">Play Now</a>
           </div>
         </article>
 
@@ -271,7 +319,7 @@
             <p>
               Let's listen to the famous audiobook by Morgan Housel.
             </p>
-            <a href="https://www.audible.in/pd/The-Psychology-of-Money-Audiobook/B08D9WJCBT?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare"><button>Play Now</button></a>
+            <a href="https://www.audible.in/pd/The-Psychology-of-Money-Audiobook/B08D9WJCBT?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare" class="btn btn-border">Play Now</a>
           </div>
         </article>
 
@@ -282,7 +330,7 @@
             <p>
               Let's listen to the famous audiobook by Mark Manson.
             </p>
-            <a href="https://www.audible.in/pd/The-Subtle-Art-of-Not-Giving-a-F-ck-Audiobook/B079BC54JT?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare"><button>Play Now</button></a>
+            <a href="https://www.audible.in/pd/The-Subtle-Art-of-Not-Giving-a-F-ck-Audiobook/B079BC54JT?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare" class="btn btn-border">Play Now</a>
           </div>
         </article>
         
@@ -293,7 +341,7 @@
             <p>
               Let's listen to the famous audiobook by Héctor García and Francesc Miralles.
             </p>
-            <a href="https://www.audible.in/pd/Ikigai-Audiobook/B0759Y4LYM?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare"><button>Play Now</button></a>
+            <a href="https://www.audible.in/pd/Ikigai-Audiobook/B0759Y4LYM?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare" class="btn btn-border">Play Now</a>
           </div>
         </article>
 
@@ -304,7 +352,7 @@
             <p>
               Let's listen to the famous audiobook by Jay Shetty.
             </p>
-            <a href="https://www.audible.in/pd/Think-Like-A-Monk-Audiobook/B07YSQ8GT5?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare"><button>Play Now</button></a>
+            <a href="https://www.audible.in/pd/Think-Like-A-Monk-Audiobook/B07YSQ8GT5?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare" class="btn btn-border">Play Now</a>
           </div>
         </article>
 
@@ -315,7 +363,7 @@
             <p>
               Let's listen to the famous audiobook by Gaur Gopal Das.
             </p>
-            <a href="https://www.audible.in/pd/Lifes-Amazing-Secrets-Audiobook/B081S9NKRP?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare"><button>Play Now</button></a>
+            <a href="https://www.audible.in/pd/Lifes-Amazing-Secrets-Audiobook/B081S9NKRP?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare" class="btn btn-border">Play Now</a>
           </div>
         </article>
 
@@ -326,18 +374,18 @@
             <p>
               Let's listen to the famous audiobook by Robert T. Kiyosaki.
             </p>
-            <a href="https://www.audible.in/pd/Rich-Dad-Poor-Dad-Audiobook/B079P9PGJB?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare"><button>Play Now</button></a>
+            <a href="https://www.audible.in/pd/Rich-Dad-Poor-Dad-Audiobook/B079P9PGJB?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare" class="btn btn-border">Play Now</a>
           </div>
         </article>
 
         <article class="card">
           <img src="https://m.media-amazon.com/images/I/51nY2HMNVHL._SL500_.jpg" alt="Karma" />
           <div class="content">
-            <h3>Karma: A Yogi’s Guide to Crafting Your Own Destiny</h3>
+            <h3>Karma: A Yogi’s Guide to Crafting...</h3>
             <p>
               Let's listen to the famous audiobook by Sadhguru and Leslie Howard.
             </p>
-            <a href="https://www.audible.in/pd/Karma-A-Yogis-Guide-to-Crafting-Your-Own-Destiny-Audiobook/9391149588?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare"><button>Play Now</button></a>
+            <a href="https://www.audible.in/pd/Karma-A-Yogis-Guide-to-Crafting-Your-Own-Destiny-Audiobook/9391149588?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare" class="btn btn-border">Play Now</a>
           </div>
         </article>
 
@@ -348,7 +396,7 @@
             <p>
               Let's listen to the famous audiobook by Leil Lowndes.
             </p>
-            <a href="https://www.audible.in/pd/How-to-Talk-to-Anyone-Audiobook/B079TLJV49?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare"><button>Play Now</button></a>
+            <a href="https://www.audible.in/pd/How-to-Talk-to-Anyone-Audiobook/B079TLJV49?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare" class="btn btn-border">Play Now</a>
           </div>
         </article>
 
@@ -360,14 +408,29 @@
               Let's listen to the famous audiobook by Jason Fried and David Heinemeier Hansson.
             </p>
             
-              <a href="https://www.audible.in/pd/Rework-Audiobook/B079VF9TV6?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare"><button>Play Now</button></a>
+              <a href="https://www.audible.in/pd/Rework-Audiobook/B079VF9TV6?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare" class="btn btn-border">Play Now</a>
           </div>
         </article>
       </div>
-
-        
-      </div>
-
+      <!-- AudioBooks Section Ends Here -->
     </section>
+    <script>
+      const ham = document.getElementById("ham");
+const menu = document.getElementById("menu");
+
+const toggleMenu = () => {
+if (menu.classList.contains("open")) {
+  menu.classList.remove("open");
+  //   menu.style.display = "block";
+  console.log("open");
+} else {
+  menu.classList.add("open");
+  //   menu.style.display = "none";
+  console.log("close");
+}
+};
+
+ham.addEventListener("click", toggleMenu);
+  </script>
   </body>
 </html>
