@@ -785,12 +785,26 @@ footer a:focus {
     left: 3vh;
   }
 
-  #about h3 {
-    margin-left: 1.5rem;
+  .box {
+    place-items: center;
+    padding: 3rem 0px;
   }
 
+  #about h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #about h3 {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .card {
+    width: 300px;
+  }
   .card img {
-    border-radius: 25px;
+    border-radius: 50%;
   }
 
   #services h2 {
@@ -852,6 +866,10 @@ footer a:focus {
     position: absolute;
     top: 19vh;
     left: 3vh;
+  }
+
+  #about h3 {
+    text-align: center;
   }
 
   .card img {
