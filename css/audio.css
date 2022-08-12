@@ -39,6 +39,7 @@ nav {
   backdrop-filter: blur(5px);
 }
 
+
 .audio-logo {
   width: 80px;
   padding: 0;
@@ -113,7 +114,7 @@ nav {
   height: 100%;
   position: fixed;
   background-color: rgba(56,56,55, 1);
-  top: 0px;
+  top: 0;
   left: 0;
   padding: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
@@ -372,4 +373,28 @@ hr {
     width: 30px;
     height: 30px;
     border-color: #222222;
+}
+
+@media screen and (max-width: 650px) {
+  .nav-links {
+    display: none;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  header {
+    min-height: 100vh;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .menu .open {
+    display: none;
+  }
 }
