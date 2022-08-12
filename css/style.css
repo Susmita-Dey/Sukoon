@@ -675,6 +675,7 @@ figure.testimonal-Card .author h5 {
   border-bottom: 2px solid #eee;
   overflow: hidden;
   transition: background-color 0.2s;
+  font-family: 'Roboto';
 }
 
 .accordion__title:hover {
@@ -721,6 +722,7 @@ figure.testimonal-Card .author h5 {
   background-color: rgb(214, 235, 244);
   font-size: 1em;
   font-weight: 500;
+  
 }
 
 /* --- Icon --- */
