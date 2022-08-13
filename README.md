@@ -3,6 +3,9 @@ This is a stress-relieving website project made for the hackathon [Hackofiesta](
 This project is under the theme **Healthcare.**
 This was our first hackathon.
 
+## Website Link-
+<a href="https://sukoon-stress-free.netlify.app/">Sukoon</a>
+
 ## 🕊 Our Tagline 
 The one step solution to get relief from your stress.
 Live a stress-free life.
@@ -23,10 +26,6 @@ Live a stress-free life.
 - Talking Therapy(Coming Soon)
 - Consult A Doctor
 
-
-## Website Link-
-<a href="https://sukoon-stress-free.netlify.app/">Sukoon</a>
- 
 
 ## Our Logo
 <img src="https://user-images.githubusercontent.com/98955085/183500401-e9273ee1-fe9b-45a6-a4a9-f844cc44426b.png" width=130px height=130px alt="logo">
