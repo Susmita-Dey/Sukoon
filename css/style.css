@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
-
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
 * {
   margin: 0;
   padding: 0;
@@ -37,6 +38,14 @@ header {
   width: 100px;
 }
 
+/* <<<<<<< HEAD
+=======
+/* .nav-links {
+  flex: 1;
+  text-align: right;
+} *//*
+
+>>>>>>> d60fe4b0cb0e633b6cdfe85218eed16f88d92493 */
 .hamburger {
   display: none;
   justify-content: center;
@@ -100,7 +109,7 @@ header {
 .login-button a {
   display: block;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: #000000;
   height: 2.4rem;
@@ -109,12 +118,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .login-button a:hover {
   color: #ffffff;
-
 }
 
 .login-button:hover {
@@ -137,7 +144,7 @@ header {
   width: 80%;
   height: 100%;
   position: absolute;
-  background-color: rgba(244, 124, 124, 0.970);
+  background-color: rgba(244, 124, 124, 0.97);
   top: 0px;
   left: 0;
   padding: 30px;
@@ -212,15 +219,15 @@ header {
   background-color: #ffffff;
 
   /* Create the gradient. */
-  background-image: linear-gradient(45deg,
-      #fff 15.666%,
-      #0da1dc 16.333%,
-      #981a8e 33.333%,
-      #ea097f 50%,
-      #e12038 66.666%,
-      #f06f25 83.333%
-      /* #323292 10.666% */
-    );
+  background-image: linear-gradient(
+    45deg,
+    #fff 15.666%,
+    #0da1dc 16.333%,
+    #981a8e 33.333%,
+    #ea097f 50%,
+    #e12038 66.666%,
+    #f06f25 83.333% /* #323292 10.666% */
+  );
 
   /* Set the background size and repeat properties. */
   background-size: 100%;
@@ -285,33 +292,45 @@ header {
   text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 }
 
-.content .hero-explore {
+.content .rainbow-button {
+  cursor: pointer;
   display: inline-block;
-  margin-top: 4rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  font-size: 1.5rem;
-  text-decoration: none;
-  background-color: #ffffff;
-  color: #014d94;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  border: 3px solid;
-  border-image-source: linear-gradient(0deg,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)),
-    linear-gradient(0deg, #014d94, #014d94);
-  transition: 0.3s ease-in-out;
+  margin:auto;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  text-decoration:none;
+  color:#FFF;
+  width:calc(8rem + 6px);
+  height:calc(3rem + 6px);
+  
+  background-image: linear-gradient(90deg, #0da1dc 0%, #981a8e 29%, #ea097f 60%, #e12038 80%, #f06f25 100%);
+  border-radius:5px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1rem;
+  font-weight:bold;
+}
+.content .rainbow-button:after {
+  content:attr(alt);
+  width:8rem;
+  height:3rem;
+  background-color:#191919;
+  opacity: 0.9;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.content .rainbow-button:hover {
+  animation:slidebg 1s linear infinite;
 }
 
-.content .hero-explore:hover {
-  background: #014d94;
-  color: white;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
+@keyframes slidebg {
+  to {
+    background-position:8rem;
+  }
 }
+
 
 .hero-btn {
   display: inline-block;
@@ -338,7 +357,7 @@ nav .fa {
 /* ABOUT SECTION */
 #about {
   /* background: #1c1c1c; */
-  background-color: #014d94;
+  background-color: rgb(13, 50, 64);
 
   width: 100%;
   padding: 5px 0px;
@@ -348,11 +367,11 @@ nav .fa {
 
 #about h2 {
   color: white;
-  font-size: 35px;
+  font-size: 40px;
   margin: 20px 20px;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 #about h3 {
@@ -362,8 +381,8 @@ nav .fa {
   justify-content: center;
   margin: 0 2rem;
   margin-bottom: 2rem;
-  font-family: 'Roboto';
-  font-weight: 400;
+  font-family: "Roboto";
+  font-weight: 600;
 }
 
 @media screen and (max-width: 780px){
@@ -388,14 +407,18 @@ nav .fa {
 
 .card {
   cursor: pointer;
-  border: 2px solid red;
-  box-shadow: 1px 2px red, -0.5em 0 0.9em black;
+  background: rgb(1, 59, 112);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   text-align: center;
   transition: 0.3s ease-in-out;
   animation: slideIn 0.5s ease-in-out;
   transform: translateY(-2.2rem);
-  padding: 2rem;
-  border-radius: 3rem;
+  padding: 20px;
+  border-radius: 20px;
+}
+.card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .card img {
@@ -517,6 +540,107 @@ h5 {
   .responsive {
     width: 100%;
   }
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 50px 0px;
+  background-color: rgb(1, 36, 49);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  margin: 0;
+}
+.testimonials_heading {
+  padding: 20px 0px;
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+  width: 100%;
+}
+.testimonials_heading h1 {
+  font-size: 50px;
+}
+
+figure.testimonal-Card {
+  font-family: "Raleway", Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  color: #333;
+  text-align: left;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+figure.testimonal-Card * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+figure.testimonal-Card img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+figure.testimonal-Card blockquote {
+  position: relative;
+  background-color: #ffffff;
+  padding: 25px 50px 25px 50px;
+  font-size: 0.8em;
+  font-weight: 500;
+  text-align: left;
+  margin: 0;
+  line-height: 1.6em;
+  font-style: italic;
+}
+figure.testimonal-Card blockquote:before,
+figure.testimonal-Card blockquote:after {
+  font-family: "FontAwesome";
+  content: "\201C";
+  position: absolute;
+  font-size: 50px;
+  opacity: 0.3;
+  font-style: normal;
+}
+figure.testimonal-Card blockquote:before {
+  top: 25px;
+  left: 20px;
+}
+figure.testimonal-Card blockquote:after {
+  content: "\201D";
+  right: 20px;
+  bottom: 0;
+}
+figure.testimonal-Card .arrow {
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #ffffff;
+  margin: 0;
+  position: absolute;
+}
+figure.testimonal-Card .author {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 25px;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0;
+  text-transform: uppercase;
+}
+figure.testimonal-Card .author h5 {
+  opacity: 0.8;
+  color: #000000;
+  text-align: center;
+  margin: 0;
+  font-weight: 600;
 }
 
 /* faq section */
@@ -749,15 +873,12 @@ footer a:focus {
     padding: 1rem;
     flex-basis: 100%;
   }
-
 }
 
 .footer-container p {
   color: white;
   margin-top: 1rem;
 }
-
-
 
 .footer-container .col .email-id {
   word-wrap: break-word;
@@ -805,12 +926,39 @@ footer a:focus {
     padding: 1rem;
   }
 
-  #about h3 {
-    margin-left: 1.5rem;
+  .responsive .round-image {
+    width: 300px;
+    height: 150px;
   }
 
+  /* .content {
+    position: absolute;
+
+    /* top: vh; *//*
+    left: 3vh;
+  } */
+
+  .box {
+    place-items: center;
+    padding: 3rem 0px;
+  }
+
+  #about h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #about h3 {
+
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .card {
+    width: 300px;
+  }
   .card img {
-    border-radius: 25px;
+    border-radius: 50%;
   }
 
   #services h2 {
@@ -850,7 +998,6 @@ footer a:focus {
 
   .hamburger {
     display: flex;
-
   }
 
   header {
@@ -864,6 +1011,30 @@ footer a:focus {
   }
 }
 
+/* <<<<<<< HEAD
+=======
+@media screen and (max-width: 820px) and (min-width: 600px) {
+  header {
+    min-height: 61vh;
+  }
+
+  .content {
+    position: absolute;
+    top: 19vh;
+    left: 3vh;
+  }
+
+  #about h3 {
+    text-align: center;
+  }
+
+  .card img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+>>>>>>> d60fe4b0cb0e633b6cdfe85218eed16f88d92493 */
 @media screen and (max-width: 880px) and (min-width: 700px) {
   #services .round-image img {
     width: 110%;
