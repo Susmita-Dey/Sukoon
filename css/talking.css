@@ -362,14 +362,16 @@ h1 {
 }
 
 .blog-content span{
-  color: #f1304d;
-  font-size: 0.9rem;
+  color: #253240;
+  font-size: 0.7rem;
+  margin-bottom: 1em;
 }
 
 .blog-content .blog-title{
   font-size: 1.2rem;
   font-weight: 500;
   color: #000;
+  transition: color 0.4s;
 }
 
 .blog-content .blog-title:hover{
@@ -389,7 +391,8 @@ h1 {
 
 .blog-content a{
   color: #000;
-text-decoration: none;
+  text-decoration: none;
+  transition: color 0.4s;
 }
 
 .blog-content a:hover{
