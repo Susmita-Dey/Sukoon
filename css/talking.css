@@ -17,7 +17,6 @@ header {
   position: relative;
   background-position: center;
   background-size: cover;
-  margin-top: 1.5rem;
 }
 
 nav {
@@ -29,8 +28,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  background-color: #253240;
-  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px); 
 }
 
 .talking-logo{
