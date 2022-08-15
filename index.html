@@ -76,14 +76,13 @@
     </div>
   </header> -->
   <header>
-    <nav class="nav">
-      <div class="">
-        <!-- <a href="index.html"><img src="logo.png" alt="Logo" class="logo" /></a> -->
+    <nav class="nav" id="nav">
+      <div>
         <a class="navbar-brand" href="#!"> <img src="logo.png" alt="Logo" class="logo" /></a>
       </div>
 
       <div class="nav-links" id="navLinks">
-        <ul class="links">
+        <ul class="links" id="navmenu">
           <li><a href="#">HOME</a></li>
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#services">SERVICES </a></li>
@@ -435,6 +434,19 @@
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/index.js"></script>
+  <script>
+    let navbar = document.getElementById("nav")
+    let navmenu = document.getElementById("navmenu")
+
+    window.onscroll = function(){
+      if (window.pageYOffset >= navmenu.offsetTop) {
+         navbar.classList.add("sticky");        
+        }
+        else{
+        navbar.classList.remove("sticky");        
+      }
+    }
+  </script>
 </body>
 
 </html>
