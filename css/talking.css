@@ -255,12 +255,12 @@ h1 {
 }
 
 .sub{
- display: flex;
- align-items: center;
- justify-content: center;
- color: #f1304d;
-font-weight: 600;
-font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f1304d;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
 .container {
@@ -437,10 +437,16 @@ text-decoration: none;
     margin-top: 120px;
   }
 
-  .sub{
+  /* .sub{
     margin-left: 80px;
-  }
+  } */
 }
+
+/* @media screen and (max-width: 500px){
+  .sub{
+    text-align: center;
+  }
+} */
 
 @media screen and (max-width: 650px) {
   .nav-links {
@@ -457,6 +463,11 @@ text-decoration: none;
 
   header {
     min-height: 100vh;
+  }
+
+  .sub{
+    font-size: 1.2rem;
+    text-align: center;
   }
 }
 
