@@ -325,7 +325,7 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 40px;
+  padding: 2em 1.5em;
 }
 
 .blog-container{
@@ -333,14 +333,14 @@ h1 {
   justify-content: center;
   align-items: center;
   margin: 10px 0px;
-  flex-wrap:wrap ;
+  flex-wrap: wrap;
 }
 
 .blog-box{
-  width: 350px;
+  max-width: 350px;
   background-color: #fff;
   border: 1px solid #f1304d;
-  margin:20px;
+  margin: 1.25em;
 }
 
 .blog-img{
