@@ -9,6 +9,32 @@
   box-sizing: border-box;
 }
 
+#loading {
+  width: 100%;
+  height: 100vh;
+  background: white url("../logo.png") no-repeat center;
+  background-size: 300px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 body {
   font-family: "Poppins";
   transform: none;
@@ -22,27 +48,15 @@ body {
 
 /* HERO SECTION */
 
-.nav.sticky{
+.nav {
+  display: flex;
+  padding: 2% 4%;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
-  top:0;
+  top: 0;
   width: 100%;
-  left: 0;
-  background-color: #313C50;
-  z-index: 1000;
-  transform:translateX(100);
-  transition: 0.6s;
-}
-.nav.sticky img{
-  transition: 0.6s;
-  width:80px;
-  margin: -10px 5px;
-}
-.nav.sticky ul li a{
-  transition: 0.6s;
-
-}
-.nav.sticky.login-button a{
-  transition: 0.6s;
+  z-index: 10;
 }
 
 header {
@@ -53,14 +67,10 @@ header {
   background-size: cover;
   position: relative;
   min-height: 100vh;
-}
-
-.nav {
-  position: relative;
+  height: 100vh;
   display: flex;
-  padding: 2% 6%;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
 }
 
 .logo {
@@ -228,7 +238,7 @@ header {
 }
 
 .content h1 {
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
   font-family: "Lucida Sans";
   font-weight: 199px;
   font-size: 4rem;
@@ -319,42 +329,48 @@ header {
 .content .rainbow-button {
   cursor: pointer;
   display: inline-block;
-  margin:auto;
+  margin: auto;
   margin-top: 3rem;
   font-size: 1.2rem;
-  text-decoration:none;
-  color:#FFF;
-  width:calc(8rem + 6px);
-  height:calc(3rem + 6px);
-  
-  background-image: linear-gradient(90deg, #0da1dc 0%, #981a8e 29%, #ea097f 60%, #e12038 80%, #f06f25 100%);
-  border-radius:5px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:1rem;
-  font-weight:bold;
+  text-decoration: none;
+  color: #fff;
+  width: calc(8rem + 6px);
+  height: calc(3rem + 6px);
+
+  background-image: linear-gradient(
+    90deg,
+    #0da1dc 0%,
+    #981a8e 29%,
+    #ea097f 60%,
+    #e12038 80%,
+    #f06f25 100%
+  );
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: bold;
 }
 .content .rainbow-button:after {
-  content:attr(alt);
-  width:8rem;
-  height:3rem;
-  background-color:#191919;
+  content: attr(alt);
+  width: 8rem;
+  height: 3rem;
+  background-color: #191919;
   opacity: 0.9;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .content .rainbow-button:hover {
-  animation:slidebg 1s linear infinite;
+  animation: slidebg 1s linear infinite;
 }
 
 @keyframes slidebg {
   to {
-    background-position:8rem;
+    background-position: 8rem;
   }
 }
-
 
 .hero-btn {
   display: inline-block;
@@ -828,10 +844,9 @@ figure.testimonal-Card .author h5 {
   color: white;
 }
 
-
 .footer-container .col a:hover,
 footer a:focus {
-  color: cyan;  
+  color: cyan;
 }
 
 @media (max-width: 730px) {
@@ -857,14 +872,14 @@ footer a:focus {
   }
 }
 
-.footer-container .col a{
+.footer-container .col a {
   display: inline-block;
   position: relative;
   color: white;
 }
 
 .footer-container .col ul li a:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -891,10 +906,9 @@ footer a:focus {
 }
 
 .footer-container .col h3 {
-  color: rgb(228,26,77);
+  color: rgb(228, 26, 77);
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  
 }
 
 .footer-container .col img {
@@ -904,7 +918,7 @@ footer a:focus {
 .footer-container .col .footerheading {
   display: flex;
   margin-left: -25px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   justify-content: center;
   cursor: pointer;
 }
@@ -912,12 +926,12 @@ footer a:focus {
   display: flex;
   margin-top: -3px;
   margin-left: -25px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   letter-spacing: 1mm;
   justify-content: center;
   cursor: pointer;
 }
-.fab:hover{
+.fab:hover {
   text-decoration: none;
 }
 
@@ -936,7 +950,7 @@ footer a:focus {
 }
 .footer-container .col .social-menu ul a:hover {
   color: cyan;
-  border:none;
+  border: none;
   text-decoration: none !important;
 }
 
@@ -979,7 +993,6 @@ footer a:focus {
   }
 
   #about h3 {
-
     text-align: center;
     font-size: 25px;
   }
