@@ -42,7 +42,10 @@
      transition: 0.3s ease-in-out;
    }
  </style>
-<body>
+<body  onload="myFunction()">
+  <div id="loading">
+    
+  </div>
 
   <!-- Back to top button -->
   <div id="back-top-div" class="back-top-wrap">
@@ -78,7 +81,7 @@
   <header>
     <nav class="nav" id="nav">
       <div>
-        <a class="navbar-brand" href="#!"> <img src="logo.png" alt="Logo" class="logo" /></a>
+        <a class="navbar-brand" href="#!"> <img src="logo.png" alt="Logo" class="logo" id="logo" /></a>
       </div>
 
       <div class="nav-links" id="navLinks">
@@ -435,15 +438,25 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/index.js"></script>
   <script>
+
+    let preloader = document.getElementById("loading")
+    function myFunction(){
+      preloader.style.display='none';
+    }
+
+
     let navbar = document.getElementById("nav")
     let navmenu = document.getElementById("navmenu")
 
     window.onscroll = function(){
       if (window.pageYOffset >= navmenu.offsetTop) {
-         navbar.classList.add("sticky");        
-        }
-        else{
-        navbar.classList.remove("sticky");        
+        navbar.style.backgroundColor="#323E51";        
+      }
+      else{
+        navbar.style.paddingTop="1%";        
+        navbar.style.paddingBottom="1%";           
+        navbar.style.backgroundColor="transparent";        
+      
       }
     }
   </script>
