@@ -97,8 +97,8 @@ header {
   /* padding: 0.65rem; */
   border: none;
   cursor: pointer;
-  background-color: #f9004d;
-  box-shadow: inset 0 0 0 0 #0da1dc;
+  background-color: #0da1dc;
+  box-shadow: inset 0 0 0 0 #ea097f ;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -114,11 +114,13 @@ header {
 .login-button a {
   display: block;
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins",sans-serif;
   font-weight: 500;
-  color: #000000;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #fff;
   height: 2.4rem;
-  width: 7.1rem;
+  width: 7.9rem;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -130,7 +132,7 @@ header {
 }
 
 .login-button:hover {
-  box-shadow: inset 130px 0 0 0 #0da1dc;
+  box-shadow: inset 130px 0 0 0 #ea097f;
 }
 
 .menu {
