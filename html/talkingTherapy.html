@@ -14,40 +14,10 @@
 </head>
 
 <body>
-  <!-- Navbar Section
-  <nav>
-    <a href="index.html"><img class="talking-logo" src="../logo.png" alt="Logo" /></a>
-
-    <div class="nav-links" id="navLinks">
-      <i class="fa fa-times" onclick="hidemenu()"></i>
-      <ul>
-        <li><a href="../index.html">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#blogs">BLOGS </a></li>
-        <li><a href="#videos">VIDEOS </a></li>
-      </ul>
-    </div>
-
-    <div class="hamburger" id="ham">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </nav>
-  <div class="menu" id="menu">
-    <ul class="menu-link">
-      <li><a href="/index.html">HOME</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#blogs">BLOGS</a></li>
-          <li><a href="#videos">VIDEOS</a></li>
-    </ul>
-  </div> -->
-      <!-- Navbar Section -->
       <nav>
         <a href="../index.html"><img class="talking-logo" src="../logo.png" alt="Logo"/></a>
   
         <div class="nav-links" id="navLinks">
-          <!-- <i class="fa fa-times" onclick="hidemenu()"></i> -->
           <ul>
             <li><a href="../index.html">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
@@ -87,9 +57,9 @@
     <p class="sub">Here are the signs that you need a Talking Therapy!</p>
     <div class="container">
 
-      <div class="cause">
-        <div class="image">
-          <img src="../images/depression.jpg" alt="" />
+      <div class="cause first">
+        <div class="layer">
+          <h3>Depression</h3>
         </div>
         <h2>Depression</h2>
         <p>
@@ -101,9 +71,9 @@
         </a>
       </div>
 
-      <div class="cause">
-        <div class="image">
-          <img src="../images/anxiety.jpg" alt="" />
+      <div class="cause second">
+        <div class="layer">
+          <h3>Anxiety</h3>
         </div>
         <h2>Anxiety</h2>
         <p>
@@ -115,9 +85,12 @@
         </a>
       </div>
 
-      <div class="cause ">
-        <div class="image">
+      <div class="cause third">
+        <!-- <div class="image">
           <img src="../images/stress.jpg" alt="" />
+        </div> -->
+        <div class="layer">
+          <h3>Stress</h3>
         </div>
         <h2>Stress</h2>
         <p>
@@ -186,7 +159,7 @@
   <section id="videos">
  <h1 class="section-headings">VIDEOS</h1>
  
- <div class="container">
+ <div class="video-container">
   <div class="collection">
     <div class="video">
       <iframe style="border-radius: 10px;" width="100%" height="380" src="https://www.youtube.com/embed/Nz9eAaXRzGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -210,6 +183,7 @@
     const ham = document.getElementById("ham");
     const menu = document.getElementById("menu");
     const close = document.querySelectorAll('.close');
+
     const closeMenu = () => {
       if (menu.classList.contains("open")) {
         menu.classList.remove("open");
