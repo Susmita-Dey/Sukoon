@@ -17,7 +17,7 @@
 <body>
   <!-- Navbar Section -->
   <nav>
-    <a href="index.html"><img class="talking-logo" src="../logo.png" alt="Logo" /></a>
+    <a href="../index.html"><img class="talking-logo" src="../logo.png" alt="Logo" /></a>
 
     <div class="nav-links" id="navLinks">
       <i class="fa fa-times" onclick="hidemenu()"></i>
@@ -25,12 +25,24 @@
         <li><a href="../index.html">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#blogs">BLOGS </a></li>
-        <li><a href="#video">VIDEOS </a></li>
+        <li><a href="#videos">VIDEOS </a></li>
       </ul>
     </div>
 
-    <i class="fa fa-bars" onclick="showmenu()"></i>
+    <div class="hamburger" id="ham">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </nav>
+  <div class="menu" id="menu">
+    <ul class="menu-link">
+      <li><a href="/index.html">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#blogs">BLOGS</a></li>
+          <li><a href="#videos">VIDEOS</a></li>
+    </ul>
+  </div>
   <!-- Header Section-->
   <header>
     <div class="filter"></div>
@@ -142,7 +154,7 @@
     </div>
   </section>
   <!-- video section  -->
-  <section id="#video">
+  <section id="videos">
  <h1 class="section-headings">VIDEOS</h1>
  
  <div class="container">
@@ -165,3 +177,21 @@
   </div>
 </div>
 </section>
+<script>
+  const ham = document.getElementById("ham");
+const menu = document.getElementById("menu");
+
+const toggleMenu = () => {
+if (menu.classList.contains("open")) {
+menu.classList.remove("open");
+console.log("open");
+} else {
+menu.classList.add("open");
+console.log("close");
+}
+};
+
+ham.addEventListener("click", toggleMenu);
+</script>
+</body>
+</html>
