@@ -43,7 +43,10 @@
      transition: 0.3s ease-in-out;
    }
  </style>
-<body>
+<body  onload="myFunction()">
+  <div id="loading">
+    
+  </div>
 
   <!-- Back to top button -->
   <div id="back-top-div" class="back-top-wrap">
@@ -51,13 +54,14 @@
   </div>
 
   <header>
-    <nav class="nav">
-      <div class="">
+    <nav class="nav" id="nav">
+      <div>
+
         <a class="navbar-brand" href="#!"> <img src="logo.png" alt="Logo" class="logo" /></a>
       </div>
 
       <div class="nav-links" id="navLinks">
-        <ul class="links">
+        <ul class="links" id="navmenu">
           <li><a href="#">HOME</a></li>
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#services">SERVICES </a></li>
@@ -357,28 +361,61 @@
       <div class="col">
 
         <!--logo insert-->
-        <img src="images/footerlogo.png" alt="logo" class="footlogo">
+        <img src="logo.png" alt="logo" class="footlogo">
+        <h2 class="footerheading">Sukoon</h2>
+        <p class="footerpara">go stressfree</p>
 
       </div>
 
       <!--ADDRESS COLUMN-->
 
-      <div class="footer-side-col">
-        <div class="col">
-          <h3>ADDRESS <div class="underline"><span></span></div>
-          </h3>
-          <p>WEST BENGAL,INDIA</p>
-          <p class="email-id">sukoon665@gmail.com </p>
-        </div>
-        <!--HOME COLUMN-->
-        <div class="col">
-          <h3>HOME<div class="underline"><span></span></div>
-          </h3>
+      <div class="col">
+        <h3>ADDRESS <div class="underline"><span></span></div>
+        </h3>
+
+        <p>West Bengal,India</p>
+        <p class="email-id">sukoon665@gmail.com </p>
+      </div>
+
+      <!--HOME COLUMN-->
+      <div class="col">
+        <h3>HOME</h3>
+        <ul>
+
+          <li><a href="#about">About Us</a></li>
+          <li><a href="https://github.com/Susmita-Dey/Sukoon/blob/main/CODE_OF_CONDUCT.md">Code Of Conduct</a></li>
+          <li><a href="https://github.com/Susmita-Dey/Sukoon">Contribute</a></li>
+          <li><a href="https://www.buymeacoffee.com/susmitadey">Donate</a></li>
+        </ul>
+      </div>
+
+
+      <!--OUR SERVICES COLUMN-->
+      <div class="col">
+        <h3>SERVICES<div class="underline"><span></span></div>
+        </h3>
+        <ul>
+
+          <li><a href="#services">Audio Therapy</a></li>
+          <li><a href="#services">Video Therapy</a></li>
+          <li><a href="#services">Yoga Therapy</a></li>
+          <li><a href="#services">Reading Therapy</a></li>
+          <li><a href="#services">Talking Therapy</a></li>
+        </ul>
+      </div>
+
+      <!--CONTACTS COLUMN-->
+
+      <div class="col">
+        <h3>CONTACTS <div class="underline"><span></span></div>
+        </h3>
+
+        <div class="social-menu">
           <ul>
-            <li><a href="#about">ABOUT US</a></li>
-            <li><a href="https://github.com/Susmita-Dey/Sukoon/blob/main/CODE_OF_CONDUCT.md">CODE OF CONDUCT</a></li>
-            <li><a href="https://github.com/Susmita-Dey/Sukoon">CONTRIBUTE</a></li>
-            <li><a href="https://www.buymeacoffee.com/susmitadey">DONATE</a></li>
+            <a href="https://twitter.com/sukoon665"><li><i class="fab fa-2x fa-twitter"></i> </li></a> 
+            <a href="https://github.com/Susmita-Dey/Sukoon"><li><i class="fab fa-2x fa-github"></i> </li></a> 
+            <a href="https://www.linkedin.com/in/sukoon-web-820705238"><li><i class="fab fa-2x fa-linkedin-in"></i></li></a>
+
           </ul>
         </div>
         <!--OUR SERVICES COLUMN-->
@@ -417,6 +454,26 @@
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/index.js"></script>
+  <script>
+
+    let preloader = document.getElementById("loading")
+    function myFunction(){
+      preloader.style.display='none';
+    }
+
+
+    let navbar = document.getElementById("nav")
+    let navmenu = document.getElementById("navmenu")
+
+    window.onscroll = function(){
+      if (window.pageYOffset >= navmenu.offsetTop) {
+         navbar.classList.add("sticky");        
+        }
+        else{
+        navbar.classList.remove("sticky");        
+      }
+    }
+  </script>
 </body>
 
 </html>
