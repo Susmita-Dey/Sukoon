@@ -79,11 +79,22 @@
     color: rgba(255,255,255,0.9);
     -o-text-overflow: clip;
     text-overflow: clip;
-    background: #7F55DA;
-  }
-  .signin:hover{
-    background: #744ec7;
-  }
+        background: #7F55DA;
+        background: linear-gradient(0deg, rgba(96,9,240,1) 0%, #7F55DA 100%);
+        border: none;
+        
+      }
+      .signin:before {
+        height: 0%;
+        width: 2px;
+      }
+      .signin:hover {
+        box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                    -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+          inset -4px -4px 6px 0 rgba(255,255,255,.2),
+          inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+      }
+  
   .signupline{
     font-family: 'Poppins';
     color: #8E8D8D;
@@ -97,7 +108,7 @@
     color: #7F55DA;
     cursor: pointer;
     }
-    .signinbutton{
+ .signinbutton{
     font-family: 'Poppins';
     font-weight: 650;
     font-size: small;
