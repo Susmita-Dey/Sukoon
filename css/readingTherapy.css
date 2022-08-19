@@ -5,10 +5,9 @@
   font-family: 'Inter',sans-serif;
 }
 
-html{
-  scroll-behaviour:smooth;
+html {
+  scroll-behavior: smooth;
 }
-
 nav{
   height: 10%;
   position: fixed;
