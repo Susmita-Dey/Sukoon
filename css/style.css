@@ -1013,16 +1013,13 @@ footer a:focus {
   .nav-links {
      display: none;
   }
-
   .logo {
     width: 60px;
   }
-
   .hamburger {
     display: flex;
   }
 }
-
 @media screen and (min-width: 650px) {
   .menu.open {
     display: none;
