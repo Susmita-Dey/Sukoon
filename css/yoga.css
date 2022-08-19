@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/*Nav section and Hero section*/
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: inline-flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+}
+
+.hamburger {
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: rgb(208, 255, 0);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.logo {
+    width: 80px;
+    padding: 2px;
+}
+
+.menu.open {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 75px;
+    z-index: 100;
+    left: 0;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.menu.open a {
+    color: #adb5bd;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    top: 85px;
+    left: 0;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.menu-link {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-link li {
+    padding-bottom: 1rem;
+}
+
+.menu-link li:last-child {
+    padding-bottom: 0;
+}
+
+.menu-link li a {
+    color: rgba(0, 0, 0, 0.782);
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("https://preview.colorlib.com/theme/yogabest/images/xbg_1.jpg.pagespeed.ic.0q7esXXIat.webp");
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.text{
+  position: absolute;
+  top: 35%;
+  left: 5%;
+}
+
+.text h1{
+    color: #fff;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.text p{
+    color:rgb(34, 194, 206);
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+/*Benefits section*/
+.benefits h1{
+    margin-top: 5%;
+}
+
+.benefits .bfit{
+    display: flex;
+}
+
+.btext{
+    padding: 5%;
+}
+
+/*Aasans section*/
+.aasan{
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.3), rgba(243, 232, 232, 0.15));
+}
+
+.aasan .row{
+    padding: 5%;
+}
+
+.aasan1{
+    display: flex;
+    margin-top: 4%;
+}
+
+.aasan1 img{
+    border-radius: 7px;
+    box-shadow: 10px 10px 5px lightgreen;
+}
+
+.atext{
+    padding: 3%;
+}
+
+.atext h1{
+    color: green;
+    font-weight: bolder;
+}
+
+.aasan1 button{
+    padding: 1%;
+    border-radius: 7px;
+    color: green;
+    font-weight: bolder;
+    border: 2px solid green;
+}
+
+.more{
+    padding: 1%;
+    border-radius: 7px;
+    color: yellow;
+    font-weight: bolder;
+    border: 2px solid yellow;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 4%;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.aasan1 button:hover{
+    color: white;
+    background-color: green;
+}
+
+.more:hover{
+    color: black;
+    background-color: yellow;
+}
+
+/*Videos section*/
+.videos .flip-card{
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .nav-links {
+        display: none;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    header {
+        min-height: 100vh;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .menu .open {
+        display: none;
+    }
+}
+
+@media (max-width:800px) {
+    .aasan1{
+        flex-direction: column;
+        height: auto;
+    }
+    .bfit{
+        flex-direction: column;
+        height: auto;
+    }
+    .benefits img{
+        width: 100%;
+    }
+}
+
+@media (max-width:600px){
+    .videos iframe{
+        width: 600px;
+    }
+
+    .aasan1 img{
+        width: 100%;
+    }
+}
