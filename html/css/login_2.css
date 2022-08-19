@@ -159,23 +159,29 @@ body{
         width: 100%;
         height: 50%;
         padding-bottom: 20%;
+
     }
 }
 @media screen and (max-width: 484px) 
 {
     img{
         width: 140%;
+        margin-top: 15%;
         
     }
+    .login{
+        margin-top: 45%;
+}
 }
 @media screen and (max-width: 380px) 
 {
     img{
         width: 150%;
         height: 55%;
+        margin-top: 20%;
         
     }
     .login{
-        margin-top: 30%;
+        margin-top: 60%;
     }
 }
