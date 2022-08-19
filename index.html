@@ -26,17 +26,18 @@
      border-radius: 50%;
      cursor: pointer;
      transition: .3s ease-in-out;
+     z-index: 500;
    }
 
    .back-top-wrap:hover{
     background-color: #00a2ff;
     color: #80F7D1;
    }
+
    .back-top-wrap:hover .fas.fa-arrow-up{
     color: white;
    }
 
-  
    .fas.fa-arrow-up {
      color: #00488F;
      transition: 0.3s ease-in-out;
@@ -49,36 +50,9 @@
     <i class="fas fa-arrow-up"></i>
   </div>
 
-  <!-- Navbar and Hero Section -->
-  <!-- <header>
-    <nav>
-      <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo" /></a>
-
-      <div class="nav-links" id="navLinks">
-        <i class="fa fa-times" onclick="hidemenu()"></i>
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#services">SERVICES </a></li>
-          <li><a href="html/contact.html">CONTACT US </a></li>
-        </ul>
-      </div>
-
-      <i class="fa fa-bars" onclick="showmenu()"></i>
-    </nav>
-
-    <div class="content">
-      <h1>Welcome to your very own SUKOON</h1>
-      <h3>
-        The one step solution to get relief from your stress.<br />Live a
-        stress-free life.
-      </h3>
-    </div>
-  </header> -->
   <header>
     <nav class="nav">
       <div class="">
-        <!-- <a href="index.html"><img src="logo.png" alt="Logo" class="logo" /></a> -->
         <a class="navbar-brand" href="#!"> <img src="logo.png" alt="Logo" class="logo" /></a>
       </div>
 
@@ -121,11 +95,10 @@
         <h2>About Us</h2>
         <h3><span style="color: rgb(91, 134, 150);">MEET OUR MEMBERS</span></h3>
       
-
       <div class="box">
 
         <div class="card">
-          <img src="/images/shayan.jpeg" alt="shayan" loading="lazy">
+          <img src="./images/shayan.jpeg" alt="shayan" loading="lazy">
           <h5>Shayan Pal</h5>
           <div class="pra">
             <p>Member</p>
@@ -134,7 +107,7 @@
         </div>
 
         <div class="card">
-          <img src="/images/soumyadeep.jpeg" alt="soumyadeep"loading="lazy">
+          <img src="./images/soumyadeep.jpeg" alt="soumyadeep"loading="lazy">
           <h5>Soumyadeep Dhali</h5>
           <div class="pra">
             <p>Member</p>
@@ -143,7 +116,7 @@
         </div>
 
         <div class="card">
-          <img src="/images/susmita.jpg" alt=""loading="lazy">
+          <img src="./images/susmita.jpg" alt=""loading="lazy">
           <h5>Susmita Dey</h5>
           <div class="pra">
             <p>Head of The Team</p>
@@ -152,7 +125,7 @@
         </div>
 
         <div class="card">
-          <img src="/images/chaitri.jpeg" alt="chaitri"loading="lazy">
+          <img src="./images/chaitri.jpeg" alt="chaitri"loading="lazy">
           <h5>Chaitri Saha Chowdhury</h5>
           <div class="pra">
             <p>Member</p>
@@ -161,7 +134,7 @@
         </div>
 
         <div class="card">
-          <img src="/images/sasanka.jpeg" alt="sasanka"loading="lazy">
+          <img src="./images/sasanka.jpeg" alt="sasanka"loading="lazy">
           <h5>Sasanka Kundu</h5>
           <div class="pra">
             <p>Member</p>
@@ -170,8 +143,6 @@
         </div>
 
       </div>
-    </div>
-    </div>
   </section>
 
   <!-- SERVICES SECTION -->
@@ -371,59 +342,52 @@
 
       <!--ADDRESS COLUMN-->
 
-      <div class="col">
-        <h3>ADDRESS <div class="underline"><span></span></div>
-        </h3>
-
-        <p>WEST BENGAL,INDIA</p>
-        <p class="email-id">sukoon665@gmail.com </p>
-      </div>
-
-      <!--HOME COLUMN-->
-      <div class="col">
-        <h3>HOME<div class="underline"><span></span></div>
-        </h3>
-        <ul>
-
-          <li><a href="#about">ABOUT US</a></li>
-          <li><a href="https://github.com/Susmita-Dey/Sukoon/blob/main/CODE_OF_CONDUCT.md">CODE OF CONDUCT</a></li>
-          <li><a href="https://github.com/Susmita-Dey/Sukoon">CONTRIBUTE</a></li>
-          <li><a href="https://www.buymeacoffee.com/susmitadey">DONATE</a></li>
-        </ul>
-      </div>
-
-
-      <!--OUR SERVICES COLUMN-->
-      <div class="col">
-        <h3>SERVICES<div class="underline"><span></span></div>
-        </h3>
-        <ul>
-
-          <li><a href="#services">AUDIO THERAPY</a></li>
-          <li><a href="#services">VIDEO THERAPY</a></li>
-          <li><a href="#services">YOGA THERAPY</a></li>
-          <li><a href="#services">READING THERAPY</a></li>
-          <li><a href="#services">TALKING THERAPY</a></li>
-        </ul>
-      </div>
-
-      <!--CONTACTS COLUMN-->
-
-      <div class="col">
-        <h3>CONTACTS <div class="underline"><span></span></div>
-        </h3>
-
-        <div class="social-menu">
+      <div class="footer-side-col">
+        <div class="col">
+          <h3>ADDRESS <div class="underline"><span></span></div>
+          </h3>
+          <p>WEST BENGAL,INDIA</p>
+          <p class="email-id">sukoon665@gmail.com </p>
+        </div>
+        <!--HOME COLUMN-->
+        <div class="col">
+          <h3>HOME<div class="underline"><span></span></div>
+          </h3>
           <ul>
-            <!-- <li><i class="fab fa-facebook-f"></i> </li> -->
-            <a href="https://twitter.com/sukoon665"><li><i class="fab fa-twitter"></i> </li></a> 
-            <a href="https://github.com/Susmita-Dey/Sukoon"><li><i class="fab fa-github"></i> </li></a> 
-            <a href="https://www.linkedin.com/in/sukoon-web-820705238"><li><i class="fab fa-linkedin-in"></i></li></a>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="https://github.com/Susmita-Dey/Sukoon/blob/main/CODE_OF_CONDUCT.md">CODE OF CONDUCT</a></li>
+            <li><a href="https://github.com/Susmita-Dey/Sukoon">CONTRIBUTE</a></li>
+            <li><a href="https://www.buymeacoffee.com/susmitadey">DONATE</a></li>
           </ul>
         </div>
+        <!--OUR SERVICES COLUMN-->
+        <div class="col">
+          <h3>SERVICES<div class="underline"><span></span></div>
+          </h3>
+          <ul>
+            <li><a href="#services">AUDIO THERAPY</a></li>
+            <li><a href="#services">VIDEO THERAPY</a></li>
+            <li><a href="#services">YOGA THERAPY</a></li>
+            <li><a href="#services">READING THERAPY</a></li>
+            <li><a href="#services">TALKING THERAPY</a></li>
+          </ul>
+        </div>
+        <!--CONTACTS COLUMN-->
+        <div class="col">
+          <h3>CONTACTS <div class="underline"><span></span></div>
+          </h3>
+          <div class="social-menu">
+            <ul>
+              <!-- <li><i class="fab fa-facebook-f"></i> </li> -->
+              <a href="https://twitter.com/sukoon665"><li><i class="fab fa-twitter"></i> </li></a>
+              <a href="https://github.com/Susmita-Dey/Sukoon"><li><i class="fab fa-github"></i> </li></a>
+              <a href="https://www.linkedin.com/in/sukoon-web-820705238"><li><i class="fab fa-linkedin-in"></i></li></a>
+            </ul>
+          </div>
+        </div>
+        
+            </div>
       </div>
-
-    </div>
     
 
   
