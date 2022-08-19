@@ -988,7 +988,6 @@ footer a:focus {
 }
 .footer-container .col .footerheading {
   display: flex;
-  margin-left: -40px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   justify-content: center;
   cursor: pointer;
@@ -996,7 +995,6 @@ footer a:focus {
 .footer-container .col .footerpara {
   display: flex;
   margin-top: 0px;
-  margin-left: -40px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   letter-spacing: 1mm;
   justify-content: center;
@@ -1039,10 +1037,6 @@ footer a:focus {
 @media screen and (max-width: 600px) {
   .container {
     padding: 1rem;
-  }
-
-  .footerpara{
-    margin-left: -10px;
   }
 
   .responsive .round-image {
@@ -1123,6 +1117,10 @@ footer a:focus {
     min-height: 100vh;
   }
 }
+.footercontent{
+  display: flex;
+  flex-direction: column;
+}
 
 @media screen and (min-width: 650px) {
   .menu.open {
@@ -1164,6 +1162,7 @@ footer a:focus {
   #services .round-image img {
     margin-right: 18%;
   }
+
 }
 
 @media screen and (max-width: 390px) {
