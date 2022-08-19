@@ -893,6 +893,7 @@ footer a:focus {
 .fab:hover{
   text-decoration: none;
 
+}
 
 .footer-container .col .sukoon {
   color: rgb(30, 240, 191);
@@ -928,10 +929,6 @@ footer a:focus {
     width: 300px;
     height: 150px;
   }
-    position: absolute;
-
-    /* top: vh; */
-    left: 3vh;
   }
 
   .box {
@@ -968,7 +965,6 @@ footer a:focus {
   .footer-container .col .social-menu ul {
     justify-content: center;
   }
-}
 
 @media screen and (max-width: 650px) {
   .nav-links {
