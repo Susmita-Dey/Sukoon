@@ -326,7 +326,9 @@ hr {
   position: relative;
   display: inline-block;
   margin: 15px;
-  padding: 12px 27px;
+  padding-left: 27px;
+  padding-right: 27px;
+  padding-bottom: 12px
   text-align: center;
   font-size: 16px;
   letter-spacing: 1px;
