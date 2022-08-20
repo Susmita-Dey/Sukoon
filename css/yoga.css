@@ -154,12 +154,17 @@ header {
 }
 
 /*Benefits section*/
+
 .benefits h1{
     margin-top: 5%;
 }
 
 .benefits .bfit{
     display: flex;
+}
+
+.bfit img{
+    width: 35%;
 }
 
 .btext{
