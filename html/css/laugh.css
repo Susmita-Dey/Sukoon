@@ -8,11 +8,123 @@
 }
 
 body {
-    text-align: center;
-    background-color: beige;
+  text-align: center;
+  background-color: beige;
 }
 
 .collection {
-    display: grid;
-    grid-template-columns: minmax(2, 1fr);
+  display: grid;
+  grid-template-columns: minmax(2, 1fr);
+}
+/* footer */
+.footer-container {
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background-color: rgb(6, 16, 37);
+}
+
+.footer-container .col {
+  padding: 2.5rem;
+  flex-basis: 20%;
+}
+
+.footer-container a:hover,
+footer a:focus {
+  color: #aaa;
+  text-decoration: none;
+  border-bottom: 1px dotted #999;
+}
+
+@media (max-width: 730px) {
+  .footer-container {
+    gap: 0.5rem;
+  }
+
+  .footer-container .col {
+    padding: 2rem;
+    flex-basis: 31%;
+  }
+
+  .footer-container p {
+    color: white;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container .col {
+    padding: 1rem;
+    flex-basis: 100%;
+  }
+}
+
+.footer-container p {
+  color: white;
+  margin-top: 1rem;
+}
+
+.footer-container .col .email-id {
+  word-wrap: break-word;
+  text-decoration: underline;
+}
+
+.footer-container .col h3 {
+  color: #900505;
+  margin-bottom: 1rem;
+}
+
+.footer-container .col img {
+  width: 140px;
+  cursor: pointer;
+}
+.footlogo {
+  display: flex;
+  margin: auto;
+}
+.footerheading {
+  display: flex;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  justify-content: center;
+  cursor: pointer;
+  margin: 10px auto;
+}
+.footer-container .col .footerpara {
+  display: flex;
+  margin-top: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 1mm;
+  justify-content: center;
+  cursor: pointer;
+}
+.fab:hover {
+  text-decoration: none;
+}
+
+.footer-container .col .sukoon {
+  color: rgb(30, 240, 191);
+  letter-spacing: 5px;
+  margin-top: 1rem;
+}
+
+.footer-container .col .social-menu ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-container .col .social-menu ul a {
+  color: aqua;
+}
+
+.footer-container .col ul li {
+  list-style-type: none;
+  text-align: left;
+  margin-top: 0.75rem;
+}
+
+.footer-container .col ul li a {
+  /* text-decoration: none; */
+  color: rgb(255, 255, 255);
 }

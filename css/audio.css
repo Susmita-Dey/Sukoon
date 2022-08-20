@@ -6,14 +6,14 @@
 
 body {
   background-color: #040404;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: white;
 }
 
 header {
   min-height: 100vh;
   width: 100%;
-  background-image: url('https://images.unsplash.com/photo-1610041321327-b794c052db27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+  background-image: url("https://images.unsplash.com/photo-1610041321327-b794c052db27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
   position: relative;
   background-position: center;
   background-size: cover;
@@ -57,16 +57,16 @@ nav {
   width: 100%;
   position: absolute;
   top: 75px;
-  z-index:100;
+  z-index: 100;
   left: 0;
   padding: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
   animation: slideIn 0.5s ease-in-out;
 }
-.menu.open a{
-  color:#adb5bd;
-  text-decoration:none;
-  cursor:pointer;
+.menu.open a {
+  color: #adb5bd;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .audio-logo {
@@ -194,7 +194,7 @@ hr {
 }
 
 .container,
-#podcasts>.collection {
+#podcasts > .collection {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -284,7 +284,7 @@ hr {
   margin: 15px;
   padding-left: 27px;
   padding-right: 27px;
-  padding-bottom: 12px
+  padding-bottom: 12px;
   text-align: center;
   font-size: 16px;
   letter-spacing: 1px;
@@ -298,39 +298,38 @@ hr {
   -moz-transition: ease-out 0.5s;
 }
 
-
 .btn.btn-border::after,
 .btn.btn-border::before {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    transition: .5s;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  transition: 0.5s;
 }
 
 .btn.btn-border::after {
-    top: -9px;
-    left: -9px;
-    border-top: 3px solid transparent;
-    border-left: 3px solid transparent;
+  top: -9px;
+  left: -9px;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
 }
 
 .btn.btn-border::before {
-    bottom: -9px;
-    right: -9px;
-    border-bottom: 3px solid transparent;
-    border-right: 3px solid transparent;
+  bottom: -9px;
+  right: -9px;
+  border-bottom: 3px solid transparent;
+  border-right: 3px solid transparent;
 }
 
 .btn.btn-border:hover {
-    color: #222222;
+  color: #222222;
 }
 
 .btn.btn-border:hover::after,
 .btn.btn-border:hover::before {
-    width: 30px;
-    height: 30px;
-    border-color: #222222;
+  width: 30px;
+  height: 30px;
+  border-color: #222222;
 }
 
 @media screen and (max-width: 650px) {
@@ -355,4 +354,115 @@ hr {
   .menu .open {
     display: none;
   }
+}
+/* footer */
+.footer-container {
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background-color: rgb(6, 16, 37);
+}
+
+.footer-container .col {
+  padding: 2.5rem;
+  flex-basis: 20%;
+}
+
+.footer-container a:hover,
+footer a:focus {
+  color: #aaa;
+  text-decoration: none;
+  border-bottom: 1px dotted #999;
+}
+
+@media (max-width: 730px) {
+  .footer-container {
+    gap: 0.5rem;
+  }
+
+  .footer-container .col {
+    padding: 2rem;
+    flex-basis: 31%;
+  }
+
+  .footer-container p {
+    color: white;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container .col {
+    padding: 1rem;
+    flex-basis: 100%;
+  }
+}
+
+.footer-container p {
+  color: white;
+  margin-top: 1rem;
+}
+
+.footer-container .col .email-id {
+  word-wrap: break-word;
+  text-decoration: underline;
+}
+
+.footer-container .col h3 {
+  color: #900505;
+  margin-bottom: 1rem;
+}
+
+.footer-container .col img {
+  width: 140px;
+  cursor: pointer;
+}
+.footlogo {
+  display: flex;
+  margin: auto;
+}
+.footerheading {
+  display: flex;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  justify-content: center;
+  cursor: pointer;
+}
+.footer-container .col .footerpara {
+  display: flex;
+  margin-top: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 1mm;
+  justify-content: center;
+  cursor: pointer;
+}
+.fab:hover {
+  text-decoration: none;
+}
+
+.footer-container .col .sukoon {
+  color: rgb(30, 240, 191);
+  letter-spacing: 5px;
+  margin-top: 1rem;
+}
+
+.footer-container .col .social-menu ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-container .col .social-menu ul a {
+  color: aqua;
+}
+
+.footer-container .col ul li {
+  list-style-type: none;
+  text-align: left;
+  margin-top: 0.75rem;
+}
+
+.footer-container .col ul li a {
+  /* text-decoration: none; */
+  color: rgb(255, 255, 255);
 }
