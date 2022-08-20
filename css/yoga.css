@@ -173,6 +173,11 @@ header {
     padding: 5%;
 }
 
+.btext .yoga-text{display: flex;}
+
+.btext .yoga-text i{
+    margin: 10px 5px;
+}
 /*Aasans section*/
 .aasan{
     background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.3), rgba(243, 232, 232, 0.15));
