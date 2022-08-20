@@ -286,6 +286,29 @@ hr{
 .container .card .sci li a:hover {
   background-color: #54BAB9;
 }
+/*Mobile view for cards
+-----------------------------------------*/
+@media (max-width: 650px) {
+  .container .card .content {
+    transform: translateY(-30px);
+  }
+  .container .card .sci li {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+/* iPad & Tablet view for cards
+-----------------------------------------*/
+@media (max-width: 850px) {
+  .container .card .content {
+    transform: translateY(-30px);
+  }
+  .container .card .sci li {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 header{
    position: relative;
 }
