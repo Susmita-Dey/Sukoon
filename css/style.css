@@ -5,6 +5,7 @@
 * {
   margin: 0;
   padding: 0;
+  margin-top: -5px;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
@@ -43,6 +44,7 @@ header {
 .logo {
   width: 100px;
 }
+
 
 /* .nav-links {
   flex: 1;
@@ -114,11 +116,11 @@ header {
 .login-button a {
   display: block;
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
   color: #000000;
-  height: 2.4rem;
-  width: 7.1rem;
+  height: 3.5rem;
+  width: 7.5rem;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -130,7 +132,7 @@ header {
 }
 
 .login-button:hover {
-  box-shadow: inset 130px 0 0 0 #0da1dc;
+  box-shadow: inset 178px 0 0 0 #0da1dc;
 }
 
 .menu {
@@ -893,7 +895,7 @@ footer a:focus {
 .fab:hover{
   text-decoration: none;
 
-
+}
 .footer-container .col .sukoon {
   color: rgb(30, 240, 191);
   letter-spacing: 5px;
@@ -928,11 +930,11 @@ footer a:focus {
     width: 300px;
     height: 150px;
   }
-    position: absolute;
+    /* position: absolute;
 
-    /* top: vh; */
+    /* top: vh; 
     left: 3vh;
-  }
+  } */
 
   .box {
     place-items: center;
@@ -968,7 +970,7 @@ footer a:focus {
   .footer-container .col .social-menu ul {
     justify-content: center;
   }
-}
+
 
 @media screen and (max-width: 650px) {
   .nav-links {
@@ -1031,21 +1033,15 @@ footer a:focus {
   #services .round-image img {
     margin-right: 25%;
   }
+}}
+
+div.col .footerheading{
+  color: #daf0f8;
 }
 
-/* @media screen and (max-width: 650px) {
-  .nav-links {
-     display: none;
-  }
-  .logo {
-    width: 60px;
-  }
-  .hamburger {
-    display: flex;
-  }
+.login-button{
+  font-size: 15px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-style:initial;
 }
-@media screen and (min-width: 650px) {
-  .menu.open {
-    display: none;
-  }
-} */
