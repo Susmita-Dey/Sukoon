@@ -20,7 +20,7 @@ body {
 
 header {
   width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+  background-image: linear-gradient(rgba(27, 3, 87, 0.7), rgba(7, 161, 217, 0.7)),
     url(/images/banner.jpg);
   background-position: center;
   background-size: cover;
@@ -51,7 +51,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 3px;
+  gap: 5px;
   cursor: pointer;
 }
 
@@ -71,32 +71,37 @@ header {
 a {
   color: white;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .links li::after {
   content: "";
   width: 0%;
   height: 2px;
-  background: rgb(208, 255, 0);
+  background: rgb(209, 232, 117);
   display: block;
   margin: auto;
-  transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in;
 }
 
 .links li:hover::after {
-  width: 100%;
+  width: 100%
+  
+}
+a:hover {
+  background-color: rgb(32, 32, 4);
+ font-size: 120%;
 }
 
 .menu {
   display: none;
   width: 100%;
   position: absolute;
-  background-color: #fff;
+  background-color: rgb(210, 174, 174);
   top: 85px;
   left: 0;
   padding: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.7);
 }
 
 .menu.open {
@@ -108,7 +113,7 @@ a {
   left: 0;
   padding: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-  animation: slideIn 0.5s ease-in-out;
+  animation: backwards 0.5s ease-in-out;
 }
 
 @keyframes slideIn {
@@ -165,8 +170,8 @@ a {
   font-size: 1.5rem;
   text-decoration: none;
   background-color: aquamarine;
-  color: #f9004d;
-  border-radius: 2rem;
+  color: #9c3a59;
+  border-radius: 5rem;
   transition: 0.3s ease-in-out;
 }
 .content .hero-explore:hover {
