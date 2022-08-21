@@ -489,7 +489,8 @@ h5 {
     transition: .3s;
 }
 .responsive:hover {
-    background-color: #072834;
+    background-color: #022531;
+    box-shadow: 5px 7px #888888;
 }
 
 .container .round-image img {
@@ -520,10 +521,10 @@ h5 {
     background-color: aliceblue;
     border-radius: .5em;
     border: 1px solid black;
-    transition: .3s;
+    transition: .6s;
 }
 .responsive a:hover {
-    background-color: #02142d;
+    background-color: #020c1a;
     color: white;
 }
 
@@ -993,6 +994,7 @@ footer a:focus {
   margin-right: 30px;
   display: flex;
   flex-direction: column;
+  
 }
 
 @media screen and (min-width: 650px) {
@@ -1044,4 +1046,7 @@ div.col .footerheading{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   font-style:initial;
+}
+div.col a{
+  text-decoration: none;
 }
