@@ -396,18 +396,19 @@ nav .fa {
 
 .card {
   cursor: pointer;
-  background: rgb(1, 59, 112);
+  background: rgb(5, 66, 123);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   text-align: center;
-  transition: 0.3s ease-in-out;
+  transition: 0.4s ease-in-out;
   animation: slideIn 0.5s ease-in-out;
   transform: translateY(-2.2rem);
   padding: 20px;
   border-radius: 20px;
 }
 .card:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+    box-shadow: 5px 10px #030303;
 }
 
 .card img {
@@ -419,10 +420,10 @@ nav .fa {
 .card img:hover {
   /* border: 5px solid #f9004d; */
   outline: 0px solid transparent;
-  padding: 3px 3px;
-  border: 2px solid red;
+  /* padding: 3px 3px; */
+  border: 8px solid rgb(7, 10, 64);
   -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 h5 {
@@ -432,7 +433,7 @@ h5 {
 }
 
 .pra p {
-  color: #fcfc;
+  color: rgba(255, 250, 255, 0.8);
   font-size: 16px;
   line-height: 27px;
   margin-bottom: 25px;
@@ -440,15 +441,15 @@ h5 {
 
 .pra button {
   padding: 0.6rem 1.2rem;
-  border: 2px solid #f9004d;
+  border: 2px solid #2b41a3;
   background-color: #fff;
   border-radius: 0.8rem;
-  color: #f9004d;
+  color: #000000;
   cursor: pointer;
 }
 
 .pra button:hover {
-  background-color: #f9004d;
+  background-color: #092751;
   color: #fff;
   transition: 0.3s;
 }
