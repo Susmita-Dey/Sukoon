@@ -162,7 +162,16 @@ nav .fa {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  padding: 3rem;
+  padding: 3rem; 
+}
+@media screen and (min-width: 360px) {
+  .card {
+    border: 2px solid red;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    margin-left: -200px;
+  }
 }
 .card {
   border: 2px solid red;
@@ -264,7 +273,7 @@ h5 {
 .responsive a:hover {
   background-color: #172a44;
   color: white;
-  border-color: white;
+  border-color: rgb(255, 255, 255);
 }
 @media screen and (max-width: 500px) {
   .container {
