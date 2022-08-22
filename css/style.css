@@ -25,7 +25,7 @@ body {
 header {
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(/images/landing-page-image.jpg);
+    url("../images/landing-page-image.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -198,6 +198,10 @@ header {
 }
 
 .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   width: 90%;
   color: #fff;
   margin: auto;
@@ -892,7 +896,7 @@ footer a:focus {
 }
 .fab:hover{
   text-decoration: none;
-
+}
 
 .footer-container .col .sukoon {
   color: rgb(30, 240, 191);
@@ -928,11 +932,11 @@ footer a:focus {
     width: 300px;
     height: 150px;
   }
-    position: absolute;
+    /* position: absolute;
 
     /* top: vh; */
-    left: 3vh;
-  }
+    /*left: 3vh; */
+
 
   .box {
     place-items: center;
@@ -970,7 +974,7 @@ footer a:focus {
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 800px) {
   .nav-links {
     display: none;
   }
@@ -982,10 +986,6 @@ footer a:focus {
   .hamburger {
     display: flex;
   }
-
-  header {
-    min-height: 100vh;
-  }
 }
 .footercontent{
   margin-right: 30px;
@@ -993,23 +993,13 @@ footer a:focus {
   flex-direction: column;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 800px) {
   .menu.open {
     display: none;
   }
 }
 
 @media screen and (max-width: 820px) and (min-width: 600px) {
-  header {
-    min-height: 61vh;
-  }
-
-  .content {
-    position: absolute;
-    top: 19vh;
-    left: 3vh;
-  }
-
   #about h3 {
     text-align: center;
   }
