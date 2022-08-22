@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+.login{
+    padding: 8em 10em;
+    padding-right: 0em;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.register{
+    padding: 8em 10em;
+    padding-right: 0em;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.welcome h1{
+    font-family: 'Poppins';
+    font-weight: 500;
+    margin: 0% 0%;
+    font-size: 1.8em;
+}
+.welcome span{
+    font-family: 'Poppins';
+    color: #8E8D8D;
+    font-size: small;
+}
+
+.inputs{
+    margin: 2.2em 0em;
+    margin-bottom: 0em;
+}
+.inputs span{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: small;
+}
+
+.inputbox {
+    width: 300px;
+    margin: 0.8em 0em;
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 8px 20px;
+    border: 1px solid #c7c7c7;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    font: normal 16px/normal "Poppins";
+    color: #000000;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+  }
+
+  .forgotpass span{
+    font-family: 'Poppins';
+    font-weight: 650;
+    font-size: small;
+    color: #7F55DA;
+    display: flex;
+    padding: 1em 17.6em;
+    cursor: pointer;
+  }
+
+  .signin {
+    margin: 0.5em 0em;
+    width: 320px;
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+    padding: 10px 10px;
+    border: none;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    font: normal 16px/normal "Poppins";
+    color: rgba(255,255,255,0.9);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+        background: #7F55DA;
+        background: linear-gradient(0deg, rgba(96,9,240,1) 0%, #7F55DA 100%);
+        border: none;
+        
+      }
+      .signin:before {
+        height: 0%;
+        width: 2px;
+      }
+      .signin:hover {
+        box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                    -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+          inset -4px -4px 6px 0 rgba(255,255,255,.2),
+          inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+      }
+  
+  .signupline{
+    font-family: 'Poppins';
+    color: #8E8D8D;
+    font-size: small;
+    padding: 1em 5em;
+}
+    .signupbutton{
+    font-family: 'Poppins';
+    font-weight: 650;
+    font-size: small;
+    color: #7F55DA;
+    cursor: pointer;
+    }
+ .signinbutton{
+    font-family: 'Poppins';
+    font-weight: 650;
+    font-size: small;
+    color: #7F55DA;
+    cursor: pointer;
+    }
+    img{
+        position: absolute;
+        margin: 6em 40em;
+        padding: 0em 10em;
+        width: 55%;
+        float: right;
+        box-sizing: border-box;
+    }
+        .register{
+        display:none;
+    }
