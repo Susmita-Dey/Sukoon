@@ -821,12 +821,23 @@ figure.testimonal-Card .author h5 {
   bottom: 0;
   width: 100%;
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: nowrap;
   background-color: rgb(6, 16, 37);
 }
 
-.footer-container .col {
+.footer-side-col{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  width: 80%;
+}
+
+.footer-side-col > .col{
+  padding: 2.5rem;
+  flex-wrap: nowrap;
+}
+
+.footer-container > .col {
   padding: 2.5rem;
   flex-basis: 20%;
 }
@@ -838,9 +849,17 @@ footer a:focus {
   border-bottom: 1px dotted #999;
 }
 
+@media (max-width: 1120px){
+  .footer-side-col{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+  }
+}
+
 @media (max-width: 730px) {
   .footer-container {
     gap: 0.5rem;
+    flex-wrap: wrap;
   }
 
   .footer-container .col {
@@ -855,6 +874,11 @@ footer a:focus {
 }
 
 @media (max-width: 600px) {
+  .footer-side-col{
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(auto,auto);
+  }
+
   .footer-container .col {
     padding: 1rem;
     flex-basis: 100%;
