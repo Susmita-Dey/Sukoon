@@ -129,28 +129,32 @@ nav {
 header {
     min-height: 100vh;
     width: 100%;
-    background-image: url("https://preview.colorlib.com/theme/yogabest/images/xbg_1.jpg.pagespeed.ic.0q7esXXIat.webp");
+    background-image: url("../images/139155.jpg");
     position: relative;
     background-position: center;
     background-size: cover;
 }
-
-.text{
+.center{
   position: absolute;
   top: 35%;
   left: 5%;
 }
 
-.text h1{
-    color: #fff;
+.center h1{
+    color:red;
     line-height: 1.2;
     font-weight: 800;
+    text-shadow: 2px 2px black;
 }
-
-.text p{
-    color:rgb(34, 194, 206);
+.enhances{
+    color: #00FFAB;
+}
+.center p{
+    color:cyan;
     font-weight: bolder;
     font-size: 1.2rem;
+    text-shadow: 2px 2px black;
+    letter-spacing: 1px;
 }
 
 /*Benefits section*/
@@ -205,15 +209,17 @@ header {
 .more{
     padding: 1%;
     border-radius: 7px;
-    color: yellow;
+    color: #F94892;
     font-weight: bolder;
-    border: 2px solid yellow;
+    border: 2px solid #411530;
     width: 40%;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin: auto;
     margin-top: 4%;
+    font-size: 18px;
+    /*letter-spacing: .1px;*/
 }
 a{
     color: inherit;
@@ -226,8 +232,8 @@ a{
 }
 
 .more:hover{
-    color: black;
-    background-color: yellow;
+    color: #F94892;
+    background-color:#FFF80A;
 }
 
 /*Videos section*/
@@ -235,7 +241,15 @@ a{
     padding: 5%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+}
+.inner{
+    margin: 20px;
+}
+.inner iframe{
+    border-radius: 1rem;
+    width: 24.375rem;
+    height: 315px;
 }
 
 
@@ -277,11 +291,13 @@ a{
         width: 100%;
     }
 }
+@media (max-width: 402px){
+    .inner iframe{
+        width: 18.75rem;
+    }
+}
 
 @media (max-width:600px){
-    .videos iframe{
-        width: 600px;
-    }
 
     .aasan1 img{
         width: 100%;
