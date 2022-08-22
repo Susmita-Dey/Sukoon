@@ -455,6 +455,10 @@ h5 {
   transition: 0.3s;
 }
 
+.footerpara{
+  white-space: nowrap;
+}
+
 /* SERVICES SECTION */
 #services {
   background-color: #092e3c;
@@ -1012,7 +1016,8 @@ footer a:focus {
   }
 }
 .footercontent{
-  margin-right: 30px;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
   flex-direction: column;
 }
@@ -1023,7 +1028,7 @@ footer a:focus {
   }
 }
 
-@media screen and (max-width: 820px) and (min-width: 600px) {
+@media screen and (max-width: 880px) and (min-width: 700px) {
   #about h3 {
     text-align: center;
   }
@@ -1035,15 +1040,19 @@ footer a:focus {
 }
 
 @media screen and (max-width: 460px) {
-  #services .round-image img {
+  /* #services .round-image img {
     margin-right: 18%;
-  }
+  } */
 
 }
 
 @media screen and (max-width: 390px) {
-  #services .round-image img {
+  /* #services .round-image img {
     margin-right: 25%;
+  } */
+
+  .content h1{
+    font-size: 3rem;
   }
 }
 
