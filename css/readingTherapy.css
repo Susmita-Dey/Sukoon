@@ -65,7 +65,8 @@ nav{
 .center{
   position: absolute;
   top: 20%;
-  left: 5%;
+  left: 2%;
+  right: 2%;
   text-align: center;
   color: black;
 }
@@ -79,6 +80,7 @@ h1 {
   font-weight: 900;
 }
 #subtitle {
+
   color:black;
   background-color: burlywood;
   border: solid black 7px;
@@ -106,6 +108,11 @@ h2 {
 }
 .black-background{
   background-color: #040303;
+}
+@media screen and (max-width: 600px) {
+  .black-background{
+    margin-top: 13rem;
+  }
 }
 body{
   background-color: #040303;
