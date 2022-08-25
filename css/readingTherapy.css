@@ -46,10 +46,12 @@ nav {
   margin: auto;
   transition: 0.5s;
 }
+
 .center,
 .collection,
 .books,
 .videos {
+
   position: relative;
   z-index: 1;
   display: flex;

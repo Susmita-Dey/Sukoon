@@ -40,76 +40,52 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sukoon</title>
-  <link rel="icon" href="/images/favicon-enhanced.png">
-  <link rel="stylesheet" href="css/s2.css" />
-  <link rel="stylesheet" text="text/CSS"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel ="icon" href="/images/favicon-enhanced.png">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" text="text/CSS" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
-<style>
-  html {
-    scroll-behavior: smooth;
-  }
+ <style>
+   html{
+     scroll-behavior: smooth;
+   }
+   .hidden{
+     visibility: hidden;
+   }
+   .back-top-wrap {
+     position: fixed;
+     bottom: 5rem;
+     right: 1rem;
+     background-color: #80F7D1;
+     padding: 1rem 1.2rem;
+     border-radius: 50%;
+     cursor: pointer;
+     transition: .3s ease-in-out;
+   }
 
-  .hidden {
-    visibility: hidden;
-  }
-
-  ::-webkit-scrollbar {
-  width: 12px;
-  background: #222131;
-}
-
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: white; 
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: cyan; 
-}
-
-
-  .back-top-wrap {
-    position: fixed;
-    bottom: 5rem;
-    right: 1rem;
-    background-color: #80F7D1;
-    padding: 1rem 1.2rem;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: .3s ease-in-out;
-    z-index: 500;
-  }
-
-  .back-top-wrap:hover {
+   .back-top-wrap:hover{
     background-color: #00a2ff;
     color: #80F7D1;
-  }
-
-  .back-top-wrap:hover .fas.fa-arrow-up {
+   }
+   .back-top-wrap:hover .fas.fa-arrow-up{
     color: white;
-  }
+   }
 
-  .fas.fa-arrow-up {
-    color: #00488F;
-    transition: 0.3s ease-in-out;
-  }
-</style>
-
-<body onload="myFunction()">
+  
+   .fas.fa-arrow-up {
+     color: #00488F;
+     transition: 0.3s ease-in-out;
+   }
+ </style>
+<body  onload="myFunction()">
   <div id="loading">
-
+    
   </div>
 
   <!-- Back to top button -->
   <div id="back-top-div" class="back-top-wrap">
     <i class="fas fa-arrow-up"></i>
   </div>
+
 
     <header>
       <nav class="nav" id="nav">
@@ -137,6 +113,7 @@
         </div>
       </nav>
 
+
       <div class="menu" id="menu">
         <ul class="menu-link">
           <li><a href="#">HOME</a></li>
@@ -145,6 +122,7 @@
           <li><a href="html/contact.html">CONTACT US </a></li>
         </ul>
       </div>
+
 
       <div class="content">
         <h1>Welcome to SUKOON</h1>
@@ -169,10 +147,12 @@
             <a href="https://bio.link/shayanpal"
               ><button>Let's Connect</button></a
             >
+
           </div>
         </div>
 
         <div class="card">
+
           <img src="./images/soumyadeep.jpeg" alt="soumyadeep" loading="lazy" />
           <h5>Soumyadeep Dhali</h5>
           <div class="pra">
@@ -180,10 +160,12 @@
             <a href="https://soumyadeep.bio.link"
               ><button>Let's Connect</button></a
             >
+
           </div>
         </div>
 
         <div class="card">
+
           <img src="./images/susmita.jpg" alt="" loading="lazy" />
           <h5>Susmita Dey</h5>
           <div class="pra">
@@ -307,6 +289,7 @@
         </div>
       </div>
     </section>
+
 
     <!-- Testimonials Section -->
     <section class="testimonials">
@@ -512,6 +495,7 @@
 
         <!--ADDRESS COLUMN-->
 
+
         <div class="col">
           <h3>
             ADDRESS
@@ -526,6 +510,7 @@
         <div class="col">
           <h3>HOME</h3>
           <ul>
+
             <li><a href="#about">About Us</a></li>
             <li>
               <a
@@ -611,7 +596,9 @@
       let preloader = document.getElementById("loading");
       function myFunction() {
         preloader.style.display = "none";
+
       }
+
 
       let navbar = document.getElementById("nav");
       let navmenu = document.getElementById("navmenu");
@@ -626,3 +613,4 @@
     </script>
   </body>
 </html>
+
