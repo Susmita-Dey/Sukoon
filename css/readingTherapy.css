@@ -65,7 +65,8 @@ nav{
 .center{
   position: absolute;
   top: 20%;
-  left: 5%;
+  left: 2%;
+  right: 2%;
   text-align: center;
   color: black;
 }
@@ -79,6 +80,7 @@ h1 {
   font-weight: 900;
 }
 #subtitle {
+
   color:black;
   background-color: burlywood;
   border: solid black 7px;
@@ -106,6 +108,11 @@ h2 {
 }
 .black-background{
   background-color: #040303;
+}
+@media screen and (max-width: 600px) {
+  .black-background{
+    margin-top: 13rem;
+  }
 }
 body{
   background-color: #040303;
@@ -256,35 +263,82 @@ hr{
 
 .container .card .sci {
   position: absolute;
-  bottom: 50px;
+  bottom: 30px;
   display: flex;
 }
 
-.container .card .sci li {
+ .container .card .sci li {
   list-style: none;
   margin: 0 10px;
-  transform: translateY(40px);
-  transition: 0.5s;
-  opacity: 0;
-}
-
-.container .card:hover .sci li {
-  transform: translateY(0px);
-  opacity: 1;
-}
-
-.container .card .sci li a {
-  border-radius: 5px;
-  color: #000;
-  font-size: 20px;
-  text-decoration: none;
-  background-color: white;
-  border: 3px solid grey;
-  padding: .5rem 1.25rem;
+} 
+.card a {
+  display: block;
   font-weight: bold;
+  text-align: center;
+  padding: 0.5rem 1.25rem;
+  border-radius: 5px;
+  color: #040404;
+  cursor: pointer;
+  margin-bottom: -8%;
+  text-decoration: none;
 }
-.container .card .sci li a:hover {
-  background-color: #54BAB9;
+.card a:hover {
+  background-color: #7de2d1;
+  
+}
+.btn {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding-left: 27px;
+  padding-right: 27px;
+  padding-bottom: 12px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #999999;
+  background: #ffffff;
+  border: 3px solid #999999;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  -webkit-transition: ease-out 0.5s;
+  -moz-transition: ease-out 0.5s;
+}
+
+
+.btn.btn-border::after,
+.btn.btn-border::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    transition: .5s;
+}
+
+.btn.btn-border::after {
+    top: -9px;
+    left: -9px;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+
+.btn.btn-border::before {
+    bottom: -9px;
+    right: -9px;
+    border-bottom: 3px solid transparent;
+    border-right: 3px solid transparent;
+}
+
+.btn.btn-border:hover {
+    color: #222222;
+}
+
+.btn.btn-border:hover::after,
+.btn.btn-border:hover::before {
+    width: 30px;
+    height: 30px;
+    border-color: #7de2d1;
 }
 header{
    position: relative;

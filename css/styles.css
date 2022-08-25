@@ -1,12 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
-body {
-  background-color: #411530;
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body{
+  background-image: url("../images/coming_soon_bg.png");
+  background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -20,97 +25,77 @@ body {
   margin: 0;
   overflow: hidden;
 }
+p{
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30px 0;
+}
+h1{
+  color: white;
+  margin: 20px 0;
+  width: 100%;
+  font-size: 80px;
+  text-align: center;
+  font-weight: bold;
+}
+hr{
+  margin: 30px 0;
+  display:flex;
+  width: 700px;
+}
+#launch{
+  margin: 20px 0;
+  margin-left:20%;
+  font-size: 40px;
+} 
 
 h1 {
   font-family: 'Itim',cursive;
   color: white;
   font-weight: normal;
   font-size: 60px;
-  margin: 30px 20px;
   text-shadow: 2px 2px 4px #011120;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-}
-
-
-
-h1:hover {
-  color: #fdec6e;
-  text-shadow:0px 0px 30px #fdec6e;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-h4 {
-  font-family: 'Itim',cursive;
-  color: #fdec6e;
-  font-size: 1.5rem;
-}
-
-.countdown {
-  margin-top: 5rem;
-  display: flex;
-  transform: scale(1.5);
-}
-
-.time {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 15px;
-  background-color: aliceblue;
-  padding: 1rem;
-  border: solid 7px;
-  border-color: black;
-}
-
-.time h2 {
-  font-family: 'Itim',cursive;
-  color: rgb(14, 78, 131);
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1;
-  margin: 0 0 5px;
-}
-.handyman{
-  height: 207px;
-}
-
-.text {
-  box-shadow: 5px 5px 3px rgb(143, 143, 143);
-  padding: 0.5rem;
-  color: rgb(89, 0, 255);
-  font-weight: 560;
-  border-radius: 5px;
-}
-
-h3 a:hover{
-  color: #fdec6e;
-  text-shadow:0px 0px 30px #fdec6e;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-.text small{
-  font-family: 'Itim',cursive;
+  margin: 20px 0;
+  width: 100%;
+  font-size: 80px;
+  text-align: center;
   font-weight: bold;
 }
-h3 a {
-  font-family: 'Itim',cursive;
-  font-style:italic;
-  font-size: 2em;
-  animation: typing 2s steps(22);
-  white-space: nowrap;
-  overflow: hidden;
+
+h3{
+  color: white;
+}
+h3 a{
   color: white;
   text-decoration: none;
 }
+
+h3 a:hover{
+  color: lightcyan;
+  text-shadow:0px 0px 10px blueviolet;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+h1:hover {
+  color: lightcyan;
+  text-shadow:0px 0px 20px blueviolet;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
 
 @keyframes typing {
   from {
@@ -137,8 +122,8 @@ h3 a {
     border-radius: 1px;
   }
   h3 {
+    color: white;
     font-size: 1rem;
-    /* width: 20ch; */
     animation: typing 1s steps(12);
   }
 }
