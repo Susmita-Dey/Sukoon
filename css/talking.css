@@ -1,4 +1,5 @@
 * {
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,6 +10,7 @@ body {
   font-family: "Inter", sans-serif;
   color: white;
 }
+
 header {
   min-height: 100vh;
   width: 100%;
@@ -18,6 +20,7 @@ header {
   background-size: cover;
   margin-top: 1.5rem;
 }
+
 nav {
   position: fixed;
   top: 0;
@@ -50,6 +53,7 @@ nav {
   position: absolute;
   top: 75px;
   z-index: 100;
+
   left: 0;
   padding: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
@@ -68,6 +72,7 @@ nav {
   padding: 0;
   margin-top: -8px;
 }
+
 .nav-links {
   flex: 1;
   text-align: right;
@@ -99,7 +104,9 @@ nav {
 .nav-links ul li:hover::after {
   width: 100%;
 }
+
 .menu {
+
   display: none;
   width: 100%;
   position: absolute;
@@ -130,9 +137,11 @@ nav {
   color: rgba(0, 0, 0, 0.782);
   font-weight: bolder;
   font-size: 1rem;
+
 }
 
 .filter {
+
   position: absolute;
   top: 0;
   left: 0;
@@ -141,6 +150,7 @@ nav {
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.3);
 }
+
 .center {
   position: absolute;
   top: 50%;
@@ -148,6 +158,7 @@ nav {
   transform: translate(-50%, -50%);
   z-index: 20;
 }
+
 h1 {
   font-size: 2.75rem;
   text-align: center;
@@ -155,21 +166,27 @@ h1 {
   font-weight: 900;
 }
 
+
 .heading-span {
   color: #f1304d;
 }
+
 #subtitle {
   color: #fff;
   text-align: center;
   font-size: 1.3rem;
 }
+
 .section-headings {
+
   font-size: 2.3rem;
   text-decoration: underline;
   text-underline-offset: 10px;
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
+
 .sub {
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,6 +194,7 @@ h1 {
   font-weight: 600;
   font-size: 1.5rem;
 }
+
 .container {
   padding: 3rem;
   display: flex;
@@ -184,7 +202,9 @@ h1 {
   justify-content: space-between;
 }
 
+
 .cause {
+
   color: whitesmoke;
   width: 30%;
   border: 3px solid #f1304d;
@@ -193,18 +213,73 @@ h1 {
   padding: 2rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   align-content: space-between;
+
   margin-top: 28px;
   box-shadow: rgba(130, 46, 46, 0.25) 0px 54px 55px,
     rgba(130, 46, 46, 0.25) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.cause:hover .layer{
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(0);
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.layer{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.3rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(5px);
+  z-index: 20;
+  transition: all 0.5s;
+}
+
+.layer h3{
+  font-size: 2.5rem;
+  color: #f1304d;
+}
+
+.first, .second, .third{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.first{
+  background-image: url('../images/depression.jpg');
+}
+
+.second{
+  background-image: url('../images/anxiety.jpg');
+}
+
+.third{
+  background-image: url('../images/stress.jpg');
+}
+
+/* .image{
+  width: 80%;
+  height: auto;
 }
 
 .cause .image img {
-  width: 12rem;
-  height: 15rem;
-  border-radius: 125px;
-}
+  object-fit: cover;
+  width: 100%;
+  border-radius: 50%;
+} */
 
 .cause h2 {
   margin-top: 1.2rem;
@@ -218,6 +293,7 @@ h1 {
 }
 
 .cause a {
+  align-self: stretch;
   text-decoration: none;
   color: black;
   background-color: rgb(255, 255, 255);
@@ -234,13 +310,16 @@ h1 {
   border-color: white;
   transition: 0.3s;
 }
+
 #blogs {
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 40px;
+  padding: 2em 1.5em;
 }
+
 .blog-container {
   display: flex;
   justify-content: center;
@@ -259,6 +338,7 @@ h1 {
   height: auto;
 }
 .blog-img img {
+
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -270,19 +350,24 @@ h1 {
   display: flex;
   flex-direction: column;
 }
+
 .blog-content span {
   color: #f1304d;
   font-size: 0.9rem;
 }
 .blog-content .blog-title {
+
   font-size: 1.2rem;
   font-weight: 500;
   color: #000;
+  transition: color 0.4s;
 }
+
 .blog-content .blog-title:hover {
   color: #f1304d;
 }
 .blog-content p {
+
   color: #253240;
   font-size: 0.9rem;
   display: -webkit-box;
@@ -292,6 +377,7 @@ h1 {
   text-overflow: ellipsis;
   margin: 20px 0px;
 }
+
 .blog-content a {
   color: #000;
   text-decoration: none;
@@ -301,29 +387,54 @@ h1 {
 }
 .video {
   border: 3px solid #f1304d;
+
   border-radius: 10px;
+  transition: 0.3s;
 }
+
 .video:hover {
+
   border: 3px solid #fff;
 }
-@media screen and (max-width: 700px) {
-  .container {
-    flex-direction: column;
-  }
 
-  .cause {
+
+.video-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1rem;
+}
+
+.collection{
+  margin: 0.5rem 1rem;
+  width: 100%;
+  max-width: 350px;
+}
+
+@media screen and (max-width: 980px) {
+  .cause{
     width: 100%;
   }
 }
+
+@media screen and (max-width: 890px) {
+  .collection{
+    max-width: 100%;
+  }
+
+}
+
 @media screen and (max-width: 600px) {
-  .container {
-    padding: 1rem;
+  .video-container {
+    padding: 0.5rem;
   }
 
   .cause .image {
     width: 300px;
     height: 150px;
   }
+
   .image {
     margin-left: 16.5%;
   }
@@ -336,7 +447,14 @@ h1 {
   .sub {
     margin-left: 80px;
   }
+
 }
+
+/* @media screen and (max-width: 500px){
+  .sub{
+    text-align: center;
+  }
+} */
 
 @media screen and (max-width: 650px) {
   .nav-links {
@@ -346,11 +464,18 @@ h1 {
   .logo {
     width: 60px;
   }
+
   .hamburger {
     display: flex;
   }
+
   header {
     min-height: 100vh;
+  }
+
+  .sub{
+    font-size: 1.2rem;
+    text-align: center;
   }
 }
 
@@ -359,18 +484,25 @@ h1 {
     display: none;
   }
 }
+
 @media screen and (max-width: 880px) and (min-width: 700px) {
   #about .image img {
     width: 150px;
     height: 220px;
+
   }
 }
+
 @media screen and (max-width: 470px) {
+
   .image img {
     margin-right: 28%;
+
   }
 }
+
 @media screen and (max-width: 390px) {
+
   .image img {
     margin-right: 25%;
   }
@@ -387,9 +519,11 @@ h1 {
 }
 @media screen and (max-width: 550) {
   .blog-box {
+
     margin: 20px 10px;
     width: 100%;
   }
+
   #blog {
     padding: 20px;
   }
@@ -506,3 +640,4 @@ footer a:focus {
   /* text-decoration: none; */
   color: rgb(255, 255, 255);
 }
+

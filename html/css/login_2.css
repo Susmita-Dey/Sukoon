@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
-
+body{
+    overflow: hidden;
+}
 .login{
     padding: 8em 10em;
     padding-right: 0em;
@@ -117,7 +119,7 @@
     }
     img{
         position: absolute;
-        margin: 6em 40em;
+        margin: 6em 32em;
         padding: 0em 10em;
         width: 55%;
         float: right;
@@ -126,3 +128,60 @@
         .register{
         display:none;
     }
+    @media screen and (max-width: 1096px) {
+        img{
+            margin-top: 12%;
+            height: 50%;
+        }
+    }
+    @media screen and (max-width: 970px) 
+{
+    img{
+        margin: 6em 25em;
+        width:70%
+    }
+}
+@media screen and (max-width: 720px) 
+{ 
+    img{
+    margin: 0em 0em;
+    width: 80%;
+    height: 40%;
+   padding-bottom: 12%;
+    }
+    .login{
+        margin-top: 8%;
+    }
+}
+@media screen and (max-width: 575px) 
+{
+    img{
+        width: 100%;
+        height: 50%;
+        padding-bottom: 20%;
+
+    }
+}
+@media screen and (max-width: 484px) 
+{
+    img{
+        width: 140%;
+        margin-top: 15%;
+        
+    }
+    .login{
+        margin-top: 45%;
+}
+}
+@media screen and (max-width: 380px) 
+{
+    img{
+        width: 150%;
+        height: 55%;
+        margin-top: 20%;
+        
+    }
+    .login{
+        margin-top: 60%;
+    }
+}
