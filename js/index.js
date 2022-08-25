@@ -26,12 +26,15 @@ $(function () {
 
 const backTopElement = document.getElementById("back-top-div");
 const minScolledAmountToBackTop = 800;
+const svg = document.querySelector('svg');
 
 window.addEventListener("scroll", () => {
   if (window.scrollY < minScolledAmountToBackTop) {
-    backTopElement.classList.add("hidden");
+    svg.style.display = 'none';
+    backTopElement.style.transform = "translateX(100%)";
   } else {
-    backTopElement.classList.remove("hidden");
+    backTopElement.style.transform = "translateX(0%)";
+    svg.style.display = 'block';
   }
 });
 
