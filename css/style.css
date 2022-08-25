@@ -9,6 +9,32 @@
   box-sizing: border-box;
 }
 
+#loading {
+  width: 100%;
+  height: 100vh;
+  background: white url("../logo.png") no-repeat center;
+  background-size: 300px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 body {
   font-family: "Poppins";
   transform: none;
@@ -22,6 +48,17 @@ body {
 
 /* HERO SECTION */
 
+.nav {
+  display: flex;
+  padding: 2% 4%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
 header {
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
@@ -30,14 +67,10 @@ header {
   background-size: cover;
   position: relative;
   min-height: 100vh;
-}
-
-.nav {
-  position: relative;
+  height: 100vh;
   display: flex;
-  padding: 2% 6%;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
 }
 
 .logo {
@@ -205,7 +238,7 @@ header {
 }
 
 .content h1 {
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
   font-family: "Lucida Sans";
   font-weight: 199px;
   font-size: 4rem;
@@ -833,11 +866,10 @@ figure.testimonal-Card .author h5 {
   flex-basis: 20%;
 }
 
-.footer-container a:hover,
+.footer-container .col a:hover,
 footer a:focus {
-  color: #aaa;
-  text-decoration: none;
-  border-bottom: 1px dotted #999;
+  color: cyan;
+
 }
 
 @media (max-width: 730px) {
@@ -863,6 +895,30 @@ footer a:focus {
   }
 }
 
+.footer-container .col a {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.footer-container .col ul li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: cyan;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.footer-container .col ul li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 .footer-container p {
   color: white;
   margin-top: 1rem;
@@ -874,7 +930,8 @@ footer a:focus {
 }
 
 .footer-container .col h3 {
-  color: #900505;
+  color: rgb(228, 26, 77);
+  font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
@@ -884,19 +941,23 @@ footer a:focus {
 }
 .footer-container .col .footerheading {
   display: flex;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-left: -25px;
+  color:white ;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   justify-content: center;
   cursor: pointer;
 }
 .footer-container .col .footerpara {
   display: flex;
-  margin-top: 0px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: -3px;
+  margin-left: -25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
   letter-spacing: 1mm;
   justify-content: center;
   cursor: pointer;
 }
-.fab:hover{
+.fab:hover {
   text-decoration: none;
 
 }
@@ -913,17 +974,21 @@ footer a:focus {
 }
 
 .footer-container .col .social-menu ul a {
-  color: aqua;
+  color: white;
+}
+.footer-container .col .social-menu ul a:hover {
+  color: cyan;
+  border: none;
+  text-decoration: none !important;
 }
 
 .footer-container .col ul li {
   list-style-type: none;
-  text-align: left;
   margin-top: 0.75rem;
 }
 
 .footer-container .col ul li a {
-  /* text-decoration: none; */
+  text-decoration: none;
   color: rgb(255, 255, 255);
 }
 
