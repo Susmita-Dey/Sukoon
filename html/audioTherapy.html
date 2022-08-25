@@ -11,12 +11,6 @@
     <title>Sukoon</title>
     <link rel="stylesheet" href="../css/audio.css" />
   </head>
-  <style>
-    .nature-sound{
-      text-align: center;
-      padding: 30px;
-    }
-  </style>
   <body>
     <!-- Navbar Section -->
     <nav>
@@ -31,13 +25,22 @@
           <li><a href="#audiobooks">AUDIOBOOKS </a></li>
         </ul>
       </div>
-
       <div class="hamburger" id="ham">
-        <span></span>
-        <span></span>
-        <span></span>
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>
       </div>
     </nav>
+
+      <!-- Mobile Layout Navbar -->
+    <div class="menu" id="menu">
+      <ul class="menu-link">
+        <li><a href="../index.html">HOME</a></li>
+        <li><a class="close" href="#music">MUSIC</a></li>
+        <li><a class="close" href="#podcasts">PODCASTS </a></li>
+        <li><a class="close" href="#audiobooks">AUDIOBOOKS </a></li>
+      </ul>
+    </div>
+      <!-- Mobile Layout Navbar Ends Here -->
+
     <!-- Navbar Section Ends Here -->
   
     <div class="menu" id="menu">
@@ -307,6 +310,7 @@
             <h3>Atomic Habits</h3>
             <p>
               Let's listen to the famous audiobook by James Clear.
+              <br>
             </p>
             <a href="https://www.audible.in/pd/Atomic-Habits-Audiobook/B07J1PK5Q7?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare" class="btn btn-border">Play Now</a>
           </div>
@@ -316,7 +320,7 @@
           <img src="https://m.media-amazon.com/images/I/51jRBz6Ug3L._SL500_.jpg" alt="The Psychology of Money" />
           <div class="content">
             <h3>The Psychology of Money</h3>
-            <p>
+            <p id="psy">
               Let's listen to the famous audiobook by Morgan Housel.
             </p>
             <a href="https://www.audible.in/pd/The-Psychology-of-Money-Audiobook/B08D9WJCBT?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare" class="btn btn-border">Play Now</a>
@@ -326,9 +330,10 @@
         <article class="card">
           <img src="https://m.media-amazon.com/images/I/51MT0MbpD7L._SL500_.jpg" alt="The Subtle Art of Not Giving a F*ck" />
           <div class="content">
-            <h3>The Subtle Art of Not Giving a F*ck</h3>
+            <h3>The Subtle Art of Not...</h3>
             <p>
               Let's listen to the famous audiobook by Mark Manson.
+              <br>
             </p>
             <a href="https://www.audible.in/pd/The-Subtle-Art-of-Not-Giving-a-F-ck-Audiobook/B079BC54JT?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare" class="btn btn-border">Play Now</a>
           </div>
@@ -351,6 +356,7 @@
             <h3>Think Like A Monk</h3>
             <p>
               Let's listen to the famous audiobook by Jay Shetty.
+              <br>
             </p>
             <a href="https://www.audible.in/pd/Think-Like-A-Monk-Audiobook/B07YSQ8GT5?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare" class="btn btn-border">Play Now</a>
           </div>
@@ -362,6 +368,7 @@
             <h3>Life's Amazing Secrets</h3>
             <p>
               Let's listen to the famous audiobook by Gaur Gopal Das.
+              <br>
             </p>
             <a href="https://www.audible.in/pd/Lifes-Amazing-Secrets-Audiobook/B081S9NKRP?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare" class="btn btn-border">Play Now</a>
           </div>
@@ -373,6 +380,7 @@
             <h3>Rich Dad Poor Dad</h3>
             <p>
               Let's listen to the famous audiobook by Robert T. Kiyosaki.
+              <br>
             </p>
             <a href="https://www.audible.in/pd/Rich-Dad-Poor-Dad-Audiobook/B079P9PGJB?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare" class="btn btn-border">Play Now</a>
           </div>
@@ -381,9 +389,9 @@
         <article class="card">
           <img src="https://m.media-amazon.com/images/I/51nY2HMNVHL._SL500_.jpg" alt="Karma" />
           <div class="content">
-            <h3>Karma: A Yogi’s Guide to Crafting...</h3>
+            <h3>Karma: A Yogi’s Guide...</h3>
             <p>
-              Let's listen to the famous audiobook by Sadhguru and Leslie Howard.
+              Let's listen to the famous audiobook by Sadhguru.
             </p>
             <a href="https://www.audible.in/pd/Karma-A-Yogis-Guide-to-Crafting-Your-Own-Destiny-Audiobook/9391149588?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare" class="btn btn-border">Play Now</a>
           </div>
@@ -395,6 +403,7 @@
             <h3>How to Talk to Anyone</h3>
             <p>
               Let's listen to the famous audiobook by Leil Lowndes.
+              <br>
             </p>
             <a href="https://www.audible.in/pd/How-to-Talk-to-Anyone-Audiobook/B079TLJV49?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare" class="btn btn-border">Play Now</a>
           </div>
@@ -404,7 +413,7 @@
           <img src="https://m.media-amazon.com/images/I/41jq-ouUBkL._SL500_.jpg" alt="Rework" />
           <div class="content">
             <h3>Rework</h3>
-            <p>
+            <p id="rew">
               Let's listen to the famous audiobook by Jason Fried and David Heinemeier Hansson.
             </p>
             
@@ -414,23 +423,38 @@
       </div>
       <!-- AudioBooks Section Ends Here -->
     </section>
+    
+    <!-- AudioBooks Section Ends Here -->
+
     <script>
       const ham = document.getElementById("ham");
-const menu = document.getElementById("menu");
+      const menu = document.getElementById("menu");
+      const close = document.querySelectorAll('.close');
+      const closeMenu = () => {
+        if (menu.classList.contains("open")) {
+          menu.classList.remove("open");
+          
+          console.log("open");
+        }
+        ham.innerHTML = '<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>'
+      }
 
-const toggleMenu = () => {
-if (menu.classList.contains("open")) {
-  menu.classList.remove("open");
-  //   menu.style.display = "block";
-  console.log("open");
-} else {
-  menu.classList.add("open");
-  //   menu.style.display = "none";
-  console.log("close");
-}
-};
-
-ham.addEventListener("click", toggleMenu);
-  </script>
+      const toggleMenu = () => {
+        if (menu.classList.contains("open")) {
+          menu.classList.remove("open");
+          ham.innerHTML = '<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>'
+          console.log("open");
+        } else {
+          menu.classList.add("open");
+          ham.innerHTML = '<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"></path></svg>'
+          console.log("close");
+        }
+      };
+      ham.addEventListener("click", toggleMenu);
+      close.forEach(ele => {
+        ele.addEventListener("click", closeMenu);
+      }
+      )
+    </script>
   </body>
 </html>

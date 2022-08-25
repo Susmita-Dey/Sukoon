@@ -12,37 +12,40 @@
   <title>Sukoon</title>
   <link rel="stylesheet" href="../css/talking.css" />
 </head>
-</style>
 
 <body>
   <!-- Navbar Section -->
-  <nav>
-    <a href="index.html"><img class="talking-logo" src="../logo.png" alt="Logo" /></a>
+    <nav>
+      <a href="../index.html"><img class="talking-logo" src="../logo.png" alt="Logo"/></a>
 
-    <div class="nav-links" id="navLinks">
-      <i class="fa fa-times" onclick="hidemenu()"></i>
-      <ul>
-        <li><a href="../index.html">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#blogs">BLOGS </a></li>
-        <li><a href="#videos">VIDEOS </a></li>
-      </ul>
-    </div>
-
-    <div class="hamburger" id="ham">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </nav>
-  <div class="menu" id="menu">
-    <ul class="menu-link">
-      <li><a href="/index.html">HOME</a></li>
+      <div class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="../index.html">HOME</a></li>
           <li><a href="#about">ABOUT</a></li>
-          <li><a href="#blogs">BLOGS</a></li>
-          <li><a href="#videos">VIDEOS</a></li>
-    </ul>
-  </div>
+          <li><a href="#blogs">BLOGS </a></li>
+          <li><a href="#videos">VIDEOS </a></li>
+        </ul>
+      </div>
+      <div class="hamburger" id="ham">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>
+      </div>
+    </nav>
+
+    <!-- Mobile Layout Navbar -->
+
+      <div class="menu" id="menu">
+        <ul class="menu-link">
+          <li><a href="../index.html">HOME</a></li>
+          <li><a onclick="closeMenu()" href="#about">ABOUT</a></li>
+          <li><a onclick="closeMenu()" href="#blogs">BLOGS</a></li>
+          <li><a onclick="closeMenu()" href="#videos">VIDEOS</a></li>
+        </ul>
+      </div>
+      
+    <!-- Mobile Layout Navbar Ends Here -->
+
+  <!-- Navbar Section Ends Here -->
+
   <!-- Header Section-->
   <header>
     <div class="filter"></div>
@@ -52,15 +55,17 @@
         the direction of change forever.</h3>
     </div>
   </header>
+  <!-- Header Section Ends Here -->
+
   <!-- About Section -->
   <section id="about">
     <h1 class="section-headings">ABOUT</h1>
     <p class="sub">Here are the signs that you need a Talking Therapy!</p>
     <div class="container">
 
-      <div class="cause">
-        <div class="image">
-          <img src="../images/depression.jpg" alt="" />
+      <div class="cause first">
+        <div class="layer">
+          <h3>Depression</h3>
         </div>
         <h2>Depression</h2>
         <p>
@@ -72,9 +77,9 @@
         </a>
       </div>
 
-      <div class="cause">
-        <div class="image">
-          <img src="../images/anxiety.jpg" alt="" />
+      <div class="cause second">
+        <div class="layer">
+          <h3>Anxiety</h3>
         </div>
         <h2>Anxiety</h2>
         <p>
@@ -86,9 +91,9 @@
         </a>
       </div>
 
-      <div class="cause ">
-        <div class="image">
-          <img src="../images/stress.jpg" alt="" />
+      <div class="cause third">
+        <div class="layer">
+          <h3>Stress</h3>
         </div>
         <h2>Stress</h2>
         <p>
@@ -101,6 +106,8 @@
       </div>
     </div>
   </section>
+  <!-- About Section Ends Here -->
+
   <!-- Blog section  -->
   <section id="blogs">
     <h1 class="section-headings">BLOGS</h1>
@@ -110,7 +117,7 @@
           <img src="../images/blog-1.jpg" alt="">
         </div>
         <div class="blog-content">
-          <span>JUNE 23, 2022/MAHEVASH SHAIKH</span>
+          <span>JUNE 23, 2022 MAHEVASH SHAIKH</span>
           <a href="https://www.healthyplace.com/blogs/copingwithdepression/2022/6/does-depression-make-you-feel-worthless-you-are-not-alone"
             target="_blank" class="blog-title">Does Depression Make You Feel Worthless? You Are Not Alone</a>
           <p>Has depression made you feel worthless? If so, you are not alone. You may even believe that you are
@@ -124,7 +131,7 @@
           <img src="../images/blog-2.jpg" alt="">
         </div>
         <div class="blog-content">
-          <span>JUNE 8, 2022/TJ DESALVO</span>
+          <span>JUNE 8, 2022 TJ DESALVO</span>
           <a href="https://www.healthyplace.com/blogs/anxiety-schmanxiety/2022/6/talking-to-others-about-my-mental-health"
             target="_blank" class="blog-title">Talking to Others About My Mental Health.Why Mental Health Is Hard to
             Talk About </a>
@@ -140,7 +147,7 @@
           <img src="../images/blog-3.jpg" alt="">
         </div>
         <div class="blog-content">
-          <span>January 25, 2021/KELLY BILODEAU,</span>
+          <span>January 25, 2021 KELLY BILODEAU,</span>
           <a href="https://www.health.harvard.edu/blog/3-simple-strategies-for-stress-relief-2021012521806"
             target="_blank" class="blog-title">Stress Management-<br>Simple strategies for stress relief.
           </a>
@@ -153,45 +160,64 @@
       </div>
     </div>
   </section>
-  <!-- video section  -->
-  <section id="#video">
+  <!-- Blog Section Ends Here -->
+
+  <!-- Video Section  -->
+  <section id="videos">
  <h1 class="section-headings">VIDEOS</h1>
  
- <div class="container">
-  <div class="help">
+ <div class="video-container">
+  <div class="collection">
     <div class="video">
-      <iframe width="100%" height="380" src="https://www.youtube.com/embed/Nz9eAaXRzGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe style="border-radius: 10px;" width="100%" height="380" src="https://www.youtube.com/embed/Nz9eAaXRzGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   
     </div>
   </div>
   <div class="collection">
     <div class="video">
-      <iframe width="100%" height="380" src="https://www.youtube.com/embed/UQ1wDXtPxxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe style="border-radius: 10px;" width="100%" height="380" src="https://www.youtube.com/embed/UQ1wDXtPxxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
        
     </div>
   </div>
   <div class="collection">
     <div class="video">
-      <iframe width="100%" height="380" src="https://www.youtube.com/embed/rmeGVhhbGrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe style="border-radius: 10px;" width="100%" height="380" src="https://www.youtube.com/embed/rmeGVhhbGrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
 </div>
 </section>
+<!-- Video Section Ends Here -->
+
 <script>
-  const ham = document.getElementById("ham");
-const menu = document.getElementById("menu");
+    const ham = document.getElementById("ham");
+    const menu = document.getElementById("menu");
+    const close = document.querySelectorAll('.close');
 
-const toggleMenu = () => {
-if (menu.classList.contains("open")) {
-menu.classList.remove("open");
-console.log("open");
-} else {
-menu.classList.add("open");
-console.log("close");
-}
-};
+    const closeMenu = () => {
+      if (menu.classList.contains("open")) {
+        menu.classList.remove("open");
+        
+        console.log("open");
+      }
+      ham.innerHTML = '<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>'
+    }
 
-ham.addEventListener("click", toggleMenu);
+    const toggleMenu = () => {
+      if (menu.classList.contains("open")) {
+        menu.classList.remove("open");
+        ham.innerHTML = '<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>'
+        console.log("open");
+      } else {
+        menu.classList.add("open");
+        ham.innerHTML = '<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"></path></svg>'
+        console.log("close");
+      }
+    };
+    ham.addEventListener("click", toggleMenu);
+    close.forEach(ele => {
+      ele.addEventListener("click", closeMenu);
+    }
+    )
 </script>
 </body>
 </html>

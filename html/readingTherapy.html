@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sukoon</title>
-    <link rel="stylesheet" href="/css/readingTherapy.css">
+    <link rel="stylesheet" href="../css/readingTherapy.css">
     <link rel="icon" href="../images/favicon-enhanced.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script&family=Itim&family=Oleo+Script+Swash+Caps&family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar-->
     <header>
     <nav class="navbar">
-        <div class=""><img src="/images/logo.png" class="icon" alt=""></div>
+        <div class=""><a href="https://sukoon-stress-free.netlify.app"><img src="../logo.png" class="icon" alt=""></a></div>
         
       <div class="nav-links" id="navLinks">
         <i class="fa fa-times" onclick="hidemenu()"></i>
@@ -25,192 +27,331 @@
           
         </ul>
       </div>
-      <i class="fa fa-bars" onclick="showmenu()"></i>
+      <div class="hamburger" id="ham">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>
+      </div>
     </nav>
+    <div class="menu" id="menu">
+      <ul class="menu-link">
+        <li><a href="/index.html">HOME</a></li>
+          <li><a href="#articles">ARTICLES</a></li>
+          <li><a href="#quotes">QUOTES </a></li>
+          <li><a href="#summary">SUMMARIES</a></li>
+          <li><a href="#reading">BOOKS </a></li>
+        </ul>
+        </div>
     <div class="contain">
-        <img class="image" src="https://th.bing.com/th/id/OIP.fGC4cQLOmSiZuOpNug1_-QHaEo?pid=ImgDet&rs=1" style="width: 100%; height: 40%;">
+        <img class="image" src="https://images2.alphacoders.com/261/thumb-1920-26102.jpg" style="width: 100%; height: 40%;">
         <div class="center"> 
-          <h1 id="title">Welcome to Our <u>Reading Therapy</u></h1>
+          <h1 id="title"><span class="heading-starting">Welcome to Our </span><span class="heading-title">Reading Therapy </span><img class="reading1" src="../images/reading1.png" alt=""></h1>
           <h3 id="subtitle">Read Articles, Motivational Quotes and listen to summaries of famous books <br> to gain some happiness, knowledge and also lighten your stress side by side.</h3>
-          <iframe class="intro" width="560" height="350" src="https://www.youtube.com/embed/AUw7laSlcbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        
     </header>
-  <section id="articles">
-    <h1>Articles</h1>
+    <div class="black-background">
+      <section id="articles">
+      <h1 style="font-size:2.3rem">Articles</h1>
+      <h2>Inspirational Stories</h2>
     <div class="collection">
-        <h2>Inspirational Stories</h2>
         <div class="playlist">
-            <iframe src="https://ahigherthought.com/the-best-way-to-refresh-mind-body-soul/" frameborder="0" width="20%" height="380px"></iframe>
-            <iframe src="https://www.developgoodhabits.com/inspirational-stories/" frameborder="0" width="30%" height="380px"></iframe>
-            <iframe src="https://www.whatsdannydoing.com/blog/short-inspirational-stories-with-a-moral" frameborder="0" width="24%" height="380px"></iframe>
-            <iframe src="https://theartofliving.com/interesting-articles/" frameborder="0" width="25%" height="380px"></iframe>
+            <iframe src="https://ahigherthought.com/the-best-way-to-refresh-mind-body-soul/" frameborder="0" width="100%" height="380px"></iframe>
+        </div>
+        <div class="playlist">
+            <iframe src="https://www.developgoodhabits.com/inspirational-stories/" frameborder="0" width="100%" height="380px"></iframe>
+        </div>
+        <div class="playlist">
+            <iframe src="https://www.whatsdannydoing.com/blog/short-inspirational-stories-with-a-moral" frameborder="0" width="100%" height="380px"></iframe>
+        </div>
+        <div class="playlist">
+            <iframe src="https://theartofliving.com/interesting-articles/" frameborder="0" width="100%" height="380px"></iframe>
         </div>
     </div>
   </section>
+  <br>
+  <hr>
   <section id="quotes">
-    <h1>Motivational Quotes</h1>
+    <h1 style="font-size:2.3rem">Motivational Quotes</h1>
+    <h2>Inspirational Quotes</h2>
     <div class="collection">
-        <h2>Inspirational Quotes</h2>
         <div class="inspiration">
-        <img class="q" src="https://th.bing.com/th/id/OIP._ZibHHI2wOkvwV7WX0qfQAHaHa?pid=ImgDet&rs=1" alt="">
-        <img class="q" src="https://th.bing.com/th/id/OIP.E9qF_RHl_LT5qV7RJzIlQwHaGk?pid=ImgDet&rs=1" alt="">
-        <img class="q" src="https://boomsumo.com/wp-content/uploads/2018/11/Top-55-Motivational-And-Inspirational-Quotes-for-success-Life-Extremely-55.jpg" alt="">
-            <img class="q" src="https://i.pinimg.com/736x/85/16/de/8516deb7c6db279e73da88e0be5b2257.jpg" alt="">
+          <div class="inspiration-card">
+            <div class="inspcardcover">
+               <img src="../images/motivation.png" alt="">
+            </div>
+            <div class="insp-content">
+             <p>Life isn't about finding yourself. Life is about creating yourself.</p>
+              </div>
+          </div>
+        </div>
+        <div class="inspiration">
+          <div class="inspiration-card">
+            <div class="inspcardcover">
+              <img src="../images/inspiration.png" alt="">
+            </div>
+            <div class="insp-content">
+              <p class="insp-p3">A mistake that makes you humble is better than an achievement that makes you arrogant.</p>
+              </div>
+          </div>
+        </div>
+        <div class="inspiration">
+          <div class="inspiration-card">
+            <div class="inspcardcover">
+               <img src="../images/inspiration (1).png" alt="">
+            </div>
+            <div class="insp-content">
+              <p>Why do we only rest in peace why don't we live in peace too?</p>
+              </div>
+          </div>
+        </div>
+        <div class="inspiration">
+          <div class="inspiration-card">
+            <div class="inspcardcover">
+               <img src="../images/motivation (3).png"  alt="">
+            </div>
+            <div class="insp-content">
+              <p>Our greatest glory is not in never falling, but in rising every time we fall. </p>
+              </div>
+          </div>
+        </div>
      </div>
-    <h2 class="stress1">Stress relieving Quotes</h2>
-    <div class="stress">
-        <img class="q" src="https://th.bing.com/th/id/OIP.21VQxUcKlJHJxeT3RD8B-QHaHa?pid=ImgDet&rs=1" alt="">
-        <img class="q" src="https://i.pinimg.com/originals/18/bb/5e/18bb5e42360b991e028729e5965d4eaf.jpg" alt="">
-        <img class="q" src="https://i0.wp.com/i.pinimg.com/originals/a0/7b/cf/a07bcf33fb0ea469b44b35a3064139a5.jpg" alt="">
-        <img class="q" src="https://fungistaaan.com/wp-content/uploads/2018/08/Stress-Relief-Quotes.jpg" alt="">
-    </div>
-
-    </div>
+    <h2>Stress relieving Quotes</h2>
+   <div class="collection">
+        <div class="inspiration">
+          <div class="inspiration-card">
+            <div class="inspcardcover">
+               <img src="../images/motivation (1).png" alt="">
+            </div>
+            <div class="insp-content">
+            <p> It’s not the events of our lives that shape us, but our beliefs as to what those events mean.</p>
+              </div>
+          </div>
+        </div>
+        <div class="inspiration">
+          <div class="inspiration-card">
+            <div class="inspcardcover">
+              <img src="../images/woman (1).png" alt="">
+            </div>
+            <div class="insp-content">
+             <p>Breath is the power behind all things…. I breathe in and know that good things will happen.</p>
+              </div>
+          </div>
+        </div>
+        <div class="inspiration">
+          <div class="inspiration-card">
+            <div class="inspcardcover">
+               <img src="../images/job-satisfaction.png" alt="">
+            </div>
+            <div class="insp-content">
+              <p>You can't control the wind, but you can adjust your sails.</p>
+              </div>
+          </div>
+        </div>
+        <div class="inspiration">
+          <div class="inspiration-card">
+            <div class="inspcardcover">
+               <img src="../images/passion.png"  alt="">
+            </div>
+            <div class="insp-content">
+              <p>There are times when we stop, we sit still. We listen and breezes from a whole other world begin to whisper.</p>
+              </div>
+          </div>
+        </div>
+     </div>
   </section>
+  <hr>
   <section id="summary">
-    <h1>Summary of Books</h1>
+    <h1 style="font-size:2.3rem">Summary of Books</h1>
+    <h2>In Articles</h2>
     <div class="collection">
-        <h2>In Articles</h2>
         <div class="books">
-            <iframe class="b" src="https://www.samuelthomasdavies.com/book-summaries/self-help/atomic-habits/" frameborder="0"></iframe>
-            <iframe class="b" src="https://jamesclear.com/book-summaries/the-subtle-art-of-not-giving-a-fck" frameborder="0"></iframe>
-            <iframe class="b" src="https://wizbuskout.com/think-like-a-monk-summary/#:~:text=Think%20Like%20A%20Monk%20Summary%20%28PDF%29%201%20Becoming,And%20Reap%20The%20Rewards.%20...%20More%20items...%20" frameborder="0"></iframe>
-            <iframe class="b" src="https://www.sloww.co/ikigai-book/" frameborder="0"></iframe>
+           <div class="playlist">
+            <iframe class="b" src="https://www.samuelthomasdavies.com/book-summaries/self-help/atomic-habits/" frameborder="0" width="100%" height="380px"></iframe>
+            </div>
+            <div class="playlist">
+            <iframe class="b" src="https://jamesclear.com/book-summaries/the-subtle-art-of-not-giving-a-fck" frameborder="0" width="100%" height="380px"></iframe>
+            </div>
+            <div class="playlist">
+            <iframe class="b" src="https://wizbuskout.com/think-like-a-monk-summary/#:~:text=Think%20Like%20A%20Monk%20Summary%20%28PDF%29%201%20Becoming,And%20Reap%20The%20Rewards.%20...%20More%20items...%20" frameborder="0" width="100%" height="380px"></iframe>
+            </div>
+            <div class="playlist">
+            <iframe class="b" src="https://www.sloww.co/ikigai-book/" frameborder="0" width="100%" height="380px"></iframe>
+            </div>
         </div>
         <h2 class="videos1">In Videos</h2>
         <div class="videos">
-            <iframe class="v" width="25%" height="315" src="https://www.youtube.com/embed/PZ7lDrwYdZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe class="v"  width="25%" height="315" src="https://www.youtube.com/embed/_4_-irspjKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe class="v"  width="25%" height="315" src="https://www.youtube.com/embed/Zxj3P0enJNQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe class="v"  width="25%" height="315" src="https://www.youtube.com/embed/8OAH3hqNsN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="v">
+            <iframe width="100%" height="280" src="https://www.youtube.com/embed/PZ7lDrwYdZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+              <div class="v">
+            <iframe width="100%" height="280" src="https://www.youtube.com/embed/Zxj3P0enJNQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+              <div class="v">
+            <iframe width="100%" height="280" src="https://www.youtube.com/embed/8OAH3hqNsN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+              <div class="v">
+             <iframe width="100%" height="280" src="https://www.youtube.com/embed/9g1BfGpoK3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
         </div>
     </div>
   </section>
-  
-
-
+  <br>
+  <hr>
   <section id="reading">
-    <h1>BOOKS</h1>
-    <div class="cards">
-      <article class="card">
-        <img src="https://m.media-amazon.com/images/I/41wuB-s8vRL._SL300_.jpg" alt="Atomic Habits" />
+    <h1 style="font-size:2.3rem">Books</h1>
+    <div class="container">
+      <div class="card">
         <div class="content">
-          <h3>Atomic Habits</h3>
-          <p>
-             Read the famous book by James Clear.
-          </p>
-          <a href="https://www.amazon.in/Atomic-Habits-James-Clear/dp/1847941834/ref=sr_1_1_sspa?adgrpid=1222657423508526&hvadid=76416220215708&hvbmt=bb&hvdev=c&hvlocphy=143836&hvnetw=o&hvqmt=b&hvtargid=kwd-76416451159832%3Aloc-90&keywords=book+-+atomic+habits&qid=1659729304&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzMTBXOTIwWUFaTkpWJmVuY3J5cHRlZElkPUEwNTQ5NzkwMjBTNVlXWkMwRjUyNCZlbmNyeXB0ZWRBZElkPUEwNTQ1NDkwQVNZQ09SVlc3REdNJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ=="><button>Read</button></a>
+          <div class="imgBx">
+            <img src="https://m.media-amazon.com/images/I/41wuB-s8vRL._SL300_.jpg" alt="Atomic Habits">
+          </div>
+          <div class="contentBx">
+            <h3>Atomic Habits<br><span>Read the famous book by James Clear.</span></h3>
+          </div>
         </div>
-      </article>
-
-      <article class="card">
-        <img src="https://m.media-amazon.com/images/I/51jRBz6Ug3L._SL500_.jpg" alt="The Psychology of Money" />
+        <ul class="sci">
+          <li>
+            <a href="https://www.amazon.in/Atomic-Habits-James-Clear/dp/1847941834/ref=sr_1_1_sspa?adgrpid=1222657423508526&hvadid=76416220215708&hvbmt=bb&hvdev=c&hvlocphy=143836&hvnetw=o&hvqmt=b&hvtargid=kwd-76416451159832%3Aloc-90&keywords=book+-+atomic+habits&qid=1659729304&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzMTBXOTIwWUFaTkpWJmVuY3J5cHRlZElkPUEwNTQ5NzkwMjBTNVlXWkMwRjUyNCZlbmNyeXB0ZWRBZElkPUEwNTQ1NDkwQVNZQ09SVlc3REdNJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==" target="_blank" class="btn btn-border">Read</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card">
         <div class="content">
-          <h3>The Psychology of Money</h3>
-          <p>Read the famous book by Morgan Housel.
-          </p>
-          <a href="https://www.amazon.in/Psychology-Money-Morgan-Housel/dp/9390166268/ref=sr_1_1_sspa?crid=3NGTBCRUC5JU6&keywords=psychology+of+money&qid=1659729390&sprefix=phsycology+of+mone+%2Caps%2C319&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExVjY1MUhLNE1QSFBKJmVuY3J5cHRlZElkPUEwMzc1NDAxM05ETEZKTjBFMksySiZlbmNyeXB0ZWRBZElkPUEwMTQ1MTU4M0I4Mks1VTNZOVVXSCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU="><button>Read</button></a>
+          <div class="imgBx">
+            <img src="https://m.media-amazon.com/images/I/51jRBz6Ug3L._SL500_.jpg" alt="The Psychology of Money">
+          </div>
+          <div class="contentBx">
+            <h3>The Psychology of Money<br><span>Read the famous book by Morgan Housel.
+          </span></h3>
+          </div>
         </div>
-      </article>
-
-      <article class="card">
-        <img src="https://m.media-amazon.com/images/I/51MT0MbpD7L._SL500_.jpg" alt="The Subtle Art of Not Giving a F*ck" />
+        <ul class="sci">
+          <li>
+            <a href="https://www.amazon.in/Psychology-Money-Morgan-Housel/dp/9390166268/ref=sr_1_1_sspa?crid=3NGTBCRUC5JU6&keywords=psychology+of+money&qid=1659729390&sprefix=phsycology+of+mone+%2Caps%2C319&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExVjY1MUhLNE1QSFBKJmVuY3J5cHRlZElkPUEwMzc1NDAxM05ETEZKTjBFMksySiZlbmNyeXB0ZWRBZElkPUEwMTQ1MTU4M0I4Mks1VTNZOVVXSCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=" target="_blank" class="btn btn-border">Read</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card">
         <div class="content">
-          <h3>The Subtle Art of Not Giving a F*ck</h3>
-          <p>
-            Read the famous book by Mark Manson.
-          </p>
-          <a href="https://www.amazon.in/Subtle-Art-Not-Giving/dp/0062641549/ref=sr_1_1?keywords=subtle+art+of+not+giving+a+fck&qid=1659729454&sprefix=subtle%2Caps%2C230&sr=8-1"><button>Read</button></a>
+          <div class="imgBx">
+           <img src="https://m.media-amazon.com/images/I/51MT0MbpD7L._SL500_.jpg" alt="The Subtle Art of Not Giving a F*ck">
+          </div>
+          <div class="contentBx">
+            <h3>The Subtle Art of Not Giving a F*ck<br><span>Read the famous book by Mark Manson.</span></h3>
+          </div>
         </div>
-      </article>
-      
-      <article class="card">
-        <img src="https://m.media-amazon.com/images/I/511HccWipML._SL500_.jpg" alt="Ikigai" />
+        <ul class="sci">
+          <li>
+            <a href="https://www.amazon.in/Subtle-Art-Not-Giving/dp/0062641549/ref=sr_1_1?keywords=subtle+art+of+not+giving+a+fck&qid=1659729454&sprefix=subtle%2Caps%2C230&sr=8-1" target="_blank" class="btn btn-border">Read</a>
+          </li>
+        </ul>
+      </div>
+       <div class="card">
         <div class="content">
-          <h3>Ikigai</h3>
-          <p>
-           Read the famous book by Héctor García and Francesc Miralles.
-          </p>
-          <a href="https://www.amazon.in/Ikigai-H%C3%A9ctor-Garc%C3%ADa/dp/178633089X/ref=sr_1_1_sspa?keywords=ikigai&qid=1659729512&sprefix=ikig%2Caps%2C474&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTUQxWFNQUlRMRDgyJmVuY3J5cHRlZElkPUEwOTk0NTg2VU9TODRZWUFaMTJQJmVuY3J5cHRlZEFkSWQ9QTA5NDE5MDAzVTQ4UloyQkdRWkpQJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ=="><button>Read</button></a>
+          <div class="imgBx">
+            <img src="https://m.media-amazon.com/images/I/511HccWipML._SL500_.jpg" alt="Ikigai">
+          </div>
+          <div class="contentBx">
+            <h3>Ikigai<br><span>Read the famous book by Héctor García and Francesc Miralles.
+          </span></h3>
+          </div>
         </div>
-      </article>
-
-      <article class="card">
-        <img src="https://m.media-amazon.com/images/I/51n4UO2a+VS._SL500_.jpg" alt="Think Like A Monk" />
+        <ul class="sci">
+          <li>
+            <a href="https://www.amazon.in/Ikigai-H%C3%A9ctor-Garc%C3%ADa/dp/178633089X/ref=sr_1_1_sspa?keywords=ikigai&qid=1659729512&sprefix=ikig%2Caps%2C474&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTUQxWFNQUlRMRDgyJmVuY3J5cHRlZElkPUEwOTk0NTg2VU9TODRZWUFaMTJQJmVuY3J5cHRlZEFkSWQ9QTA5NDE5MDAzVTQ4UloyQkdRWkpQJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==" target="_blank" class="btn btn-border">Read</a>
+          </li>
+        </ul>
+      </div>
+       <div class="card">
         <div class="content">
-          <h3>Think Like A Monk</h3>
-          <p>
-            Read the famous book by Jay Shetty.
-          </p>
-          <a href="https://www.amazon.in/Think-Like-Monk-Jay-Shetty/dp/0008386595/ref=sr_1_3?keywords=think+like+a+monk&qid=1659729627&sprefix=thi%2Caps%2C402&sr=8-3"><button>Read</button></a>
+          <div class="imgBx">
+            <img src="https://m.media-amazon.com/images/I/51n4UO2a+VS._SL500_.jpg" alt="Think Like A Monk">
+          </div>
+          <div class="contentBx">
+            <h3>Think Like A Monk<br><span>Read the famous book by Jay Shetty.</span></h3>
+          </div>
         </div>
-      </article>
-
-      <article class="card">
-        <img src="https://m.media-amazon.com/images/I/514sscPA15L._SL500_.jpg" alt="Life's Amazing Secrets" />
+        <ul class="sci">
+          <li>
+            <a href="https://www.amazon.in/Think-Like-Monk-Jay-Shetty/dp/0008386595/ref=sr_1_3?keywords=think+like+a+monk&qid=1659729627&sprefix=thi%2Caps%2C402&sr=8-3" target="_blank" class="btn btn-border">Read</a>
+          </li>
+        </ul>
+      </div>
+       <div class="card">
         <div class="content">
-          <h3>Life's Amazing Secrets</h3>
-          <p>
-            Read the famous book by Gaur Gopal Das.
-          </p>
-          <a href="https://www.amazon.in/Lifes-Amazing-Secrets-Balance-Purpose/dp/0143442295/ref=sr_1_3?keywords=lifes+amazing+secret+by+gaur+gopal+das&qid=1659729687&sprefix=lifes+a%2Caps%2C276&sr=8-3"><button>Read</button></a>
+          <div class="imgBx">
+            <img src="https://m.media-amazon.com/images/I/51hAGh15bTL._SL500_.jpg" alt="How to Talk to Anyone">
+          </div>
+          <div class="contentBx">
+            <h3>How To Talk To Anyone<br><span>Read the famous book by Leil Lowndes.</span></h3>
+          </div>
         </div>
-      </article>
-
-      <article class="card">
-        <img src="https://m.media-amazon.com/images/I/51AHZGhzZEL._SL500_.jpg" alt="Rich Dad Poor Dad" />
+        <ul class="sci">
+          <li>
+            <a href="https://www.amazon.in/dp/0007272618/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=af9ef1c4fcfb9c0b2c0a394a726ce918&content-id=amzn1.sym.c679a10e-5f33-4f2e-b014-f92eed44a58f%3Aamzn1.sym.c679a10e-5f33-4f2e-b014-f92eed44a58f&hsa_cr_id=2136511430502&pd_rd_plhdr=t&pd_rd_r=1525085f-99bc-44ac-b9fb-f5e87302bd73&pd_rd_w=DYVmj&pd_rd_wg=FgQwc&qid=1659729996&ref_=sbx_be_s_sparkle_mcd_asin_0_img&sr=1-1-fd947bf3-57d2-4cc9-939d-2805f92cef28" target="_blank" class="btn btn-border">Read</a>
+          </li>
+        </ul>
+      </div>
+       <div class="card">
         <div class="content">
-          <h3>Rich Dad Poor Dad</h3>
-          <p>
-            Read the famous book by Robert T. Kiyosaki.
-          </p>
-          <a href="https://www.amazon.in/Rich-Dad-Poor-Middle-Updates/dp/1612680194/ref=sr_1_3?keywords=rich+dad+poor+dad+book&qid=1659729734&sprefix=RICH+DAD+%2Caps%2C692&sr=8-3"><button>Read</button></a>
+          <div class="imgBx">
+           <img src="https://m.media-amazon.com/images/I/51AHZGhzZEL._SL500_.jpg" alt="Rich Dad Poor Dad">
+          </div>
+          <div class="contentBx">
+            <h3>Rich Dad Poor Dad<br><span>Read the famous book by Robert T. Kiyosaki.</span></h3>
+          </div>
         </div>
-      </article>
-
-      <article class="card">
-        <img src="https://m.media-amazon.com/images/I/51nY2HMNVHL._SL500_.jpg" alt="Karma" />
+        <ul class="sci">
+          <li>
+            <a href="https://www.amazon.in/Rich-Dad-Poor-Middle-Updates/dp/1612680194/ref=sr_1_3?keywords=rich+dad+poor+dad+book&qid=1659729734&sprefix=RICH+DAD+%2Caps%2C692&sr=8-3" target="_blank" class="btn btn-border">Read</a>
+          </li>
+        </ul>
+      </div>
+       <div class="card">
         <div class="content">
-          <h3>Karma: A Yogi’s Guide to Crafting Your Own Destiny</h3>
-          <p>
-           Read the famous book by Sadhguru and Leslie Howard.
-          </p>
-          <a href="https://www.amazon.in/Karma-Yogis-Guide-Crafting-Destiny-ebook/dp/B091D6ZG17/ref=sr_1_2?keywords=karma+a+yogi%27s+guide+to+crafting+your+destiny&qid=1659729801&sprefix=KARMA+A%2Caps%2C237&sr=8-2"><button>Read</button></a>
+          <div class="imgBx">
+           <img src="https://m.media-amazon.com/images/I/41jq-ouUBkL._SL500_.jpg" alt="Rework">
+          </div>
+          <div class="contentBx">
+            <h3>Rework<br><span>Read the famous book by David Heinemeier Hansson.</span></h3>
+          </div>
         </div>
-      </article>
-
-      <article class="card">
-        <img src="https://images-eu.ssl-images-amazon.com/images/I/41VC-6wmHsL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg" style="height: 300PX;" alt="How to Talk to Anyone" />
-        <div class="content">
-          <h3>How to Talk to Anyone</h3>
-          <p>
-           Read the famous book by Leil Lowndes.
-          </p>
-          <a href="https://www.amazon.in/dp/0007272618/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=af9ef1c4fcfb9c0b2c0a394a726ce918&content-id=amzn1.sym.c679a10e-5f33-4f2e-b014-f92eed44a58f%3Aamzn1.sym.c679a10e-5f33-4f2e-b014-f92eed44a58f&hsa_cr_id=2136511430502&pd_rd_plhdr=t&pd_rd_r=1525085f-99bc-44ac-b9fb-f5e87302bd73&pd_rd_w=DYVmj&pd_rd_wg=FgQwc&qid=1659729996&ref_=sbx_be_s_sparkle_mcd_asin_0_img&sr=1-1-fd947bf3-57d2-4cc9-939d-2805f92cef28"><button>Read</button></a>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="https://images-na.ssl-images-amazon.com/images/I/51mHDriUacL._SX548_BO1,204,203,200_.jpg" alt="Rework" />
-        <div class="content">
-          <h3>Rework</h3>
-          <p>
-            Read the famous book by Walter Isaacson.
-          </p>
-          
-            <a href="https://www.amazon.in/Steve-Jobs-Walter-Isaacson/dp/034914043X/ref=sr_1_3?keywords=steve+jobs&qid=1659730147&s=books&sprefix=Steve+%2Cstripbooks%2C306&sr=1-3"><button>Read</button></a>
-        </div>
-      </article>
+        <ul class="sci">
+          <li>
+            <a href="https://www.amazon.in/ReWork-Change-Way-Work-Forever/dp/0091929784/ref=sr_1_1?crid=25WNEF0767DVS&keywords=rework&qid=1660213089&sprefix=re%2Caps%2C928&sr=8-1" target="_blank" class="btn btn-border">Read</a>
+          </li>
+        </ul>
+      </div>
     </div>
-
-      
-    </div>
-
   </section>
+    </div>
+    <script>
+      const ham = document.getElementById("ham");
+      const menu = document.getElementById("menu");
+      const close = document.querySelectorAll('.close');
+      const closeMenu = () => {
+        if (menu.classList.contains("open")) {
+          menu.classList.remove("open");
+          
+          console.log("open");
+        }
+        ham.innerHTML = '<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>'
+      }
 
-
-
-  
+      const toggleMenu = () => {
+        if (menu.classList.contains("open")) {
+          menu.classList.remove("open");
+          ham.innerHTML = '<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>'
+          console.log("open");
+        } else {
+          menu.classList.add("open");
+          ham.innerHTML = '<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"></path></svg>'
+          console.log("close");
+        }
+      };
+      ham.addEventListener("click", toggleMenu);
+      close.forEach(ele => {
+        ele.addEventListener("click", closeMenu);
+      }
+      )
+    </script>
 </body>
 </html>
