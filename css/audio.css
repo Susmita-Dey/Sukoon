@@ -376,6 +376,18 @@ hr {
   -moz-transition: ease-out 0.5s;
 }
 
+
+#psy{
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+
+#rew{
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+
+
 .btn.btn-border::after,
 .btn.btn-border::before {
   position: absolute;
