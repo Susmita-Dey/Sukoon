@@ -481,20 +481,16 @@ h5 {
 }
 
 .responsive {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    gap: 1em;
-    border: 1px solid rgba(245, 245, 245, 0.146);
-    border-radius: 1.5em;
-    padding: 1.5em;
-    transition: .3s;
-}
-.responsive:hover {
-    background-color: #072834;
-}
+  color: whitesmoke;
+  width: 30%;
+  border: 1px solid rgba(245, 245, 245, 0.146);
+  border-radius: 1.5rem;
+  text-align: center;
+  padding: 2rem;
+  display: grid;
+  grid-template-rows: auto;
+  margin-top: 28px;
+
 
 .container .round-image img {
     width: 192px;
@@ -516,15 +512,15 @@ h5 {
 
 
 .responsive a {
-    display: inline-block;
-    width: 100%;
-    text-decoration: none;
-    color: black;
-    padding: .5em;
-    background-color: aliceblue;
-    border-radius: .5em;
-    border: 1px solid black;
-    transition: .3s;
+  text-decoration: none;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: 0.3s ease-in-out;
+  height: 35px;
+
 }
 .responsive a:hover {
     background-color: #02142d;
