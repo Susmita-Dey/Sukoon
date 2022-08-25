@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sukoon</title>
+  <link rel="manifest" href="./manifest.json" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="apple-touch-icon" href="/images/favicon-enhanced.png" />
   <link rel ="icon" href="/images/favicon-enhanced.png">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" text="text/CSS" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -42,7 +45,10 @@
      transition: 0.3s ease-in-out;
    }
  </style>
-<body>
+<body  onload="myFunction()">
+  <div id="loading">
+    
+  </div>
 
   <!-- Back to top button -->
   <div id="back-top-div" class="back-top-wrap">
@@ -76,14 +82,13 @@
     </div>
   </header> -->
   <header>
-    <nav class="nav">
-      <div class="">
-        <!-- <a href="index.html"><img src="logo.png" alt="Logo" class="logo" /></a> -->
-        <a class="navbar-brand" href="#!"> <img src="logo.png" alt="Logo" class="logo" /></a>
+    <nav class="nav" id="nav">
+      <div>
+        <a class="navbar-brand" href="#!"> <img src="logo.png" alt="Logo" class="logo" id="logo" /></a>
       </div>
 
       <div class="nav-links" id="navLinks">
-        <ul class="links">
+        <ul class="links" id="navmenu">
           <li><a href="#">HOME</a></li>
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#services">SERVICES </a></li>
@@ -435,6 +440,38 @@
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/index.js"></script>
+  <script>
+    if ('serviceWorker' in navigator){
+      window.addEventListener('load', ()=>{
+        navigator.serviceWorker.register('./serviceworker.js')
+        .then((reg)=>console.log('Success', reg.scope))
+        .catch ((err)=>console.log('Error', err))
+      })
+    }
+  </script>
+  <script>
+
+    let preloader = document.getElementById("loading")
+    function myFunction(){
+      preloader.style.display='none';
+    }
+
+
+    let navbar = document.getElementById("nav")
+    let navmenu = document.getElementById("navmenu")
+
+    window.onscroll = function(){
+      if (window.pageYOffset >= navmenu.offsetTop) {
+        navbar.style.backgroundColor="#323E51";        
+      }
+      else{
+        navbar.style.paddingTop="1%";        
+        navbar.style.paddingBottom="1%";           
+        navbar.style.backgroundColor="transparent";        
+      
+      }
+    }
+  </script>
 </body>
 
 </html>
