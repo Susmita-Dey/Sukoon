@@ -14,8 +14,99 @@
     />
   </head>
   <body>
-    <section class="videos">
-      <h1>VIDEOS</h1>
+    <nav>
+      <a href="../index.html"><img class="audio-logo" src="../logo.png" alt="Logo"/></a>
+
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hidemenu()"></i>
+        <ul>
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#memes">MEMES </a></li>
+          <li><a href="#standups">STANDUPS </a></li>
+        </ul>
+      </div>
+
+      <div class="hamburger" id="ham">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  
+    <div class="menu" id="menu">
+      <ul class="menu-link">
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#memes">MEMES </a></li>
+        <li><a href="#standups">STANDUPS </a></li>
+      </ul>
+    </div>
+    
+    <header>
+      <div class="center"> 
+        <h1 id="title">Welcome to Our <br><span class="heading-span">Laughing Therapy</span></h1>
+        <h3 id="subtitle">Learn more about laughter therapy. Read some memes and <br>enjoy watching standup to gain some happiness and relief <br> from your problems.</h3>
+      </div>
+    </header>
+    <section id="about">
+      <h1 class="section-headings">ABOUT</h1>
+      <div class="image">
+      <img src="/images/laugh.jpg" alt="">
+    </div>
+    <div class="about-content">
+     <div class="one"> Laughter Yoga includes four things:</div>
+      <ol>
+      <li>Clapping in rhythm to ‘ho-ho-ha-ha-ha’.</li>
+
+      <li>Breathing and stretching.</li>
+
+      <li>Child-like play.</li>
+
+      <li>Laughter exercises.</li>
+</ol>
+<button class="btn"><a href="https://www.healthline.com/nutrition/laughing-yoga" target="_blank">Know More</a></button>
+    </div>
+    </section>
+    <hr />
+<section id="memes">
+  <h1 class="section-headings">MEMES</h1>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="/images/meme1.jpg" style="width:50%; margin-left: 25%;">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="/images/meme2.jpg" style="width:50%; margin-left: 25%;">
+   
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="/images/meme3.jpg" style="width:50%; margin-left: 25%;">
+   
+    </div>
+    <div class="mySlides fade">
+      <img src="/images/meme4.jpg" style="width:50%; margin-left: 25%;">
+   
+    </div>
+    <div class="mySlides fade">
+      <img src="/images/meme5.jpg" style="width:50%; margin-left: 25%;">
+   
+    </div>
+    <div class="mySlides fade">
+      <img src="/images/meme6.jpg" style="width:50% ; margin-left: 25%;">
+   
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+</section>
+<hr />
+<section id="standups">
+  <h1 class="section-headings">STANDUPS</h1>
       <div class="collection">
         <div class="video">
           <iframe
@@ -83,7 +174,7 @@
             allowfullscreen
           ></iframe>
         </div>
-        <div class="video">
+        <div class="video" >
           <iframe
             width="560"
             height="315"
@@ -128,6 +219,7 @@
           ></iframe>
         </div>
       </div>
+
     </section>
     <!-- footer start -->
     <footer>
@@ -236,5 +328,50 @@
         </div>
       </div>
     </footer>
+
+    </section> 
+    <script>
+
+
+      const ham = document.getElementById("ham");
+    const menu = document.getElementById("menu");
+    
+    const toggleMenu = () => {
+    if (menu.classList.contains("open")) {
+    menu.classList.remove("open");
+    console.log("open");
+    } else {
+    menu.classList.add("open");
+    console.log("close");
+    }
+    };
+    
+    ham.addEventListener("click", toggleMenu);
+    let slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+
   </body>
 </html>
