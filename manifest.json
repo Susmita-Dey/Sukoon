@@ -1,0 +1,23 @@
+{
+    "short_name": "Sukoon",
+    "name": "Live a stress-free life!",
+    "icons": [
+      {
+        "src": "images/favicon-enhanced.png",
+        "sizes": "64x64 32x32 24x24 16x16",
+        "type": "image/png",
+        "purpose": "maskable any"
+      },
+      {
+        "src": "logo.png",
+        "type": "image/png",
+        "sizes": "192x192 512x512",
+        "purpose": "maskable any"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+  }
+  

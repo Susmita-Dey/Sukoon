@@ -4,23 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel ="icon" href="/images/favicon-enhanced.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/favicon-enhanced.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      text="text/CSS"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Sukoon</title>
     <link rel="stylesheet" href="../css/audio.css" />
   </head>
+
   <style>
-    .nature-sound{
+    .nature-sound {
       text-align: center;
       padding: 30px;
     }
   </style>
+
   <body>
     <!-- Navbar Section -->
     <nav>
-      <a href="../index.html"><img class="audio-logo" src="../logo.png" alt="Logo"/></a>
+      <a href="../index.html"
+        ><img class="audio-logo" src="../logo.png" alt="Logo"
+      /></a>
 
       <div class="nav-links" id="navLinks">
         <i class="fa fa-times" onclick="hidemenu()"></i>
@@ -31,30 +43,44 @@
           <li><a href="#audiobooks">AUDIOBOOKS </a></li>
         </ul>
       </div>
-
       <div class="hamburger" id="ham">
-        <span></span>
-        <span></span>
-        <span></span>
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>
       </div>
     </nav>
+
+      <!-- Mobile Layout Navbar -->
+    <div class="menu" id="menu">
+      <ul class="menu-link">
+        <li><a href="../index.html">HOME</a></li>
+        <li><a class="close" href="#music">MUSIC</a></li>
+        <li><a class="close" href="#podcasts">PODCASTS </a></li>
+        <li><a class="close" href="#audiobooks">AUDIOBOOKS </a></li>
+      </ul>
+    </div>
+      <!-- Mobile Layout Navbar Ends Here -->
+
     <!-- Navbar Section Ends Here -->
-  
+
     <div class="menu" id="menu">
       <ul class="menu-link">
         <li><a href="/index.html">HOME</a></li>
-            <li><a href="#music">MUSIC</a></li>
-            <li><a href="#podcasts">PODCASTS</a></li>
-            <li><a href="#audiobooks">AUDIOBOOKS</a></li>
+        <li><a href="#music">MUSIC</a></li>
+        <li><a href="#podcasts">PODCASTS</a></li>
+        <li><a href="#audiobooks">AUDIOBOOKS</a></li>
       </ul>
     </div>
-    
 
     <!-- Header Section-->
     <header>
-      <div class="center"> 
-        <h1 id="title">Welcome to Our <br><span class="heading-span">Audio Therapy</span></h1>
-        <h3 id="subtitle">Listen to Music, Motivational Podcasts and Audiobooks <br> to gain some happiness, knowledge and also lighten your stress side by side.</h3>
+      <div class="center">
+        <h1 id="title">
+          Welcome to Our <br /><span class="heading-span">Audio Therapy</span>
+        </h1>
+        <h3 id="subtitle">
+          Listen to Music, Motivational Podcasts and Audiobooks <br />
+          to gain some happiness, knowledge and also lighten your stress side by
+          side.
+        </h3>
       </div>
     </header>
     <!-- Header Section Ends here -->
@@ -110,14 +136,13 @@
     <!-- Music Section Ends Here-->
 
     <hr />
-    
+
     <!-- Podcasts Section-->
     <section id="podcasts">
       <h1 class="section-headings">Podcasts</h1>
       <div class="collection">
         <div class="show">
           <iframe
-            
             src="https://open.spotify.com/embed/episode/4feTGTT8jp9e18w90mBtXc?utm_source=generator"
             width="100%"
             height="152"
@@ -128,7 +153,6 @@
         </div>
         <div class="show">
           <iframe
-            
             src="https://open.spotify.com/embed/show/5ZxgpIlnsT8kILxQItEQ5f?utm_source=generator"
             width="100%"
             height="152"
@@ -139,7 +163,6 @@
         </div>
         <div class="show">
           <iframe
-            
             src="https://open.spotify.com/embed/episode/4ahVo34YZsDDtCgXX5KS5P?utm_source=generator"
             width="100%"
             height="152"
@@ -150,7 +173,6 @@
         </div>
         <div class="show">
           <iframe
-            
             src="https://open.spotify.com/embed/episode/3ZvJ1jpxtjFIZ8sTghil7u?utm_source=generator"
             width="100%"
             height="152"
@@ -161,7 +183,6 @@
         </div>
         <div class="show">
           <iframe
-            
             src="https://open.spotify.com/embed/episode/0vEWGG6S1wL6IbxJsxb3sF?utm_source=generator"
             width="100%"
             height="152"
@@ -172,7 +193,6 @@
         </div>
         <div class="show">
           <iframe
-            
             src="https://open.spotify.com/embed/episode/0PLXymZ2KH89Ty2KGFpREP?utm_source=generator"
             width="100%"
             height="152"
@@ -183,7 +203,6 @@
         </div>
         <div class="show">
           <iframe
-            
             src="https://open.spotify.com/embed/episode/3qZRmQtsUgHyOVNmZzxxPw?utm_source=generator"
             width="100%"
             height="152"
@@ -194,7 +213,6 @@
         </div>
         <div class="show">
           <iframe
-            
             src="https://open.spotify.com/embed/episode/3rG0WSWKcQ4iEM4JkLQRGg?utm_source=generator"
             width="100%"
             height="152"
@@ -205,7 +223,6 @@
         </div>
         <div class="show">
           <iframe
-            
             src="https://open.spotify.com/embed/episode/2UmljSQsLNonJRZ88b2zfx?utm_source=generator"
             width="100%"
             height="152"
@@ -216,7 +233,6 @@
         </div>
         <div class="show">
           <iframe
-            
             src="https://open.spotify.com/embed/episode/24JEpPldCxgeqGprKO7kMI?utm_source=generator"
             width="100%"
             height="152"
@@ -227,7 +243,6 @@
         </div>
         <div class="show">
           <iframe
-            
             src="https://open.spotify.com/embed/episode/5nWxL1XA1Jr3C3aJLem5ZK?utm_source=generator"
             width="100%"
             height="152"
@@ -238,7 +253,6 @@
         </div>
         <div class="show">
           <iframe
-            
             src="https://open.spotify.com/embed/episode/06OxqMY33JiZ23Pxw8NmDs?utm_source=generator"
             width="100%"
             height="152"
@@ -249,7 +263,6 @@
         </div>
         <div class="show">
           <iframe
-            
             src="https://open.spotify.com/embed/episode/1496yN5qwJAwbLB30XzrvR?utm_source=generator"
             width="100%"
             height="152"
@@ -260,7 +273,6 @@
         </div>
         <div class="show">
           <iframe
-            
             src="https://open.spotify.com/embed/episode/54UlEUdnxJ96kGkrcskhGf?utm_source=generator"
             width="100%"
             height="152"
@@ -271,7 +283,6 @@
         </div>
         <div class="show">
           <iframe
-            
             src="https://open.spotify.com/embed/episode/6lbYN222AInVmmLj674vKB?utm_source=generator"
             width="100%"
             height="152"
@@ -282,7 +293,6 @@
         </div>
         <div class="show">
           <iframe
-            
             src="https://open.spotify.com/embed/episode/19XfB2nyuc1Uh3BservSyf?utm_source=generator"
             width="100%"
             height="152"
@@ -302,143 +312,348 @@
       <h1 class="section-headings">Audiobooks</h1>
       <div class="cards">
         <article class="card">
-          <img src="https://m.media-amazon.com/images/I/41wuB-s8vRL._SL300_.jpg" alt="Atomic Habits" />
+          <img
+            src="https://m.media-amazon.com/images/I/41wuB-s8vRL._SL300_.jpg"
+            alt="Atomic Habits"
+          />
           <div class="content">
             <h3>Atomic Habits</h3>
             <p>
               Let's listen to the famous audiobook by James Clear.
-              <br>
+              <br />
             </p>
-            <a href="https://www.audible.in/pd/Atomic-Habits-Audiobook/B07J1PK5Q7?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare" class="btn btn-border">Play Now</a>
+            <a
+              href="https://www.audible.in/pd/Atomic-Habits-Audiobook/B07J1PK5Q7?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare"
+              class="btn btn-border"
+              >Play Now</a
+            >
           </div>
         </article>
 
         <article class="card">
-          <img src="https://m.media-amazon.com/images/I/51jRBz6Ug3L._SL500_.jpg" alt="The Psychology of Money" />
+          <img
+            src="https://m.media-amazon.com/images/I/51jRBz6Ug3L._SL500_.jpg"
+            alt="The Psychology of Money"
+          />
           <div class="content">
             <h3>The Psychology of Money</h3>
-            <p>
+            <p id="psy">
               Let's listen to the famous audiobook by Morgan Housel.
-              <br>
+
+              <br />
+
             </p>
-            <a href="https://www.audible.in/pd/The-Psychology-of-Money-Audiobook/B08D9WJCBT?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare" class="btn btn-border">Play Now</a>
+            <a
+              href="https://www.audible.in/pd/The-Psychology-of-Money-Audiobook/B08D9WJCBT?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare"
+              class="btn btn-border"
+              >Play Now</a
+            >
           </div>
         </article>
 
         <article class="card">
-          <img src="https://m.media-amazon.com/images/I/51MT0MbpD7L._SL500_.jpg" alt="The Subtle Art of Not Giving a F*ck" />
+          <img
+            src="https://m.media-amazon.com/images/I/51MT0MbpD7L._SL500_.jpg"
+            alt="The Subtle Art of Not Giving a F*ck"
+          />
           <div class="content">
             <h3>The Subtle Art of Not...</h3>
             <p>
               Let's listen to the famous audiobook by Mark Manson.
-              <br>
+              <br />
             </p>
-            <a href="https://www.audible.in/pd/The-Subtle-Art-of-Not-Giving-a-F-ck-Audiobook/B079BC54JT?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare" class="btn btn-border">Play Now</a>
-          </div>
-        </article>
-        
-        <article class="card">
-          <img src="https://m.media-amazon.com/images/I/511HccWipML._SL500_.jpg" alt="Ikigai" />
-          <div class="content">
-            <h3>Ikigai</h3>
-            <p>
-              Let's listen to the famous audiobook by Héctor García and Francesc Miralles.
-            </p>
-            <a href="https://www.audible.in/pd/Ikigai-Audiobook/B0759Y4LYM?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare" class="btn btn-border">Play Now</a>
+            <a
+              href="https://www.audible.in/pd/The-Subtle-Art-of-Not-Giving-a-F-ck-Audiobook/B079BC54JT?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare"
+              class="btn btn-border"
+              >Play Now</a
+            >
           </div>
         </article>
 
         <article class="card">
-          <img src="https://m.media-amazon.com/images/I/51n4UO2a+VS._SL500_.jpg" alt="Think Like A Monk" />
+          <img
+            src="https://m.media-amazon.com/images/I/511HccWipML._SL500_.jpg"
+            alt="Ikigai"
+          />
+          <div class="content">
+            <h3>Ikigai</h3>
+            <p>
+              Let's listen to the famous audiobook by Héctor García and Francesc
+              Miralles.
+            </p>
+            <a
+              href="https://www.audible.in/pd/Ikigai-Audiobook/B0759Y4LYM?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare"
+              class="btn btn-border"
+              >Play Now</a
+            >
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="https://m.media-amazon.com/images/I/51n4UO2a+VS._SL500_.jpg"
+            alt="Think Like A Monk"
+          />
           <div class="content">
             <h3>Think Like A Monk</h3>
             <p>
               Let's listen to the famous audiobook by Jay Shetty.
-              <br>
+              <br />
             </p>
-            <a href="https://www.audible.in/pd/Think-Like-A-Monk-Audiobook/B07YSQ8GT5?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare" class="btn btn-border">Play Now</a>
+            <a
+              href="https://www.audible.in/pd/Think-Like-A-Monk-Audiobook/B07YSQ8GT5?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare"
+              class="btn btn-border"
+              >Play Now</a
+            >
           </div>
         </article>
 
         <article class="card">
-          <img src="https://m.media-amazon.com/images/I/514sscPA15L._SL500_.jpg" alt="Life's Amazing Secrets" />
+          <img
+            src="https://m.media-amazon.com/images/I/514sscPA15L._SL500_.jpg"
+            alt="Life's Amazing Secrets"
+          />
           <div class="content">
             <h3>Life's Amazing Secrets</h3>
             <p>
               Let's listen to the famous audiobook by Gaur Gopal Das.
-              <br>
+              <br />
             </p>
-            <a href="https://www.audible.in/pd/Lifes-Amazing-Secrets-Audiobook/B081S9NKRP?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare" class="btn btn-border">Play Now</a>
+            <a
+              href="https://www.audible.in/pd/Lifes-Amazing-Secrets-Audiobook/B081S9NKRP?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare"
+              class="btn btn-border"
+              >Play Now</a
+            >
           </div>
         </article>
 
         <article class="card">
-          <img src="https://m.media-amazon.com/images/I/51AHZGhzZEL._SL500_.jpg" alt="Rich Dad Poor Dad" />
+          <img
+            src="https://m.media-amazon.com/images/I/51AHZGhzZEL._SL500_.jpg"
+            alt="Rich Dad Poor Dad"
+          />
           <div class="content">
             <h3>Rich Dad Poor Dad</h3>
             <p>
               Let's listen to the famous audiobook by Robert T. Kiyosaki.
-              <br>
+              <br />
             </p>
-            <a href="https://www.audible.in/pd/Rich-Dad-Poor-Dad-Audiobook/B079P9PGJB?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare" class="btn btn-border">Play Now</a>
+            <a
+              href="https://www.audible.in/pd/Rich-Dad-Poor-Dad-Audiobook/B079P9PGJB?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare"
+              class="btn btn-border"
+              >Play Now</a
+            >
           </div>
         </article>
 
         <article class="card">
-          <img src="https://m.media-amazon.com/images/I/51nY2HMNVHL._SL500_.jpg" alt="Karma" />
+          <img
+            src="https://m.media-amazon.com/images/I/51nY2HMNVHL._SL500_.jpg"
+            alt="Karma"
+          />
           <div class="content">
             <h3>Karma: A Yogi’s Guide...</h3>
             <p>
-              Let's listen to the famous audiobook by Sadhguru and Leslie Howard.
-              <br>
+
+              Let's listen to the famous audiobook by Sadhguru and Leslie
+              Howard.
+              <br />
+
             </p>
-            <a href="https://www.audible.in/pd/Karma-A-Yogis-Guide-to-Crafting-Your-Own-Destiny-Audiobook/9391149588?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare" class="btn btn-border">Play Now</a>
+            <a
+              href="https://www.audible.in/pd/Karma-A-Yogis-Guide-to-Crafting-Your-Own-Destiny-Audiobook/9391149588?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare"
+              class="btn btn-border"
+              >Play Now</a
+            >
           </div>
         </article>
 
         <article class="card">
-          <img src="https://m.media-amazon.com/images/I/51hAGh15bTL._SL500_.jpg" alt="How to Talk to Anyone" />
+          <img
+            src="https://m.media-amazon.com/images/I/51hAGh15bTL._SL500_.jpg"
+            alt="How to Talk to Anyone"
+          />
           <div class="content">
             <h3>How to Talk to Anyone</h3>
             <p>
               Let's listen to the famous audiobook by Leil Lowndes.
-              <br>
+              <br />
             </p>
-            <a href="https://www.audible.in/pd/How-to-Talk-to-Anyone-Audiobook/B079TLJV49?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare" class="btn btn-border">Play Now</a>
+            <a
+              href="https://www.audible.in/pd/How-to-Talk-to-Anyone-Audiobook/B079TLJV49?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare"
+              class="btn btn-border"
+              >Play Now</a
+            >
           </div>
         </article>
 
         <article class="card">
-          <img src="https://m.media-amazon.com/images/I/41jq-ouUBkL._SL500_.jpg" alt="Rework" />
+          <img
+            src="https://m.media-amazon.com/images/I/41jq-ouUBkL._SL500_.jpg"
+            alt="Rework"
+          />
           <div class="content">
             <h3>Rework</h3>
+
             <p>
-              Let's listen to the famous audiobook by Jason Fried and David Heinemeier Hansson.
+              Let's listen to the famous audiobook by Jason Fried and David
+              Heinemeier Hansson.
+
             </p>
-            
-              <a href="https://www.audible.in/pd/Rework-Audiobook/B079VF9TV6?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare" class="btn btn-border">Play Now</a>
+
+            <a
+              href="https://www.audible.in/pd/Rework-Audiobook/B079VF9TV6?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare"
+              class="btn btn-border"
+              >Play Now</a
+            >
           </div>
         </article>
       </div>
       <!-- AudioBooks Section Ends Here -->
     </section>
+
+    <!-- footer start -->
+    <footer>
+      <div class="footer-container">
+        <!--logo and info column-->
+        <div class="col">
+          <!--logo insert-->
+          <img src="../logo.png" alt="logo" class="footlogo" />
+          <div class="footercontent">
+            <h2 class="footerheading">Sukoon</h2>
+            <p class="footerpara">go stressfree</p>
+          </div>
+        </div>
+
+        <!--ADDRESS COLUMN-->
+
+        <div class="col">
+          <h3>
+            ADDRESS
+            <div class="underline"><span></span></div>
+          </h3>
+
+          <p>West Bengal,India</p>
+          <p class="email-id">sukoon665@gmail.com</p>
+        </div>
+
+        <!--HOME COLUMN-->
+        <div class="col">
+          <h3>HOME</h3>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li>
+              <a
+                href="https://github.com/Susmita-Dey/Sukoon/blob/main/CODE_OF_CONDUCT.md"
+                >Code Of Conduct</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/Susmita-Dey/Sukoon">Contribute</a>
+            </li>
+            <li>
+              <a href="https://www.buymeacoffee.com/susmitadey">Donate</a>
+            </li>
+          </ul>
+        </div>
+
+        <!--OUR SERVICES COLUMN-->
+        <div class="col">
+          <h3>
+            SERVICES
+            <div class="underline"><span></span></div>
+          </h3>
+          <ul>
+            <li>
+              <a href="https://sukoon-stress-free.netlify.app/html/audiotherapy"
+                >Audio Therapy</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://sukoon-stress-free.netlify.app/html/yogatherapy.html"
+                >Yoga Therapy</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://sukoon-stress-free.netlify.app/html/readingtherapy"
+                >Reading Therapy</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://sukoon-stress-free.netlify.app/html/talkingtherapy"
+                >Talking Therapy</a
+              >
+            </li>
+            <li>
+              <a href="https://www.practo.com/counselling-psychology"
+                >Consult a Doctor</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!--CONTACTS COLUMN-->
+
+        <div class="col">
+          <h3>
+            CONTACTS
+            <div class="underline"><span></span></div>
+          </h3>
+
+          <div class="social-menu">
+            <ul>
+              <a href="https://twitter.com/sukoon665">
+                <li><i class="fab fa-2x fa-twitter"></i></li>
+              </a>
+              <a href="https://github.com/Susmita-Dey/Sukoon">
+                <li><i class="fab fa-2x fa-github"></i></li>
+              </a>
+              <a href="https://www.linkedin.com/in/sukoon-web-820705238">
+                <li><i class="fab fa-2x fa-linkedin-in"></i></li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+
+    
+    <!-- AudioBooks Section Ends Here -->
+
     <script>
       const ham = document.getElementById("ham");
-const menu = document.getElementById("menu");
+      const menu = document.getElementById("menu");
+      const close = document.querySelectorAll('.close');
+      const closeMenu = () => {
+        if (menu.classList.contains("open")) {
+          menu.classList.remove("open");
+          
+          console.log("open");
+        }
+        ham.innerHTML = '<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>'
+      }
 
-const toggleMenu = () => {
-if (menu.classList.contains("open")) {
-  menu.classList.remove("open");
-  //   menu.style.display = "block";
-  console.log("open");
-} else {
-  menu.classList.add("open");
-  //   menu.style.display = "none";
-  console.log("close");
-}
-};
+      const toggleMenu = () => {
+        if (menu.classList.contains("open")) {
+          menu.classList.remove("open");
+          ham.innerHTML = '<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>'
+          console.log("open");
+        } else {
+          menu.classList.add("open");
+          ham.innerHTML = '<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"></path></svg>'
+          console.log("close");
+        }
+      };
+      ham.addEventListener("click", toggleMenu);
+      close.forEach(ele => {
+        ele.addEventListener("click", closeMenu);
+      }
+      )
 
-ham.addEventListener("click", toggleMenu);
-  </script>
+    </script>
   </body>
 </html>
