@@ -139,18 +139,32 @@ header {
   position: absolute;
   top: 35%;
   left: 5%;
+  width: 35%;
+  height: 10%;
 }
 
-.text h1 {
-  color: #fff;
-  line-height: 1.2;
-  font-weight: 800;
+.text h1{
+    color:lightgoldenrodyellow;
+    line-height: 1.2;
+    font-weight: 800;
+    font-family: "Vollkorn";
+    font-size: 2.5em;
+    text-align: center;
 }
 
-.text p {
-  color: rgb(34, 194, 206);
-  font-weight: bolder;
-  font-size: 1.2rem;
+.text div{
+    color:lightcyan ;
+    font-weight: bolder;
+    text-shadow: 2px 2px black;
+    letter-spacing: 1px;
+    font-family: "Lobster Two";
+    font-weight: bolder;
+    font-size: 24.5px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 20px;
+    backdrop-filter: blur(25px);
+    /*padding: 10px;*/
 }
 
 /*Benefits section*/
@@ -209,15 +223,16 @@ header {
 .more {
   padding: 1%;
   border-radius: 7px;
-  color: yellow;
+  color: #F94892;
   font-weight: bolder;
-  border: 2px solid yellow;
+  border: 2px solid #411530;
   width: 40%;
   align-items: center;
   justify-content: center;
   text-align: center;
   margin: auto;
   margin-top: 4%;
+  font-size: 18px;
 }
 a {
   color: inherit;
@@ -230,8 +245,8 @@ a {
 }
 
 .more:hover {
-  color: black;
-  background-color: yellow;
+  color: #F94892;
+  background-color: #FFF80A;
 }
 
 /*Videos section*/
@@ -239,7 +254,15 @@ a {
   padding: 5%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+}
+.inner{
+    margin: 20px;
+}
+.inner iframe{
+    border-radius: 1rem;
+    width: 24.375rem;
+    height: 315px;
 }
 
 @media screen and (max-width: 650px) {
@@ -279,12 +302,12 @@ a {
     width: 100%;
   }
 }
-
+@media (max-width: 402px){
+    .inner iframe{
+        width: 18.75rem;
+    }
+}
 @media (max-width: 600px) {
-  .videos iframe {
-    width: 600px;
-  }
-
   .aasan1 img {
     width: 100%;
   }
@@ -332,6 +355,21 @@ footer a:focus {
     padding: 1rem;
     flex-basis: 100%;
   }
+}
+@media (max-width: 553px){
+    .text{
+      position: absolute;
+      top: 35%;
+      left: 5%;
+      transform: translate(-2%,-20%);
+      z-index: 20;
+    }
+}
+@media (max-width:979px ){
+     .text{
+         width: auto;
+         height: auto;
+    }
 }
 
 .footer-container p {
