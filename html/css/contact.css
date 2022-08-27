@@ -24,6 +24,8 @@ body {
   align-items: center;
   height: 100vh;
   background: url(/images/contact.png);
+background-size: cover;
+  background-repeat: no-repeat;
   font-family: "Lato", sans-serif;
   
 }
@@ -70,11 +72,11 @@ a {
 }
 a .btn {
   margin-top: 18px;
-  border: 2px solid #f9004d;
+  border: 2px solid #137afc;
   color: #fff;
   cursor: pointer;
-  background-color: #f9004d;
-  box-shadow: inset 0 0 0 0 #f9004d;
+  background-color:  #137afc;
+  box-shadow: inset 0 0 0 0 #137afc;
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -101,7 +103,7 @@ a .btn {
 }
 
 a .btn:hover {
-  border: 2px solid #f9004d;
+  border: 2px solid #137afc;
   box-shadow: inset 130px 0 0 0 #fff;
-  color: #f9004d;
+  color: #137afc;
 }
