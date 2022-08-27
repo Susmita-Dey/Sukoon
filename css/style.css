@@ -391,7 +391,16 @@ nav .fa {
 /* ABOUT SECTION */
 #about {
   /* background: #1c1c1c; */
-  background-color: rgb(13, 50, 64);
+  background-image: linear-gradient(
+    45deg,
+    rgb(76, 202, 84) 15.666%,
+    #0dbf75 16.333%,
+    #950e89 33.333%,
+    #a9085b 50%,
+    #e12038 66.666%,
+    #dde810 90.333% /* #323292 10.666% */
+  );
+ 
 
   width: 100%;
   padding: 5px 0px;
@@ -400,16 +409,21 @@ nav .fa {
 }
 
 #about h2 {
-  color: white;
+  color: rgb(105, 11, 11);
   font-size: 40px;
   margin: 20px 20px;
-  font-weight: 700;
+  font-weight: 1200;
   text-align: center;
   font-family: "Montserrat";
+  background-color: lightgreen;
+  
+
+  text-shadow: #e3e323;
+
 }
 
 #about h3 {
-  color: white;
+  color: rgb(19, 2, 2);
   display: flex;
   font-size: 35px;
   justify-content: center;
@@ -425,56 +439,73 @@ nav .fa {
   padding: 3rem;
 }
 
-.card {
+.card{
   cursor: pointer;
-  background: rgb(1, 59, 112);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: rgb(58, 5, 85);
+  box-shadow: rgba(250, 251, 248, 0.24) 2px 3px 10px;
   text-align: center;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
   animation: slideIn 0.5s ease-in-out;
   transform: translateY(-2.2rem);
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 60px;
+  border: 4px solid rgb(232, 228, 16);
+  -webkit-transition: all 0.2s ease-in-out;
+ 
+ 
 }
 .card:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: rgba(16, 182, 224, 0.25) 0px 50px 100px -20px,
+    rgba(230, 46, 46, 0.3) 0px 30px 60px -30px;
+    animation:slideIn 0.5s ease-in-out;
 }
 
 .card img {
   height: 200px;
   width: 200px;
-  border-radius: 50%;
+  border-radius: 500%;
 }
 
 .card img:hover {
   /* border: 5px solid #f9004d; */
   outline: 0px solid transparent;
   padding: 3px 3px;
-  border: 2px solid red;
+  border: 4px solid rgb(232, 228, 16);
   -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-out;
+ 
 }
 
 h5 {
-  color: white;
+  color: rgb(24, 3, 3);
   font-size: 23px;
   margin-bottom: 15px;
+  display: inline-block;
+  background-image: linear-gradient(
+    90deg,
+   
+    #eae325 20%,
+   
+   
+    #e12038 60%,
+    #dde810 20% /* #323292 10.666% */
+  );
+ 
 }
 
 .pra p {
-  color: #fcfc;
-  font-size: 16px;
+  color: rgba(208, 172, 54, 0.8);
+  font-size: 20px;
   line-height: 27px;
   margin-bottom: 25px;
 }
 
 .pra button {
   padding: 0.6rem 1.2rem;
-  border: 2px solid #f9004d;
-  background-color: #fff;
+  border: 2px solid #ebe528;
+  background-color: rgb(213, 238, 246);
   border-radius: 0.8rem;
-  color: #f9004d;
+  color: #dc4a78;
   cursor: pointer;
 }
 
@@ -585,7 +616,7 @@ h5 {
 /* Testimonials Section */
 .testimonials {
   padding: 50px 0px;
-  background-color: rgb(1, 36, 49);
+  background-color: rgb(55, 105, 123);
   display: flex;
   justify-content: center;
   align-items: center;
