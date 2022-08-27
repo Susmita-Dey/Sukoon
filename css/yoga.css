@@ -525,7 +525,11 @@ footer a:focus {
   display: flex;
   gap: 1rem;
 }
-
+.footer-container .col ul li {
+    list-style-type: none;
+    text-align: left;
+    margin-top: 0.5rem;
+}
 .footer-container .col .social-menu ul a {
   color: white;
 }
