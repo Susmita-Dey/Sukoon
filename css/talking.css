@@ -112,7 +112,9 @@ menu-link {
 .menu-link li:last-child {
   padding-bottom: 0;
 }
-
+.menu-link li{
+  list-style: none;
+}
 .menu-link li a {
   color: #fff;
   font-weight: bolder;
