@@ -343,7 +343,6 @@ a {
 footer a:focus {
   color: #aaa;
   text-decoration: none;
-  border-bottom: 1px dotted #999;
 }
 
 @media (max-width: 730px) {
