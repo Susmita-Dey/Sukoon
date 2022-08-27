@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
 * {
@@ -481,7 +482,7 @@ h5 {
   background-color: #fff;
   border-radius: 0.8rem;
   color: #f9004d;
-  font-family: 'Montserrat';
+  font-family: 'Roboto Slab', serif;
   cursor: pointer;
 }
 
