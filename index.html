@@ -1,39 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sukoon</title>
-    <link rel="icon" href="/images/favicon-enhanced.png" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      text="text/CSS"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-  </head>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-
-    .hidden {
-      visibility: hidden;
-    }
-
-    .back-top-wrap {
-      position: fixed;
-      bottom: 5rem;
-      right: 1rem;
-      background-color: #80f7d1;
-      padding: 1rem 1.2rem;
-      border-radius: 50%;
-      cursor: pointer;
-      transition: 0.3s ease-in-out;
-      z-index: 500;
-    }
 
 <head>
   <meta charset="UTF-8" />
@@ -48,21 +14,24 @@
    html{
      scroll-behavior: smooth;
    }
-   .hidden{
-     visibility: hidden;
-   }
-   .back-top-wrap {
-     position: fixed;
-     bottom: 5rem;
-     right: 1rem;
-     background-color: #80F7D1;
-     padding: 1rem 1.2rem;
-     border-radius: 50%;
-     cursor: pointer;
-     transition: .3s ease-in-out;
-   }
 
-   .back-top-wrap:hover{
+  .hidden {
+    visibility: hidden;
+  }
+
+  .back-top-wrap {
+    position: fixed;
+    bottom: 5rem;
+    right: 1rem;
+    background-color: #80F7D1;
+    padding: 1rem 1.35rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    z-index: 500;
+  }
+
+  .back-top-wrap:hover {
     background-color: #00a2ff;
     color: #80F7D1;
    }
@@ -77,15 +46,12 @@
    }
  </style>
 <body  onload="myFunction()">
-  <div id="loading">
-    
-  </div>
+  <div id="loading"></div>
 
-  <!-- Back to top button -->
-  <div id="back-top-div" class="back-top-wrap">
-    <i class="fas fa-arrow-up"></i>
-  </div>
-
+    <!-- Back to top button -->
+    <div id="back-top-div" class="back-top-wrap">
+      <i class="fas fa-arrow-up"></i>
+    </div>
 
     <header>
       <nav class="nav" id="nav">
@@ -113,7 +79,6 @@
         </div>
       </nav>
 
-
       <div class="menu" id="menu">
         <ul class="menu-link">
           <li><a href="#">HOME</a></li>
@@ -122,7 +87,6 @@
           <li><a href="html/contact.html">CONTACT US </a></li>
         </ul>
       </div>
-
 
       <div class="content">
         <h1>Welcome to SUKOON</h1>
@@ -147,12 +111,10 @@
             <a href="https://bio.link/shayanpal"
               ><button>Let's Connect</button></a
             >
-
           </div>
         </div>
 
         <div class="card">
-
           <img src="./images/soumyadeep.jpeg" alt="soumyadeep" loading="lazy" />
           <h5>Soumyadeep Dhali</h5>
           <div class="pra">
@@ -160,12 +122,10 @@
             <a href="https://soumyadeep.bio.link"
               ><button>Let's Connect</button></a
             >
-
           </div>
         </div>
 
         <div class="card">
-
           <img src="./images/susmita.jpg" alt="" loading="lazy" />
           <h5>Susmita Dey</h5>
           <div class="pra">
@@ -227,16 +187,6 @@
           <a href="html/readingTherapy.html"> Let's Explore </a>
         </div>
 
-        <h2>Laughing Therapy</h2>
-        <p>
-          Laughing is the only medicine which refreshes our mind.
-        </p>
-        <a href="html/laughTherapy.html">
-       Let's Explore
-        </a>
-      </div>
-
-
         <div class="responsive yoga">
           <div class="round-image">
             <img src="./images/yoga.png" alt="yoga" loading="lazy" />
@@ -245,16 +195,6 @@
           <p>Yoga and exercise plays a very important role in our lives.</p>
           <a href="html/yogatherapy.html"> Let's Explore </a>
         </div>
-
-        <h2>Talking Therapy</h2>
-        <p>
-          A quick short conversation can often bring smile to our face.
-        </p>
-        <a href="html/talkingTherapy.html">
-         Let's Explore
-        </a>
-      </div>
-
 
         <div class="responsive laugh">
           <div class="round-image">
@@ -289,7 +229,6 @@
         </div>
       </div>
     </section>
-
 
     <!-- Testimonials Section -->
     <section class="testimonials">
@@ -346,186 +285,136 @@
       </figure>
     </section>
 
-    <!-- Faq section -->
-    <section class="faq">
-      <div class="faq_heading">
-        <h1>Frequently Asked Questions</h1>
-      </div>
-      <div class="wrap">
-        <ul class="accordion">
-          <li class="accordion__item">
-            <a class="accordion__title" href="javascript:void(0)">
-              Who are we and what do we do?
-              <div class="bmenu x7">
-                <span class="btop"></span><span class="bmid"></span
-                ><span class="bbot"></span>
-              </div>
-            </a>
-            <p class="accordion__content">
-              We are a team of open source contributors who have created this
-              website "sukoon" with the aim to provide a one step solution to
-              get relief from stress. We hope that everyone can live a stress
-              free life with the help of sukoon.
-            </p>
-          </li>
+  <!-- Faq section -->
+  <section class="faq">
+    <div class="faq_heading">
+      <h1>Frequently Asked Questions</h1>
+    </div>
+    <div class="wrap">
+      <ul class="accordion">
+        <li class="accordion__item">
+          <a class="accordion__title" href="javascript:void(0)"> Who are we and what do we do?
+            <div class="bmenu x7"><span class="btop"></span><span class="bmid"></span><span class="bbot"></span></div>
+          </a>
+          <p class="accordion__content">We are a team of open source contributors who have created this website "sukoon"
+            with the aim
+            to provide a one step solution to get relief from stress. We hope that everyone can live a
+            stress free life with the help of sukoon.
+        </li>
+        <li class="accordion__item">
+          <a class="accordion__title" href="javascript:void(0)">What are the services we offer?
+            <div class="bmenu x7"><span class="btop"></span><span class="bmid"></span><span class="bbot"></span></div>
+          </a>
+          <p class="accordion__content">We provide multiple services which are:
+            <br>
+            1. Audio Therapy
+            <br>
+            2. Reading Therapy
+            <br>
+            3. Yoga Therapy
+            <br>
+            4. Laughing Therapy
+            <br>
+            5. Talking Therapy
+            <br>
+            6. Doctor Consultation
+          </p>
+        </li>
+        <li class="accordion__item">
+          <a class="accordion__title" href="javascript:void(0)">How can you Contact Us?
+            <div class="bmenu x7"><span class="btop"></span><span class="bmid"></span><span class="bbot"></span></div>
+          </a>
+          <p class="accordion__content">You can contact us via <a href="mailto:sukoon665@gmail.com">sukoon665@gmail.com</a></p>
+        </li>
+        <li class="accordion__item">
+          <a class="accordion__title" href="javascript:void(0)">What is Reading Therapy?
+            <div class="bmenu x7"><span class="btop"></span><span class="bmid"></span><span class="bbot"></span></div>
+          </a>
+          <p class="accordion__content"> Reading therapy is a creative art therapy that uses literature to support good
+            mental health and is a versatile and cost-effective treatment. It includes storytelling or the reading of
+            specific texts.
+          </p>
+        </li>
+        <li class="accordion__item">
+          <a class="accordion__title" href="javascript:void(0)">What is Audio Therapy?
+            <div class="bmenu x7"><span class="btop"></span><span class="bmid"></span><span class="bbot"></span></div>
+          </a>
+          <p class="accordion__content">Audio Therapy includes auditory and vibratory inputs which are used to influence
+            a person's psychological state, includes sound healing, vibroacoustic sound therapy, music, and music
+            therapy.
+          </p>
+        </li>
+        <li class="accordion__item">
+          <a class="accordion__title" href="javascript:void(0)">What is Yoga Therapy?
+            <div class="bmenu x7"><span class="btop"></span><span class="bmid"></span><span class="bbot"></span></div>
+          </a>
+          <p class="accordion__content">Yoga therapy uses yoga postures, breathing exercises, meditation, and guided
+            imagery to improve mental and physical health.
+          </p>
+        </li>
+        <li class="accordion__item">
+          <a class="accordion__title" href="javascript:void(0)">What is Laughing Therapy?
+            <div class="bmenu x7"><span class="btop"></span><span class="bmid"></span><span class="bbot"></span></div>
+          </a>
+          <p class="accordion__content">Laughing therapy uses humor to help relieve pain and stress and improve a
+            person's sense of well-being through jokes and playful exercises that encourage hearty, continuous, and
+            lively laughter.
+          </p>
+        </li>
+        <li class="accordion__item">
+          <a class="accordion__title" href="javascript:void(0)">What is Talking Therapy?
+            <div class="bmenu x7"><span class="btop"></span><span class="bmid"></span><span class="bbot"></span></div>
+          </a>
+          <p class="accordion__content">Talking therapy involves talking to someone to help deal with negative feelings
+            or other mental health problems. It helps shy individuals open up their problems to others so that they can
+            help them overcome them.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-          <li class="accordion__item">
-            <a class="accordion__title" href="javascript:void(0)"
-              >What all services do we provide?
-              <div class="bmenu x7">
-                <span class="btop"></span><span class="bmid"></span
-                ><span class="bbot"></span>
-              </div>
-            </a>
-            <p class="accordion__content">
-              We provide multiple services which are:
-              <br />
-              Audio Therapy
-              <br />
-              Reading Therapy
-              <br />
-              Yoga Therapy
-              <br />
-              Laughing Therapy
-              <br />
-              Talking Therapy
-              <br />
-              Doctor Consultation
-            </p>
-          </li>
-          <li class="accordion__item">
-            <a class="accordion__title" href="javascript:void(0)"
-              >How can you contact us?
-              <div class="bmenu x7">
-                <span class="btop"></span><span class="bmid"></span
-                ><span class="bbot"></span>
-              </div>
-            </a>
-            <p class="accordion__content">
-              You can contact us via sukoon665@gmail.com
-            </p>
-          </li>
-          <li class="accordion__item">
-            <a class="accordion__title" href="javascript:void(0)"
-              >What is reading therapy?
-              <div class="bmenu x7">
-                <span class="btop"></span><span class="bmid"></span
-                ><span class="bbot"></span>
-              </div>
-            </a>
-            <p class="accordion__content">
-              Reading therapy is a creative art therapy that uses literature to
-              support good mental health and is a versatile and cost-effective
-              treatment. It includes storytelling or the reading of specific
-              texts.
-            </p>
-          </li>
-          <li class="accordion__item">
-            <a class="accordion__title" href="javascript:void(0)"
-              >What is audio therapy?
-              <div class="bmenu x7">
-                <span class="btop"></span><span class="bmid"></span
-                ><span class="bbot"></span>
-              </div>
-            </a>
-            <p class="accordion__content">
-              Audio Therapy includes auditory and vibratory inputs which are
-              used to influence a person's psychological state, includes sound
-              healing, vibroacoustic sound therapy, music, and music therapy.
-            </p>
-          </li>
-          <li class="accordion__item">
-            <a class="accordion__title" href="javascript:void(0)"
-              >what is yoga therapy?
-              <div class="bmenu x7">
-                <span class="btop"></span><span class="bmid"></span
-                ><span class="bbot"></span>
-              </div>
-            </a>
-            <p class="accordion__content">
-              Yoga therapy uses yoga postures, breathing exercises, meditation,
-              and guided imagery to improve mental and physical health.
-            </p>
-          </li>
-          <li class="accordion__item">
-            <a class="accordion__title" href="javascript:void(0)"
-              >what is laughing therapy?
-              <div class="bmenu x7">
-                <span class="btop"></span><span class="bmid"></span
-                ><span class="bbot"></span>
-              </div>
-            </a>
-            <p class="accordion__content">
-              Laughing therapy uses humor to help relieve pain and stress and
-              improve a person's sense of well-being through jokes and playful
-              exercises that encourage hearty, continuous, and lively laughter.
-            </p>
-          </li>
-          <li class="accordion__item">
-            <a class="accordion__title" href="javascript:void(0)"
-              >what is talking therapy?
-              <div class="bmenu x7">
-                <span class="btop"></span><span class="bmid"></span
-                ><span class="bbot"></span>
-              </div>
-            </a>
-            <p class="accordion__content">
-              Talking therapy involves talking to someone to help deal with
-              negative feelings or other mental health problems. It helps shy
-              individuals open up their problems to others so that they can help
-              them overcome them.
-            </p>
-          </li>
+  <!-- footer start -->
+  <footer>
+    <div class="footer-container">
+
+      <!--logo and info column-->
+      <div class="col">
+
+        <!--logo insert-->
+        <img src="logo.png" alt="logo" class="footlogo">
+        <div class="footercontent">
+        <h2 class="footerheading">Sukoon</h2>
+        <p class="footerpara">go stressfree</p>
+      </div>
+
+      </div>
+
+
+      <!--ADDRESS COLUMN-->
+
+      <div class="col">
+        <h3>ADDRESS <div class="underline"><span></span></div>
+        </h3>
+
+
+        <p>West Bengal,India</p>
+        <p class="email-id"><a href="mailto:sukoon665@gmail.com">sukoon665@gmail.com</a></p>
+      </div>
+
+
+      <!--HOME COLUMN-->
+      <div class="col">
+        <h3>HOME</h3>
+        <ul>
+
+          <li><a href="#about">About Us</a></li>
+          <li><a href="https://github.com/Susmita-Dey/Sukoon/blob/main/CODE_OF_CONDUCT.md">Code Of Conduct</a></li>
+          <li><a href="https://github.com/Susmita-Dey/Sukoon">Contribute</a></li>
+          <li><a href="https://www.buymeacoffee.com/susmitadey">Donate</a></li>
         </ul>
       </div>
-    </section>
 
-    <!-- footer start -->
-    <footer>
-      <div class="footer-container">
-        <!--logo and info column-->
-        <div class="col">
-          <!--logo insert-->
-          <img src="logo.png" alt="logo" class="footlogo" />
-          <div class="footercontent">
-            <h2 class="footerheading">Sukoon</h2>
-            <p class="footerpara">go stressfree</p>
-          </div>
-        </div>
-
-        <!--ADDRESS COLUMN-->
-
-
-        <div class="col">
-          <h3>
-            ADDRESS
-            <div class="underline"><span></span></div>
-          </h3>
-
-          <p>West Bengal,India</p>
-          <p class="email-id">sukoon665@gmail.com</p>
-        </div>
-
-        <!--HOME COLUMN-->
-        <div class="col">
-          <h3>HOME</h3>
-          <ul>
-
-            <li><a href="#about">About Us</a></li>
-            <li>
-              <a
-                href="https://github.com/Susmita-Dey/Sukoon/blob/main/CODE_OF_CONDUCT.md"
-                >Code Of Conduct</a
-              >
-            </li>
-            <li>
-              <a href="https://github.com/Susmita-Dey/Sukoon">Contribute</a>
-            </li>
-            <li>
-              <a href="https://www.buymeacoffee.com/susmitadey">Donate</a>
-            </li>
-          </ul>
-        </div>
 
         <!--OUR SERVICES COLUMN-->
         <div class="col">
@@ -596,9 +485,7 @@
       let preloader = document.getElementById("loading");
       function myFunction() {
         preloader.style.display = "none";
-
       }
-
 
       let navbar = document.getElementById("nav");
       let navmenu = document.getElementById("navmenu");
@@ -613,4 +500,3 @@
     </script>
   </body>
 </html>
-

@@ -176,10 +176,22 @@ header {
   display: flex;
 }
 
-.btext {
-  padding: 5%;
+
+.bfit img{
+    width: 35%;
 }
 
+.btext{
+    margin-top: 40px;
+    margin-left: 45px;
+    padding: 5%;
+}
+
+.btext .yoga-text{display: flex;}
+
+.btext .yoga-text i{
+    margin: 10px 5px;
+}
 /*Aasans section*/
 .aasan {
   background: linear-gradient(
