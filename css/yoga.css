@@ -503,10 +503,11 @@ footer a:focus {
   justify-content: center;
   cursor: pointer;
   font-weight:bold;
+  font-size:26px;
 }
 .footer-container .col .footerpara {
   display: flex;
-  margin-top: -3px;
+  margin-top: -6px;
   margin-left: -25px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   letter-spacing: 1mm;
