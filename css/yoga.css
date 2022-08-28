@@ -502,7 +502,7 @@ footer a:focus {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   justify-content: center;
   cursor: pointer;
-  font-style:bold;
+  font-weight:bold;
 }
 .footer-container .col .footerpara {
   display: flex;
