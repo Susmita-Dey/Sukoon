@@ -539,6 +539,10 @@ footer a:focus {
   text-align: left;
   margin-top: 0.5rem;
 }
+.footer-container .col ul{
+	padding-left: 0;
+  list-style: none;
+}
 
 .footer-container .col ul li a {
   text-decoration: none;
