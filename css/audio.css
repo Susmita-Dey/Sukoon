@@ -155,6 +155,19 @@ nav {
   animation: slideIn 0.5s ease-in-out;
   z-index: 100;
 }
+.Main-Content{
+  position: relative;
+  z-index:1;
+  background-color:black;
+}
+.Footer{
+  position: sticky;
+  z-index:-1;
+  bottom: 0;
+}
+.footer-container{
+  height: 40vh;
+}
 
 @media screen and (max-width: 650px) {
   .nav-links {

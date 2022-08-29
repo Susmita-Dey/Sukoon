@@ -253,6 +253,20 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.Main-Content{
+  position: relative;
+  z-index:1;
+  background-color: white;
+}
+.Footer{
+  position: sticky;
+  z-index:-1;
+  bottom: 0;
+}
+.footer-container{
+  height: 40vh;
+}
+
 
 @media screen and (max-width: 650px) {
   .nav-links {
