@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,800");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -40,13 +42,16 @@ body {
   transform: none;
 }
 
-/* 
-body {
-  display: inline-block;
-  font-size: 0;
-} */
-
-/* HERO SECTION */
+.nav {
+  display: flex;
+  padding: 0.5% 4%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
 
 .nav {
   display: flex;
@@ -77,14 +82,8 @@ header {
   width: 100px;
 }
 
-/* .nav-links {
-  flex: 1;
-  text-align: right;
-} */
-
 .hamburger {
   display: none;
-  /* display: flex; */
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -127,7 +126,6 @@ header {
 }
 
 .login-button {
-  /* padding: 0.65rem; */
   border: none;
   cursor: pointer;
   background-color: #f9004d;
@@ -485,6 +483,7 @@ h5 {
   background-color: #fff;
   border-radius: 0.8rem;
   color: #f9004d;
+  font-family: 'Roboto Slab', serif;
   cursor: pointer;
 }
 
@@ -563,7 +562,7 @@ h5 {
   border-color: white;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
   .container {
     flex-direction: column;
   }
@@ -770,13 +769,24 @@ figure.testimonal-Card .author h5 {
   display: none;
   position: relative;
   overflow: hidden;
-  border: 1px solid #eee;
+  /* border: 1px solid #eee; */
   border-top: none;
   line-height: 1.65;
-  padding: 25px;
-  background-color: rgb(214, 235, 244);
+  padding: 2em;
+  background-color: #b7bbc5;
   font-size: 1em;
   font-weight: 500;
+}
+
+.accordion__content a{
+  text-decoration: none;
+  color: #000;
+  transition: text-decoration 0.5s ease-in-out;
+}
+
+.accordion__content a:hover{
+  text-decoration: underline;
+
 }
 
 /* --- Icon --- */
@@ -959,6 +969,11 @@ footer a:focus {
   text-decoration: underline;
 }
 
+.email-id a{
+  text-decoration: none;
+  color: white;
+}
+
 .footer-container .col h3 {
   color: rgb(228, 26, 77);
   font-size: 1.2rem;
@@ -1099,36 +1114,11 @@ footer a:focus {
   #about h3 {
     text-align: center;
   }
-
-  .card img {
-    width: 150px;
-    height: 150px;
-  }
 }
 
-@media screen and (max-width: 460px) {
 
+@media screen and (max-width: 460px) {
   .content h1{
     font-size: 3rem;
   }
 }
-
-/* @media screen and (max-width: 650px) {
-  .nav-links {
-     display: none;
-  }
-
-  .logo {
-    width: 60px;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-}
-
-@media screen and (min-width: 650px) {
-  .menu.open {
-    display: none;
-  }
-} */

@@ -18,7 +18,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(5px);
 }
 .nav-links {
