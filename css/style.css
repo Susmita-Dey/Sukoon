@@ -51,6 +51,13 @@ body {
   top: 0;
   width: 100%;
   z-index: 10;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-active{
+  background-color: #000000ad;
+  backdrop-filter: blur(5px);
+  box-shadow: 5px -1px 12px -5px grey;
 }
 
 header {
