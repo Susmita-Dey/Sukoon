@@ -497,6 +497,15 @@
           navbar.classList.remove("sticky");
         }
       };
+
+      
+      window.onscroll = () => {
+          if (window.scrollY > 200) {
+              navbar.classList.add('nav-active');
+          } else {
+              navbar.classList.remove('nav-active');
+          }
+      };
     </script>
   </body>
 </html>
