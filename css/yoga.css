@@ -112,6 +112,15 @@ nav {
   z-index: 100;
 }
 
+@keyframes slideIn {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
 .menu-link {
   list-style: none;
   display: flex;
