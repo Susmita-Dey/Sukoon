@@ -35,13 +35,8 @@ nav {
   align-items: center;
   flex-direction: column;
   gap: 3px;
+  color: #fff;
   cursor: pointer;
-}
-
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
 }
 
 .nav-links {
@@ -81,18 +76,6 @@ nav {
   width: 80px;
   padding: 0px;
 }
-
-/* .menu.open {
-  display: block;
-  width: 70%;
-  position: absolute;
-  top: 0;
-  z-index: 100;
-  left: 0;
-  padding: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-  animation: slideIn 0.5s ease-in-out;
-} */
 
 .menu.open a {
   color: #fff;
@@ -295,7 +278,7 @@ a {
 }
 
 @media screen and (min-width: 650px) {
-  .menu .open {
+  .open {
     display: none;
   }
 }
