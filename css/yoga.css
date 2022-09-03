@@ -39,6 +39,10 @@ nav {
   cursor: pointer;
 }
 
+.hamburger:hover, .hamburger:focus{
+  color: #e5e5e5;
+}
+
 .nav-links {
   flex: 1;
   text-align: right;
