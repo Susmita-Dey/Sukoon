@@ -864,7 +864,22 @@ figure.testimonal-Card .author h5 {
 footer a:focus {
   color: cyan;
 }
-
+@media (max-width: 500px){
+.accordion__title{
+  font-size: 1.2em;
+  font-weight: 600;
+}
+}
+@media (max-width: 447px){
+  .accordion__title{
+    font-size: 1em;
+  }
+  }
+  @media (max-width: 393px){
+    .accordion__title{
+      font-size: 0.8em;
+    }
+    }
 @media (max-width: 730px) {
   .footer-container {
     gap: 0.5rem;
