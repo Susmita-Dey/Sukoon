@@ -172,6 +172,9 @@ header {
     margin-left: 45px;
     padding: 5%;
 }
+.bfit img{
+  width: 35%;
+}
 
 .btext .yoga-text{display: flex;}
 
