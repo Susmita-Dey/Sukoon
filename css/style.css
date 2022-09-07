@@ -869,10 +869,16 @@ footer a:focus {
   font-size: 1.2em;
   font-weight: 600;
 }
+.accordion__content{
+  font-size: 0.9em;
+}
 }
 @media (max-width: 447px){
   .accordion__title{
     font-size: 1em;
+  }
+  .accordion__content{
+    font-size: 0.8em;
   }
   }
   @media (max-width: 393px){
