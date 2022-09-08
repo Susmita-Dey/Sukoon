@@ -4,10 +4,40 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/signup.css">
+    <link rel="stylesheet" href="css/">
+    <!-- <link rel="stylesheet" text="text/CSS" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" text="text/CSS"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> -->
 <!--     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 	<title>Signup</title>
 </head>
+<body id="root">
+    <style> 
+        #bg{
+        margin:0px;
+        }
+    </style>
+</body>
 <body>
+    <nav class="nav" id="nav">
+        <div>
+          <a class="navbar-brand" href="#!"> <img src="/logo.png" alt="Logo" class="logo" /></a>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <ul class="links" id="navmenu">
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/index.html#about">ABOUT</a></li>
+            <li><a href="/index.html#services">SERVICES </a></li>
+            <li><a href="/html/contact.html">CONTACT US </a></li>
+          </ul>
+        </div>
+        <button class="login-button"><a href="html/login.html">SignUp / Login</a></button>
+        <div class="hamburger" id="ham">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
 <div class="wrapper">
         <div class="logo">
            <h1>SignUp</h1>
@@ -29,5 +59,20 @@
             <button type="submit" class="btn mt-3">Signup</button>
         </form><br>
     </div>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js"></script>
+    <script>
+        VANTA.RINGS({
+            el: "#root",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x95cf5a
+        })
+    </script>
+    </body>
 </html>
