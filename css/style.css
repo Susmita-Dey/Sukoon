@@ -867,7 +867,7 @@ footer a:focus {
 @media (max-width: 500px){
 .accordion__title{
   font-size: 1.2em;
-  font-weight: 600;
+  font-weight: 700;
 }
 .accordion__content{
   font-size: 0.9em;
