@@ -10,10 +10,33 @@
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
+//MridulTi-Revealing-Footer
 #loading{
   background-color: white;
 }
 #loading>div {
+=======
+::-webkit-scrollbar {
+  width: 12px;
+  background: #222131;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: cyan; 
+}
+
+#loading {
+//main
   width: 100%;
   height: 100vh;
   background: transparent url("../logo.png") no-repeat center;
@@ -934,6 +957,9 @@ footer a:focus {
 .footer-container p {
   margin-top: 0.5rem;
 }
+.footerpara{
+  margin-left: -10px;
+}
 
 .footer-container .col .email-id {
   word-wrap: break-word;
@@ -965,8 +991,8 @@ footer a:focus {
 }
 .footer-container .col .footerpara {
   display: flex;
-  margin-top: -3px;
-  margin-left: -25px;
+  margin-top: 0px;
+  margin-left: -40px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   letter-spacing: 1mm;
   justify-content: center;
