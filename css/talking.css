@@ -431,6 +431,17 @@ h1 {
   width: 100%;
   max-width: 350px;
 }
+/* Footer Revealable */
+.main-contain{
+  background-color: #253240;
+  position: relative;
+  z-index:1;
+}
+.Footer{
+  position: sticky;
+  z-index:-1;
+  bottom: 0;
+}
 
 @media screen and (max-width: 980px) {
   .cause{

@@ -105,6 +105,7 @@ color: #fff;
   position: absolute;
   top:0;
   left:0;
+  padding:30% 0% ;
   text-align: center;
   background-color: #565656c9;
   width: 100%;
@@ -147,6 +148,16 @@ color: #fff;
 .project-hov:hover{
   transform: translateY(0);
   opacity: 1;
+}
+/* Footer Revealable */
+.main-contain{
+  position: relative;
+  z-index:1;
+}
+.Footer{
+  position: sticky;
+  z-index:-1;
+  bottom: 0;
 }
 @media  screen and (max-width:1400px) {
   .collage-row{

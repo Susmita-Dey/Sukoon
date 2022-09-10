@@ -282,6 +282,17 @@ float: left;
   clear: both;
   display: table;
 }
+/* Footer Revealable */
+.main-contain{
+  background-color: #040404;
+  position: relative;
+  z-index:1;
+}
+.Footer{
+  position: sticky;
+  z-index:-1;
+  bottom: 0;
+}
 @media screen and (max-width: 650px) {
   .nav-links {
     display: none;

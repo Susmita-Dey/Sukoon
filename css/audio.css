@@ -188,7 +188,17 @@ h1 {
   text-align: center;
   font-size: 1.3rem;
 }
-
+/* Footer Revealable */
+.main-contain{
+  background-color: #040404;
+  position: relative;
+  z-index:1;
+}
+.Footer{
+  position: sticky;
+  z-index:-1;
+  bottom: 0;
+}
 @media(max-width: 650px){
   h1{
     font-size: 2.3rem;

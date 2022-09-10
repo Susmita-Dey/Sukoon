@@ -154,6 +154,9 @@ header {
 }
 
 /*Benefits section*/
+.benefits{
+  background-color: #fff;
+}
 .benefits h1 {
   margin-top: 5%;
 }
@@ -161,7 +164,6 @@ header {
 .benefits .bfit {
   display: flex;
 }
-
 
 .bfit img{
     width: 35%;
@@ -257,6 +259,17 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+/* Footer Revealable */
+.main-contain{
+  background-color: #ffffff;
+  position: relative;
+  z-index:1;
+}
+.Footer{
+  position: sticky;
+  z-index:-1;
+  bottom: 0;
 }
 
 @media screen and (max-width: 650px) {
