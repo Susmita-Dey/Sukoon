@@ -237,6 +237,7 @@ header {
   color: green;
   font-weight: bolder;
   border: 2px solid green;
+  transition: 0.3s ease-in-out;
 }
 
 .more {
