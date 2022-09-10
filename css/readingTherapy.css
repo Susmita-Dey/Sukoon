@@ -148,6 +148,16 @@ color: #fff;
   transform: translateY(0);
   opacity: 1;
 }
+/* Footer Revealable */
+.main-contain{
+  position: relative;
+  z-index:1;
+}
+.Footer{
+  position: sticky;
+  z-index:-1;
+  bottom: 0;
+}
 @media  screen and (max-width:1400px) {
   .collage-row{
     width:95vw;
