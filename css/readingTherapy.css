@@ -141,8 +141,7 @@ color: #fff;
   width: 85vw;
   height: 50vh;
   scrollbar-width: 4vw;
-  overflow-y: hidden;
-  overflow-x:scroll;
+  overflow:hidden;
   scroll-behavior: smooth;
 }
 .project-hov:hover{
