@@ -168,6 +168,7 @@ color: #fff;
     margin: 5% 10%;
     width: 85vw;
     height:100vh;
+    overflow:hidden;
     scrollbar-width: 4vw;
     scroll-behavior: smooth;
   }
@@ -198,6 +199,7 @@ color: #fff;
     margin: 5% 9%;
     width: 85vw;
     height:100vh;
+    overflow: hidden;
     scrollbar-width: 4vw;
     scroll-behavior: smooth;
   }
@@ -228,6 +230,7 @@ color: #fff;
     margin: 5% 10%;
     width: 85vw;
     height:100vh;
+    overflow: hidden;
     scrollbar-width: 4vw;
     scroll-behavior: smooth;
   }
@@ -259,6 +262,7 @@ color: #fff;
     margin: 5% 10%;
     width: 95vw;
     height:100vh;
+    overflow: hidden;
     scrollbar-width: 4vw;
     scroll-behavior: smooth;
   }
