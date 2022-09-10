@@ -80,7 +80,144 @@ color: #fff;
   animation: slideIn 0.5s ease-in-out;
   z-index: 100;
 }
-
+/* Summary */
+.collage-row{
+  width:80vw;
+  height: 80vh;
+  display: flex;
+  gap: 10rem;
+  overflow:hidden;
+}
+.collage-card{
+  position: relative;
+  background-color: #3AB0FF;
+  width: 100vw;
+  height: 45vh;
+  overflow: hidden;
+}
+.collage-card>div>img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+}
+.project-hov{
+  position: absolute;
+  top:0;
+  left:0;
+  text-align: center;
+  background-color: #565656c9;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  opacity: 0;
+  transform: translateY(5vh);
+  transition: all 0.4s ease;
+}
+.text{
+  margin-top: 5%;
+  font-size: 2rem;
+}
+.break-words{
+  font-size: 1rem;
+  font-weight: 100;
+  margin-bottom:1%;
+}
+.butn-red{
+  padding: 2%;
+  background-color: #900505;
+  border-color:#900505 ;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight:600 ;
+}
+.butn-red>a{
+  text-decoration: none;
+  color: #ffffff;
+}
+.workcard{
+  margin: 5% 10%;
+  width: 85vw;
+  height: 50vh;
+  scrollbar-width: 4vw;
+  overflow-y: hidden;
+  overflow-x:scroll;
+  scroll-behavior: smooth;
+}
+.project-hov:hover{
+  transform: translateY(0);
+  opacity: 1;
+}
+@media  screen and (max-width:1400px) {
+  .collage-row{
+    width:95vw;
+    height: 75vh;
+    display: flex;
+    gap: 1rem;
+    overflow:hidden;
+  }
+  .project-hov:active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+}
+@media  screen and (max-width:1100px) {
+  .collage-row{
+    width:120vw;
+    height: 75vh;
+    display: flex;
+    gap: 1rem;
+    overflow:hidden;
+  }
+  .project-hov:active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+}
+@media  screen and (max-width:810px) {
+  .collage-row{
+    width:160vw;
+    height: 75vh;
+    display: flex;
+    gap: 1rem;
+    overflow:hidden;
+  }
+  .project-hov:active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+}
+@media screen and (max-width:450px) {
+  .collage-row{
+    width: 300vw;
+    height:100vh;
+    gap: 1rem;
+  }
+  .project-hov:active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+}
+@media screen and (max-width:360px) {
+  .collage-row{
+    width: 600vw;
+    height:100%;
+    gap: 1rem;
+  }
+  .collage-card{
+    width: 80vw;
+    height:50vh;
+  }
+  .project-hov:active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+}
 @media screen and (max-width: 650px) {
   .nav-links {
     display: none;
