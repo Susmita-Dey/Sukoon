@@ -1019,6 +1019,8 @@ footer a:focus {
   color: rgb(228, 26, 77);
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  font-weight: 900;
+  font-family: "Ubuntu",sans-serif;
 }
 
 .footer-container .col img {

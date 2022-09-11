@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -386,33 +387,52 @@ margin-left: 2%;
   }
 } 
 
-
-
 /* footer */
+footer{
+  font-family: "Poppins",sans-serif;
+}
 .footer-container {
   bottom: 0;
   width: 100%;
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: nowrap;
   background-color: rgb(6, 16, 37);
 }
 
-.footer-container .col {
-  padding: 2.5rem;
-  flex-basis: 20%;
+.footer-side-col{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  width: 80%;
 }
 
-.footer-container a:hover,
+.footer-side-col > .col{
+  padding: 2.5rem;
+  flex-wrap: nowrap;
+}
+
+.footer-container > .col {
+  padding: 2.5rem;
+  flex-basis: 20%;
+  color: white;
+}
+
+.footer-container .col a:hover,
 footer a:focus {
-  color: #aaa;
-  text-decoration: none;
-  border-bottom: 1px dotted #999;
+  color: cyan;
+}
+
+@media (max-width: 1120px){
+  .footer-side-col{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+  }
 }
 
 @media (max-width: 730px) {
   .footer-container {
     gap: 0.5rem;
+    flex-wrap: wrap;
   }
 
   .footer-container .col {
@@ -427,15 +447,68 @@ footer a:focus {
 }
 
 @media (max-width: 600px) {
+  .footer-side-col{
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(auto,auto);
+  }
+
   .footer-container .col {
     padding: 1rem;
     flex-basis: 100%;
   }
 }
 
+.footer-container .col a {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.footer-container .col ul li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: cyan;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.footer-container .col ul li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 .footer-container p {
   color: white;
-  margin-top: 1rem;
+}
+
+.footer-container .col ul li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: cyan;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.footer-container .col ul li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.footer-container p {
+  margin-top: 0.5rem;
+}
+.footerpara{
+  margin-left: -10px;
 }
 
 .footer-container .col .email-id {
@@ -443,31 +516,37 @@ footer a:focus {
   text-decoration: underline;
 }
 
-.footer-container .col h3 {
-  color: #900505;
-  margin-bottom: 1rem;
+.email-id a{
+  text-decoration: none;
+  color: white;
 }
 
+.footer-container .col h3 {
+  color: rgb(228, 26, 77);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  font-family: "Ubuntu",sans-serif;
+
+}
 .footer-container .col img {
+  display: block;
+  margin: 0 auto;
   width: 140px;
   cursor: pointer;
 }
-.footlogo {
+.footer-container .col .footerheading {
   display: flex;
-  margin: auto;
-}
-.footerheading {
-  display: flex;
+  color:white ;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   justify-content: center;
   cursor: pointer;
-  margin: 10px auto;
 }
 .footer-container .col .footerpara {
   display: flex;
-  margin-top: 0px;
+  margin-top: -19px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  letter-spacing: 1mm;
+  letter-spacing: 4px;
   justify-content: center;
   cursor: pointer;
 }
@@ -478,7 +557,6 @@ footer a:focus {
 .footer-container .col .sukoon {
   color: rgb(30, 240, 191);
   letter-spacing: 5px;
-  margin-top: 1rem;
 }
 
 .footer-container .col .social-menu ul {
@@ -487,17 +565,42 @@ footer a:focus {
 }
 
 .footer-container .col .social-menu ul a {
-  color: aqua;
+  color: white;
+}
+.footer-container .col .social-menu ul a:hover {
+  color: cyan;
+  border: none;
+  text-decoration: none !important;
 }
 
 .footer-container .col ul li {
   list-style-type: none;
   text-align: left;
-  margin-top: 0.75rem;
+  margin-top: 0.5rem;
 }
-
 .footer-container .col ul li a {
-  /* text-decoration: none; */
-  color: rgb(255, 255, 255);
+  text-decoration: none;
+  color: white;
 }
 
+@media screen and (max-width: 600px) {
+  
+  .footer-container .col ul li {
+    text-align: center;
+  }
+
+  .footer-container {
+    text-align: center;
+  }
+
+  .footer-container .col .social-menu ul {
+    justify-content: center;
+  }
+}
+
+.footercontent{
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
