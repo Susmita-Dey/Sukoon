@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -460,8 +459,8 @@
     function myFunction() {
       preloader.style.display = 'none';
     }
-    let navbar = document.getElementById("nav");
-    let navmenu = document.getElementById("navmenu");
+    let navbar = document.querySelector("#nav");
+    let navmenu = document.querySelector("#navmenu");
 
     window.onscroll = function () {
       if (window.pageYOffset >= navmenu.offsetTop) {
@@ -470,6 +469,15 @@
         navbar.classList.remove("sticky");
       }
     };
+    
+    window.onscroll = () => {
+        if (window.scrollY > 100) {
+            navbar.classList.add('nav-active');
+        } else {
+            navbar.classList.remove('nav-active');
+        }
+    };
     </script>
   </body>
 </html>
+
