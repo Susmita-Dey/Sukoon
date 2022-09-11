@@ -1,15 +1,32 @@
-var count = new Date ("Sep 25, 2022 00:00:00").getTime();
-var x = setInterval(function(){
-    var now = new Date().getTime();
-    var distance = count-now;
-    var days = Math.floor(distance/(1000*60*60*24));
-    var hours = Math.floor((distance%(1000*60*60*24)) / (1000*60*60));
-    var minutes = Math.floor((distance%(1000*60*60))/(1000*60));
-    var seconds = Math.floor((distance%(1000*60)) / 1000);
-    function formatTime(days){
-        return days<10 ?(`0${days}`):days;
-    }  
+(document).ready(function() {
+    $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        center: true,
+        navText: [
+            "<i class='fa fa-angle-left'></i>",
+            "<i class='fa fa-angle-right'></i>"
+        ],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 3
+            }
+        }
+    });
+});
 
+
+const countdown = () => {
+  const countDate = new Date("May 21, 2022 00:00:00").getTime();
+  const now = new Date().getTime();
+  const gap = countDate - now;
     function formatTime(hours){
         return hours<10 ?(`0${hours}`):hours;
     }    
