@@ -98,7 +98,10 @@ menu-link {
   align-items: center;
   flex-direction: column;
 }
-
+.menu.open a {
+  color: #adb5bd;
+  text-decoration: none;
+}
 .menu-link li {
   padding: 2rem;
   font-weight: bolder;
