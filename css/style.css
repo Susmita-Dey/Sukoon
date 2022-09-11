@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,800");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
 * {
   margin: 0;
@@ -16,17 +16,17 @@
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: white; 
+  background: white;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: cyan; 
+  background: cyan;
 }
 
 #loading {
@@ -72,7 +72,7 @@ body {
   transition: 0.3s ease-in-out;
 }
 
-.nav-active{
+.nav-active {
   background-color: #000000ad;
   backdrop-filter: blur(5px);
   box-shadow: 5px -1px 12px -5px grey;
@@ -247,7 +247,7 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 90%;
   color: #fff;
   margin: auto;
@@ -498,7 +498,9 @@ h5 {
   background-color: #fff;
   border-radius: 0.8rem;
   color: #f9004d;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
   cursor: pointer;
 }
 
@@ -508,7 +510,7 @@ h5 {
   transition: 0.3s;
 }
 
-.footerpara{
+.footerpara {
   white-space: nowrap;
 }
 
@@ -793,15 +795,14 @@ figure.testimonal-Card .author h5 {
   font-weight: 500;
 }
 
-.accordion__content a{
+.accordion__content a {
   text-decoration: none;
   color: #000;
   transition: text-decoration 0.5s ease-in-out;
 }
 
-.accordion__content a:hover{
+.accordion__content a:hover {
   text-decoration: underline;
-
 }
 
 /* --- Icon --- */
@@ -871,13 +872,13 @@ figure.testimonal-Card .author h5 {
   background-color: rgb(6, 16, 37);
 }
 
-.footer-side-col{
+.footer-side-col {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   width: 80%;
 }
 
-.footer-side-col > .col{
+.footer-side-col > .col {
   padding: 2.5rem;
   flex-wrap: nowrap;
 }
@@ -893,33 +894,33 @@ footer a:focus {
   color: cyan;
 }
 
-@media (max-width: 500px){
-.accordion__title{
-  font-size: 1.2em;
-  font-weight: 700;
+@media (max-width: 500px) {
+  .accordion__title {
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+  .accordion__content {
+    font-size: 0.9em;
+  }
 }
-.accordion__content{
-  font-size: 0.9em;
-}
-}
-@media (max-width: 447px){
-  .accordion__title{
+@media (max-width: 447px) {
+  .accordion__title {
     font-size: 1em;
   }
-  .accordion__content{
+  .accordion__content {
     font-size: 0.8em;
   }
+}
+@media (max-width: 393px) {
+  .accordion__title {
+    font-size: 0.8em;
   }
-  @media (max-width: 393px){
-    .accordion__title{
-      font-size: 0.8em;
-    }
-    }
-    
-@media (max-width: 1120px){
-  .footer-side-col{
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
+}
+
+@media (max-width: 1120px) {
+  .footer-side-col {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }
 
@@ -941,9 +942,9 @@ footer a:focus {
 }
 
 @media (max-width: 600px) {
-  .footer-side-col{
+  .footer-side-col {
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(auto,auto);
+    grid-template-rows: minmax(auto, auto);
   }
 
   .footer-container .col {
@@ -1001,7 +1002,7 @@ footer a:focus {
 .footer-container p {
   margin-top: 0.5rem;
 }
-.footerpara{
+.footerpara {
   margin-left: -10px;
 }
 
@@ -1010,7 +1011,7 @@ footer a:focus {
   text-decoration: underline;
 }
 
-.email-id a{
+.email-id a {
   text-decoration: none;
   color: white;
 }
@@ -1031,7 +1032,7 @@ footer a:focus {
 }
 .footer-container .col .footerheading {
   display: flex;
-  color:white ;
+  color: white;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   justify-content: center;
   cursor: pointer;
@@ -1140,7 +1141,7 @@ footer a:focus {
   }
 }
 
-.footercontent{
+.footercontent {
   margin-right: auto;
   margin-left: auto;
   display: flex;
@@ -1159,9 +1160,8 @@ footer a:focus {
   }
 }
 
-
 @media screen and (max-width: 460px) {
-  .content h1{
+  .content h1 {
     font-size: 3rem;
   }
 }
