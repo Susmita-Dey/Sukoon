@@ -19,7 +19,7 @@ nav{
   align-items: center;
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(2px);
 }
 .nav-links {
   flex: 1;
@@ -30,22 +30,40 @@ nav{
   display: inline-block;
   padding: 8px 12px;
   position: relative;
+
+  
 }
+
+
+
 
 .nav-links ul li a {
   color: white;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 15px;
+  background-color: palevioletred;
+  border-radius: 4px;
+  width: 100%;
+  transition: 0.5s;
+  border: solid purple;
+  
 }
 .nav-links ul li::after {
   content: "";
-  width: 0%;
+  width: 1%;
   height: 2px;
-  background: rgb(208, 255, 0);
+  background: rgb(64, 196, 223);
   display: block;
   margin: auto;
   transition: 0.5s;
+  
+
+ 
+ 
 }
+
+
+
 .center,.collection,.books,.videos{
   position: relative;
   z-index: 1;
@@ -56,6 +74,7 @@ nav{
 }
 .nav-links ul li:hover::after {
   width: 100%;
+  size: 150%;
 }
 .icon{
   width: 80px;
@@ -70,17 +89,24 @@ nav{
   color: black;
 }
 h1 {
-  color: white;
+  color: rgb(238, 227, 227);
   font-size: 2.75rem;
   font-size: 50px;
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
   font-weight: 900;
+
+ 
 }
+h1:hover {
+  animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+  cursor: pointer;
+}
+
 #subtitle {
   color:black;
-  background-color: burlywood;
+  background-color: rgb(242, 213, 175);
   border: solid black 7px;
   padding: 10px;
   font-size: 1.3rem;
@@ -92,20 +118,31 @@ h1 {
  display: inline;
 }
 .heading-title{
-  color: #FF4646;
+  color: #e75353;
 }
 .heading-starting{
-  color: darkorange;
+  color: rgb(231, 218, 202);
+  text-shadow: #FF4646;
 }
 h2 {
-  color:#FF4646;
+  color:#3e0736;
+text-shadow: #54BAB9;
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
   text-decoration: dotted;
 }
 .black-background{
-  background-color: #040303;
+
+  background-image: linear-gradient(
+    45deg,
+   
+    #bfb913 20%,
+    #e12038 60%,
+    #af9e07 20% 
+    /* #323292 10.666% */
+  );
+ 
 }
 body{
   background-color: #040303;
@@ -130,7 +167,7 @@ hr{
     position: relative;
     max-width : 300px;
     height : 225px;  
-    background-color : #fff;
+    background-color : rgb(216, 183, 183);
     margin : 30px 10px;
     padding : 20px 15px;
     
@@ -150,7 +187,7 @@ hr{
   
   top : -40%;
   left: 8px;
-  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  box-shadow : 0 5px 20px rgba(232, 142, 142, 0.2);
   z-index : 1;
 }
 .inspiration .inspiration-card .inspcardcover img{
@@ -198,12 +235,12 @@ hr{
   height: 500px;
   background: rgba(255, 255, 255, 0.05);
   margin: 25px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 15px 35px rgba(231, 38, 38, 0.5);
   border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
 }
 
 .container .card .content {
