@@ -20,16 +20,16 @@ Live a stress-free life.
 
 ## 💼 Our Services
 - Audio Therapy
-- Reading Therapy(Coming Soon)
-- Yoga Therapy(Coming Soon)
-- Laughing Therapy(Coming Soon)
-- Talking Therapy(Coming Soon)
+- Reading Therapy
+- Yoga Therapy
+- Laughing Therapy
+- Talking Therapy
 - Consult A Doctor
 
 
 
 ## Our Logo
-<img src="https://user-images.githubusercontent.com/98955085/183500401-e9273ee1-fe9b-45a6-a4a9-f844cc44426b.png" width=130px height=130px alt="logo">
+<img src="./logo.png" width=140px height=110px alt="logo">
 
 ## 📸 Screenshots
 ![readmeBanner](https://user-images.githubusercontent.com/98955085/184510782-3f699206-4768-4b3a-aa6d-40c924e13578.png)
