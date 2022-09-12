@@ -29,7 +29,7 @@
     border-radius: 50%;
     cursor: pointer;
     transition: .3s ease-in-out;
-    z-index: 500;
+    z-index: 100;
   }
 
   .back-top-wrap:hover {
@@ -47,8 +47,9 @@
 </style>
 
 <body onload="myFunction()">
-<div id="loading">
-</div>
+  <div class="loading-wrapper">
+    <img src="./logo.png" id="loading" />
+  </div>
 
 <!-- Back to top button -->
 <div id="back-top-div" class="back-top-wrap">
@@ -455,9 +456,10 @@
   <script src="js/index.js"></script>
   <script>
 
-    let preloader = document.getElementById("loading");
+    let preloader = document.querySelector(".loading-wrapper");
     function myFunction() {
       preloader.style.display = 'none';
+      document.body.style.overflow = 'auto';
     }
     let navbar = document.querySelector("#nav");
     let navmenu = document.querySelector("#navmenu");
