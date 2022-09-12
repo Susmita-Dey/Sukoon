@@ -99,12 +99,11 @@ color: #fff;
   display: block;
   width: 100%;
   height: 100%;
-  object-fit:contain;
+  object-fit:cover;
 }
 .project-hov{
   position: absolute;
   top:0;
-  padding:30% 0%;
   left:0;
   text-align: center;
   background-color: #565656c9;
@@ -141,7 +140,8 @@ color: #fff;
   width: 85vw;
   height: 50vh;
   scrollbar-width: 4vw;
-  overflow:hidden;
+  overflow-y: hidden;
+  overflow-x:scroll;
   scroll-behavior: smooth;
 }
 .project-hov:hover{
@@ -149,12 +149,22 @@ color: #fff;
   opacity: 1;
 }
 @media  screen and (max-width:1400px) {
+  .workcard{
+    overflow:hidden;
+  }
   .collage-row{
     width:95vw;
     height: 75vh;
     display: flex;
     gap: 1rem;
     overflow:hidden;
+  }
+  .collage-card{
+    position: relative;
+    background-color: #3AB0FF;
+    width: 100vw;
+    height: 45vh;
+    overflow: hidden;
   }
   .project-hov:active{
     transform: translateY(0);
@@ -167,88 +177,188 @@ color: #fff;
     margin: 5% 10%;
     width: 85vw;
     height:100vh;
-    overflow:hidden;
     scrollbar-width: 4vw;
     scroll-behavior: smooth;
-  }
-  .collage-row{
-      width:80vw;
-      height: 100vh;
-      display: grid;
-      gap: 10rem;
-      overflow-x: hidden;
-      grid-template-columns: repeat(auto-fill,minmax(190px ,1fr));
-      row-gap: 1rem;
-  }
-  .collage-card{
-      position: relative;
-      background-color: #3AB0FF;
-      width: 28vw;
-      height: 45vh;
-      overflow: hidden;
-  }
+}
+.collage-row{
+    width:80vw;
+    height: 100vh;
+    display: grid;
+    gap: 10rem;
+    overflow-x: hidden;
+    grid-template-columns: repeat(auto-fill,minmax(190px ,1fr));
+    row-gap: 1rem;
+}
+.collage-card{
+    position: relative;
+    background-color: #3AB0FF;
+    width: 28vw;
+    height: 42vh;
+    overflow: hidden;
+}
   .project-hov:active{
     transform: translateY(0);
     opacity: 1;
   }
   
 }
+
 @media  screen and (max-width:810px) {
+
   .workcard{
     margin: 5% 9%;
     width: 85vw;
     height:100vh;
-    overflow: hidden;
     scrollbar-width: 4vw;
     scroll-behavior: smooth;
-  }
-  .collage-row{
-      width:82vw;
-      height: 100vh;
-      display: grid;
-      gap: 3rem;
-      overflow-x: hidden;
-      grid-template-columns: repeat(auto-fill,minmax(190px ,1fr));
-      row-gap: 1rem;
-  }
-  .collage-card{
-      position: relative;
-      background-color: #3AB0FF;
-      width: 40vw;
-      height: 45vh;
-      overflow: hidden;
-  }
+}
+.collage-row{
+    width:82vw;
+    height: 100vh;
+    display: grid;
+    gap: 3rem;
+    overflow-x: hidden;
+    grid-template-columns: repeat(auto-fill,minmax(190px ,1fr));
+    row-gap: 1rem;
+}
+.collage-card{
+    position: relative;
+    background-color: #3AB0FF;
+    width: 38vw;
+    height: 43vh;
+    overflow: hidden;
+}
   .project-hov:active{
     transform: translateY(0);
     opacity: 1;
   }
   
+}
+@media screen and (max-width: 650px) {
+  
+  .workcard{
+    margin: 5% 9%;
+    width: 85vw;
+    height:100vh;
+    scrollbar-width: 4vw;
+    scroll-behavior: smooth;
+}
+.collage-row{
+    width:60vw;
+    height: 100vh;
+    display: grid;
+    gap: 3rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    grid-template-columns: repeat(auto-fill,minmax(190px ,1fr));
+    row-gap: 1rem;
+}
+.collage-card{
+    position: relative;
+    background-color: #3AB0FF;
+    width: 50vw;
+    height: 55vh;
+    overflow: hidden;
+}
+  .project-hov:active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .workcard{
+    margin: 5% 10%;
+    width: 95vw;
+    height:100vh;
+    scrollbar-width: 4vw;
+    scroll-behavior: smooth;
+}
+  .collage-row{
+    width:75vw;
+    height: 100vh;
+    display: grid;
+    gap: 3rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    grid-template-columns: repeat(auto-fill,minmax(190px ,1fr));
+    row-gap: 1rem;
+}
+  .collage-card{
+    position: relative;
+    background-color: #3AB0FF;
+    width: 62vw;
+    height: 50vh;
+    overflow: hidden;
+}
+  .project-hov:active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .project-hov:active{
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 @media screen and (max-width:450px) {
   .workcard{
     margin: 5% 10%;
     width: 85vw;
     height:100vh;
-    overflow: hidden;
     scrollbar-width: 4vw;
     scroll-behavior: smooth;
+}
+  .collage-row{
+    width:82vw;
+    height: 100vh;
+    display: grid;
+    gap: 3rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    grid-template-columns: repeat(auto-fill,minmax(190px ,1fr));
+    row-gap: 1rem;
+}
+  .collage-card{
+    position: relative;
+    background-color: #3AB0FF;
+    width: 72vw;
+    height: 45vh;
+    overflow: hidden;
+}
+  .project-hov:active{
+    transform: translateY(0);
+    opacity: 1;
   }
-    .collage-row{
-      width:82vw;
-      height: 100vh;
-      display: grid;
-      gap: 3rem;
-      overflow-x: hidden;
-      overflow-y: scroll;
-      grid-template-columns: repeat(auto-fill,minmax(190px ,1fr));
-      row-gap: 1rem;
-  }
-    .collage-card{
-      position: relative;
-      background-color: #3AB0FF;
-      width: 75vw;
-      height: 45vh;
-      overflow: hidden;
+  
+}
+@media screen and (max-width:390px) {
+  .workcard{
+    margin: 5% 10%;
+    width: 95vw;
+    height:100vh;
+    scrollbar-width: 4vw;
+    scroll-behavior: smooth;
+}
+  .collage-row{
+    width:82vw;
+    height: 100vh;
+    display: grid;
+    gap: 3rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    grid-template-columns: repeat(auto-fill,minmax(190px ,1fr));
+    row-gap: 1rem;
+}
+  .collage-card{
+    position: relative;
+    background-color: #3AB0FF;
+    width: 80vw;
+    height: 55vh;
+    overflow: hidden;
+}
+  .project-hov:active{
+    transform: translateY(0);
+    opacity: 1;
   }
   .project-hov:active{
     transform: translateY(0);
@@ -256,31 +366,70 @@ color: #fff;
   }
   
 }
+@media screen and (max-width:375px) {
+  .workcard{
+    margin: 5% 10%;
+    width: 95vw;
+    height:100vh;
+    scrollbar-width: 4vw;
+    scroll-behavior: smooth;
+}
+  .collage-row{
+    width:82vw;
+    height: 100vh;
+    display: grid;
+    gap: 3rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    grid-template-columns: repeat(auto-fill,minmax(190px ,1fr));
+    row-gap: 1rem;
+}
+  .collage-card{
+    position: relative;
+    background-color: #3AB0FF;
+    width: 80vw;
+    height: 55vh;
+    overflow: hidden;
+}
+  .project-hov:active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .project-hov:active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+}
+
 @media screen and (max-width:360px) {
   .workcard{
     margin: 5% 10%;
     width: 95vw;
     height:100vh;
-    overflow: hidden;
     scrollbar-width: 4vw;
     scroll-behavior: smooth;
-  }
-    .collage-row{
-      width:82vw;
-      height: 100vh;
-      display: grid;
-      gap: 3rem;
-      overflow-x: hidden;
-      overflow-y: scroll;
-      grid-template-columns: repeat(auto-fill,minmax(190px ,1fr));
-      row-gap: 1rem;
-  }
-    .collage-card{
-      position: relative;
-      background-color: #3AB0FF;
-      width: 80vw;
-      height: 50vh;
-      overflow: hidden;
+}
+  .collage-row{
+    width:82vw;
+    height: 100vh;
+    display: grid;
+    gap: 3rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    grid-template-columns: repeat(auto-fill,minmax(190px ,1fr));
+    row-gap: 1rem;
+}
+  .collage-card{
+    position: relative;
+    background-color: #3AB0FF;
+    width: 80vw;
+    height: 60vh;
+    overflow: hidden;
+}
+  .project-hov:active{
+    transform: translateY(0);
+    opacity: 1;
   }
   .project-hov:active{
     transform: translateY(0);
@@ -288,6 +437,7 @@ color: #fff;
   }
   
 }
+
 @media screen and (max-width: 650px) {
   .nav-links {
     display: none;
@@ -299,12 +449,12 @@ color: #fff;
     display: flex;
   } 
 }
-
-@media screen and (min-width: 650px) {
+@media screen and (min-width:650px){
   .open{
     display: none;
   } 
 }
+
 
 @keyframes slideIn {
   0% {
