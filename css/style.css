@@ -709,7 +709,7 @@ figure.testimonal-Card .author h5 {
 }
 
 .testimonial-box {
-    background: rgb(1, 64, 112);
+   
     padding: 30px 20px;
     margin: 50px 15px 90px 15px;
     border-radius: 5px;
@@ -769,6 +769,11 @@ figure.testimonal-Card .author h5 {
 
 .owl-dots .owl-dot.active {
     background: #999 !important;
+}
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+    color: #ffff;
 }
 
 
