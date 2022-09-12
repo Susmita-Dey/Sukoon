@@ -17,34 +17,34 @@
 
 <body>
   <!-- Navbar Section -->
-    <nav>
-      <a href="../index.html"><img class="talking-logo" src="../logo.png" alt="Logo"/></a>
+  <nav>
+    <a href="../index.html"><img class="talking-logo" src="../logo.png" alt="Logo" /></a>
 
-      <div class="nav-links" id="navLinks">
-        <ul>
-          <li><a href="../index.html">HOME</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#blogs">BLOGS </a></li>
-          <li><a href="#videos">VIDEOS </a></li>
-        </ul>
-      </div>
-      <div class="hamburger" id="ham">
-        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>
-      </div>
-    </nav>
+    <div class="nav-links" id="navLinks">
+      <i class="fa fa-times" onclick="hidemenu()"></i>
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="#about" class=".smooth-scroll">ABOUT</a></li>
+        <li><a href="#blogs" class=".smooth-scroll">BLOGS </a></li>
+        <li><a href="#video" class=".smooth-scroll">VIDEOS </a></li>
 
-    <!-- Mobile Layout Navbar -->
 
-      <div class="menu" id="menu">
-        <ul class="menu-link">
-          <li><a href="../index.html">HOME</a></li>
-          <li><a onclick="closeMenu()" href="#about">ABOUT</a></li>
-          <li><a onclick="closeMenu()" href="#blogs">BLOGS</a></li>
-          <li><a onclick="closeMenu()" href="#videos">VIDEOS</a></li>
-        </ul>
-      </div>
-      
-    <!-- Mobile Layout Navbar Ends Here -->
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Mobile Layout Navbar -->
+
+  <div class="menu" id="menu">
+    <ul class="menu-link">
+      <li><a href="../index.html">HOME</a></li>
+      <li><a onclick="closeMenu()" href="#about">ABOUT</a></li>
+      <li><a onclick="closeMenu()" href="#blogs">BLOGS</a></li>
+      <li><a onclick="closeMenu()" href="#videos">VIDEOS</a></li>
+    </ul>
+  </div>
+
+  <!-- Mobile Layout Navbar Ends Here -->
 
   <!-- Navbar Section Ends Here -->
 
@@ -165,29 +165,39 @@
   <!-- Blog Section Ends Here -->
 
   <!-- Video Section  -->
-  <section id="videos">
- <h1 class="section-headings">VIDEOS</h1>
- 
- <div class="video-container">
-  <div class="collection">
-    <div class="video">
-      <iframe style="border-radius: 10px;" width="100%" height="380" src="https://www.youtube.com/embed/Nz9eAaXRzGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  
+  <section id="video">
+    <h1 class="section-headings">VIDEOS</h1>
+
+    <div class="video-container">
+      <div class="collection">
+        <div class="video">
+          <iframe style="border-radius: 10px;" width="100%" height="380" src="https://www.youtube.com/embed/Nz9eAaXRzGg"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+        </div>
+      </div>
+      <div class="collection">
+        <div class="video">
+          <iframe style="border-radius: 10px;" width="100%" height="380" src="https://www.youtube.com/embed/UQ1wDXtPxxI"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+        </div>
+      </div>
+      <div class="collection">
+        <div class="video">
+          <iframe style="border-radius: 10px;" width="100%" height="380" src="https://www.youtube.com/embed/rmeGVhhbGrM"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="collection">
-    <div class="video">
-      <iframe style="border-radius: 10px;" width="100%" height="380" src="https://www.youtube.com/embed/UQ1wDXtPxxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-       
-    </div>
-  </div>
-  <div class="collection">
-    <div class="video">
-      <iframe style="border-radius: 10px;" width="100%" height="380" src="https://www.youtube.com/embed/rmeGVhhbGrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-  </div>
-</div>
-</section>
+  </section>
+
 
  <!-- footer start -->
  <footer>
@@ -201,6 +211,7 @@
         <p class="footerpara">go stressfree</p>
       </div>
     </div>
+
 
     <!--ADDRESS COLUMN-->
 
@@ -289,10 +300,12 @@
           </ul>
         </div>
     </div>
+
     </div>
     </div>
   </div>
 </footer>
+  <script type="text/javascript" src="../js/scrollsmooth.js"></script>
 
 <script>
     const ham = document.getElementById("ham");
@@ -302,7 +315,7 @@
     const closeMenu = () => {
       if (menu.classList.contains("open")) {
         menu.classList.remove("open");
-        
+
         console.log("open");
       }
       ham.innerHTML = '<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>'
@@ -324,6 +337,7 @@
       ele.addEventListener("click", closeMenu);
     }
     )
-</script>
+  </script>
 </body>
+
 </html>
