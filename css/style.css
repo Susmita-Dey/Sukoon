@@ -28,12 +28,19 @@
 ::-webkit-scrollbar-thumb:hover {
   background: cyan;
 }
-
-#loading {
-  width: 100%;
+.loading-wrapper{
+  background-color: white;
+  position: fixed;
+  width: 100vw;
   height: 100vh;
-  background: white url("../logo.png") no-repeat center;
-  background-size: 300px;
+  z-index: 250;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#loading {
+  z-index: 251;
+  width: 20rem;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
@@ -58,6 +65,7 @@
 body {
   font-family: "Poppins";
   transform: none;
+  overflow: hidden;
 }
 
 .nav {
