@@ -28,12 +28,19 @@
 ::-webkit-scrollbar-thumb:hover {
   background: cyan;
 }
-
-#loading {
-  width: 100%;
+.loading-wrapper{
+  background-color: white;
+  position: fixed;
+  width: 100vw;
   height: 100vh;
-  background: white url("../logo.png") no-repeat center;
-  background-size: 300px;
+  z-index: 250;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#loading {
+  z-index: 251;
+  width: 20rem;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
@@ -58,6 +65,7 @@
 body {
   font-family: "Poppins";
   transform: none;
+  overflow: hidden;
 }
 
 .nav {
@@ -450,18 +458,22 @@ nav .fa {
 
 .card {
   cursor: pointer;
-  background: rgb(1, 59, 112);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   text-align: center;
-  transition: 0.3s ease-in-out;
   animation: slideIn 0.5s ease-in-out;
   transform: translateY(-2.2rem);
   padding: 20px;
-  border-radius: 20px;
+  transition: all 0.25s;
+  background: rgba(1, 59, 112, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(23, 25, 50, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1px solid rgba(245, 245, 245, 0.145);
 }
 .card:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: 0px 5px 25px 0 rgba(0, 0, 0, 0.642);
+  margin-top: -2%;
+  margin-bottom: 2%;
 }
 
 .card img {
