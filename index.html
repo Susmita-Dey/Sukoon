@@ -62,7 +62,6 @@
     </div>
     <div class="nav-links" id="navLinks">
       <ul class="links" id="navmenu">
-        <li><a href="#">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#services">SERVICES </a></li>
         <li><a href="html/contact.html">CONTACT US </a></li>
@@ -70,14 +69,11 @@
     </div>
     <button class="login-button"><a href="html/login.html">SignUp / Login</a></button>
     <div class="hamburger" id="ham">
-      <span></span>
-      <span></span>
-      <span></span>
+      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>
     </div>
   </nav>
   <div class="menu" id="menu">
     <ul class="menu-link">
-      <li><a href="#">HOME</a></li>
       <li><a href="#about">ABOUT</a></li>
       <li><a href="#services">SERVICES </a></li>
       <li><a href="html/contact.html">CONTACT US </a></li>
@@ -473,11 +469,11 @@
     };
     
     window.onscroll = () => {
-        if (window.scrollY > 100) {
-            navbar.classList.add('nav-active');
-        } else {
-            navbar.classList.remove('nav-active');
-        }
+      if (window.scrollY > 100) {
+        navbar.classList.add('nav-active');
+      } else {
+        navbar.classList.remove('nav-active');
+      }
     };
     </script>
   </body>
