@@ -21,31 +21,31 @@
     <nav>
       <a href="../index.html"><img class="talking-logo" src="../logo.png" alt="Logo"/></a>
 
-      <div class="nav-links" id="navLinks">
-        <ul>
-          <li><a href="../index.html">HOME</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#blogs">BLOGS </a></li>
-          <li><a href="#videos">VIDEOS </a></li>
-        </ul>
-      </div>
-      <div class="hamburger" id="ham">
-        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>
-      </div>
-    </nav>
+    <div class="nav-links" id="navLinks">
+      <i class="fa fa-times" onclick="hidemenu()"></i>
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="#about" class=".smooth-scroll">ABOUT</a></li>
+        <li><a href="#blogs" class=".smooth-scroll">BLOGS </a></li>
+        <li><a href="#video" class=".smooth-scroll">VIDEOS </a></li>
 
-    <!-- Mobile Layout Navbar -->
 
-      <div class="menu" id="menu">
-        <ul class="menu-link">
-          <li><a href="../index.html">HOME</a></li>
-          <li><a onclick="closeMenu()" href="#about">ABOUT</a></li>
-          <li><a onclick="closeMenu()" href="#blogs">BLOGS</a></li>
-          <li><a onclick="closeMenu()" href="#videos">VIDEOS</a></li>
-        </ul>
-      </div>
-      
-    <!-- Mobile Layout Navbar Ends Here -->
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Mobile Layout Navbar -->
+
+  <div class="menu" id="menu">
+    <ul class="menu-link">
+      <li><a href="../index.html">HOME</a></li>
+      <li><a onclick="closeMenu()" href="#about">ABOUT</a></li>
+      <li><a onclick="closeMenu()" href="#blogs">BLOGS</a></li>
+      <li><a onclick="closeMenu()" href="#videos">VIDEOS</a></li>
+    </ul>
+  </div>
+
+  <!-- Mobile Layout Navbar Ends Here -->
 
   <!-- Navbar Section Ends Here -->
 
@@ -193,80 +193,110 @@
   <!-- footer start -->
   <footer class="Footer">
     <div class="footer-container">
-
-      <!--logo and info column-->
-      <div class="col">
-
-        <!--logo insert-->
-        <img src="../logo.png" alt="logo" class="footlogo">
-        <div class="footercontent">
+    <!--logo and info column-->
+    <div class="col">
+      <!--logo insert-->
+      <img src="../logo.png" alt="logo" class="footlogo" />
+      <div class="footercontent">
         <h2 class="footerheading">Sukoon</h2>
         <p class="footerpara">go stressfree</p>
       </div>
+    </div>
 
-      </div>
 
-      <!--ADDRESS COLUMN-->
+    <!--ADDRESS COLUMN-->
 
+    <div class="footer-side-col">
       <div class="col">
-        <h3>ADDRESS <div class="underline"><span></span></div>
+        <h3>
+          ADDRESS
+          <div class="underline"><span></span></div>
         </h3>
-
         <p>West Bengal,India</p>
-        <p class="email-id">sukoon665@gmail.com </p>
+        <p class="email-id"><a href="mailto:sukoon665@gmail.com">sukoon665@gmail.com</a></p>
       </div>
-
       <!--HOME COLUMN-->
       <div class="col">
         <h3>HOME</h3>
         <ul>
-
           <li><a href="#about">About Us</a></li>
-          <li><a href="https://github.com/Susmita-Dey/Sukoon/blob/main/CODE_OF_CONDUCT.md">Code Of Conduct</a></li>
-          <li><a href="https://github.com/Susmita-Dey/Sukoon">Contribute</a></li>
-          <li><a href="https://www.buymeacoffee.com/susmitadey">Donate</a></li>
+          <li>
+            <a
+              href="https://github.com/Susmita-Dey/Sukoon/blob/main/CODE_OF_CONDUCT.md"
+              >Code Of Conduct</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/Susmita-Dey/Sukoon">Contribute</a>
+          </li>
+          <li>
+            <a href="https://www.buymeacoffee.com/susmitadey">Donate</a>
+          </li>
         </ul>
       </div>
-
-
       <!--OUR SERVICES COLUMN-->
       <div class="col">
-        <h3>SERVICES<div class="underline"><span></span></div>
+        <h3>
+          SERVICES
+          <div class="underline"><span></span></div>
         </h3>
         <ul>
-
-          <li><a href="https://sukoon-stress-free.netlify.app/html/audiotherapy">Audio Therapy</a></li>
-          <li><a href="https://sukoon-stress-free.netlify.app/html/yogatherapy.html">Yoga Therapy</a></li>
-          <li><a href="https://sukoon-stress-free.netlify.app/html/readingtherapy">Reading Therapy</a></li>
-          <li><a href="https://sukoon-stress-free.netlify.app/html/talkingtherapy">Talking Therapy</a></li>
-          <li><a href="https://www.practo.com/counselling-psychology">Consult a Doctor</a></li>
+          <li>
+            <a href="https://sukoon-stress-free.netlify.app/html/audiotherapy"
+              >Audio Therapy</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://sukoon-stress-free.netlify.app/html/yogatherapy.html"
+              >Yoga Therapy</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://sukoon-stress-free.netlify.app/html/readingtherapy"
+              >Reading Therapy</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://sukoon-stress-free.netlify.app/html/talkingtherapy"
+              >Talking Therapy</a
+            >
+          </li>
+          <li>
+            <a href="https://www.practo.com/counselling-psychology"
+              >Consult a Doctor</a
+            >
+          </li>
         </ul>
       </div>
-
       <!--CONTACTS COLUMN-->
-
       <div class="col">
-        <h3>CONTACTS <div class="underline"><span></span></div>
+        <h3>
+          CONTACTS
+          <div class="underline"><span></span></div>
         </h3>
-
         <div class="social-menu">
           <ul>
             <a href="https://twitter.com/sukoon665">
-              <li><i class="fab fa-2x fa-twitter"></i> </li>
+              <li><i class="fab fa-2x fa-twitter"></i></li>
             </a>
             <a href="https://github.com/Susmita-Dey/Sukoon">
-              <li><i class="fab fa-2x fa-github"></i> </li>
+              <li><i class="fab fa-2x fa-github"></i></li>
             </a>
             <a href="https://www.linkedin.com/in/sukoon-web-820705238">
               <li><i class="fab fa-2x fa-linkedin-in"></i></li>
             </a>
-
           </ul>
         </div>
-
-      </div>
     </div>
-  </footer>
+
+    </div>
+    </div>
+  </div>
+</footer>
+  <script type="text/javascript" src="../js/scrollsmooth.js"></script>
 
 <script>
     const ham = document.getElementById("ham");
@@ -276,7 +306,7 @@
     const closeMenu = () => {
       if (menu.classList.contains("open")) {
         menu.classList.remove("open");
-        
+
         console.log("open");
       }
       ham.innerHTML = '<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>'
@@ -298,6 +328,7 @@
       ele.addEventListener("click", closeMenu);
     }
     )
-</script>
+  </script>
 </body>
+
 </html>
