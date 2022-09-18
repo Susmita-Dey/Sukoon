@@ -430,11 +430,11 @@ nav .fa {
   padding-bottom: 100px;
 }
 
-#about h2 {
+#about h1 {
   color: white;
-  font-size: 40px;
+  font-size: 50px;
   margin: 20px 20px;
-  font-weight: 700;
+  font-weight: 800;
   text-align: center;
   font-family: "Montserrat";
 }
@@ -569,7 +569,9 @@ h5 {
   font-size: 50px;
   text-align: center;
   padding-top: 2rem;
+  font-weight: 800;
   font-weight: bolder;
+  font-family: "Montserrat";
   color: white;
 }
 
@@ -653,6 +655,9 @@ h5 {
 }
 .testimonials_heading h1 {
   font-size: 50px;
+  font-weight: 800;
+  padding-bottom:3rem;
+  font-family: "Montserrat";
 }
 
 figure.testimonal-Card {
@@ -751,6 +756,9 @@ figure.testimonal-Card .author h5 {
 
 .faq_heading h1 {
   font-size: 50px;
+  font-family: "Montserrat";
+  font-weight: 800;
+  padding-bottom: 2rem;
 }
 
 .wrap {
