@@ -69,6 +69,11 @@ nav {
   z-index: 100;
 }
 
+.nav-links .fa{
+  display:none;
+
+}
+
 @media screen and (max-width: 650px) {
   .nav-links {
     display: none;
