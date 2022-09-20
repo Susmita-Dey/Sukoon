@@ -593,8 +593,13 @@ h5 {
   margin-top: 28px;
 }
 
+.round-image{
+  object-fit: cover;
+}
+
 .responsive .round-image img {
   width: 12rem;
+  border-radius: 50%;
 }
 
 .responsive h2 {
