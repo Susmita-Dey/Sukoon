@@ -4,6 +4,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+::-webkit-scrollbar{
+  background: transparent;
+  width: 0.4rem;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgba(173, 173, 173, 0.2);
+  border-radius: 10px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(173, 173, 173, 0.5);
+}
+
+html{
+  scroll-behavior: smooth;
+  overflow-y: overlay;
+}
+
 body {
   background-color: #253240;
   font-family: 'Inter', sans-serif;
