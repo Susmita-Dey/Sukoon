@@ -12,7 +12,8 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script&family=Itim&family=Oleo+Script+Swash+Caps&family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="myfunction()">
+  <div id="load"></div>
     <!-- Navbar-->
     <header>
     <nav class="navbar">
@@ -460,5 +461,11 @@
       }
       )
     </script>
+    <script>
+      var preloader = document.getElementById('load');
+      function myfunction(){
+          preloader.style.display='none';
+      }
+  </script>
 </body>
 </html>

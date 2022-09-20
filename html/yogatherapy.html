@@ -27,7 +27,8 @@
     <title>Yoga Therapy</title>
   </head>
 
-  <body>
+  <body onload="myfunction()">
+    <div id="load"></div>
     <!-- Navbar Section -->
     <nav>
       <a href="../index.html"
@@ -413,5 +414,11 @@
       }
       )
     </script>
+    <script>
+      var preloader = document.getElementById('load');
+      function myfunction(){
+          preloader.style.display='none';
+      }
+  </script>
   </body>
 </html>

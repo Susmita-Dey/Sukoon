@@ -15,7 +15,9 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
-<body>
+<body onload="myfunction()">
+  <div id="load"></div>
+
   <!-- Navbar Section -->
   <nav>
     <a href="../index.html"><img class="talking-logo" src="../logo.png" alt="Logo" /></a>
@@ -338,6 +340,12 @@
     }
     )
   </script>
+  <script>
+    var preloader = document.getElementById('load');
+    function myfunction(){
+        preloader.style.display='none';
+    }
+</script>
 </body>
 
 </html>

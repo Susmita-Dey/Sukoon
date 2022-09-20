@@ -13,7 +13,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
   </head>
-  <body>
+  <body onload="myfunction()">
+    <div id="load">
+      <div style="background-color: white; height: 25vh; width: 100%; position: relative; top: -70px;"></div>
+    </div>
+  
     <nav>
       <a href="../index.html"><img class="audio-logo" src="../logo.png" alt="Logo"/></a>
 
@@ -436,6 +440,11 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
     </script>
-
+<script>
+  var preloader = document.getElementById('load');
+  function myfunction(){
+      preloader.style.display='none';
+  }
+</script>
   </body>
 </html>
