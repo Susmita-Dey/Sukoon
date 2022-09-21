@@ -8,6 +8,7 @@
   <link rel ="icon" href="/images/favicon-enhanced.png">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" text="text/CSS" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" text="text/CSS"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -232,42 +233,67 @@
       </div>
     </div>
   </section>
-   <!-- Testimonials Section -->
-   <section class=" testimonials">
-    <div class="testimonials_heading">
-      <h1>Testimonials</h1>
-    </div>
-    <figure data-aos="zoom-in" data-aos-duration="800" class="testimonal-Card">
-      <blockquote>I have found benefits from Sound Therapy through improved concentration and absorbing more information
-        while studying for my university degree. Also an improvement in hearing has helped me to enjoy life more.
-        <div class="arrow"></div>
-      </blockquote>
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg" alt="sample3" />
-      <div class="author">
-        <h5>Merry</h5>
-      </div>
-    </figure>
-    <figure data-aos="zoom-in" data-aos-duration="800" class="testimonal-Card hover">
-      <blockquote>I had 6 sessions of talking therapy over Zoom, I found the sessions very helpful and my therapist was
-        understanding, clear and gave me useful and achievable tools to manage during the 6 weeks and afterwards too.
-        <div class="arrow"></div>
-      </blockquote>
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample47.jpg" alt="sample47" />
-      <div class="author">
-        <h5>Rohan</h5>
-      </div>
-    </figure>
-    <figure data-aos="zoom-in" data-aos-duration="800" class="testimonal-Card">
-      <blockquote>Finished my second round of therapy today, am very happy with how it all went, all the staff I have
-        delt with have been wonderful and do an amazing job. I have found it very helpful.Would highly recommend Sukoon.
-        <div class="arrow"></div>
-      </blockquote>
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample17.jpg" alt="sample17" />
-      <div class="author">
-        <h5>Emily</h5>
-      </div>
-    </figure>
-  </section>
+
+  <!-- Testimonials Section -->
+    <section id="testimonial" class="section-100">
+        <div class="testimonials_heading">
+            <h1>Testimonials</h1>
+        </div>
+        <div class="testimonial-view">
+            <div class="owl-carousel">
+                <div class="testimonial-box">
+
+                    <figure class="testimonal-Card">
+                        <blockquote>I have found benefits from Sound Therapy through improved concentration and absorbing more information while studying for my university degree. Also an improvement in hearing has helped me to enjoy life more.
+                            <div class="arrow"></div>
+                        </blockquote>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg" alt="sample3" />
+                        <div class="author">
+                            <h5>Merry</h5>
+                        </div>
+                </div>
+                <div class="testimonial-box">
+                    <!-- <i class="fa fa-quote-left quote-icon"></i> -->
+                    <figure class="testimonal-Card hover">
+                        <blockquote>I had 6 sessions of talking therapy over Zoom, I found the sessions very helpful and my therapist was understanding, clear and gave me useful and achievable tools to manage during the 6 weeks and afterwards too.
+                            <div class="arrow"></div>
+                        </blockquote>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample47.jpg" alt="sample47" />
+                        <div class="author">
+                            <h5>Rohan</h5>
+                        </div>
+                    </figure>
+                </div>
+                <div class="testimonial-box">
+                    <!-- <i class="fa fa-quote-left quote-icon"></i> -->
+                    <figure class="testimonal-Card">
+                        <blockquote>Finished my second round of therapy today, am very happy with how it all went, all the staff I have delt with have been wonderful and do an amazing job. I have found it very helpful.Would highly recommend Sukoon.
+                            <div class="arrow"></div>
+                        </blockquote>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample34.jpg" alt="sample17" />
+                        <div class="author">
+                            <h5>Alex</h5>
+                        </div>
+                    </figure>
+
+                </div>
+                <div class="testimonial-box">
+                    <!-- <i class="fa fa-quote-left quote-icon"></i> -->
+                    <figure class="testimonal-Card">
+                        <blockquote>Finished my second round of therapy today, am very happy with how it all went, all the staff I have delt with have been wonderful and do an amazing job. I have found it very helpful.Would highly recommend Sukoon.
+                            <div class="arrow"></div>
+                        </blockquote>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample11.jpg" alt="sample17" />
+                        <div class="author">
+                            <h5>Emily</h5>
+                        </div>
+                    </figure>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
   <!-- Faq section -->
   <section class="faq">
     <div class="faq_heading">
@@ -490,10 +516,9 @@
         }
     };
     </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   </body>
 </html>
 
