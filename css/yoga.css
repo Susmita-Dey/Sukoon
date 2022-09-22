@@ -161,13 +161,21 @@ header {
 }
 
 .text h1 {
-  color: #fff;
+  color: #06a38f;
   line-height: 1.2;
   font-weight: 800;
+  animation: slidein 3s ;
+}
+
+@keyframes slidein {
+  0% { margin-left:-800px; }
+  20% { margin-left:-800px; }
+  35% { margin-left:0px; }
+  100% { margin-left:0px; }
 }
 
 .text p {
-  color: rgb(34, 194, 206);
+  color: rgb(206 34 34);
   font-weight: bolder;
   font-size: 1.2rem;
 }
@@ -175,7 +183,17 @@ header {
 /*Benefits section*/
 .benefits h1 {
   margin-top: 5%;
+  animation: showup 2s infinite;
 }
+
+@keyframes showup {
+  0% {opacity:0;}
+  20% {opacity:1;}
+  80% {opacity:1;}
+  100% {opacity:0;}
+}
+
+
 
 .benefits .bfit {
   display: flex;
@@ -191,6 +209,8 @@ header {
     margin-left: 45px;
     padding: 5%;
 }
+
+
 .bfit img{
   width: 35%;
 }
@@ -216,8 +236,31 @@ header {
 .aasan1 {
   display: flex;
   margin-top: 4%;
+    }
+
+.aasan1 h1 {
+  transition: 3s ease-out;
+  animation: 2s anim-lineUp ease-out infinite;
 }
 
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+ 
 .aasan1 img {
   border-radius: 7px;
   box-shadow: 10px 10px 5px lightgreen;
