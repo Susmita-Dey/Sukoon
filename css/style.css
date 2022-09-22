@@ -461,14 +461,20 @@ nav .fa {
  border-radius: 10px;
  margin-right: 10%;
 }
+
 .about .about-content .text-1{
 font-size: 27px;
-margin-top: 70px;
+margin-top: 80px;
 font-family: "Montserrat";
+
+/* margin-left: 2px; */
+margin:2px;
 }
 .about .about-content .text-3{
-font-size: 27px;
+  /* text-align: center; */
+font-size: 22px;
 margin: 5px 0;
+/* padding: 4px; */
 font-family: "Montserrat";
 }
 .about .about-content .text-3 span,.about .about-content .text-1 span,.about .about-content .text-5 span{
@@ -1292,6 +1298,13 @@ footer a:focus {
   #about h3 {
     text-align: center;
   }
+  .about .photo{
+    float:left;
+    margin-left: 18%;
+  }
+  .about .about-content .text-1{
+    padding-top: 400px;
+  }
 }
 
 @media screen and (max-width: 460px) {
@@ -1300,31 +1313,104 @@ footer a:focus {
   }
 }
 @media (max-width: 690px) {
-  .max-width{
-      padding: 0 20px;
-  }
+  
+  
   .about .about-content .text-1{
 padding-top: 70%;
   }
 }
 
 @media (max-width: 500px) {
-  .max-width{
-    padding: 0 5px;
-}
-  .about .about-content .text-1{
-    padding-top: 100px;
+  .about .photo{
+    margin-left: 85px;
   }
+  .about .max-width{
+    margin: auto;
+  }
+  .about .about-content .text-1{
+    padding-top: 400px;
+    margin-left: 27px;
+  }
+  .about .about-content .text-3 {
+    margin: 10px;
+    margin-top: 24px;
+    font-size: 22px;
+    margin-left: 27px;
+  }
+  .about .about-content .text-5{
+        font-size: 22px;
+        margin:14px;
+        margin-left: 27px;
+      }
+  
 }
-@media (max-width: 450px){
+@media (max-width: 456px){
   .about .photo{
     float: left;
-    margin-left: -15%;
+    margin-left:6%;
   }
+
+  .about .about-content .text-1{
+    padding: 350px 8px 0px 0px;
+    margin: 10px;
+    margin-top: 24px;
+    font-size: 22px;
+  }
+  .about .about-content .text-3 {
+    margin: 10px;
+    margin-top: 24px;
+    font-size: 22px;
+  }
+  .about .about-content .text-5{
+        font-size: 22px;
+        margin:14px
+      }
 }
 @media (max-width: 400px){
-  .about .photo{
+.about .photo{
+  float: left;
+  /* margin-left: -14%; */
+  width:280px;
+}
+  .about .photo img{
     float: left;
-    margin-left: -18%;
+    /* margin-left: -14%; */
+    width:270px;
+   
   }
+  .about .about-content .text-1{
+margin: 12px 4px;
+font-size: 22px;
+
+  }
+  .about .about-content .text-3 {
+    margin: 10px;
+    margin-top: 24px;
+    font-size: 22px;
+      }
+      .about .about-content .text-5{
+        font-size: 22px;
+      }
+}
+@media (max-width:700px){
+  .about .photo{
+    float:left;
+    margin-left: 14%;
+
+
+  }
+  .about .about-content .text-1{
+    margin: 12px 8px;
+    font-size: 22px;
+    padding-top: 400px;
+    
+      }
+      .about .about-content .text-3 {
+        margin: 10px;
+        margin-top: 24px;
+        font-size: 22px;
+          }
+          .about .about-content .text-5{
+            font-size: 22px;
+          }
 }
