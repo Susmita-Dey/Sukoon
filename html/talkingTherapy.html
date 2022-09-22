@@ -15,7 +15,10 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
-<body>
+<body onload="myfunction()" id="main">
+  <div id="load">
+    <div style="background-color: white; height: 25vh; width: 100%; position: relative; top: -70px;"></div>
+  </div>
 
   <!-- Navbar Section -->
   <nav>
@@ -339,6 +342,14 @@
     }
     )
   </script>
+  <script>
+    var preloader = document.getElementById('load');
+    var scroll = document.getElementById('main');
+    function myfunction(){
+        preloader.style.display='none';
+        scroll.style.overflow='scroll';
+    }
+</script>
 </body>
 
 </html>
