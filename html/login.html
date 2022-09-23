@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel ="icon" href="/images/favicon-enhanced.png">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" 
+    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Login/SignUp</title>
 </head>
 <body>
     <img src="/images/signupill.png" alt="">
     <div class="login">
         <div class="welcome">
-            <h1 class="titletext">Welcome back</h1>
+            <h1 class="titletext">Welcome to Sukoon</h1>
             <span>Please enter your details.</span>
         </div>
         <div class="inputs">
             <span>Email<br></span>
             <input class="inputbox" placeholder="Enter your email"/><br>
             <span>Password<br></span>
-            <input type="password" class="inputbox" placeholder="••••••••"/>        
+            <input type="password" class="inputbox" placeholder="Password" id="password"/>   
+            <i class="fa fa-eye" aria-hidden="true" id="eye"
+            onclick="toggle()"></i>  
         </div>
         <div class="forgotpass">
             <span>Forgot Password</span>
@@ -44,7 +48,10 @@
             <span>Email<br></span>
             <input class="inputbox" placeholder="Enter your email"/><br>
             <span>Password<br></span>
-            <input type="password" class="inputbox" placeholder="••••••••"/>        
+            <input type="pass" class="inputbox" placeholder="password" id="pass"/>
+            <i class="fa fa-eye" aria-hidden="true" id="eyes"
+            onclick="toggles()"></i>
+
         </div>
         <div class="button">
             <input type="button" class="signin" value="Sign up" />
@@ -70,6 +77,35 @@
             register.style.display='none';
             login.style.display='block';
         })
+
+        var state = false;
+        function toggle(){
+            if(state){
+                document.getElementById("password").setAttribute("type","password");
+                document.getElementById("eye").style.color = '#7a797e';
+                state = false;
+            }
+            else{
+                document.getElementById("password").setAttribute("type","text");
+                document.getElementById("eye").style.color = '#7F55DA';
+                state = true;
+
+            }
+        }
+        var state = false;
+        function toggles(){
+            if(state){
+                document.getElementById("pass").setAttribute("type","password");
+                document.getElementById("eyes").style.color = '#7a797e';
+                state = false;
+            }
+            else{
+                document.getElementById("pass").setAttribute("type","text");
+                document.getElementById("eyes").style.color = '#7F55DA';
+                state = true;
+
+            }
+        }
 
 
     </script>
