@@ -8,10 +8,13 @@
   <link rel ="icon" href="/images/favicon-enhanced.png">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" text="text/CSS" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" text="text/CSS"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <style>
   html {
@@ -98,12 +101,12 @@
     <section id="about" class="about">
       <h2>About Us</h2>
       <div class="max-width ">
-        <div class="photo"><img src="./images/about.jpg" alt="" height="300px" width="330px"></div>
+        <div  data-aos="zoom-in" class="photo" ><img src="./images/about.jpg" alt="" height="300px" width="330px"></div>
         <div class="about-content">
-            <div class="text-1">  We are a team of open source contributors <br>who have created this website Sukoon </div>
-            <div class="text-3">  with the aim
+            <div data-aos="fade-right" class="text-1">  We are a team of open source contributors <br>who have created this website Sukoon </div>
+            <div data-aos="fade-right" class="text-3">  with the aim
               to provide a <span>one step <br>solution</span> to get relief from stress. </div>
-            <div class="text-5">We hope that everyone can live a <span>stress <br> free life </span>with the help of<span> sukoon.</span></div>
+            <div data-aos="fade-right" class="text-5">We hope that everyone can live a <span>stress <br> free life </span>with the help of<span> sukoon.</span></div>
         </div>
     </div>
       <h3><span style="color: rgb(91, 134, 150);">MEET OUR MEMBERS</span></h3>
@@ -118,7 +121,7 @@
             <a href="https://bio.link/shayanpal"><button>Let's Connect</button></a>
           </div>
         </div> -->
-        <div data-aos="fade-up" ddata-aos-duration="800" class="card">
+        <div class="card">
           <img src="./images/soumyadeep.jpeg" alt="soumyadeep" loading="lazy" />
           <h5>Soumyadeep Dhali</h5>
           <div class="pra">
@@ -126,7 +129,7 @@
             <a href="https://soumyadeep.bio.link"><button>Let's Connect</button></a>
           </div>
         </div>
-        <div data-aos="fade-up" data-aos-duration="800" class="card">
+        <div class="card">
           <img src="./images/susmita.jpg" alt="" loading="lazy" />
           <h5>Susmita Dey</h5>
           <div class="pra">
@@ -134,7 +137,7 @@
             <a href="https://bio.link/susmitadey"><button>Let's Connect</button></a>
           </div>
         </div>
-        <div data-aos="fade-up" data-aos-duration="800" class="card">
+        <div class="card">
           <img src="./images/chaitri.jpeg" alt="chaitri" loading="lazy">
           <h5>Chaitri Saha Chowdhury</h5>
           <div class="pra">
@@ -143,7 +146,7 @@
           </div>
         </div>
   
-        <div data-aos="fade-up" data-aos-duration="800" class="card">
+        <div class="card">
           <img src="./images/sasanka.jpeg" alt="sasanka" loading="lazy">
           <h5>Sasanka Kundu</h5>
           <div class="pra">
@@ -158,7 +161,7 @@
   <!-- SERVICES SECTION -->
   <section id="services">
     <h1>Our Services</h1>
-    <div data-aos="zoom-in" data-aos-duration="800" class="container">
+    <div class="container">
       <div class="responsive audio">
         <div class="round-image">
           <img src="./images/audio.png" alt="audio" loading="lazy" />
@@ -171,7 +174,7 @@
           Let's Explore
         </a>
       </div>
-      <div data-aos="zoom-in" data-aos-duration="800" class="responsive reading">
+      <div class="responsive reading">
         <div class="round-image">
           <img src="./images/reading.png" alt="read" loading="lazy" />
         </div>
@@ -183,7 +186,7 @@
           Let's Explore
         </a>
       </div>
-      <div data-aos="zoom-in" data-aos-duration="800" class="responsive yoga">
+      <div class="responsive yoga">
         <div class="round-image">
           <img src="./images/yoga.png" alt="yoga" loading="lazy" />
         </div>
@@ -195,7 +198,7 @@
           Let's Explore
         </a>
       </div>
-      <div data-aos="zoom-in" data-aos-duration="800" class="responsive laugh">
+      <div class="responsive laugh">
         <div class="round-image">
           <img src="./images/laughing.png" alt="laughing" />
         </div>
@@ -207,7 +210,7 @@
          Let's Explore
         </a>
       </div>
-      <div data-aos="zoom-in" data-aos-duration="800" class="responsive talk">
+      <div class="responsive talk">
         <div class="round-image">
           <img src="./images/talking.png" loading="lazy" alt="talking" />
         </div>
@@ -219,7 +222,7 @@
           Let's Explore
         </a>
       </div>
-      <div data-aos="zoom-in" data-aos-duration="800" class="responsive doctor">
+      <div class="responsive doctor">
         <div class="round-image">
           <img src="./images/doctor.png" alt="doctor" loading="lazy" />
         </div>
@@ -233,67 +236,42 @@
       </div>
     </div>
   </section>
-
-  <!-- Testimonials Section -->
-    <section id="testimonial" class="section-100">
-        <div class="testimonials_heading">
-            <h1>Testimonials</h1>
-        </div>
-        <div class="testimonial-view">
-            <div class="owl-carousel">
-                <div class="testimonial-box">
-
-                    <figure class="testimonal-Card">
-                        <blockquote>I have found benefits from Sound Therapy through improved concentration and absorbing more information while studying for my university degree. Also an improvement in hearing has helped me to enjoy life more.
-                            <div class="arrow"></div>
-                        </blockquote>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg" alt="sample3" />
-                        <div class="author">
-                            <h5>Merry</h5>
-                        </div>
-                </div>
-                <div class="testimonial-box">
-                    <!-- <i class="fa fa-quote-left quote-icon"></i> -->
-                    <figure class="testimonal-Card hover">
-                        <blockquote>I had 6 sessions of talking therapy over Zoom, I found the sessions very helpful and my therapist was understanding, clear and gave me useful and achievable tools to manage during the 6 weeks and afterwards too.
-                            <div class="arrow"></div>
-                        </blockquote>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample47.jpg" alt="sample47" />
-                        <div class="author">
-                            <h5>Rohan</h5>
-                        </div>
-                    </figure>
-                </div>
-                <div class="testimonial-box">
-                    <!-- <i class="fa fa-quote-left quote-icon"></i> -->
-                    <figure class="testimonal-Card">
-                        <blockquote>Finished my second round of therapy today, am very happy with how it all went, all the staff I have delt with have been wonderful and do an amazing job. I have found it very helpful.Would highly recommend Sukoon.
-                            <div class="arrow"></div>
-                        </blockquote>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample34.jpg" alt="sample17" />
-                        <div class="author">
-                            <h5>Alex</h5>
-                        </div>
-                    </figure>
-
-                </div>
-                <div class="testimonial-box">
-                    <!-- <i class="fa fa-quote-left quote-icon"></i> -->
-                    <figure class="testimonal-Card">
-                        <blockquote>Finished my second round of therapy today, am very happy with how it all went, all the staff I have delt with have been wonderful and do an amazing job. I have found it very helpful.Would highly recommend Sukoon.
-                            <div class="arrow"></div>
-                        </blockquote>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample11.jpg" alt="sample17" />
-                        <div class="author">
-                            <h5>Emily</h5>
-                        </div>
-                    </figure>
-
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
+   <!-- Testimonials Section -->
+   <section class=" testimonials">
+    <div class="testimonials_heading">
+      <h1>Testimonials</h1>
+    </div>
+    <figure class="testimonal-Card">
+      <blockquote>I have found benefits from Sound Therapy through improved concentration and absorbing more information
+        while studying for my university degree. Also an improvement in hearing has helped me to enjoy life more.
+        <div class="arrow"></div>
+      </blockquote>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg" alt="sample3" />
+      <div class="author">
+        <h5>Merry</h5>
+      </div>
+    </figure>
+    <figure class="testimonal-Card hover">
+      <blockquote>I had 6 sessions of talking therapy over Zoom, I found the sessions very helpful and my therapist was
+        understanding, clear and gave me useful and achievable tools to manage during the 6 weeks and afterwards too.
+        <div class="arrow"></div>
+      </blockquote>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample47.jpg" alt="sample47" />
+      <div class="author">
+        <h5>Rohan</h5>
+      </div>
+    </figure>
+    <figure class="testimonal-Card">
+      <blockquote>Finished my second round of therapy today, am very happy with how it all went, all the staff I have
+        delt with have been wonderful and do an amazing job. I have found it very helpful.Would highly recommend Sukoon.
+        <div class="arrow"></div>
+      </blockquote>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample17.jpg" alt="sample17" />
+      <div class="author">
+        <h5>Emily</h5>
+      </div>
+    </figure>
+  </section>
   <!-- Faq section -->
   <section class="faq">
     <div class="faq_heading">
@@ -516,9 +494,6 @@
         }
     };
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
