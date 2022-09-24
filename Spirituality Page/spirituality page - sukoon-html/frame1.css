@@ -483,7 +483,7 @@
   text-decoration: none;
   transition: 0.2s ease-in;
 }
-.frame1-text044:hover{
+.frame1-text047:hover{
   color: rgb(255, 235, 157);
 
 }
@@ -504,6 +504,12 @@
   margin-right: 0;
   margin-bottom: 0;
   text-decoration: none;
+  transition: 0.2s ease-in;
+
+}
+.frame1-text050:hover{
+  color: rgb(255, 235, 157);
+
 }
 .frame1-text051 {
   left: 960px;
@@ -522,6 +528,12 @@
   margin-right: 0;
   margin-bottom: 0;
   text-decoration: none;
+  transition: 0.2s ease-in;
+
+}
+.frame1-text051:hover{
+  color: rgb(255, 235, 157);
+
 }
 .frame1-text054 {
   top: 240px;
@@ -540,6 +552,11 @@
   margin-right: 0;
   margin-bottom: 0;
   text-decoration: none;
+  transition: 0.2s ease-in;
+}
+.frame1-text054:hover{
+  color: rgb(255, 235, 157);
+
 }
 .frame1-text055 {
   top: 177px;
