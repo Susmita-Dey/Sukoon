@@ -434,6 +434,12 @@
   margin-right: 0;
   margin-bottom: 0;
   text-decoration: none;
+  transition: 0.2s ease-in;
+}
+
+.frame1-text043:hover{
+  color: rgb(255, 235, 157);
+
 }
 .frame1-text044 {
   top: 151px;
@@ -451,7 +457,12 @@
   font-stretch: normal;
   margin-right: 0;
   margin-bottom: 0;
+  transition: 0.2s ease-in;
   text-decoration: none;
+}
+.frame1-text044:hover{
+  color: rgb(255, 235, 157);
+
 }
 .frame1-text047 {
   left: 717px;
@@ -470,6 +481,11 @@
   margin-right: 0;
   margin-bottom: 0;
   text-decoration: none;
+  transition: 0.2s ease-in;
+}
+.frame1-text044:hover{
+  color: rgb(255, 235, 157);
+
 }
 .frame1-text050 {
   top: 213px;
@@ -1311,6 +1327,7 @@
   border-radius: 25px;
   margin-bottom: 0;
 }
+
 .frame1-text118 {
   top: 580px;
   left: 1035px;
@@ -1329,6 +1346,11 @@
   margin-right: 0;
   margin-bottom: 0;
   text-decoration: none;
+  transition: 0.3s ease-in;
+}
+
+.frame1-text118:hover{
+  color: rgb(114, 255, 53);
 }
 .frame1-text120 {
   top: 26px;
