@@ -646,12 +646,14 @@ h5 {
 }
 
 .responsive a {
+  display: inline-block;
+  width: 100%;
   text-decoration: none;
   color: black;
   background-color: rgb(255, 255, 255);
   border: 1px solid black;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
+  padding: 0.5em;
+  border-radius: 0.5em;
   transition: 0.3s ease-in-out;
 }
 
