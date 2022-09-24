@@ -16,10 +16,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap"
       rel="stylesheet"
     />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Sukoon</title>
     <link rel="stylesheet" href="../css/audio.css" />
@@ -97,7 +93,7 @@
       <div class="container">
         <div class="collection">
           <h2>Stress Relief Sounds</h2>
-          <div class="playlist animate__animated animate__fadeInUp">
+          <div data-aos="fade-up" ddata-aos-duration="800" class="playlist" >
             <iframe
               style="border-radius: 12px"
               src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXe9gFZP0gtP?utm_source=generator"
@@ -623,9 +619,11 @@
     </div>
   </footer>
     
-    <!-- AudioBooks Section Ends Here -->
-    <script type="text/javascript" src="../js/scrollsmooth.js"></script>
+  <!-- AudioBooks Section Ends Here -->
+  <script type="text/javascript" src="../js/scrollsmooth.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+      AOS.init();
       const ham = document.getElementById("ham");
       const menu = document.getElementById("menu");
       const close = document.querySelectorAll('.close');
@@ -656,5 +654,6 @@
       )
 
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   </body>
 </html>
