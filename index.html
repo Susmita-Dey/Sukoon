@@ -64,7 +64,6 @@
     </div>
     <div class="nav-links" id="navLinks">
       <ul class="links" id="navmenu">
-        <li><a href="#">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#services">SERVICES </a></li>
         <li><a href="html/contact.html">CONTACT US </a></li>
@@ -72,14 +71,11 @@
     </div>
     <button class="login-button"><a href="html/login.html">SignUp / Login</a></button>
     <div class="hamburger" id="ham">
-      <span></span>
-      <span></span>
-      <span></span>
+      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>
     </div>
   </nav>
   <div class="menu" id="menu">
     <ul class="menu-link">
-      <li><a href="#">HOME</a></li>
       <li><a href="#about">ABOUT</a></li>
       <li><a href="#services">SERVICES </a></li>
       <li><a href="html/contact.html">CONTACT US </a></li>
@@ -96,7 +92,7 @@
 
     <!-- About Section -->
     <section id="about" class="about">
-      <h2>About Us</h2>
+      <h1>About Us</h1>
       <div class="max-width ">
         <div class="photo"><img src="./images/about.jpg" alt="" height="300px" width="330px"></div>
         <div class="about-content">
@@ -379,6 +375,21 @@
             help them overcome them.
           </p>
         </li>
+        <li class="accordion__item">
+          <a class="accordion__title" href="javascript:void(0)">What is Child Therapy?
+            <div class="bmenu x7"><span class="btop"></span><span class="bmid"></span><span class="bbot"></span></div>
+          </a>
+          <p class="accordion__content">Child therapy includes the watching of cute videos and images of children, as children make us forget about our problems with their innocence and cuteness.
+            
+          </p>
+        </li>
+        <li class="accordion__item">
+          <a class="accordion__title" href="javascript:void(0)">What is Spiritual Therapy?
+            <div class="bmenu x7"><span class="btop"></span><span class="bmid"></span><span class="bbot"></span></div>
+          </a>
+          <p class="accordion__content">Spiritual therapy is a form of counseling that attempts to treat a person's soul as well as mind and body by accessing individual belief systems and using that faith in a higher power to explore areas of conflict in life.
+          </p>
+        </li>
       </ul>
     </div>
   </section>
@@ -509,11 +520,11 @@
     };
     
     window.onscroll = () => {
-        if (window.scrollY > 100) {
-            navbar.classList.add('nav-active');
-        } else {
-            navbar.classList.remove('nav-active');
-        }
+      if (window.scrollY > 100) {
+        navbar.classList.add('nav-active');
+      } else {
+        navbar.classList.remove('nav-active');
+      }
     };
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
