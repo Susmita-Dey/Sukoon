@@ -30,8 +30,8 @@ body {
   -ms-flex-align: center;
   align-items: center;
   height: 100vh;
-  background: url(/images/contact.png);
-background-size: cover;
+  background: url("../../images/contact.png");
+  background-size: cover;
   background-repeat: no-repeat;
   font-family: "Lato", sans-serif;
   
