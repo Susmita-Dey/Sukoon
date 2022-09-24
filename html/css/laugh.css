@@ -162,7 +162,7 @@ menu-link {
 
 .center {
   position: absolute;
-  top: 50%;
+  top: 37%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 20;
@@ -186,11 +186,14 @@ h1 {
 }
 
 .heading-span {
-  color: cyan;
+  color: #3b94af;
+  text-shadow: 2.5px 2px 1px #05caca;
 }
 #subtitle {
-  color: #fff;
+  color:#d85e00;
+  padding: 10px;
   text-align: center;
+  text-shadow: 1.5px 1.5px 1px #ac2045;
   font-size: 1.3rem;
   font-weight: 800;
 }
@@ -299,13 +302,19 @@ hr {
   to {opacity: 1}
 }
 .video {
-float: left;
-  width: 42.5%;
-  padding: 5px;
-  margin-left: 5%;
+  box-sizing: border-box;
+  float: left;
+  width: 38%;
+  margin-top: 5px;
+  margin-left: 8.5%;
+  margin-bottom:5px;
 }
-.video:hover{
-  border:  1px cyan solid ;
+iframe{
+  padding:10px;
+}
+iframe:hover{
+  border: 1.5px #00eeff solid ;
+  border-radius: 5px;
 }
 .collection::after{
   content: "";
@@ -364,7 +373,7 @@ float: left;
   .image img{
     width:400px;
     height: 490px;
-margin-left: 2%;
+    margin-left: 2%;
   }
   .about-content{
     margin-top: -50%;
