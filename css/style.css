@@ -122,9 +122,10 @@ header {
 }
 
 
-.hamburger:hover{
-  color:rgb(200, 200, 200)
+.hamburger:hover {
+  color: rgb(200, 200, 200)
 }
+
 /* .hamburger span {
   width: 25px;
   height: 3px;
@@ -227,7 +228,7 @@ header {
   width: 70%;
   height: 100%;
   position: fixed;
-  background-color: rgb(56,56,55);
+  background-color: rgb(56, 56, 55);
   top: 0;
   left: 0;
   padding: 30px;
@@ -685,6 +686,9 @@ h5 {
 
 .testimonials_heading h1 {
   font-size: 50px;
+  font-weight: 800;
+  padding-bottom: 3rem;
+  font-family: "Montserrat";
 }
 
 figure.testimonal-Card {
@@ -863,197 +867,7 @@ figure.testimonal-Card .author h5 {
   padding: 0 !important;
   font: inherit;
 }
-  .testimonials_heading {
-        padding: 20px 0px;
-        text-align: center;
-        font-weight: bolder;
-        color: rgb(253, 253, 253);
-        width: 100%;
-    }
-    
-    .testimonials_heading h1 {
-        font-size: 50px;
-        font-weight: 800;
-        padding-bottom:3rem;
-        font-family: "Montserrat";
-    }
-    
-    figure.testimonal-Card {
-        font-family: "Raleway", Arial, sans-serif;
-        position: relative;
-        overflow: hidden;
-        margin: 0 auto;
-        min-width: 220px;
-        max-width: 310px;
-        width: 100%;
-        color: #333;
-        text-align: left;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-        border-radius: 8px;
-    }
-    
-    figure.testimonal-Card * {
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
-        transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
-    }
-    
-    figure.testimonal-Card img {
-        max-width: 100%;
-        vertical-align: middle;
-    }
-    
-    figure.testimonal-Card blockquote {
-        position: relative;
-        background-color: #ffffff;
-        padding: 25px 50px;
-        font-size: 0.8em;
-        font-weight: 500;
-        text-align: left;
-        margin: 0;
-        line-height: 1.6em;
-        font-style: italic;
-    }
-    
-    figure.testimonal-Card blockquote:before,
-    figure.testimonal-Card blockquote:after {
-        font-family: "FontAwesome";
-        content: "\201C";
-        position: absolute;
-        font-size: 50px;
-        opacity: 0.3;
-        font-style: normal;
-    }
-    
-    figure.testimonal-Card blockquote:before {
-        top: 25px;
-        left: 20px;
-    }
-    
-    figure.testimonal-Card blockquote:after {
-        content: "\201D";
-        right: 20px;
-        bottom: 0;
-    }
-    
-    figure.testimonal-Card .arrow {
-        top: 100%;
-        width: 0;
-        height: 0;
-        border-left: 0 solid transparent;
-        border-right: 25px solid transparent;
-        border-top: 25px solid #ffffff;
-        margin: 0;
-        position: absolute;
-    }
-    
-    figure.testimonal-Card .author {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        padding: 10px 25px;
-        color: #000000;
-        background-color: #ffffff;
-        margin: 0;
-        text-transform: uppercase;
-    }
-    
-    figure.testimonal-Card .author h5 {
-        opacity: 0.8;
-        color: #000000;
-        text-align: center;
-        margin: 0;
-        font-weight: 600;
-    }
-    
-    .section-100 {
-        padding: 50px;
-        background-color: rgb(13 50 64);
-    }
-    
-    .testimonial-view {
-        margin-bottom: 30px;
-        position: relative;
-    }
-    
-    .testimonial-view .owl-item.active.center .testimonial-box {
-        transform: scale(1.15);
-        opacity: 1;
-    }
-    
-    .testimonial-box {
-        padding: 30px 20px;
-        margin: 50px 15px 90px 15px;
-        border-radius: 5px;
-        box-shadow: 0 15px 50px -3px rgba(0, 0, 0, 0.1);
-        transform: scale(0.9);
-        opacity: 0.5;
-        transition: all 0.3s;
-    }
-    
-    .testimonial-box .quote-icon {
-        font-size: 50px;
-        color: #eee;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    
-    .testimonial-box img.user-img {
-        height: 60px;
-        width: 60px;
-        border: 3px solid #eee;
-        border-radius: 60px;
-        object-fit: cover;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16);
-    }
-    
-    .owl-nav .owl-prev {
-        position: absolute;
-        top: calc(50% - 25px);
-        left: 0;
-        opacity: 0.7;
-        font-size: 30px !important;
-        z-index: 1;
-    }
-    
-    .owl-nav .owl-next {
-        position: absolute;
-        top: calc(50% - 25px);
-        right: 0;
-        opacity: 0.7;
-        font-size: 30px !important;
-        z-index: 1;
-    }
-    
-    .owl-dots {
-        text-align: center;
-    }
-    
-    .owl-dots .owl-dot {
-        height: 8px;
-        width: 8px;
-        border-radius: 8px;
-        background: #ccc !important;
-        margin-left: 5px;
-        margin-right: 5px;
-        outline: none;
-    }
-    
-    .owl-dots .owl-dot.active {
-        background: #999 !important;
-    }
-    
-    .owl-carousel .owl-nav button.owl-next,
-    .owl-carousel .owl-nav button.owl-prev,
-    .owl-carousel button.owl-dot {
-        background: 0 0;
-        /* color: inherit; */
-        color: #fff;
-        border: none;
-        padding: 0!important;
-        font: inherit;
-    }
+
 /* faq section */
 .faq {
   background-color: rgb(0, 39, 55);
@@ -1074,9 +888,6 @@ figure.testimonal-Card .author h5 {
 
 .faq_heading h1 {
   font-size: 50px;
-  font-family: "Montserrat";
-  font-weight: 800;
-  padding-bottom: 2rem;
 }
 
 .accordion {
@@ -1192,7 +1003,6 @@ figure.testimonal-Card .author h5 {
   }
 }
 
-
 /* --- Icon --- */
 .bmenu {
   width: 26px;
@@ -1280,6 +1090,33 @@ figure.testimonal-Card .author h5 {
 .footer-container .col a:hover,
 footer a:focus {
   color: cyan;
+}
+
+@media (max-width: 500px) {
+  .accordion__title {
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+
+  .accordion__content {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 447px) {
+  .accordion__title {
+    font-size: 1em;
+  }
+
+  .accordion__content {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 393px) {
+  .accordion__title {
+    font-size: 0.8em;
+  }
 }
 
 @media (max-width: 1120px) {
