@@ -575,6 +575,13 @@
   margin-right: 0;
   margin-bottom: 0;
   text-decoration: none;
+  transition: 0.2s ease-in;
+
+}
+
+.frame1-text055:hover{
+  color: rgb(255, 235, 157);
+
 }
 .frame1-text058 {
   top: 146px;
@@ -593,6 +600,12 @@
   margin-right: 0;
   margin-bottom: 0;
   text-decoration: none;
+  transition: 0.2s ease-in;
+
+}
+.frame1-text058:hover{
+  color: rgb(255, 235, 157);
+
 }
 .frame1-text061 {
   top: 115px;
@@ -611,6 +624,12 @@
   margin-right: 0;
   margin-bottom: 0;
   text-decoration: none;
+  transition: 0.2s ease-in;
+
+}
+.frame1-text061:hover{
+  color: rgb(255, 235, 157);
+
 }
 .frame1-text064 {
   top: 167px;
@@ -1367,7 +1386,7 @@
 }
 
 .frame1-text118:hover{
-  color: rgb(114, 255, 53);
+  color: rgb(255, 236, 159);
 }
 .frame1-text120 {
   top: 26px;
@@ -1387,6 +1406,11 @@
   margin-right: 0;
   margin-bottom: 0;
   text-decoration: none;
+  transition: 0.3s ease-in;
+
+}
+.frame1-text120:hover{
+  color: rgb(30, 158, 132);
 }
 .frame1-text121 {
   top: 26px;
@@ -1406,6 +1430,11 @@
   margin-right: 0;
   margin-bottom: 0;
   text-decoration: none;
+  transition: 0.3s ease-in;
+
+}
+.frame1-text121:hover{
+  color: rgb(30, 158, 132);
 }
 .frame1-text123 {
   top: 26px;
@@ -1424,7 +1453,11 @@
   font-stretch: normal;
   margin-right: 0;
   margin-bottom: 0;
+  transition: 0.3s ease-in;
   text-decoration: none;
+}
+.frame1-text123:hover{
+  color: rgb(30, 158, 132);
 }
 .frame1-text125 {
   top: 26px;
@@ -1444,6 +1477,12 @@
   margin-right: 0;
   margin-bottom: 0;
   text-decoration: none;
+  transition: 0.3s ease-in;
+
+}
+.frame1-text125:hover{
+  color: rgb(30, 158, 132);
+
 }
 .frame1-text127 {
   top: 26px;
@@ -1463,4 +1502,9 @@
   margin-right: 0;
   margin-bottom: 0;
   text-decoration: none;
+  transition: 0.3s ease-in;
+}
+.frame1-text127:hover{
+  color: rgb(30, 158, 132);
+
 }
