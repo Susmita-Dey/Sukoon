@@ -112,13 +112,18 @@ header {
   gap: 3px;
   cursor: pointer;
   z-index: 200;
+  color: white;
 }
 
-.hamburger span {
+
+.hamburger:hover{
+  color:rgb(200, 200, 200)
+}
+/* .hamburger span {
   width: 25px;
   height: 3px;
   background-color: #fff;
-}
+} */
 
 .links li {
   list-style: none;
@@ -198,7 +203,7 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
 
-.menu.open {
+/* .menu.open {
   display: block;
   width: 80%;
   height: 100%;
@@ -210,15 +215,28 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
   animation: slideIn 0.5s ease-in-out;
   z-index: 100;
+} */
+.open {
+  display: block;
+  width: 70%;
+  height: 100%;
+  position: fixed;
+  background-color: rgb(56,56,55);
+  top: 0;
+  left: 0;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  animation: slideIn 0.5s ease-in-out;
+  z-index: 100;
 }
 
 @keyframes slideIn {
   0% {
-    top: -150px;
+    left: -150px;
   }
 
   100% {
-    top: 85px;
+    left: 0px;
   }
 }
 
@@ -240,15 +258,18 @@ header {
 }
 
 .menu-link li a {
-  color: rgba(0, 0, 0, 0.782);
+  color: rgb(247, 245, 245);
+  /* color:rgb(30, 240, 191); */
   font-weight: bolder;
-  font-size: 1rem;
+  font-size: 1.15rem;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
 }
 
 .menu-link li a:hover {
   z-index: 150;
-  color: #105e7d;
-  border-bottom: #011b24 1px solid;
+  color: rgb(30, 240, 191);
+  /* border-bottom: #011b24 1px solid; */
 }
 
 .content {
