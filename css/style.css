@@ -667,6 +667,33 @@ h5 {
         -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
         transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
     }
+    figure.testimonal-Card {
+      font-family: "Raleway", Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+      margin: 0 auto;
+      min-width: 220px;
+      max-width: 310px;
+      width: 100%;
+      color: #333;
+      text-align: left;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+      box-shadow: 
+         0 0 5px white,
+         0 0 10px white;
+   
+        
+  }
+  .testimonal-Card:hover{
+    box-shadow: 
+    
+    0 0 20px white,
+    0 0 40px white;
+    
+  transition: all 1.5s ease-out;
+  }
+
     
     figure.testimonal-Card img {
         max-width: 100%;
