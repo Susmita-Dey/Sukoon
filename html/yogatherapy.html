@@ -24,6 +24,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/yoga.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Yoga Therapy</title>
   </head>
 
@@ -383,7 +384,9 @@
       </div>
     </div>
   </footer>
-    <script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
       const ham = document.getElementById("ham");
       const menu = document.getElementById("menu");
       const close = document.querySelectorAll('.close');
