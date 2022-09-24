@@ -86,48 +86,28 @@
     <hr/>
     <section id="images">
       <h1 class="section-headings">IMAGES</h1>
-      <div class="slideshow-container">
-        <div class="mySlides fade">
-          <img src="/images/slider-4.jpg" style="width:50%; margin-left: 25%;">
+      <div class="main-scroll-div">
+        <div>
+            <button class="icon" onclick="scrolll()"> <i class="fas fa-angle-double-left"></i></button>
         </div>
-      
-        <div class="mySlides fade">
-          <img src="/images/slider1.jpg" style="width:50%; margin-left: 25%;">
-       
+        <div class="cover">
+            <div class="scroll-images">
+                <div class="child"><img class="child-img" src="../images/slider-8.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="../images/slider-3.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="../images/slider-4.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="../images/slider-5.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="../images/slider-6.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="../images/slider-2.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="../images/slider-7.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="../images/slider-8.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="../images/slider-9.jpg" alt="image"></div>
+            </div>
         </div>
-        <div class="mySlides fade">
-          <img src="/images/slider-7.jpg" style="width:50%; margin-left: 25%;">
-       
+        <div>
+            <button class="icon" onclick="scrollr()"> <i class="fas fa-angle-double-right"></i></button>
         </div>
-        <div class="mySlides fade">
-          <img src="/images/slider-8.jpg" style="width:50%; margin-left: 25%;">
-       
-        </div>
-        <div class="mySlides fade">
-          <img src="/images/slider-9.jpg" style="width:50%; margin-left: 25%;">
-       
-        </div>
-        <div class="mySlides fade">
-          <img src="/images/slider-5.jpg" style="width:50%; margin-left: 25%;">
-       
-        </div>
-        <div class="mySlides fade">
-          <img src="/images/slider-2.jpg" style="width:50%; margin-left: 25%;">
-       
-        </div>
-        <div class="mySlides fade">
-          <img src="/images/slider-6.jpg" style="width:50%; margin-left: 25%;">
-       
-        </div>
-        <div class="mySlides fade">
-          <img src="/images/slider-3.jpg" style="width:50% ; margin-left: 25%;">
-       
-        </div>
-      
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
+    </div>
+     
       <br>
     </section>
     <hr/>
@@ -286,6 +266,15 @@
             console.log("close");
           }
         };
+        function scrolll() {
+        var left = document.querySelector(".scroll-images");
+        left.scrollBy(350, 0)
+    }
+
+    function scrollr() {
+        var right = document.querySelector(".scroll-images");
+        right.scrollBy(-350, 0)
+    }
         ham.addEventListener("click", toggleMenu);
         close.forEach(ele => {
           ele.addEventListener("click", closeMenu);
