@@ -12,8 +12,11 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script&family=Itim&family=Oleo+Script+Swash+Caps&family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  </head>
-<body>
+</head>
+<body onload="myfunction()" id="main">
+  <div id="load">
+    <div style="background-color: white; height: 25vh; width: 100%; position: relative; top: -70px;"></div>
+  </div>
     <!-- Navbar-->
     <header>
     <nav class="navbar">
@@ -473,6 +476,14 @@
       }
       )
     </script>
+    <script>
+      var preloader = document.getElementById('load');
+      var scroll = document.getElementById('main');
+      function myfunction(){
+          preloader.style.display='none';
+          scroll.style.overflow='scroll';
+      }
+  </script>
 </body>
 </html>
   

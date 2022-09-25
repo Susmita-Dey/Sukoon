@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="css/login.css">
     <title>Login/SignUp</title>
 </head>
-<body>
+<body onload="myfunction()">
+    <div id="load">
+        <div style="background-color: white; height: 25vh; width: 100%; position: relative; top: -70px;"></div>
+      </div>
     <img src="/images/signupill.png" alt="">
     <div class="login">
         <div class="welcome">
@@ -72,6 +75,12 @@
         })
 
 
+    </script>
+    <script>
+        var preloader = document.getElementById('load');
+        function myfunction(){
+            preloader.style.display='none';
+        }
     </script>
 </body>
 </html>

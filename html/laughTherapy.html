@@ -14,7 +14,10 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
-  <body>
+  <body onload="myfunction()" id="main">
+    <div id="load">
+      <div style="background-color: white; height: 25vh; width: 100%; position: relative; top: -70px;"></div>
+    </div>
     
   
     <nav>
@@ -456,5 +459,13 @@
       dots[slideIndex-1].className += " active";
     }
     </script>
+    <script>
+      var preloader = document.getElementById('load');
+      var scroll = document.getElementById('main');
+      function myfunction(){
+          preloader.style.display='none';
+          scroll.style.overflow='scroll';
+      }
+  </script>
   </body>
 </html>
