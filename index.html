@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sukoon</title>
-  <link rel ="icon" href="/images/favicon-enhanced.png">
+  <link rel="icon" href="/images/favicon-enhanced.png">
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" text="text/CSS" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
   <link rel="stylesheet" text="text/CSS"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" text="text/CSS"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <style>
@@ -41,14 +43,15 @@
     background-color: #00a2ff;
     color: #80F7D1;
   }
+
   .back-top-wrap:hover .fas.fa-arrow-up {
     color: white;
   }
 
-.fas.fa-arrow-up {
-  color: #00488F;
-  transition: 0.3s ease-in-out;
-}
+  .fas.fa-arrow-up {
+    color: #00488F;
+    transition: 0.3s ease-in-out;
+  }
 </style>
 
 <body onload="myFunction()">
@@ -56,47 +59,50 @@
     <img src="./logo.png" id="loading" />
   </div>
 
-<!-- Back to top button -->
-<div id="back-top-div" class="back-top-wrap">
-  <i class="fas fa-arrow-up"></i>
-</div>
-<header>
-  <nav class="nav" id="nav">
-    <div>
-      <a class="navbar-brand" href="#!"> <img src="logo.png" alt="Logo" class="logo" /></a>
-    </div>
-    <div class="nav-links" id="navLinks">
-      <ul class="links" id="navmenu">
-        <li><a href="#">HOME</a></li>
+  <!-- Back to top button -->
+  <div id="back-top-div" class="back-top-wrap">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+  <header>
+    <nav class="nav" id="nav">
+      <div>
+        <a class="navbar-brand" href="#!"> <img src="logo.png" alt="Logo" class="logo" /></a>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <ul class="links" id="navmenu">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#services">SERVICES </a></li>
+          <li><a href="html/contact.html">CONTACT US </a></li>
+        </ul>
+      </div>
+      <button class="login-button"><a href="html/login.html">SignUp / Login</a></button>
+      <div class="hamburger" id="ham">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z">
+          </path>
+        </svg>
+      </div>
+    </nav>
+    <div class="menu" id="menu">
+      <ul class="menu-link">
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#services">SERVICES </a></li>
         <li><a href="html/contact.html">CONTACT US </a></li>
       </ul>
     </div>
-    <button class="login-button"><a href="html/login.html">SignUp / Login</a></button>
-    <div class="hamburger" id="ham">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </nav>
-  <div class="menu" id="menu">
-    <ul class="menu-link">
-      <li><a href="#">HOME</a></li>
-      <li><a href="#about">ABOUT</a></li>
-      <li><a href="#services">SERVICES </a></li>
-      <li><a href="html/contact.html">CONTACT US </a></li>
-    </ul>
-  </div>
-  <div class="content">
+    <div class="content">
       <h1>Welcome to SUKOON</h1>
       <h3>The one step solution to get relief from your stress.<br />Live a
         stress-free life!</h3>
-        <a href="#services" class="rainbow-button" alt="Explore"></a>
-      </div>
+      <a href="#services" class="rainbow-button" alt="Explore"></a>
+    </div>
+
+ 
   
     </header>
-
+ 
     <!-- About Section -->
     <section id="about" class="about">
       <h2>About Us</h2>
@@ -108,12 +114,13 @@
               to provide a <span>one step <br>solution</span> to get relief from stress. </div>
             <div data-aos="fade-right" class="text-5">We hope that everyone can live a <span>stress <br> free life </span>with the help of<span> sukoon.</span></div>
         </div>
+
     </div>
-      <h3><span style="color: rgb(91, 134, 150);">MEET OUR MEMBERS</span></h3>
-  
-      <div class="box">
-  
-<!--         <div class="card">
+    <h3><span style="color: rgb(91, 134, 150);">MEET OUR MEMBERS</span></h3>
+
+    <div class="box">
+
+      <!--         <div class="card">
           <img src="./images/shayan.jpeg" alt="shayan" loading="lazy">
           <h5>Shayan Pal</h5>
           <div class="pra">
@@ -121,40 +128,41 @@
             <a href="https://bio.link/shayanpal"><button>Let's Connect</button></a>
           </div>
         </div> -->
-        <div class="card">
-          <img src="./images/soumyadeep.jpeg" alt="soumyadeep" loading="lazy" />
-          <h5>Soumyadeep Dhali</h5>
-          <div class="pra">
-            <p>Member</p>
-            <a href="https://soumyadeep.bio.link"><button>Let's Connect</button></a>
-          </div>
+      <div data-aos="fade-up" ddata-aos-duration="800" class="card">
+        <img src="./images/soumyadeep.jpeg" alt="soumyadeep" loading="lazy" />
+        <h5>Soumyadeep Dhali</h5>
+        <div class="pra">
+          <p>Member</p>
+          <a href="https://soumyadeep.bio.link"><button>Let's Connect</button></a>
         </div>
-        <div class="card">
-          <img src="./images/susmita.jpg" alt="" loading="lazy" />
-          <h5>Susmita Dey</h5>
-          <div class="pra">
-            <p>Head of The Team</p>
-            <a href="https://bio.link/susmitadey"><button>Let's Connect</button></a>
-          </div>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="800" class="card">
+        <img src="./images/susmita.jpg" alt="" loading="lazy" />
+        <h5>Susmita Dey</h5>
+        <div class="pra">
+          <p>Head of The Team</p>
+          <a href="https://bio.link/susmitadey"><button>Let's Connect</button></a>
         </div>
-        <div class="card">
-          <img src="./images/chaitri.jpeg" alt="chaitri" loading="lazy">
-          <h5>Chaitri Saha Chowdhury</h5>
-          <div class="pra">
-            <p>Member</p>
-            <a href="https://bio.link/chaitri"><button>Let's Connect</button></a>
-          </div>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="800" class="card">
+        <img src="./images/chaitri.jpeg" alt="chaitri" loading="lazy">
+        <h5>Chaitri Saha Chowdhury</h5>
+        <div class="pra">
+          <p>Member</p>
+          <a href="https://bio.link/chaitri"><button>Let's Connect</button></a>
         </div>
-  
-        <div class="card">
-          <img src="./images/sasanka.jpeg" alt="sasanka" loading="lazy">
-          <h5>Sasanka Kundu</h5>
-          <div class="pra">
-            <p>Member</p>
-            <a href="https://bio.link/sasankakundu"><button>Let's Connect</button></a>
-          </div>
+      </div>
+
+      <div data-aos="fade-up" data-aos-duration="800" class="card">
+        <img src="./images/sasanka.jpeg" alt="sasanka" loading="lazy">
+        <h5>Sasanka Kundu</h5>
+        <div class="pra">
+          <p>Member</p>
+          <a href="https://bio.link/sasankakundu"><button>Let's Connect</button></a>
+
         </div>
-        
+      </div>
+
     </div>
   </section>
 
@@ -207,7 +215,7 @@
           Laughing is the only medicine which refreshes our mind.
         </p>
         <a href="html/laughTherapy.html">
-         Let's Explore
+          Let's Explore
         </a>
       </div>
       <div class="responsive talk">
@@ -236,63 +244,106 @@
       </div>
     </div>
   </section>
-   <!-- Testimonials Section -->
-   <section class=" testimonials">
+
+  <!-- Testimonials Section -->
+  <section id="testimonial" class="section-100">
     <div class="testimonials_heading">
       <h1>Testimonials</h1>
     </div>
-    <figure class="testimonal-Card">
-      <blockquote>I have found benefits from Sound Therapy through improved concentration and absorbing more information
-        while studying for my university degree. Also an improvement in hearing has helped me to enjoy life more.
-        <div class="arrow"></div>
-      </blockquote>
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg" alt="sample3" />
-      <div class="author">
-        <h5>Merry</h5>
+    <div class="testimonial-view">
+      <div class="owl-carousel">
+        <div class="testimonial-box">
+
+          <figure class="testimonal-Card">
+            <blockquote>I have found benefits from Sound Therapy through improved concentration and absorbing more
+              information while studying for my university degree. Also an improvement in hearing has helped me to enjoy
+              life more.
+              <div class="arrow"></div>
+            </blockquote>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg" alt="sample3" />
+            <div class="author">
+              <h5>Merry</h5>
+            </div>
+        </div>
+        <div class="testimonial-box">
+          <!-- <i class="fa fa-quote-left quote-icon"></i> -->
+          <figure class="testimonal-Card hover">
+            <blockquote>I had 6 sessions of talking therapy over Zoom, I found the sessions very helpful and my
+              therapist was understanding, clear and gave me useful and achievable tools to manage during the 6 weeks
+              and afterwards too.
+              <div class="arrow"></div>
+            </blockquote>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample47.jpg" alt="sample47" />
+            <div class="author">
+              <h5>Rohan</h5>
+            </div>
+          </figure>
+        </div>
+        <div class="testimonial-box">
+          <!-- <i class="fa fa-quote-left quote-icon"></i> -->
+          <figure class="testimonal-Card">
+            <blockquote>Finished my second round of therapy today, am very happy with how it all went, all the staff I
+              have delt with have been wonderful and do an amazing job. I have found it very helpful.Would highly
+              recommend Sukoon.
+              <div class="arrow"></div>
+            </blockquote>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample34.jpg" alt="sample17" />
+            <div class="author">
+              <h5>Alex</h5>
+            </div>
+          </figure>
+
+        </div>
+        <div class="testimonial-box">
+          <!-- <i class="fa fa-quote-left quote-icon"></i> -->
+          <figure class="testimonal-Card">
+            <blockquote>Finished my second round of therapy today, am very happy with how it all went, all the staff I
+              have delt with have been wonderful and do an amazing job. I have found it very helpful.Would highly
+              recommend Sukoon.
+              <div class="arrow"></div>
+            </blockquote>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample11.jpg" alt="sample17" />
+            <div class="author">
+              <h5>Emily</h5>
+            </div>
+          </figure>
+
+        </div>
       </div>
-    </figure>
-    <figure class="testimonal-Card hover">
-      <blockquote>I had 6 sessions of talking therapy over Zoom, I found the sessions very helpful and my therapist was
-        understanding, clear and gave me useful and achievable tools to manage during the 6 weeks and afterwards too.
-        <div class="arrow"></div>
-      </blockquote>
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample47.jpg" alt="sample47" />
-      <div class="author">
-        <h5>Rohan</h5>
-      </div>
-    </figure>
-    <figure class="testimonal-Card">
-      <blockquote>Finished my second round of therapy today, am very happy with how it all went, all the staff I have
-        delt with have been wonderful and do an amazing job. I have found it very helpful.Would highly recommend Sukoon.
-        <div class="arrow"></div>
-      </blockquote>
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample17.jpg" alt="sample17" />
-      <div class="author">
-        <h5>Emily</h5>
-      </div>
-    </figure>
+    </div>
+    </div>
+
   </section>
   <!-- Faq section -->
   <section class="faq">
     <div class="faq_heading">
       <h1>Frequently Asked Questions</h1>
     </div>
-    <div class="wrap">
-      <ul class="accordion">
-        <li class="accordion__item">
-          <a class="accordion__title" href="javascript:void(0)"> Who are we and what do we do?
-            <div class="bmenu x7"><span class="btop"></span><span class="bmid"></span><span class="bbot"></span></div>
-          </a>
-          <p class="accordion__content">We are a team of open source contributors who have created this website "sukoon"
+    <div class="accordion">
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>Who are we and what do we do?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>We are a team of open source contributors who have created this website "sukoon"
             with the aim
             to provide a one step solution to get relief from stress. We hope that everyone can live a
-            stress free life with the help of sukoon.
-        </li>
-        <li class="accordion__item">
-          <a class="accordion__title" href="javascript:void(0)">What are the services we offer?
-            <div class="bmenu x7"><span class="btop"></span><span class="bmid"></span><span class="bbot"></span></div>
-          </a>
-          <p class="accordion__content">We offer multiple services like:
+            stress free life with the help of sukoon.</p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What are the services we offer?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>We offer multiple services like:
             <br>
             1. Audio Therapy
             <br>
@@ -306,58 +357,116 @@
             <br>
             6. Doctor Consultation
           </p>
-        </li>
-        <li class="accordion__item">
-          <a class="accordion__title" href="javascript:void(0)">How can you Contact Us?
-            <div class="bmenu x7"><span class="btop"></span><span class="bmid"></span><span class="bbot"></span></div>
-          </a>
-          <p class="accordion__content">You can contact us via <a href="mailto:sukoon665@gmail.com">sukoon665@gmail.com</a></p>
-        </li>
-        <li class="accordion__item">
-          <a class="accordion__title" href="javascript:void(0)">What is Reading Therapy?
-            <div class="bmenu x7"><span class="btop"></span><span class="bmid"></span><span class="bbot"></span></div>
-          </a>
-          <p class="accordion__content"> Reading therapy is a creative art therapy that uses literature to support good
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>How can you Contact Us?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p> You can contact us via <a href="mailto:sukoon665@gmail.com">sukoon665@gmail.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What is Reading Therapy?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>Reading therapy is a creative art therapy that uses literature to support good
             mental health and is a versatile and cost-effective treatment. It includes storytelling or the reading of
-            specific texts.
-          </p>
-        </li>
-        <li class="accordion__item">
-          <a class="accordion__title" href="javascript:void(0)">What is Audio Therapy?
-            <div class="bmenu x7"><span class="btop"></span><span class="bmid"></span><span class="bbot"></span></div>
-          </a>
-          <p class="accordion__content">Audio Therapy includes auditory and vibratory inputs which are used to influence
-            a person's psychological state, includes sound healing, vibroacoustic sound therapy, music, and music
-            therapy.
-          </p>
-        </li>
-        <li class="accordion__item">
-          <a class="accordion__title" href="javascript:void(0)">What is Yoga Therapy?
-            <div class="bmenu x7"><span class="btop"></span><span class="bmid"></span><span class="bbot"></span></div>
-          </a>
-          <p class="accordion__content">Yoga therapy uses yoga postures, breathing exercises, meditation, and guided
-            imagery to improve mental and physical health.
-          </p>
-        </li>
-        <li class="accordion__item">
-          <a class="accordion__title" href="javascript:void(0)">What is Laughing Therapy?
-            <div class="bmenu x7"><span class="btop"></span><span class="bmid"></span><span class="bbot"></span></div>
-          </a>
-          <p class="accordion__content">Laughing therapy uses humor to help relieve pain and stress and improve a
-            person's sense of well-being through jokes and playful exercises that encourage hearty, continuous, and
-            lively laughter.
-          </p>
-        </li>
-        <li class="accordion__item">
-          <a class="accordion__title" href="javascript:void(0)">What is Talking Therapy?
-            <div class="bmenu x7"><span class="btop"></span><span class="bmid"></span><span class="bbot"></span></div>
-          </a>
-          <p class="accordion__content">Talking therapy involves talking to someone to help deal with negative feelings
-            or other mental health problems. It helps shy individuals open up their problems to others so that they can
-            help them overcome them.
-          </p>
-        </li>
-      </ul>
+            specific texts.</p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What is Audio Therapy?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>Audio Therapy includes auditory and vibratory inputs which are used to influence a person's psychological
+            state, includes sound healing, vibroacoustic sound therapy, music, and music therapy.</p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What is Yoga Therapy?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>Yoga therapy uses yoga postures, breathing exercises, meditation, and guided imagery to improve mental and
+            physical health.</p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What is Laughing Therapy?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>Laughing therapy uses humor to help relieve pain and stress and improve a person's sense of well-being
+            through jokes and playful exercises that encourage hearty, continuous, and lively laughter.</p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What is Talking Therapy?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>Talking therapy involves talking to someone to help deal with negative feelings or other mental health
+            problems. It helps shy individuals open up their problems to others so that they can help them overcome
+            them.</p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What is Child Therapy?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>Child therapy includes the watching of cute videos and images of children, as children make us
+            forget about our problems with their innocence and cuteness.</p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What is Spritual Therapy?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>Spiritual therapy is a form of counseling that attempts to treat a person's soul as well as mind and body
+            by accessing individual belief systems and using
+            that faith in a higher power to explore areas of conflict in life.</p>
+        </div>
+      </div>
+    </div>
     </div>
   </section>
 
@@ -391,10 +500,7 @@
           <ul>
             <li><a href="#about">About Us</a></li>
             <li>
-              <a
-                href="https://github.com/Susmita-Dey/Sukoon/blob/main/CODE_OF_CONDUCT.md"
-                >Code Of Conduct</a
-              >
+              <a href="https://github.com/Susmita-Dey/Sukoon/blob/main/CODE_OF_CONDUCT.md">Code Of Conduct</a>
             </li>
             <li>
               <a href="https://github.com/Susmita-Dey/Sukoon">Contribute</a>
@@ -412,32 +518,19 @@
           </h3>
           <ul>
             <li>
-              <a href="https://sukoon-stress-free.netlify.app/html/audiotherapy"
-                >Audio Therapy</a
-              >
+              <a href="https://sukoon-stress-free.netlify.app/html/audiotherapy">Audio Therapy</a>
             </li>
             <li>
-              <a
-                href="https://sukoon-stress-free.netlify.app/html/yogatherapy.html"
-                >Yoga Therapy</a
-              >
+              <a href="https://sukoon-stress-free.netlify.app/html/yogatherapy.html">Yoga Therapy</a>
             </li>
             <li>
-              <a
-                href="https://sukoon-stress-free.netlify.app/html/readingtherapy"
-                >Reading Therapy</a
-              >
+              <a href="https://sukoon-stress-free.netlify.app/html/readingtherapy">Reading Therapy</a>
             </li>
             <li>
-              <a
-                href="https://sukoon-stress-free.netlify.app/html/talkingtherapy"
-                >Talking Therapy</a
-              >
+              <a href="https://sukoon-stress-free.netlify.app/html/talkingtherapy">Talking Therapy</a>
             </li>
             <li>
-              <a href="https://www.practo.com/counselling-psychology"
-                >Consult a Doctor</a
-              >
+              <a href="https://www.practo.com/counselling-psychology">Consult a Doctor</a>
             </li>
           </ul>
         </div>
@@ -460,9 +553,9 @@
               </a>
             </ul>
           </div>
+        </div>
       </div>
-      </div>
-      </div>
+    </div>
     </div>
   </footer>
 
@@ -485,19 +578,23 @@
         navbar.classList.remove("sticky");
       }
     };
-    
-    window.onscroll = () => {
-        if (window.scrollY > 100) {
-            navbar.classList.add('nav-active');
-        } else {
-            navbar.classList.remove('nav-active');
-        }
-    };
-    </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
-</html>
 
+    window.onscroll = () => {
+      if (window.scrollY > 100) {
+        navbar.classList.add('nav-active');
+      } else {
+        navbar.classList.remove('nav-active');
+      }
+    };
+
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
