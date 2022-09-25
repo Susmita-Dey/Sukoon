@@ -32,6 +32,9 @@
     <div id="load">
       <div style="background-color: white; height: 25vh; width: 100%; position: relative; top: -70px;"></div>
     </div>
+    <div id="back-top-div" class="back-top-wrap">
+      <i class="fas fa-arrow-up"></i>
+    </div>
     <!-- Navbar Section -->
     <nav>
       <a href="../index.html"
@@ -426,6 +429,23 @@
           preloader.style.display='none';
           scroll.style.overflow='scroll';
       }
+      const backTopElement = document.getElementById("back-top-div");
+      const minScolledAmountToBackTop = 800;
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY < minScolledAmountToBackTop) {
+          backTopElement.classList.add("hidden");
+        } else {
+          backTopElement.classList.remove("hidden");
+        }
+      });
+
+      const backTop = () => {
+        window.scrollTo(0, 0);
+      };
+
+      backTopElement.addEventListener("click", backTop);
+      ham.addEventListener("click", toggleMenu);
   </script>
   </body>
 </html>
