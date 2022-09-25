@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap"
       rel="stylesheet"
     />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Sukoon</title>
     <link rel="stylesheet" href="../css/audio.css" />
   </head>
@@ -74,10 +75,10 @@
     <header>
       <div class="filter"></div>
       <div class="center">
-        <h1 id="title">
+        <h1 id="title" data-aos="fade-up" data-aos-duration="800">
           Welcome to Our <br /><span class="heading-span">Audio Therapy</span>
         </h1>
-        <h3 id="subtitle">
+        <h3 id="subtitle" data-aos="fade-up" data-aos-duration="800">
           Listen to Music, Motivational Podcasts and Audiobooks <br />
           to gain some happiness, knowledge and also lighten your stress side by
           side.
@@ -92,7 +93,7 @@
       <div class="container">
         <div class="collection">
           <h2>Stress Relief Sounds</h2>
-          <div class="playlist">
+          <div data-aos="fade-up" data-aos-duration="800" class="playlist" >
             <iframe
               style="border-radius: 12px"
               src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXe9gFZP0gtP?utm_source=generator"
@@ -106,7 +107,7 @@
         </div>
         <div class="collection">
           <h2>Peaceful Guitar</h2>
-          <div class="playlist">
+          <div data-aos="fade-up" data-aos-duration="800" class="playlist">
             <iframe
               style="border-radius: 12px"
               src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0jgyAiPl8Af?utm_source=generator"
@@ -120,7 +121,7 @@
         </div>
         <div class="collection">
           <h2>Calm Nature Sounds</h2>
-          <div class="playlist">
+          <div data-aos="fade-up" data-aos-duration="800" class="playlist">
             <iframe
               style="border-radius: 12px"
               src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO2pMckE?utm_source=generator"
@@ -312,7 +313,7 @@
     <section id="audiobooks">
       <h1 class="section-headings">Audiobooks</h1>
       <div class="cards">
-        <article class="card">
+        <article data-aos="fade-up" data-aos-duration="800" class="card">
           <img
             src="https://m.media-amazon.com/images/I/41wuB-s8vRL._SL300_.jpg"
             alt="Atomic Habits"
@@ -331,7 +332,7 @@
           </div>
         </article>
 
-        <article class="card">
+        <article data-aos="fade-up" data-aos-duration="800" class="card">
           <img
             src="https://m.media-amazon.com/images/I/51jRBz6Ug3L._SL500_.jpg"
             alt="The Psychology of Money"
@@ -352,7 +353,7 @@
           </div>
         </article>
 
-        <article class="card">
+        <article data-aos="fade-up" data-aos-duration="800" class="card">
           <img
             src="https://m.media-amazon.com/images/I/51MT0MbpD7L._SL500_.jpg"
             alt="The Subtle Art of Not Giving a F*ck"
@@ -371,7 +372,7 @@
           </div>
         </article>
 
-        <article class="card">
+        <article data-aos="fade-up" data-aos-duration="800" class="card">
           <img
             src="https://m.media-amazon.com/images/I/511HccWipML._SL500_.jpg"
             alt="Ikigai"
@@ -390,7 +391,7 @@
           </div>
         </article>
 
-        <article class="card">
+        <article data-aos="fade-up" data-aos-duration="800" class="card">
           <img
             src="https://m.media-amazon.com/images/I/51n4UO2a+VS._SL500_.jpg"
             alt="Think Like A Monk"
@@ -409,7 +410,7 @@
           </div>
         </article>
 
-        <article class="card">
+        <article data-aos="fade-up" data-aos-duration="800" class="card">
           <img
             src="https://m.media-amazon.com/images/I/514sscPA15L._SL500_.jpg"
             alt="Life's Amazing Secrets"
@@ -428,7 +429,7 @@
           </div>
         </article>
 
-        <article class="card">
+        <article data-aos="fade-up" data-aos-duration="800" class="card">
           <img
             src="https://m.media-amazon.com/images/I/51AHZGhzZEL._SL500_.jpg"
             alt="Rich Dad Poor Dad"
@@ -447,7 +448,7 @@
           </div>
         </article>
 
-        <article class="card">
+        <article data-aos="fade-up" data-aos-duration="800" class="card">
           <img
             src="https://m.media-amazon.com/images/I/51nY2HMNVHL._SL500_.jpg"
             alt="Karma"
@@ -469,7 +470,7 @@
           </div>
         </article>
 
-        <article class="card">
+        <article data-aos="fade-up" data-aos-duration="800" class="card">
           <img
             src="https://m.media-amazon.com/images/I/51hAGh15bTL._SL500_.jpg"
             alt="How to Talk to Anyone"
@@ -488,7 +489,7 @@
           </div>
         </article>
 
-        <article class="card">
+        <article data-aos="fade-up" data-aos-duration="800" class="card">
           <img
             src="https://m.media-amazon.com/images/I/41jq-ouUBkL._SL500_.jpg"
             alt="Rework"
@@ -669,9 +670,11 @@
     </div>
   </footer>
     
-    <!-- AudioBooks Section Ends Here -->
-    <script type="text/javascript" src="../js/scrollsmooth.js"></script>
+  <!-- AudioBooks Section Ends Here -->
+  <script type="text/javascript" src="../js/scrollsmooth.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+      AOS.init();
       const ham = document.getElementById("ham");
       const menu = document.getElementById("menu");
       const close = document.querySelectorAll('.close');
@@ -702,5 +705,6 @@
       )
 
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   </body>
 </html>
