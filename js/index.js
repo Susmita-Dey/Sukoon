@@ -13,16 +13,23 @@ const toggleMenu = () => {
   }
 };
 
-$(function () {
-  $(".accordion")
-    .find(".accordion__title")
-    .click(function () {
-      $(this).toggleClass("active");
-      $(this).next().slideToggle("fast");
-      $(".accordion__content").not($(this).next()).slideUp("fast");
-      $(".accordion__title").not($(this)).removeClass("active");
-    });
-});
+// select all accordion items
+const accItems = document.querySelectorAll(".accordion__item");
+
+// add a click event for all items
+accItems.forEach((acc) => acc.addEventListener("click", toggleAcc));
+
+function toggleAcc() {
+  // remove active class from all items exept the current item (this)
+  accItems.forEach((item) => item != this ? item.classList.remove("accordion__item--active") : null
+  );
+
+  // toggle active class on current item
+  if (this.classList != "accordion__item--active") {
+    this.classList.toggle("accordion__item--active");
+  }
+}
+
 
 const backTopElement = document.getElementById("back-top-div");
 const minScolledAmountToBackTop = 800;
