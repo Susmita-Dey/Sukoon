@@ -27,7 +27,11 @@
     }
   </style>
 
-<body>
+<body onload="myfunction()" id="main">
+  
+  <div id="load">
+    <div style="background-color: white; height: 25vh; width: 100%; position: relative; top: -70px;"></div>
+  </div>
   
     <!-- Navbar Section -->
     <nav>
@@ -74,10 +78,10 @@
     <header>
       <div class="filter"></div>
       <div class="center">
-        <h1 id="title">
+        <h1 id="title" data-aos="fade-up" data-aos-duration="800">
           Welcome to Our <br /><span class="heading-span">Audio Therapy</span>
         </h1>
-        <h3 id="subtitle">
+        <h3 id="subtitle" data-aos="fade-up" data-aos-duration="800">
           Listen to Music, Motivational Podcasts and Audiobooks <br />
           to gain some happiness, knowledge and also lighten your stress side by
           side.
@@ -92,7 +96,7 @@
       <div class="container">
         <div class="collection">
           <h2>Stress Relief Sounds</h2>
-          <div class="playlist">
+          <div data-aos="fade-up" data-aos-duration="800" class="playlist" >
             <iframe
               style="border-radius: 12px"
               src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXe9gFZP0gtP?utm_source=generator"
@@ -106,7 +110,7 @@
         </div>
         <div class="collection">
           <h2>Peaceful Guitar</h2>
-          <div class="playlist">
+          <div data-aos="fade-up" data-aos-duration="800" class="playlist">
             <iframe
               style="border-radius: 12px"
               src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0jgyAiPl8Af?utm_source=generator"
@@ -120,7 +124,7 @@
         </div>
         <div class="collection">
           <h2>Calm Nature Sounds</h2>
-          <div class="playlist">
+          <div data-aos="fade-up" data-aos-duration="800" class="playlist">
             <iframe
               style="border-radius: 12px"
               src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO2pMckE?utm_source=generator"
@@ -312,7 +316,7 @@
     <section id="audiobooks">
       <h1 class="section-headings">Audiobooks</h1>
       <div class="cards">
-        <article class="card">
+        <article data-aos="fade-up" data-aos-duration="800" class="card">
           <img
             src="https://m.media-amazon.com/images/I/41wuB-s8vRL._SL300_.jpg"
             alt="Atomic Habits"
@@ -331,7 +335,7 @@
           </div>
         </article>
 
-        <article class="card">
+        <article data-aos="fade-up" data-aos-duration="800" class="card">
           <img
             src="https://m.media-amazon.com/images/I/51jRBz6Ug3L._SL500_.jpg"
             alt="The Psychology of Money"
@@ -352,7 +356,7 @@
           </div>
         </article>
 
-        <article class="card">
+        <article data-aos="fade-up" data-aos-duration="800" class="card">
           <img
             src="https://m.media-amazon.com/images/I/51MT0MbpD7L._SL500_.jpg"
             alt="The Subtle Art of Not Giving a F*ck"
@@ -371,7 +375,7 @@
           </div>
         </article>
 
-        <article class="card">
+        <article data-aos="fade-up" data-aos-duration="800" class="card">
           <img
             src="https://m.media-amazon.com/images/I/511HccWipML._SL500_.jpg"
             alt="Ikigai"
@@ -390,7 +394,7 @@
           </div>
         </article>
 
-        <article class="card">
+        <article data-aos="fade-up" data-aos-duration="800" class="card">
           <img
             src="https://m.media-amazon.com/images/I/51n4UO2a+VS._SL500_.jpg"
             alt="Think Like A Monk"
@@ -409,7 +413,7 @@
           </div>
         </article>
 
-        <article class="card">
+        <article data-aos="fade-up" data-aos-duration="800" class="card">
           <img
             src="https://m.media-amazon.com/images/I/514sscPA15L._SL500_.jpg"
             alt="Life's Amazing Secrets"
@@ -428,7 +432,7 @@
           </div>
         </article>
 
-        <article class="card">
+        <article data-aos="fade-up" data-aos-duration="800" class="card">
           <img
             src="https://m.media-amazon.com/images/I/51AHZGhzZEL._SL500_.jpg"
             alt="Rich Dad Poor Dad"
@@ -447,7 +451,7 @@
           </div>
         </article>
 
-        <article class="card">
+        <article data-aos="fade-up" data-aos-duration="800" class="card">
           <img
             src="https://m.media-amazon.com/images/I/51nY2HMNVHL._SL500_.jpg"
             alt="Karma"
@@ -469,7 +473,7 @@
           </div>
         </article>
 
-        <article class="card">
+        <article data-aos="fade-up" data-aos-duration="800" class="card">
           <img
             src="https://m.media-amazon.com/images/I/51hAGh15bTL._SL500_.jpg"
             alt="How to Talk to Anyone"
@@ -488,7 +492,7 @@
           </div>
         </article>
 
-        <article class="card">
+        <article data-aos="fade-up" data-aos-duration="800" class="card">
           <img
             src="https://m.media-amazon.com/images/I/41jq-ouUBkL._SL500_.jpg"
             alt="Rework"
@@ -509,6 +513,47 @@
             >
           </div>
         </article>
+        <article class="card">
+          <img
+            src="https://m.media-amazon.com/images/I/51bmAi4DCML._SL500_.jpg"
+            alt="The Monk Who Sold His Ferrari"
+          />
+          <div class="content">
+            <h3>The Monk Who Sold His Ferrari</h3>
+
+            <p id="rew">
+              Let's listen to the famous audiobook by Robin Sharma
+
+            </p>
+
+            <a
+              href="https://www.audible.in/pd/The-Monk-Who-Sold-His-Ferrari-Audiobook/B072MR2L6V?qid=1663432045&sr=1-2&ref=a_search_c3_lProduct_1_2&pf_rd_p=2d02bc98-4366-4f94-99d9-5e898cda0766&pf_rd_r=PBF08GY7EPN53D1K48CC"target="_blank"
+              class="btn btn-border"
+              >Play Now</a
+            >
+          </div>
+        </article>
+        <article class="card">
+          <img
+            src="https://m.media-amazon.com/images/I/41iYeNKefoL._SL500_.jpg"
+            alt="Good Vibes, Good Life"
+          />
+          <div class="content">
+            <h3>Good Vibes, Good Life</h3>
+
+            <p id="rew">
+              Let's listen to the famous audiobook by Vex King
+
+            </p>
+
+            <a
+              href="   https://www.audible.in/pd/Good-Vibes-Good-Life-Audiobook/1788174992?qid=1663432525&sr=1-1&ref=a_search_c3_lProduct_1_1&pf_rd_p=2d02bc98-4366-4f94-99d9-5e898cda0766&pf_rd_r=PFHFS2XZPZE9CNS18WVB"target="_blank"
+              class="btn btn-border"
+              >Play Now</a
+            >
+          </div>
+        </article>
+     
       </div>
       <!-- AudioBooks Section Ends Here -->
     </section>
@@ -618,9 +663,11 @@
     </div>
   </footer>
     
-    <!-- AudioBooks Section Ends Here -->
-    <script type="text/javascript" src="../js/scrollsmooth.js"></script>
+  <!-- AudioBooks Section Ends Here -->
+  <script type="text/javascript" src="../js/scrollsmooth.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+      AOS.init();
       const ham = document.getElementById("ham");
       const menu = document.getElementById("menu");
       const close = document.querySelectorAll('.close');
@@ -651,5 +698,14 @@
       )
 
     </script>
+    <script>
+      var preloader = document.getElementById('load');
+      var scroll = document.getElementById('main');
+      function myfunction(){
+          preloader.style.display='none';
+          scroll.style.overflow='scroll';
+      }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   </body>
 </html>
