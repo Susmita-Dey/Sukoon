@@ -42,7 +42,7 @@ Every contribution counts.
 1. Ensure that you have Git installed and working properly.
 2. Fork the repo by clicking on 'Fork' above.
 3. Clone the project by running git clone <forked_project_url>.
-4. Confused about where to start? Check out good-first-issue.
+4. Confused about where to start? Check out [good-first-issue](https://github.com/Susmita-Dey/Sukoon/labels/good%20first%20issue).
 5. Make a separate branch with the issue name ex. issue#485.
 6. You are good to go. Change the code and we will be waiting for your exciting PRs.
 
