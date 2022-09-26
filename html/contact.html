@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
 </head>
 
-<body>
+<body onload="myfunction()">
+    <div id="load"></div>
     <!-- Contact Us Section -->
     <section id="contact">
         <div class="form-container">
@@ -49,6 +50,12 @@
             <p><a class="tag" href="/index.html">&#8592; Back</a></p>
         </div>
     </section>
+    <script>
+        var preloader = document.getElementById('load');
+        function myfunction(){
+            preloader.style.display='none';
+        }
+    </script>
 </body>
 
 </html>
