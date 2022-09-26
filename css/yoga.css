@@ -121,43 +121,102 @@ nav {
     left: 0px;
   }
 }
+* {box-sizing:border-box}
 
-.menu-link {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  min-height: 100vh;
+  margin: auto;
 }
 
-.menu-link li {
-  padding: 2rem;
-  font-weight: bolder;
+/* Hide the images by default */
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-.menu-link li a {
-  color: rgba(0, 0, 0, 0.782);
-  font-weight: bolder;
-  font-size: 1rem;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-.menu-link li a:hover{
-  color: #00a8e8;
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
+
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
 
 header {
-  min-height: 100vh;
+  min-height: 40vh;
   width: 100%;
-  background-image: url("https://preview.colorlib.com/theme/yogabest/images/xbg_1.jpg.pagespeed.ic.0q7esXXIat.webp");
+/*  background-image: url('/images/1507557126_versterk-je-core-met-deze-yoga-flow-down-dog-freshhh.jpg'); */
   position: relative;
   background-position: center;
-  background-size: cover;
+  background-size: cover; 
 }
 
 .text {
   position: absolute;
-  top: 35%;
-  left: 5%;
+  top: 25%;
+  left: 4%;
+  width: 40%;
 }
 
 .text h1 {
