@@ -8,6 +8,9 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+html,body{
+  overflow-x: hidden;
+}
 /*Nav section and Hero section*/
 nav {
   position: fixed;
@@ -137,40 +140,63 @@ header {
 
 .text {
   position: absolute;
-  top: 35%;
+  top: 20%;
   left: 5%;
 }
 
 .text h1 {
   color: #fff;
   line-height: 1.2;
+  font-size: 4rem;
   font-weight: 800;
 }
-
-.text p {
-  color: rgb(34, 194, 206);
+.text ul li {
+  margin: 3% 5%;
+  width: 30vw;
+  color: #FF5757;
   font-weight: bolder;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
-
+.text button{
+  margin: 0% 20%;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: 0.2rem solid #fff;
+  padding: 2% 5%;
+  background-color: #000;
+}
+.text button:hover{
+  color: #000;
+  background-color: #fff;
+  border-color: #fff;
+}
 /*Benefits section*/
-.benefits h1 {
-  margin-top: 5%;
+.benefits{
+  padding: 2% 0%;
 }
 
 .benefits .bfit {
+  padding: 0% 10%;
   display: flex;
+  gap: 15rem;
 }
 
 
 .bfit img{
-    width: 35%;
+    width: 55vw;
+    height: 80vh;
+    background-color: #000;
+    border-radius: 7px;
+    box-shadow: 15rem -20rem 0.1rem -5rem  lightgreen;
 }
 
 .btext{
-    margin-top: 40px;
-    margin-left: 45px;
+    margin-left: 0%;
     padding: 5%;
+}
+.btext h1{
+  margin:10% 0%;
 }
 .bfit img{
   width: 35%;
@@ -185,7 +211,7 @@ header {
 .aasan {
   background: linear-gradient(
     to bottom right,
-    rgba(0, 0, 0, 0.3),
+    #EEEEEE,
     rgba(243, 232, 232, 0.15)
   );
 }
@@ -195,29 +221,50 @@ header {
 }
 
 .aasan1 {
+  width: 100vw;
   display: flex;
   margin-top: 4%;
 }
-
-.aasan1 img {
-  border-radius: 7px;
-  box-shadow: 10px 10px 5px lightgreen;
+.aasan1 div{
+  padding: 0% 10% 0%;
+  width: 50vw;
 }
+
+.aasan1 div img {
+  width: 20vw;
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 7px;
+  box-shadow: 10rem -8rem 0.1rem -5rem  lightgreen;
+}
+/* .wide-asan>img{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  border-radius: 7px;
+  box-shadow: 10rem -8rem 0.1rem -5rem  lightgreen;
+} */
 
 .atext {
   padding: 3%;
 }
 
 .atext h1 {
+  font-size: 4rem;
   color: green;
   font-weight: bolder;
 }
+.atext p{
+  font-size: 1.2rem;
+}
 
 .aasan1 button {
-  padding: 1%;
+  font-size: 1.2rem;
+  padding: 1% 3%;
   border-radius: 7px;
-  color: green;
+  color: #fff;
   font-weight: bolder;
+  background-color: green;
   border: 2px solid green;
   transition: 0.3s ease-in-out;
 }
@@ -252,11 +299,27 @@ a {
 }
 
 /*Videos section*/
+.video-frame{
+  width: 25vw;
+  height: 30vh;
+}
 .videos .flip-card {
   padding: 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.videos>h1{
+  padding: 2% 0%;
+  text-align: center;
+  font-size: 3rem;
+  font-weight:600 ;
+}
+.videos-grid{
+  padding: 0% 5%;
+  display: grid;
+  grid-template-areas: "c1 c2 c3" 
+  "r1 r2 r3";
 }
 
 @media screen and (max-width: 650px) {
@@ -282,8 +345,213 @@ a {
     display: none;
   }
 }
+@media screen and (max-width: 1080px)and (min-width: 811px) {
+  .bfit img{
+    width: 45vw;
+    height: 75vh;
+  }
+  header {
+    width: 100vw;
+    object-fit: cover;
+    object-position: right;
+  }
+  .text h1 {
+    margin-top: -10%;
+    width: 100vw;
+    color: #fff;
+    line-height: 1.2;
+    font-size: 4rem;
+    font-weight: 800;
+  }
+  .text ul{
+    margin-top: 15%;
+  }
+  .text ul li {
+    margin: 3% 1%;
+    width: 40vw;
+    color: #fd4848;
+    font-weight: bolder;
+    font-size: 1.5rem;
+  }
+  .text button{
+    margin: 0% 5%;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 0.2rem solid #fff;
+    padding: 2% 5%;
+    background-color: #000;
+  }
+  .benefits .bfit {
+    padding: 0% 5%;
+    display: flex;
+    gap:2rem;
+    
 
-@media (max-width: 800px) {
+  }
+  .benefits .bfit {
+    padding: 0% 2%;
+  }
+  .bfit img{
+    box-shadow: 10rem -5rem 0.1rem -4rem  lightgreen;
+  }
+  .btext{
+    background-color: #ffffff;
+    padding: 5% 2%;
+  }
+  .btext h1{
+    margin:10% 0%;
+  }
+  .aasan1 {
+    padding: 5% 0%;
+    gap: 3rem;
+  }
+  .aasan1 div{
+    padding: 0% 1% 0%;
+    width: 50vw;
+  }
+  
+  .aasan1 div img {
+    width: 40vw;
+    height: 35vh;
+    box-shadow: 7rem -8rem 0.1rem -5rem  lightgreen;
+  }
+  .atext {
+    padding: 3%;
+  }
+  
+  .atext h1 {
+    font-size: 3.5rem;
+  }
+  .atext p{
+    font-size: 1.2rem;
+  }
+  
+  .aasan1 button {
+    font-size: 1.1rem;
+  }
+  .videos .flip-card {
+    padding: 5%;
+  }
+  .video-frame{
+    width: 40vw;
+    height: 30vh;
+  }
+  .videos>h1{
+    width: 100vw;
+  }
+  .videos-grid{
+    padding: 0%;
+    display: grid;
+    grid-template-areas: "c1";
+  }
+}
+@media screen and (max-width: 810px)and (min-width: 481px) {
+  .aasan1 {
+    flex-direction: row;
+    height: auto;
+  }
+  .bfit {
+    flex-direction: row;
+    height: auto;
+  }
+  
+  .benefits img {
+    width: 50%;
+  }
+  .bfit img{
+    width: 40vw;
+    height: 50vh;
+  }
+  header {
+    width: 100vw;
+    object-fit: cover;
+    object-position: right;
+  }
+  .text {
+    left:2%;
+  }
+  .text h1 {
+    margin-top: -10%;
+  }
+  .text ul{
+    margin-top: 2%;
+  }
+  .text ul li {
+    margin: 3% 1%;
+    width: 50vw;
+    font-weight: bolder;
+    font-size: 1.2rem;
+  }
+  .text button{
+    margin: 0% 5%;
+  }
+  .benefits .bfit {
+    width: 50vw;
+    padding: 0%;
+    display: flex;
+    gap:2rem;
+  }
+  .benefits .bfit {
+    padding: 0% 2%;
+  }
+  .bfit img{
+    box-shadow: 10rem -5rem 0.1rem -4rem  lightgreen;
+  }
+  .btext{
+    background-color: #ffffff;
+    padding: 5% 1%;
+  }
+  .yoga-text{
+    width: 50vw;
+    font-size: 0.4rem;
+  }
+  .btext h1{
+    margin:10% 15%;
+  }
+  .aasan1 {
+    padding: 5% 0%;
+    gap: 2rem;
+  }
+  .aasan1 div{
+    padding: 0% 1% 0%;
+    width: 50vw;
+  }
+  
+  .aasan1 div img {
+    width: 45vw;
+    height: 30vh;
+    box-shadow: 7rem -8rem 0.1rem -5rem  lightgreen;
+  }
+  .atext {
+    padding: 5%;
+  }
+  
+  .atext h1 {
+    font-size: 2.5rem;
+  }
+  .atext p{
+    font-size: 1rem;
+  }
+  
+  .aasan1 button {
+    font-size: 1.1rem;
+  }
+  .videos .flip-card {
+    padding: 5%;
+    
+  }
+  .video-frame{
+    width: 40vw;
+    height: 20vh;
+  }
+  .videos-grid{
+    padding: 0%;
+    display: grid;
+    grid-template-areas: "c1";
+  }
+}
+@media screen and (max-width: 480px)and (min-width: 320px){
   .aasan1 {
     flex-direction: column;
     height: auto;
@@ -295,8 +563,127 @@ a {
   .benefits img {
     width: 100%;
   }
-}
+  .bfit img{
+    width: 95vw;
+    height: auto;
+  }
+  
+  header {
+    width: 100vw;
+    object-fit: cover;
+    object-position: right;
+  }
+  .text {
+    position: relative;
+    padding-top: 25%;
+  }
+  .text h1 {
+    text-align: center;
+    width: 95vw;
+    color: #fff;
+    line-height: 1.2;
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+  .text ul{
+    margin-top:30%;
+  }
+  .text ul li {
+    margin: 5% 0%;
+    text-align: left;
+    color: rgb(240, 240, 78);
+    width: 80vw;
+    font-weight: bolder;
+    font-size: 1.2rem;
+  }
+  .text button{
+    margin: 0% 25%;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 0.2rem solid #fff;
+    padding: 2% 5%;
+    background-color: #000;
+  }
+  .benefits .bfit {
+    padding: 0% 5%;
+    display: flex;
+    gap:2rem;
+    
 
+  }
+  .benefits .bfit {
+    padding: 0% 2%;
+  }
+  .bfit img{
+    padding: 5%;
+    box-shadow: 0rem 0rem
+  }
+  .btext{
+    background-color: #ffffff;
+    padding: 5% 2%;
+  }
+  .btext h1{
+    margin:10% 0%;
+  }
+  .aasan1 {
+    padding: 10% 0%;
+    gap: 2rem;
+  }
+  .aasan1 div{
+    padding: 0% 5% 0%;
+    width: 90vw;
+  }
+  
+  .aasan1 div img {
+    width: 80vw;
+    height: 35vh;
+    box-shadow: 7rem -8rem 0.1rem -5rem  lightgreen;
+  }
+  .atext {
+    padding: 3%;
+  }
+  
+  .atext h1 {
+    text-align: left;
+    font-size: 2.5rem;
+  }
+  .atext p{
+    text-align: left;
+    font-size: 1rem;
+  }
+  
+  .aasan1 button {
+    font-size: 1.1rem;
+  }
+  .video-div{
+    padding-bottom:56.25%;
+    position:relative;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%
+  }
+  .video-frame{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 95vw;
+    height: 100%;
+  }
+  .videos .flip-card {
+    padding: 5%;
+    display: block;
+  }
+  .videos>h1{
+    width: 100vw;
+  }
+  .videos-grid{
+    width: 95vw;
+    padding: 0%;
+    padding-left: 5%;
+    display: block;
+  }
+}
 @media (max-width: 600px) {
   .videos iframe {
     width: 600px;
@@ -342,6 +729,11 @@ footer a:focus {
     color: white;
     margin-top: 1rem;
   }
+  /* header{
+    object-fit: cover;
+    width: 100vw;
+  } */
+
 }
 
 @media (max-width: 600px) {
