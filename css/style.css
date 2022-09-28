@@ -756,12 +756,14 @@ figure.testimonal-Card blockquote:after {
 figure.testimonal-Card blockquote:before {
   top: 25px;
   left: 20px;
+  color: #083653;
 }
 
 figure.testimonal-Card blockquote:after {
   content: "\201D";
   right: 20px;
   bottom: 0;
+  color: #083653;
 }
 
 figure.testimonal-Card .arrow {
@@ -792,6 +794,7 @@ figure.testimonal-Card .author h5 {
   text-align: center;
   margin: 0;
   font-weight: 600;
+  color: #083653;
 }
 
 .section-100 {
@@ -821,15 +824,15 @@ figure.testimonal-Card .author h5 {
 
 .testimonial-box .quote-icon {
   font-size: 50px;
-  color: #eee;
-  margin-top: 20px;
+  color: #083653;
+    margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .testimonial-box img.user-img {
   height: 60px;
   width: 60px;
-  border: 3px solid #eee;
+  border: 3px solid #083653 ;
   border-radius: 60px;
   object-fit: cover;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16);
@@ -876,10 +879,15 @@ figure.testimonal-Card .author h5 {
 .owl-carousel button.owl-dot {
   background: 0 0;
   /* color: inherit; */
-  color: #fff;
+  color: #fff !important;
   border: none;
   padding: 0 !important;
   font: inherit;
+}
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel button.owl-dot:hover{
+  color: #f9004d !important;
 }
 
 /* faq section */
@@ -902,6 +910,9 @@ figure.testimonal-Card .author h5 {
 
 .faq_heading h1 {
   font-size: 50px;
+  font-weight: 800;
+  padding-bottom: 2rem;
+  font-family: "Montserrat";
 }
 
 .accordion {
