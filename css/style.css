@@ -521,8 +521,16 @@ nav .fa {
 .box {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  padding: 3rem;
+  gap: 1.5rem;
+  padding: 2.5rem;
+}
+@media screen and (max-width: 1336px) and (min-width: 600px)
+{
+  .box {
+  gap: 1rem;
+  padding: 2.5rem;
+}
+
 }
 
 .card {
@@ -531,6 +539,7 @@ nav .fa {
   animation: slideIn 0.5s ease-in-out;
   transform: translateY(-2.2rem);
   padding: 20px;
+  width: 300px;
   transition: all 0.25s;
   background: rgba(1, 59, 112, 0.4);
   box-shadow: 0 8px 32px 0 rgba(23, 25, 50, 0.37);
@@ -575,7 +584,7 @@ h5 {
 }
 
 .pra button {
-  padding: 0.6rem 1.2rem;
+  padding: 0.5rem 1.0rem;
   border: 2px solid #f9004d;
   background-color: #fff;
   border-radius: 0.8rem;
@@ -584,16 +593,21 @@ h5 {
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
+margin-bottom: 1rem;
 }
-
+.p{
+  margin-top: -24px;
+}
 .pra button:hover {
   background-color: #f9004d;
   color: #fff;
   transition: 0.3s;
 }
-
 .footerpara {
   white-space: nowrap;
+}
+.he{
+  margin-top: -30%;
 }
 
 /* SERVICES SECTION */
@@ -1318,7 +1332,7 @@ footer a:focus {
   }
 
   .card {
-    width: 300px;
+    width: 400px;
   }
 
   .card img {
