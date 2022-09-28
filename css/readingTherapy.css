@@ -44,19 +44,6 @@
 body {
   font-family: "Inter", sans-serif;
 }
-<<<<<<< HEAD
-
-/* <<<<<<< HEAD */
-::-webkit-scrollbar{
-  background: transparent;
-  width: 0.4rem;
-=======
-html {
-  scroll-behavior: smooth;
-  overflow-y: overlay;
->>>>>>> 0df8eaa91c12e3ba837fb5676b3cfb9c0655b204
-}
-
 ::-webkit-scrollbar-thumb{
   background-color: rgba(173, 173, 173, 0.2);
   border-radius: 10px;
