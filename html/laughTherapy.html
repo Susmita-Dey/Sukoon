@@ -12,10 +12,14 @@
       text="text/CSS"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body onload="myfunction()" id="main">
     <div id="load">
       <div style="background-color: white; height: 25vh; width: 100%; position: relative; top: -70px;"></div>
+    </div>
+    <div id="back-top-div" class="back-top-wrap">
+      <i class="fas fa-arrow-up"></i>
     </div>
     
   
@@ -47,55 +51,55 @@
     
     <header>
       <div class="center"> 
-        <h1 id="title">Welcome to Our <br><span class="heading-span">Laughing Therapy</span></h1>
-        <h3 id="subtitle">Learn more about laughter therapy. Read some memes and <br>enjoy watching standup to gain some happiness and relief <br> from your problems.</h3>
+        <h1  data-aos="fade-down"  id="title">Welcome to Our <br><span class="heading-span">Laughing Therapy</span></h1>
+        <h3 data-aos="fade-up-right" data-aos-duration="1500" id="subtitle">Learn more about laughter therapy. Read some memes and <br>enjoy watching standup to gain some happiness and relief <br> from your problems.</h3>
       </div>
     </header>
 
     <section id="about">
-      <h1 class="section-headings">ABOUT</h1>
-      <div class="image">
+      <h1 data-aos="flip-right" class="section-headings">ABOUT</h1>
+      <div data-aos="fade-up-right" data-aos-duration="5000" class="image">
         <img src="../images/laugh.jpg" alt="">
       </div>
       <div class="about-content">
-        <div class="one"> Laughter Yoga includes four things:</div>
+        <div  data-aos="fade-up-left" class="one"> Laughter Yoga includes four things:</div>
         <ol>
-          <li>Clapping in rhythm to ‘ho-ho-ha-ha-ha’.</li>
+          <li  data-aos="fade-left">Clapping in rhythm to ‘ho-ho-ha-ha-ha’.</li>
 
-          <li>Breathing and stretching.</li>
+          <li  data-aos="fade-left">Breathing and stretching.</li>
 
-          <li>Child-like play.</li>
+          <li data-aos="fade-left">Child-like play.</li>
 
-          <li>Laughter exercises.</li>
+          <li data-aos="fade-left">Laughter exercises.</li>
         </ol>
         <button class="btn"><a href="https://www.healthline.com/nutrition/laughing-yoga" target="_blank">Know More</a></button>
       </div>
     </section>
     <hr/>
     <section id="memes">
-      <h1 class="section-headings">MEMES</h1>
-      <div class="slideshow-container">
+      <h1  data-aos="zoom-out" class="section-headings">MEMES</h1>
+      <div data-aos="flip-up" class="slideshow-container">
         <div class="mySlides fade">
           <img src="../images/meme1.jpg" style="width:50%; margin-left: 25%;">
         </div>
       
-        <div class="mySlides fade">
+        <div data-aos="flip-up" class="mySlides fade">
           <img src="../images/meme2.jpg" style="width:50%; margin-left: 25%;">
         </div>
       
-        <div class="mySlides fade">
+        <div data-aos="flip-up" class="mySlides fade">
           <img src="../images/meme3.jpg" style="width:50%; margin-left: 25%;">
         </div>
 
-        <div class="mySlides fade">
+        <div data-aos="flip-up" class="mySlides fade">
           <img src="../images/meme4.jpg" style="width:50%; margin-left: 25%;">
         </div>
 
-        <div class="mySlides fade">
+        <div data-aos="flip-up" class="mySlides fade">
           <img src="../images/meme5.jpg" style="width:50%; margin-left: 25%;">
         </div>
 
-        <div class="mySlides fade">
+        <div data-aos="flip-up" class="mySlides fade">
           <img src="../images/meme6.jpg" style="width:50% ; margin-left: 25%;">
         </div>
     
@@ -107,9 +111,9 @@
     </section>
     <hr/>
     <section id="standups">
-      <h1 class="section-headings">STANDUPS</h1>
+      <h1 data-aos="zoom-in-up" class="section-headings">STANDUPS</h1>
         <div class="collection">
-          <div class="video">
+          <div data-aos="flip-down" class="video">
             <iframe
               width="570"
               height="330"
@@ -120,7 +124,7 @@
               allowfullscreen>
             </iframe>
           </div>
-          <div class="video">
+          <div data-aos="flip-down" class="video">
             <iframe
               width="570"
               height="330"
@@ -131,7 +135,7 @@
               allowfullscreen>
             </iframe>
           </div>
-          <div class="video">
+          <div data-aos="flip-down" class="video">
             <iframe
               width="570"
               height="330"
@@ -142,7 +146,7 @@
               allowfullscreen>
             </iframe>
           </div>
-          <div class="video">
+          <div data-aos="flip-down" class="video">
             <iframe
               width="570"
               height="330"
@@ -153,7 +157,7 @@
               allowfullscreen>
             </iframe>
           </div>
-          <div class="video">
+          <div data-aos="flip-down" class="video">
             <iframe
               width="570"
               height="330"
@@ -164,7 +168,7 @@
               allowfullscreen>
             </iframe>
           </div>
-          <div class="video">
+          <div data-aos="flip-down" class="video">
             <iframe
               width="570"
               height="330"
@@ -175,7 +179,7 @@
               allowfullscreen>
             </iframe>
           </div>
-          <div class="video" >
+          <div data-aos="flip-down" class="video" >
             <iframe
               width="570"
               height="330"
@@ -186,7 +190,7 @@
               allowfullscreen>
             </iframe>
           </div>
-          <div class="video">
+          <div data-aos="flip-down" class="video">
             <iframe
               width="570"
               height="330"
@@ -197,7 +201,7 @@
               allowfullscreen>
             </iframe>
           </div>
-          <div class="video">
+          <div data-aos="flip-down" class="video">
             <iframe
               width="570"
               height="330"
@@ -208,7 +212,7 @@
               allowfullscreen>
             </iframe>
           </div>
-          <div class="video">
+          <div data-aos="flip-down" class="video">
             <iframe
               width="570"
               height="330"
@@ -219,7 +223,7 @@
               allowfullscreen>
             </iframe>
           </div>
-          <div class="video">
+          <div data-aos="flip-down" class="video">
             <iframe 
               width="570"
               height="330" 
@@ -230,7 +234,7 @@
               allowfullscreen>
             </iframe>
           </div>
-          <div class="video">
+          <div data-aos="flip-down" class="video">
             <iframe 
               width="570" 
               height="330" 
@@ -241,7 +245,7 @@
               allowfullscreen>
             </iframe>
           </div>
-          <div class="video">
+          <div data-aos="flip-down" class="video">
             <iframe 
               width="570" 
               height="330" 
@@ -252,7 +256,7 @@
               allowfullscreen>
             </iframe>
           </div>
-          <div class="video">
+          <div data-aos="flip-down" class="video">
             <iframe 
               width="570" 
               height="330"
@@ -263,7 +267,7 @@
               allowfullscreen>
             </iframe>
           </div>
-          <div class="video">
+          <div data-aos="flip-down" class="video">
             <iframe 
               width="570"
               height="330" 
@@ -274,7 +278,7 @@
               allowfullscreen>
             </iframe>
           </div>
-          <div class="video">
+          <div data-aos="flip-down" class="video">
             <iframe 
               width="570"
               height="330" 
@@ -345,6 +349,16 @@
               <li>
                 <a href="https://www.practo.com/counselling-psychology">Consult a Doctor</a>
               </li>
+              <li>
+                <a href="https://sukoon-stress-free.netlify.app/html/childTherapy"
+                  >Child Therapy</a
+                >
+              </li>
+              <li>
+                <a href="https://sukoon-stress-free.netlify.app/html/spiritualTherapy"
+                  >Spiritual Therapy</a
+                >
+              </li>
             </ul>
           </div>
 
@@ -354,13 +368,13 @@
             <h3>CONTACTS<div class="underline"><span></span></div></h3>
             <div class="social-menu">
               <ul>
-                <a href="https://twitter.com/sukoon665">
+                <a href="https://twitter.com/sukoon665" target="_blank">
                   <li><i class="fab fa-2x fa-twitter"></i></li>
                 </a>
-                <a href="https://github.com/Susmita-Dey/Sukoon">
+                <a href="https://github.com/Susmita-Dey/Sukoon" target="_blank">
                   <li><i class="fab fa-2x fa-github"></i></li>
                 </a>
-                <a href="https://www.linkedin.com/in/sukoon-web-820705238">
+                <a href="https://www.linkedin.com/in/sukoon-web-820705238" target="_blank">
                   <li><i class="fab fa-2x fa-linkedin-in"></i></li>
                 </a>
               </ul>
@@ -432,6 +446,27 @@
           preloader.style.display='none';
           scroll.style.overflow='scroll';
       }
+      const backTopElement = document.getElementById("back-top-div");
+      const minScolledAmountToBackTop = 800;
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY < minScolledAmountToBackTop) {
+          backTopElement.classList.add("hidden");
+        } else {
+          backTopElement.classList.remove("hidden");
+        }
+      });
+
+      const backTop = () => {
+        window.scrollTo(0, 0);
+      };
+
+      backTopElement.addEventListener("click", backTop);
+      ham.addEventListener("click", toggleMenu);
   </script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>    
   </body>
 </html>
