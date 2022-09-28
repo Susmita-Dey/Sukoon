@@ -192,8 +192,8 @@ header {
 .text ul li {
   margin: 3% 5%;
   width: 30vw;
-  color: #FF5757;
-  font-weight: bolder;
+  color: #fff;
+  font-weight: medium;
   font-size: 1.5rem;
 }
 .text button{
@@ -423,8 +423,6 @@ a {
   .text ul li {
     margin: 3% 1%;
     width: 40vw;
-    color: #fd4848;
-    font-weight: bolder;
     font-size: 1.5rem;
   }
   .text button{
@@ -534,7 +532,6 @@ a {
   .text ul li {
     margin: 3% 1%;
     width: 50vw;
-    font-weight: bolder;
     font-size: 1.2rem;
   }
   .text button{
@@ -648,9 +645,7 @@ a {
   .text ul li {
     margin: 5% 0%;
     text-align: left;
-    color: rgb(240, 240, 78);
     width: 80vw;
-    font-weight: bolder;
     font-size: 1.2rem;
   }
   .text button{
