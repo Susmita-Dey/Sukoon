@@ -988,11 +988,13 @@ figure.testimonal-Card .author h5 {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  color: hsl(248, 10%, 40%);
+  color: white;
   transform: translateX(16px);
   transition: max-height 0.5s ease, opacity 0.5s, transform 0.5s;
 }
-
+.accordion__content .email{
+  color:  rgb(228, 26, 77);
+}
 .accordion__content p {
   padding: 1rem 1.8rem;
 }
