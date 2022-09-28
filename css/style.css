@@ -896,6 +896,9 @@ figure.testimonal-Card .author h5 {
 
 .faq_heading h1 {
   font-size: 50px;
+  font-weight: 800;
+  padding-bottom: 2rem;
+  font-family: "Montserrat";
 }
 
 .accordion {
