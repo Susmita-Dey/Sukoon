@@ -20,6 +20,7 @@ body{
 }
 html {
   scroll-behavior: smooth;
+  overflow-y: overlay;
 }
 nav {
   height: 10%;
