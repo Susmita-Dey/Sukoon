@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+
 ::-webkit-scrollbar{
   background: transparent;
   width: 0.4rem;
