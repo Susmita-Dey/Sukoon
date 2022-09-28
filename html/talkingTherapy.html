@@ -20,6 +20,9 @@
   <div id="load">
     <div style="background-color: white; height: 25vh; width: 100%; position: relative; top: -70px;"></div>
   </div>
+  <div id="back-top-div" class="back-top-wrap">
+    <i class="fas fa-arrow-up"></i>
+  </div>
 
   <!-- Navbar Section -->
   <nav>
@@ -225,75 +228,102 @@
 
       <!--ADDRESS COLUMN-->
 
-      <div class="footer-side-col">
-        <div class="col">
-          <h3>
-            ADDRESS
-            <div class="underline"><span></span></div>
-          </h3>
-          <p>West Bengal,India</p>
-          <p class="email-id"><a href="mailto:sukoon665@gmail.com">sukoon665@gmail.com</a></p>
-        </div>
-        <!--HOME COLUMN-->
-        <div class="col">
-          <h3>HOME</h3>
+    <div class="footer-side-col">
+      <div class="col">
+        <h3>
+          ADDRESS
+          <div class="underline"><span></span></div>
+        </h3>
+        <p>West Bengal,India</p>
+        <p class="email-id"><a href="mailto:sukoon665@gmail.com">sukoon665@gmail.com</a></p>
+      </div>
+      <!--HOME COLUMN-->
+      <div class="col">
+        <h3>HOME</h3>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li>
+            <a
+              href="https://github.com/Susmita-Dey/Sukoon/blob/main/CODE_OF_CONDUCT.md"
+              >Code Of Conduct</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/Susmita-Dey/Sukoon">Contribute</a>
+          </li>
+          <li>
+            <a href="https://www.buymeacoffee.com/susmitadey">Donate</a>
+          </li>
+        </ul>
+      </div>
+      <!--OUR SERVICES COLUMN-->
+      <div class="col">
+        <h3>
+          SERVICES
+          <div class="underline"><span></span></div>
+        </h3>
+        <ul>
+          <li>
+            <a href="https://sukoon-stress-free.netlify.app/html/audiotherapy"
+              >Audio Therapy</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://sukoon-stress-free.netlify.app/html/yogatherapy.html"
+              >Yoga Therapy</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://sukoon-stress-free.netlify.app/html/readingtherapy"
+              >Reading Therapy</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://sukoon-stress-free.netlify.app/html/talkingtherapy"
+              >Talking Therapy</a
+            >
+          </li>
+          <li>
+            <a href="https://www.practo.com/counselling-psychology"
+              >Consult a Doctor</a
+            >
+          </li>
+          <li>
+            <a href="https://sukoon-stress-free.netlify.app/html/childTherapy"
+              >Child Therapy</a
+            >
+          </li>
+          <li>
+            <a href="https://sukoon-stress-free.netlify.app/html/spiritualTherapy"
+              >Spiritual Therapy</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!--CONTACTS COLUMN-->
+      <div class="col">
+        <h3>
+          CONTACTS
+          <div class="underline"><span></span></div>
+        </h3>
+        <div class="social-menu">
           <ul>
-            <li><a href="#about">About Us</a></li>
-            <li>
-              <a href="https://github.com/Susmita-Dey/Sukoon/blob/main/CODE_OF_CONDUCT.md">Code Of Conduct</a>
-            </li>
-            <li>
-              <a href="https://github.com/Susmita-Dey/Sukoon">Contribute</a>
-            </li>
-            <li>
-              <a href="https://www.buymeacoffee.com/susmitadey">Donate</a>
-            </li>
-          </ul>
-        </div>
-        <!--OUR SERVICES COLUMN-->
-        <div class="col">
-          <h3>
-            SERVICES
-            <div class="underline"><span></span></div>
-          </h3>
-          <ul>
-            <li>
-              <a href="https://sukoon-stress-free.netlify.app/html/audiotherapy">Audio Therapy</a>
-            </li>
-            <li>
-              <a href="https://sukoon-stress-free.netlify.app/html/yogatherapy.html">Yoga Therapy</a>
-            </li>
-            <li>
-              <a href="https://sukoon-stress-free.netlify.app/html/readingtherapy">Reading Therapy</a>
-            </li>
-            <li>
-              <a href="https://sukoon-stress-free.netlify.app/html/talkingtherapy">Talking Therapy</a>
-            </li>
-            <li>
-              <a href="https://www.practo.com/counselling-psychology">Consult a Doctor</a>
-            </li>
-          </ul>
-        </div>
-        <!--CONTACTS COLUMN-->
-        <div class="col">
-          <h3>
-            CONTACTS
-            <div class="underline"><span></span></div>
-          </h3>
-          <div class="social-menu">
-            <ul>
-              <a href="https://twitter.com/sukoon665">
+              <a href="https://twitter.com/sukoon665" target="_blank">
                 <li><i class="fab fa-2x fa-twitter"></i></li>
               </a>
-              <a href="https://github.com/Susmita-Dey/Sukoon">
+              <a href="https://github.com/Susmita-Dey/Sukoon" target="_blank">
                 <li><i class="fab fa-2x fa-github"></i></li>
               </a>
-              <a href="https://www.linkedin.com/in/sukoon-web-820705238">
+              <a href="https://www.linkedin.com/in/sukoon-web-820705238" target="_blank">
                 <li><i class="fab fa-2x fa-linkedin-in"></i></li>
               </a>
             </ul>
           </div>
         </div>
+
 
       </div>
     </div>
@@ -340,6 +370,23 @@
         preloader.style.display='none';
         scroll.style.overflow='scroll';
     }
+    const backTopElement = document.getElementById("back-top-div");
+      const minScolledAmountToBackTop = 800;
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY < minScolledAmountToBackTop) {
+          backTopElement.classList.add("hidden");
+        } else {
+          backTopElement.classList.remove("hidden");
+        }
+      });
+
+      const backTop = () => {
+        window.scrollTo(0, 0);
+      };
+
+      backTopElement.addEventListener("click", backTop);
+      ham.addEventListener("click", toggleMenu);
 </script>
 </body>
 
