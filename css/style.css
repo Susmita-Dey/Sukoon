@@ -11,26 +11,26 @@
   box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
-  width: 12px;
-  background: #222131;
+::-webkit-scrollbar{
+  background: transparent;
+  width: 0.4rem;
 }
 
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
+::-webkit-scrollbar-thumb{
+  background-color: rgba(173, 173, 173, 0.2);
   border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: white;
-  border-radius: 10px;
+  transition: background-color 0.5s ease-in-out;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: cyan;
+  background-color: rgba(173, 173, 173, 0.5);
 }
 
-.loading-wrapper {
+html{
+  overflow-y: overlay;
+}
+
+.loading-wrapper{
   background-color: white;
   position: fixed;
   width: 100vw;
@@ -67,6 +67,7 @@
     transform: rotate(360deg);
   }
 }
+
 
 body {
   font-family: "Poppins";
@@ -646,8 +647,13 @@ margin-bottom: 1rem;
   margin-top: 28px;
 }
 
+.round-image{
+  object-fit: cover;
+}
+
 .responsive .round-image img {
   width: 12rem;
+  border-radius: 50%;
 }
 
 .responsive h2 {
