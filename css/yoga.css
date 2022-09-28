@@ -239,6 +239,18 @@ header {
   font-size: 1.2rem;
 }
 
+.container-glass {
+  background: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.2);
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .container-glass {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+}
+
 /*Benefits section*/
 .benefits{
   color: #00171f;
