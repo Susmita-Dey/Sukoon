@@ -5,7 +5,42 @@
   padding: 0;
   box-sizing: border-box;
 }
+#load{
+	margin: auto;
+    width: 100%;
+    height: -webkit-fill-available;
+    position: fixed;
+    background: #fff url(../images/Spin-Preloader-1.gif) no-repeat center;
+    z-index: 9999999;
+}
+#main{
+  overflow: hidden;
+}
+.back-top-wrap {
+    position: fixed;
+    bottom: 5rem;
+    right: 1rem;
+    background-color: #80F7D1;
+    padding: 1rem 1.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    z-index: 100;
+  }
 
+  .back-top-wrap:hover {
+    background-color: #00a2ff;
+    color: #80F7D1;
+  }
+
+  .back-top-wrap:hover .fas.fa-arrow-up {
+    color: white;
+  }
+
+  .fas.fa-arrow-up {
+    color: #00488F;
+    transition: 0.3s ease-in-out;
+  }
 body {
   font-family: "Inter", sans-serif;
 }

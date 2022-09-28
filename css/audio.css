@@ -36,6 +36,31 @@ html{
   scroll-behavior: smooth;
   overflow-y: overlay;
 }
+.back-top-wrap {
+  position: fixed;
+  bottom: 5rem;
+  right: 1rem;
+  background-color: #80F7D1;
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  z-index: 100;
+}
+
+.back-top-wrap:hover {
+  background-color: #00a2ff;
+  color: #80F7D1;
+}
+
+.back-top-wrap:hover .fas.fa-arrow-up {
+  color: white;
+}
+
+.fas.fa-arrow-up {
+  color: #00488F;
+  transition: 0.3s ease-in-out;
+}
 
 body {
   background-color: #040404;
