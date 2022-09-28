@@ -925,7 +925,7 @@ figure.testimonal-Card .author h5 {
   width: 42rem;
   padding: 1.2rem 0;
   border-radius: 1rem;
-  background: white;
+  background: rgba(1, 59, 112, 0.4);;
   margin-top: 2rem;
 }
 
@@ -944,10 +944,10 @@ figure.testimonal-Card .author h5 {
   align-items: center;
   width: 100%;
   padding: 1.2rem 1.4rem;
-  background: white;
+  background: rgba(1, 59, 112, 0.4);
   border: none;
   outline: none;
-  color: hsl(248, 10%, 40%);
+  color: white;
   font-size: 1.2rem;
   text-align: left;
   cursor: pointer;
