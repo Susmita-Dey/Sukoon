@@ -29,6 +29,9 @@
   <div id="load">
     <div style="background-color: white; height: 25vh; width: 100%; position: relative; top: -70px;"></div>
   </div>
+  <div id="back-top-div" class="back-top-wrap">
+    <i class="fas fa-arrow-up"></i>
+  </div>
     <!-- Navbar-->
     <header>
 
@@ -285,6 +288,16 @@
               <a href="https://www.amazon.in/Psychology-Money-Morgan-Housel/dp/9390166268/ref=sr_1_1_sspa?crid=3NGTBCRUC5JU6&keywords=psychology+of+money&qid=1659729390&sprefix=phsycology+of+mone+%2Caps%2C319&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExVjY1MUhLNE1QSFBKJmVuY3J5cHRlZElkPUEwMzc1NDAxM05ETEZKTjBFMksySiZlbmNyeXB0ZWRBZElkPUEwMTQ1MTU4M0I4Mks1VTNZOVVXSCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU="
                 target="_blank" class="btn btn-border">Read</a>
             </li>
+            <li>
+              <a href="https://sukoon-stress-free.netlify.app/html/childTherapy"
+                >Child Therapy</a
+              >
+            </li>
+            <li>
+              <a href="https://sukoon-stress-free.netlify.app/html/spiritualTherapy"
+                >Spiritual Therapy</a
+              >
+            </li>
           </ul>
         </div>
         <div class="card">
@@ -427,6 +440,7 @@
           <div class="col">
             <h3>HOME</h3>
             <ul>
+
               <li><a href="#about">About Us</a></li>
               <li>
                 <a href="https://github.com/Susmita-Dey/Sukoon/blob/main/CODE_OF_CONDUCT.md">Code Of Conduct</a>
@@ -471,13 +485,13 @@
             </h3>
             <div class="social-menu">
               <ul>
-                <a href="https://twitter.com/sukoon665">
+                <a href="https://twitter.com/sukoon665"target="_blank">
                   <li><i class="fab fa-2x fa-twitter"></i></li>
                 </a>
-                <a href="https://github.com/Susmita-Dey/Sukoon">
+                <a href="https://github.com/Susmita-Dey/Sukoon"target="_blank">
                   <li><i class="fab fa-2x fa-github"></i></li>
                 </a>
-                <a href="https://www.linkedin.com/in/sukoon-web-820705238">
+                <a href="https://www.linkedin.com/in/sukoon-web-820705238"target="_blank">
                   <li><i class="fab fa-2x fa-linkedin-in"></i></li>
                 </a>
               </ul>
@@ -519,6 +533,11 @@
       ele.addEventListener("click", closeMenu);
     }
     )
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 0df8eaa91c12e3ba837fb5676b3cfb9c0655b204
     </script>
     <script>
       var preloader = document.getElementById('load');
@@ -527,7 +546,23 @@
           preloader.style.display='none';
           scroll.style.overflow='scroll';
       }
+      const backTopElement = document.getElementById("back-top-div");
+      const minScolledAmountToBackTop = 800;
 
+      window.addEventListener("scroll", () => {
+        if (window.scrollY < minScolledAmountToBackTop) {
+          backTopElement.classList.add("hidden");
+        } else {
+          backTopElement.classList.remove("hidden");
+        }
+      });
+
+      const backTop = () => {
+        window.scrollTo(0, 0);
+      };
+
+      backTopElement.addEventListener("click", backTop);
+      ham.addEventListener("click", toggleMenu);
   </script>
 </body>
 </html>
