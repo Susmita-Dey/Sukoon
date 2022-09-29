@@ -925,7 +925,7 @@ figure.testimonal-Card .author h5 {
   width: 42rem;
   padding: 1.2rem 0;
   border-radius: 1rem;
-  background: white;
+  background: rgba(1, 59, 112, 0.4);;
   margin-top: 2rem;
 }
 
@@ -944,10 +944,10 @@ figure.testimonal-Card .author h5 {
   align-items: center;
   width: 100%;
   padding: 1.2rem 1.4rem;
-  background: white;
+  background: rgba(1, 59, 112, 0.4);
   border: none;
   outline: none;
-  color: hsl(248, 10%, 40%);
+  color: white;
   font-size: 1.2rem;
   text-align: left;
   cursor: pointer;
@@ -988,11 +988,13 @@ figure.testimonal-Card .author h5 {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  color: hsl(248, 10%, 40%);
+  color: white;
   transform: translateX(16px);
   transition: max-height 0.5s ease, opacity 0.5s, transform 0.5s;
 }
-
+.accordion__content .email{
+  color:  #ffff00;
+}
 .accordion__content p {
   padding: 1rem 1.8rem;
 }
