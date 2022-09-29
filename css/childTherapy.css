@@ -12,6 +12,7 @@ body {
   background-color: #040404;
   font-family: "Inter", sans-serif;
   color: white;
+  overflow-x: hidden;
 }
 
 header {
