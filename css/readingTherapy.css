@@ -44,13 +44,6 @@
 body {
   font-family: "Inter", sans-serif;
 }
-
-/* <<<<<<< HEAD */
-::-webkit-scrollbar{
-  background: transparent;
-  width: 0.4rem;
-}
-
 ::-webkit-scrollbar-thumb{
   background-color: rgba(173, 173, 173, 0.2);
   border-radius: 10px;
