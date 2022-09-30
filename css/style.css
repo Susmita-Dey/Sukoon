@@ -480,43 +480,50 @@ nav .fa {
 }
 
 .about .max-width {
-  margin: auto 0 auto 85px;
-  margin-bottom: 30px;
+  /* margin: auto 0 auto 85px;
+  margin-bottom: 30px; */
   color: white;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .about .photo {
-  float: right;
   border: 5px solid #f9004d;
   border-radius: 10px;
-  margin-right: 10%;
+  /* margin-right: 10%; */
+  order: 2;
 }
 
-.about .about-content .text-1 {
+@media (max-width: 1050px) {
+  .about-content{
+    order: 3;
+  }
+
+  .about .photo{
+    margin-bottom: 2rem;
+  }
+}
+
+.about-content p{
+  max-width: 700px;
+  padding: 0 1em;
   font-size: 27px;
-  margin-top: 70px;
   font-family: "Montserrat";
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
-.about .about-content .text-3 {
-  font-size: 27px;
-  margin: 5px 0;
-  font-family: "Montserrat";
+.text-3{
+  margin-top: 2rem;
 }
 
-.about .about-content .text-3 span,
-.about .about-content .text-1 span,
-.about .about-content .text-5 span {
+.about .about-content span,
+.about .about-content span,
+.about .about-content span {
   color: #f9004d;
   font-weight: 700;
-}
-
-.about .about-content .text-5 {
-  font-size: 27px;
-  margin-top: 40px;
-  color: #fff;
-  font-family: "Montserrat";
 }
 
 .box {
@@ -1405,39 +1412,5 @@ footer a:focus {
 @media screen and (max-width: 460px) {
   .content h1 {
     font-size: 3rem;
-  }
-}
-
-@media (max-width: 690px) {
-  .max-width {
-    padding: 0 20px;
-  }
-
-  .about .about-content .text-1 {
-    padding-top: 70%;
-  }
-}
-
-@media (max-width: 500px) {
-  .max-width {
-    padding: 0 5px;
-  }
-
-  .about .about-content .text-1 {
-    padding-top: 100px;
-  }
-}
-
-@media (max-width: 450px) {
-  .about .photo {
-    float: left;
-    margin-left: -15%;
-  }
-}
-
-@media (max-width: 400px) {
-  .about .photo {
-    float: left;
-    margin-left: -18%;
   }
 }
