@@ -692,6 +692,15 @@ margin-bottom: 1rem;
   border-color: white;
 }
 
+.description {
+  min-height: 55%;
+  /* background-color: wheat; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
 @media screen and (max-width: 900px) {
   .container {
     flex-direction: column;
