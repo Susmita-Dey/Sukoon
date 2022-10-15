@@ -22,12 +22,12 @@ const ham = document.getElementById("ham");
             console.log("close");
           }
         };
-        function scrolll() {
+        function scrollr() {
         var left = document.querySelector(".scroll-images");
         left.scrollBy(350, 0)
     }
 
-    function scrollr() {
+    function scrolll() {
         var right = document.querySelector(".scroll-images");
         right.scrollBy(-350, 0)
     }
