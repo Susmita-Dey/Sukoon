@@ -12,9 +12,9 @@
  ## Quicklinks 
   
  * [Code of Conduct](#code-of-conduct)
- * [Getting Started](#getting-started)
+ * [Getting Started](#gettingstarted)
  * [Issues](#issues)
- * [Pull Requests](#pull-requests)
+ * [Pull Requests](#pullrequests)
 
   
  ## Code of Conduct
