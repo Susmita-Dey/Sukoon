@@ -1,86 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel ="icon" href="/images/favicon-enhanced.png">
-    <link rel="stylesheet" href="css/login.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/favicon-enhanced.png" />
+    <link rel="stylesheet" href="css/login.css" />
     <title>Sukoon - Login</title>
-</head>
-<body onload="myfunction()">
+  </head>
+  <body onload="myfunction()">
     <div id="load">
-        <div style="background-color: white; height: 25vh; width: 100%; position: relative; top: -70px;"></div>
-      </div>
-    <img src="/images/signupill.png" alt="">
+      <div
+        style="
+          background-color: white;
+          height: 25vh;
+          width: 100%;
+          position: relative;
+          top: -70px;
+        "
+      ></div>
+    </div>
+    <img src="/images/signupill.png" alt="" />
     <div class="login">
-        <div class="welcome">
-            <h1 class="titletext">Welcome back</h1>
-            <span>Please enter your details.</span>
-        </div>
-        <div class="inputs">
-            <span>Email<br></span>
-            <input class="inputbox" placeholder="Enter your email"/><br>
-            <span>Password<br></span>
-            <input type="password" class="inputbox" placeholder="••••••••"/>        
-        </div>
-        <div class="forgotpass">
-            <span>Forgot Password</span>
-        </div>
-        <div class="button">
-            <input type="button" class="signin" value="Sign in" />
-        </div>
-        <div class="signupline">
-            <span>Don't have an account?</span>
-                <span class="signupbutton"> Sign up</span>
-            
-        </div>
+      <div class="welcome">
+        <h1 class="titletext">Welcome Back &#x1F917</h1>
+        <span>Please enter your details.</span>
+      </div>
+      <div class="inputs">
+        <span>Email<br /></span>
+        <input class="inputbox" placeholder="Enter your email" /><br />
+        <span>Password<br /></span>
+        <input type="password" class="inputbox" placeholder="••••••••" />
+      </div>
+      <div class="forgotpass">
+        <span>Forgot Password</span>
+      </div>
+      <div class="button">
+        <input type="button" class="signin" value="Sign in" />
+      </div>
+      <div class="signupline">
+        <span>Don't have an account?</span>
+        <span class="signupbutton"> Sign up</span>
+      </div>
     </div>
     <div class="register">
-        <div class="welcome">
-            <h1 class="titletext">Create an account</h1>
-            <span>Let's get started.</span>
-        </div>
-        <div class="inputs">
-            <span>Username<br></span>
-            <input class="inputbox" placeholder="Enter your username"/><br>
-            <span>Email<br></span>
-            <input class="inputbox" placeholder="Enter your email"/><br>
-            <span>Password<br></span>
-            <input type="password" class="inputbox" placeholder="••••••••"/>        
-        </div>
-        <div class="button">
-            <input type="button" class="signin" value="Sign up" />
-        </div>
-        <div class="signupline">
-            <span>Already have an account?</span>
-                <span class="signinbutton"> Sign in</span>
-        </div>
-        </div>
-    
+      <div class="welcome">
+        <h1 class="titletext">Create an account</h1>
+        <span>Let's get started.</span>
+      </div>
+      <div class="inputs">
+        <span>Username<br /></span>
+        <input class="inputbox" placeholder="Enter your username" /><br />
+        <span>Email<br /></span>
+        <input class="inputbox" placeholder="Enter your email" /><br />
+        <span>Password<br /></span>
+        <input type="password" class="inputbox" placeholder="••••••••" />
+      </div>
+      <div class="button">
+        <input type="button" class="signin" value="Sign up" />
+      </div>
+      <div class="signupline">
+        <span>Already have an account?</span>
+        <span class="signinbutton"> Sign in</span>
+      </div>
+    </div>
 
-    
     <script>
-        const signin_btn = document.querySelector('.signinbutton');
-        const signup_btn = document.querySelector('.signupbutton');
-        const register = document.querySelector('.register');
-        const login = document.querySelector('.login');
-        signup_btn.addEventListener('click', ()=> {
-            register.style.display='block';
-            login.style.display='none';
-        })
-        signin_btn.addEventListener('click', ()=> {
-            register.style.display='none';
-            login.style.display='block';
-        })
-
-
+      const signin_btn = document.querySelector(".signinbutton");
+      const signup_btn = document.querySelector(".signupbutton");
+      const register = document.querySelector(".register");
+      const login = document.querySelector(".login");
+      signup_btn.addEventListener("click", () => {
+        register.style.display = "block";
+        login.style.display = "none";
+      });
+      signin_btn.addEventListener("click", () => {
+        register.style.display = "none";
+        login.style.display = "block";
+      });
     </script>
     <script>
-        var preloader = document.getElementById('load');
-        function myfunction(){
-            preloader.style.display='none';
-        }
+      var preloader = document.getElementById("load");
+      function myfunction() {
+        preloader.style.display = "none";
+      }
     </script>
-</body>
+  </body>
 </html>
