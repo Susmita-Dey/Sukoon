@@ -41,16 +41,7 @@ html{
   align-items: center;
 }
 
-.logo:hover{
-  transition: ease-in-out;
-  animation: rot 2s linear infinite;
-}
 
-@keyframes rot {
-  100%{
-    transform: rotate(360deg);
-  }
-}
 #loading {
   z-index: 251;
   width: 20rem;
@@ -119,6 +110,17 @@ header {
 
 .logo {
   width: 100px;
+}
+
+.logo:hover{
+  transition: ease-in-out;
+  animation: rot 2s linear infinite;
+}
+
+@keyframes rot {
+  100%{
+    transform: rotate(360deg);
+  }
 }
 
 .hamburger {
