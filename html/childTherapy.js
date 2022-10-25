@@ -61,3 +61,9 @@ const ham = document.getElementById("ham");
       slides[slideIndex-1].style.display = "block";
       dots[slideIndex-1].className += " active";
     }
+    var preloader = document.getElementById('load');
+    var scroll = document.getElementById('main');
+    function myfunction(){
+        preloader.style.display='none';
+        scroll.style.overflow='scroll';
+    }
