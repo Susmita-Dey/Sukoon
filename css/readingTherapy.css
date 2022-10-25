@@ -307,6 +307,14 @@ hr {
   border-color: #2b2c28;
 }
 
+.readingbenefits{
+  text-align: left;
+  margin-left: 20rem;
+}
+.vl {
+  border-left: 6px solid green;
+  height: 500px;
+}
 .playlist {
   background-color: #2b2c28;
   padding: 0.75em;
