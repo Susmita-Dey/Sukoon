@@ -33,7 +33,7 @@ html{
     z-index: 9999999;
 }
 #main{
-  overflow: hidden;
+  overflow: hidden !important;
 }
 .back-top-wrap {
     position: fixed;
@@ -304,9 +304,61 @@ body {
 hr {
   width: 90%;
   margin: 0 auto;
-  border-color: #2b2c28;
+  text-align: center;
+  border-color:rgb(255, 255, 255);
 }
 
+.readingbenefits{
+  text-align: left;
+  margin-left: 13rem;
+}
+
+.right-side{
+  float: right;
+  margin-right: 13rem;
+
+}
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 25px;
+    box-shadow: 0 15px 35px rgb(0 0 0 / 50%);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px); 
+}
+
+.vl {
+  border-left: 6px solid rgb(255, 255, 255);
+  height: 300px;
+  margin: 0 50%;
+  z-index: 10;
+}
+
+.benefit-points{
+  transition: 0.25s ease-in;
+  margin: 10px 10px;
+}
+.benefit-points:hover{
+  transform: translate(10px);
+
+
+}
+.right-side #subtitle{
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
+  transition: all .3s ease-in-out;
+}
+
+.right-side #subtitle:hover{
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+    transform: translate3d(0px, -10px, 0px);
+
+}
 .playlist {
   background-color: #2b2c28;
   padding: 0.75em;
