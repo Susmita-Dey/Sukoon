@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/images/favicon-enhanced.png" />
     <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <title>Sukoon - Login</title>
   </head>
   <body onload="myfunction()">
@@ -30,11 +31,13 @@
         <span>Email<br /></span>
         <input class="inputbox" placeholder="Enter your email" /><br />
         <span>Password<br /></span>
-        <input type="password" class="inputbox" placeholder="••••••••" />
+        <input type="password" class="inputbox" placeholder="••••••••"  id="id_password">
+        <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
       </div>
       <div class="forgotpass">
         <span>Forgot Password</span>
       </div>
+      <p class="back"><a class="tag" href="/index.html">&#8592; Back</a></p>
       <div class="button">
         <input type="button" class="signin" value="Sign in" />
       </div>
@@ -54,8 +57,10 @@
         <span>Email<br /></span>
         <input class="inputbox" placeholder="Enter your email" /><br />
         <span>Password<br /></span>
-        <input type="password" class="inputbox" placeholder="••••••••" />
+        <input type="password" class="inputbox" placeholder="••••••••"  id="id_password">
+        <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
       </div>
+      <p class="back-1"><a class="tag1" href="/index.html">&#8592; Back</a></p>
       <div class="button">
         <input type="button" class="signin" value="Sign up" />
       </div>
@@ -84,6 +89,14 @@
       function myfunction() {
         preloader.style.display = "none";
       }
+      const togglePassword = document.querySelector('#togglePassword');
+  const password = document.querySelector('#id_password');
+
+  togglePassword.addEventListener('click', function (e) {
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    this.classList.toggle('fa-eye-slash');
+});
     </script>
   </body>
 </html>
