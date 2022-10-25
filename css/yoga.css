@@ -202,14 +202,14 @@ nav {
 .menu-link li a:hover{
   color: #00a8e8;
 }
-
-header {
-  min-height: 100vh;
-  width: 100%;
-  background-image: url("https://images.unsplash.com/photo-1524863479829-916d8e77f114?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+.carousel{
+  width:100vw;
+  height: 100vh;
   position: relative;
-  background-position: center;
-  background-size: cover;
+}
+.carousel img{
+  width:100vw;
+  height: 100vh;
 }
 
 .filter{
@@ -224,8 +224,10 @@ header {
 .text {
   position: absolute;
   top: 35%;
-  left: 5%;
+  left: 3%;
   padding: 0.5em;
+  z-index: 1;
+  border-radius: 1.5rem;
 }
 
 .text h1 {
@@ -241,7 +243,7 @@ header {
 
 .container-glass {
   background: rgba(0,0,0,0.8);
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.3);
 }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
