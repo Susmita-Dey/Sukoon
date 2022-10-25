@@ -33,7 +33,7 @@ html{
     z-index: 9999999;
 }
 #main{
-  overflow: hidden;
+  overflow: hidden !important;
 }
 .back-top-wrap {
     position: fixed;
