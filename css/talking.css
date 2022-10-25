@@ -67,7 +67,7 @@ html{
     z-index: 9999999;
 }
 #main{
-  overflow: hidden;
+  overflow: hidden !important;
 }
 header {
   min-height: 100vh;
