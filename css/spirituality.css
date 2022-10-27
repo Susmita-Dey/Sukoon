@@ -311,6 +311,8 @@ hr {
 .pt1{
   margin: 10px 15px;
 }
+ 
+
 @media (max-width: 800px) {
 
   .bfit {
