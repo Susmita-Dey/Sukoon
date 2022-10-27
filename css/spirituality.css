@@ -261,10 +261,11 @@ h2 {
   margin-bottom: 1rem;
 }
 .section-headings {
-  font-size: 2.3rem;
+  font-size: 3rem;
+  font-family: 'Baloo Bhai 2';
   text-decoration: underline;
   text-underline-offset: 10px;
-  margin: 3rem 0;
+  margin: 3rem 0; 
 }
 hr {
   width: 90%;
@@ -278,12 +279,13 @@ hr {
   margin-left: 5%;
   margin-bottom: 2%;
 }
+
 .bfit img{
   width: 45%;
   height: 45%;
   margin-top: 4%;
-  border:3px solid cyan ;
   border-radius: 10px;
+  background-color: green;
 }
 .about .bfit {
   display: flex;
@@ -291,12 +293,23 @@ hr {
 .btext{
   margin-top: 40px;
   margin-left: 45px;
+  font-family: 'Montserrat';
   padding: 5%;
 }
 
 .btext .baby-text{
   font-size: 25px;
 
+}
+
+.points{
+  margin: 0 100px;
+}
+.pt1 p{
+  font-family: 'Montserrat';
+}
+.pt1{
+  margin: 10px 15px;
 }
 @media (max-width: 800px) {
 
