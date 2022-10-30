@@ -455,7 +455,7 @@ nav .fa {
 
   width: 100%;
   padding: 5px 0px;
-  padding-top: 30px;
+  padding-top: 70px;
   padding-bottom: 100px;
 }
 
@@ -621,6 +621,7 @@ margin-bottom: 1rem;
 /* SERVICES SECTION */
 #services {
   background-color: #092e3c;
+  padding-top: 60px;
   width: 100%;
 }
 
