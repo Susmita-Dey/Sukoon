@@ -671,8 +671,15 @@ footer a:focus {
 .footer-container .col .social-menu ul a li#social-twitter:hover{
   color: 	#1DA1F2;
 }
+.footer-container .col .social-menu ul a li#social-github{
+  transition: transform  250ms ease-out, color 250ms ease-out, padding 250ms ease-out !important;
+}
 .footer-container .col .social-menu ul a li#social-github:hover{
-  color:#333;
+  transform: scale(1.2) !important;
+  color:black;
+  background-color: whitesmoke;
+  padding: 2px 2px 0px 2px;
+  border-radius: 25px;
 }
 .footer-container .col .social-menu ul a li#social-linkedin:hover{
   color: #0A66C2;
