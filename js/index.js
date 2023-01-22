@@ -1,13 +1,24 @@
 const ham = document.getElementById("ham");
+const burger = document.querySelector(".burger");
+const cancel = document.querySelector(".cancel");
 const menu = document.getElementById("menu");
+const login = document.querySelector(".login-button");
+
+cancel.style.display = "none";
 
 const toggleMenu = () => {
   if (menu.classList.contains("open")) {
     menu.classList.remove("open");
+    cancel.style.display = "none";
+    login.style.display = "block";
+    burger.style.display = "block";
     //   menu.style.display = "block";
     console.log("open");
   } else {
     menu.classList.add("open");
+    login.style.display = "none";
+    burger.style.display = "none";
+    cancel.style.display = "block";
     //   menu.style.display = "none";
     console.log("close");
   }
