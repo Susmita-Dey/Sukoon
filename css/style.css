@@ -83,7 +83,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 5;
   transition: 0.3s ease-in-out;
 }
 
@@ -118,8 +118,12 @@ header {
   flex-direction: column;
   gap: 3px;
   cursor: pointer;
-  z-index: 200;
+  z-index: 50;
   color: white;
+}
+
+.cancel {
+  display: none;
 }
 
 
@@ -143,7 +147,7 @@ header {
 .links a {
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .links li::after {
@@ -175,6 +179,7 @@ header {
   -moz-transition: ease-out 0.4s;
   -ms-transition: ease-out 0.4s;
   -o-transition: ease-out 0.4s;
+  /* z-index: -9999; */
 }
 
 .login-button a {
@@ -206,7 +211,7 @@ header {
   position: absolute;
   background-color: #fff;
   top: 85px;
-  left: 0;
+  right: 0;
   padding: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
@@ -231,20 +236,20 @@ header {
   position: fixed;
   background-color: rgb(56, 56, 55);
   top: 0;
-  left: 0;
+  right: 0;
   padding: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
   animation: slideIn 0.5s ease-in-out;
-  z-index: 100;
+  z-index: 2;
 }
 
 @keyframes slideIn {
   0% {
-    left: -150px;
+    right: -150px;
   }
 
   100% {
-    left: 0px;
+    right: 0px;
   }
 }
 
@@ -1318,16 +1323,36 @@ footer a:focus {
   color: white;
 }
 
-.footer-container .col .social-menu ul a:hover {
-  color: cyan;
-  border: none;
-  text-decoration: none !important;
-}
 
 .footer-container .col ul li {
   list-style-type: none;
   text-align: left;
   margin-top: 0.5rem;
+}
+.footer-container .col .social-menu ul a li{
+  transition: transform  250ms ease-out, color 250ms ease-out;
+}
+
+
+.footer-container .col .social-menu ul a li:hover {
+  transform: scale(1.4) !important;
+  text-decoration: none !important;
+}
+.footer-container .col .social-menu ul a li#social-twitter:hover{
+  color: 	#1DA1F2;
+}
+.footer-container .col .social-menu ul a li#social-github{
+  transition: transform  250ms ease-out, color 250ms ease-out, padding 250ms ease-out !important;
+}
+.footer-container .col .social-menu ul a li#social-github:hover{
+  transform: scale(1.2) !important;
+  color:black;
+  background-color: whitesmoke;
+  padding: 2px 2px 0px 2px;
+  border-radius: 25px;
+}
+.footer-container .col .social-menu ul a li#social-linkedin:hover{
+  color: #0A66C2;
 }
 
 .footer-container .col ul li a {
@@ -1396,6 +1421,12 @@ footer a:focus {
 
   .hamburger {
     display: flex;
+  }
+
+  .hamburger i {
+    z-index: 1000000000;
+    display: block;
+    font-size: 25px;
   }
 }
 
