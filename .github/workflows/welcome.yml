@@ -14,4 +14,3 @@ jobs:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         issue-message: "<h1>It's great having you contribute to this Project</h1> Thank you for noticing & notifying us for this issue in Sukoon. 🤓<br/>If you would like to keep contributing to open-source, you can check out the other projects by <b>Susmita Dey</b> <a href='https://github.com/Susmita-Dey?tab=repositories&q=&type=source&language=&sort='>here</a><br/> Any questions, let us know. 🤓"
         pr-message: "<h1>It's great having you contribute to this project</h1> Thank you for your first pull request to Sukoon. 🤓 <br/> If you would like to keep contributing to open-source, you can check out the other projects by <b>Susmita Dey</b> <a href='https://github.com/Susmita-Dey?tab=repositories&q=&type=source&language=&sort='>here</a><br/> Any questions, let us know. 🤓"
-        
