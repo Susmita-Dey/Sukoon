@@ -15,13 +15,29 @@
 }
 
 .submit {
-  background-color: rgb(227, 44, 90);
+  padding: 0.5rem 1rem;
+  border: 2px solid #f9004d;
+  background-color: #fff;
+  border-radius: 0.8rem;
+  color: #f9004d;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 1rem;
   width: fit-content;
   margin-left: 3vw;
 }
 
+.submit:hover {
+  background-color: #f9004d;
+  color: white;
+  border: 2px solid #f9004d;
+}
+
 .input_box {
-  height: 1.5em;
+  border-radius: 0.25em;
+  height: 2em;
   width: 90%;
   margin-left: 2em;
 }
@@ -31,6 +47,7 @@
   width: 90%;
   text-align: center;
   margin-left: 2em;
+  border-radius: 0.25em;
 }
 
 .spacer {
