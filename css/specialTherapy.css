@@ -5,6 +5,42 @@
   box-sizing: border-box;
 }
 
+.text-center {
+  text-align: left !important;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 0.25em;
+}
+
+.submit {
+  background-color: rgb(227, 44, 90);
+  width: fit-content;
+  margin-left: 3vw;
+}
+
+.input_box {
+  height: 1.5em;
+  width: 90%;
+  margin-left: 2em;
+}
+
+.text_box {
+  height: 200px;
+  width: 90%;
+  text-align: center;
+  margin-left: 2em;
+}
+
+.spacer {
+  height: 5vh;
+}
+
+.spacer_large {
+  height: 25vh;
+}
+
 ::-webkit-scrollbar {
   background: transparent;
   width: 0.4rem;
@@ -223,7 +259,7 @@ header {
 
 .text {
   position: absolute;
-  top: 45%;
+  top: 75%;
   left: 7%;
   padding: 0.5em;
 }
@@ -242,6 +278,9 @@ header {
 .container-glass {
   background: rgba(0, 0, 0, 0.8);
   background-color: rgba(0, 0, 0, 0.2);
+  width: fit-content;
+  height: auto;
+  border-radius: 1em;
 }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
@@ -255,7 +294,6 @@ header {
 .benefits {
   color: #00171f;
   background-color: #adb5bd;
-  height: 100vh;
 }
 
 .benefits h1 {
@@ -678,10 +716,6 @@ footer a:focus {
   margin-left: auto;
   display: flex;
   flex-direction: column;
-}
-
-.spacer {
-  height: 200vh;
 }
 
 .spacer_small {

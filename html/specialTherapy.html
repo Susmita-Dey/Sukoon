@@ -25,6 +25,9 @@
     <link rel="stylesheet" href="../css/specialTherapy.css" />
     <title>Sukoon - Special Therapy</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@1.5.7/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/tgs-player.js"></script>
   </head>
 
   <body onload="myfunction()" id="main">
@@ -89,33 +92,72 @@
       <div class="filter"></div>
       <div class="text col-lg-5 container-glass">
         <!-- <<<<<<< HEAD -->
-        <h1>Sometimes you need to speak with someone</h1>
-        <p>
-          Doggo ipsum borkf heckin angery woofer such treat clouds most angery
-          pupper I have ever seen snoot borking doggo, extremely cuuuuuute shibe
-          wow such tempt you are doing me the shock heckin angery woofer heck,
-          stop it fren you are doin me a concern doing me a frighten clouds you
-          are doin me a concern. Wrinkler puggorino doggo borking doggo corgo,
-          floofs heckin heckin good boys and girls. Vvv heckin pupperino yapper
-          extremely cuuuuuute, big ol lotsa pats bork. Noodle horse doggorino
-          borking doggo heckin angery woofer heckin good boys and girls, heckin
-          super chub. Ruff clouds shibe pats shibe big ol pupper, super chub you
-          are doing me the shock smol borking doggo with a long snoot for pats
-          ruff sub woofer, very taste wow long woofer much ruin diet stop it
-          fren.
-        </p>
+        <h1 class="title">Would you like to speak with us?</h1>
       </div>
     </header>
     <!-- Header Section Ends here -->
 
     <!--Benefits section-->
     <section class="benefits" id="benefits">
-      <div class="col-md-12 text-center">
-        <h1><strong>Speak to someone Live</strong></h1>
-        <div class="spacer_small"></div>
-        <h3>How are you feeling today?</h3>
-        <input />
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12 text-center">
+            <div class="spacer_small"></div>
+            <h3>How are you feeling today?</h3>
+            <div class="spacer"></div>
+
+            <p>
+              Offering a new live chatbot service to my customers could be a
+              great way to improve customer service and help build customer
+              loyalty. A live chatbot is a service that uses artificial
+              intelligence to answer customer inquiries in real time. This type
+              of service can be beneficial for customers who have quick
+              questions or need immediate help with an issue. By providing a
+              live chatbot service, I can help my customers more efficiently and
+              quickly. This can result in better customer satisfaction and
+              increased loyalty. Additionally, the live chatbot can be
+              programmed to understand the customer’s needs and provide accurate
+              answers. This can help reduce the need to transfer customers to a
+              human representative and save time for both the customer and my
+              team. Live chatbot services can be a great way to give my
+              customers the best experience possible.
+            </p>
+          </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="row">
+          <div class="col-md-8">
+            <input
+              placeholder="Hi how can I help you today?"
+              class="text_box"
+            />
+          </div>
+
+          <div class="col-md-4">
+            <lottie-player
+              autoplay
+              loop
+              mode="normal"
+              src="../images/chatbot.json"
+              style="width: 225px"
+            >
+            </lottie-player>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <input
+              placeholder="Start typing here..."
+              class="input_box"
+            />
+        </div>
+    
       </div>
+      <div class="spacer"></div>
+
+      <button class="btn submit">SUBMIT</button>
+      <div class="spacer_large"></div>
+
     </section>
     <!--Benefits section ends-->
 
