@@ -193,6 +193,11 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 20;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
 .filter {
@@ -223,7 +228,7 @@ font-size: 25px;
 line-height: 32px;
 text-align: center;
 color: #ffffff;
-  
+width: 50%;
 }
 
 .title-button{
@@ -461,11 +466,14 @@ footer{
   .footer-side-col{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    width: 80%;
+    width: 100%;
   }
   
   .footer-side-col > .col{
     padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     flex-wrap: nowrap;
   }
   
@@ -513,6 +521,10 @@ footer{
     .footer-container .col {
       padding: 1rem;
       flex-basis: 100%;
+    }
+
+    .footer-side-col > .col > p {
+      max-width: 330px;
     }
   }
   
