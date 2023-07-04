@@ -6,10 +6,12 @@
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Poppins";
   transform: none;
 }
+
 /* 
 body {
   display: inline-block;
@@ -87,7 +89,7 @@ nav img {
   color: #fff;
   margin: auto;
   text-align: center;
-  
+
 }
 
 .content h1 {
@@ -99,6 +101,7 @@ nav img {
   font-size: 14px;
   color: rgb(163, 158, 158);
 }
+
 .content .hero-explore {
   display: inline-block;
   margin-top: 4rem;
@@ -110,6 +113,7 @@ nav img {
   border-radius: 2rem;
   transition: 0.3s ease-in-out;
 }
+
 .content .hero-explore:hover {
   background-color: #f9004d;
   color: aqua;
@@ -146,35 +150,41 @@ nav .fa {
   padding-top: 30px;
   padding-bottom: 100px;
 }
+
 #about h2 {
   color: white;
   font-size: 50px;
   margin: 30px;
   text-align: center;
 }
+
 #about h3 {
   color: white;
   margin-left: 3rem;
   margin-bottom: 2rem;
   text-decoration: underline;
 }
+
 .box {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   padding: 3rem;
 }
+
 .card {
   border: 2px solid red;
   text-align: center;
   padding: 2rem;
   border-radius: 2rem;
 }
+
 .card img {
   height: 200px;
   width: 200px;
   border-radius: 90px;
 }
+
 .card img:hover {
   border: 2px solid #f9004d;
 }
@@ -184,6 +194,7 @@ h5 {
   font-size: 23px;
   margin-bottom: 15px;
 }
+
 .pra p {
   color: #fcfc;
   font-size: 16px;
@@ -220,6 +231,7 @@ h5 {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
+
 .responsive {
   color: whitesmoke;
   border: 1px solid rgba(245, 245, 245, 0.146);
@@ -227,6 +239,7 @@ h5 {
   text-align: center;
   padding: 2rem;
 }
+
 .responsive .round-image {
   width: 250px;
   height: 150px;
@@ -240,19 +253,23 @@ h5 {
   width: 100%;
   height: 100%;
 }
+
 .responsive.laugh .round-image,
 .responsive.doctor .round-image {
   width: 150px;
   background-color: transparent;
 }
+
 .responsive h2 {
   margin-top: 1.5rem;
 }
+
 .responsive p {
   width: 270px;
   word-wrap: break-word;
   margin: 1.5rem auto;
 }
+
 .responsive a {
   text-decoration: none;
   color: black;
@@ -261,15 +278,18 @@ h5 {
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
+
 .responsive a:hover {
   background-color: #172a44;
   color: white;
   border-color: white;
 }
+
 @media screen and (max-width: 500px) {
   .container {
     padding: 1rem;
   }
+
   .responsive .round-image {
     width: 300px;
     height: 150px;
@@ -283,43 +303,68 @@ h5 {
   gap: 1.5rem;
   background-color: rgb(6, 16, 37);
 }
+
 .footer-container p {
   color: white;
   margin-top: 1rem;
 }
+
 .footer-container .col {
   padding: 2.5rem;
 }
+
 .footer-container .col .email-id {
   word-wrap: break-word;
   text-decoration: underline;
 }
+
 .footer-container .col h3 {
   color: #f9004d;
   margin-bottom: 1rem;
 }
+
 .footer-container .col img {
   width: 100px;
   height: 100px;
 }
+
 .footer-container .col .sukoon {
   color: rgb(30, 240, 191);
   letter-spacing: 5px;
   margin-top: 1rem;
 }
+
 .footer-container .col .social-menu ul {
   display: flex;
   gap: 1rem;
 }
+
 .footer-container .col .social-menu ul a {
   color: aqua;
 }
+
 .footer-container .col ul li {
   list-style-type: none;
   text-align: left;
   margin-top: 0.75rem;
 }
+
 .footer-container .col ul li a {
   /* text-decoration: none; */
   color: rgb(255, 255, 255);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #2b323c;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container h1 {
+  font: weight 600;
+
 }

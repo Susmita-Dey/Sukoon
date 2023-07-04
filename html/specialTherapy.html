@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/favicon-enhanced.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      text="text/CSS"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/specialTherapy.css" />
+    <title>Sukoon - Special Therapy</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@1.5.7/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/tgs-player.js"></script>
+  </head>
+
+  <body onload="myfunction()" id="main">
+    <div id="load">
+      <div
+        style="
+          background-color: white;
+          height: 25vh;
+          width: 100%;
+          position: relative;
+          top: -70px;
+        "
+      ></div>
+    </div>
+    <div id="back-top-div" class="back-top-wrap">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+    <!-- Navbar Section -->
+    <nav>
+      <a href="../index.html"
+        ><img class="logo" src="../logo.png" alt="Logo"
+      /></a>
+
+      <div class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="#benefits">BENEFITS</a></li>
+          <li><a href="#aasan">AASANS </a></li>
+          <li><a href="#videos">VIDEOS </a></li>
+        </ul>
+      </div>
+
+      <div class="hamburger" id="ham">
+        <svg
+          stroke="currentColor"
+          fill="currentColor"
+          stroke-width="0"
+          viewBox="0 0 1024 1024"
+          height="1em"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"
+          ></path>
+        </svg>
+      </div>
+    </nav>
+    <!-- Navbar Section Ends Here -->
+
+    <div class="menu" id="menu">
+      <ul class="menu-link">
+        <li><a href="/index.html">HOME</a></li>
+        <li><a class="close" href="#benefits">BENEFITS</a></li>
+        <li><a class="close" href="#aasan">AASANS</a></li>
+        <li><a class="close" href="#videos">VIDEOS</a></li>
+      </ul>
+    </div>
+
+    <!-- Header Section-->
+    <header>
+      <div class="filter"></div>
+      <div class="text col-lg-5 container-glass">
+        <!-- <<<<<<< HEAD -->
+        <h1 class="title">Speak with Special Therapy 24/7</h1>
+      </div>
+    </header>
+    <!-- Header Section Ends here -->
+
+    <!--Benefits section-->
+    <section class="benefits" id="benefits">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12 text-center">
+            <div class="spacer_small"></div>
+            <h3>Would you like to speak with us?</h3>
+            <div class="spacer"></div>
+
+            <p>
+              Offering a new live chatbot service to my customers could be a
+              great way to improve customer service and help build customer
+              loyalty. A live chatbot is a service that uses artificial
+              intelligence to answer customer inquiries in real time. This type
+              of service can be beneficial for customers who have quick
+              questions or need immediate help with an issue. By providing a
+              live chatbot service, I can help my customers more efficiently and
+              quickly. This can result in better customer satisfaction and
+              increased loyalty. Additionally, the live chatbot can be
+              programmed to understand the customer’s needs and provide accurate
+              answers. This can help reduce the need to transfer customers to a
+              human representative and save time for both the customer and my
+              team. Live chatbot services can be a great way to give my
+              customers the best experience possible.
+            </p>
+          </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="row">
+          <div class="col-md-8">
+            <input
+              placeholder="Hi how can I help you today?"
+              class="text_box"
+            />
+          </div>
+
+          <div class="col-md-4">
+            <lottie-player
+              autoplay
+              loop
+              mode="normal"
+              src="../images/chatbot.json"
+              style="width: 225px"
+            >
+            </lottie-player>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <input
+              placeholder="Start typing here..."
+              class="input_box"
+            />
+        </div>
+    
+      </div>
+      <div class="spacer"></div>
+
+      <button class="btn submit">SUBMIT</button>
+      <div class="spacer_large"></div>
+
+    </section>
+    <!--Benefits section ends-->
+
+    <!-- footer start -->
+    <footer>
+      <div class="footer-container">
+        <!--logo and info column-->
+        <div class="col">
+          <!--logo insert-->
+          <img src="../logo.png" alt="logo" class="footlogo" />
+          <div class="footercontent">
+            <h2 class="footerheading">Sukoon</h2>
+            <p class="footerpara">go stressfree</p>
+          </div>
+        </div>
+
+        <!--ADDRESS COLUMN-->
+
+        <div class="footer-side-col">
+          <div class="col">
+            <h3>
+              ADDRESS
+              <div class="underline"><span></span></div>
+            </h3>
+            <p>West Bengal,India</p>
+            <p class="email-id">
+              <a href="mailto:sukoon665@gmail.com">sukoon665@gmail.com</a>
+            </p>
+          </div>
+          <!--HOME COLUMN-->
+          <div class="col">
+            <h3>HOME</h3>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li>
+                <a
+                  href="https://github.com/Susmita-Dey/Sukoon/blob/main/CODE_OF_CONDUCT.md"
+                  >Code Of Conduct</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/Susmita-Dey/Sukoon">Contribute</a>
+              </li>
+              <li>
+                <a href="https://www.buymeacoffee.com/susmitadey">Donate</a>
+              </li>
+            </ul>
+          </div>
+          <!--OUR SERVICES COLUMN-->
+          <div class="col">
+            <h3>
+              SERVICES
+              <div class="underline"><span></span></div>
+            </h3>
+            <ul>
+              <li>
+                <a
+                  href="https://sukoon-stress-free.netlify.app/html/audiotherapy"
+                  >Audio Therapy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sukoon-stress-free.netlify.app/html/yogatherapy.html"
+                  >Yoga Therapy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sukoon-stress-free.netlify.app/html/readingtherapy"
+                  >Reading Therapy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sukoon-stress-free.netlify.app/html/talkingtherapy"
+                  >Talking Therapy</a
+                >
+              </li>
+              <li>
+                <a href="https://www.practo.com/counselling-psychology"
+                  >Consult a Doctor</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sukoon-stress-free.netlify.app/html/childTherapy"
+                  >Child Therapy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sukoon-stress-free.netlify.app/html/spiritualTherapy"
+                  >Spiritual Therapy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--CONTACTS COLUMN-->
+          <div class="col">
+            <h3>
+              CONTACTS
+              <div class="underline"><span></span></div>
+            </h3>
+            <div class="social-menu">
+              <ul>
+                <a href="https://twitter.com/sukoon665" target="_blank">
+                  <li id="social-twitter">
+                    <i class="fab fa-2x fa-twitter"></i>
+                  </li>
+                </a>
+                <a href="https://github.com/Susmita-Dey/Sukoon" target="_blank">
+                  <li id="social-github">
+                    <i class="fab fa-2x fa-github"></i>
+                  </li>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/sukoon-web-820705238"
+                  target="_blank"
+                >
+                  <li id="social-linkedin">
+                    <i class="fab fa-2x fa-linkedin-in"></i>
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      const ham = document.getElementById("ham");
+      const menu = document.getElementById("menu");
+      const close = document.querySelectorAll(".close");
+      const closeMenu = () => {
+        if (menu.classList.contains("open")) {
+          menu.classList.remove("open");
+
+          console.log("open");
+        }
+        ham.innerHTML =
+          '<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>';
+      };
+
+      const toggleMenu = () => {
+        if (menu.classList.contains("open")) {
+          menu.classList.remove("open");
+          ham.innerHTML =
+            '<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>';
+          console.log("open");
+        } else {
+          menu.classList.add("open");
+          ham.innerHTML =
+            '<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"></path></svg>';
+          console.log("close");
+        }
+      };
+      ham.addEventListener("click", toggleMenu);
+      close.forEach((ele) => {
+        ele.addEventListener("click", closeMenu);
+      });
+    </script>
+    <script>
+      var preloader = document.getElementById("load");
+      var scroll = document.getElementById("main");
+      function myfunction() {
+        preloader.style.display = "none";
+        scroll.style.overflow = "hidden";
+      }
+      const backTopElement = document.getElementById("back-top-div");
+      const minScolledAmountToBackTop = 800;
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY < minScolledAmountToBackTop) {
+          backTopElement.classList.add("hidden");
+        } else {
+          backTopElement.classList.remove("hidden");
+        }
+      });
+
+      const backTop = () => {
+        window.scrollTo(0, 0);
+      };
+
+      backTopElement.addEventListener("click", backTop);
+      ham.addEventListener("click", toggleMenu);
+    </script>
+  </body>
+</html>
