@@ -41,6 +41,12 @@ header {
   background-size: cover;
 }
 
+.pt-head {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
 .back{
     min-height: 100vh;
     width: 100%;
@@ -49,6 +55,9 @@ header {
 }
 
 section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 2em;
 }
 
@@ -114,6 +123,9 @@ nav {
 }
 
 .center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -228,9 +240,8 @@ color: #ffffff;
 
 .title-button{
     width: 201px;
-    margin: 50px 250px;
+    margin-top: 50px;
 height: 44px;
-top: 574px;
     font-family: 'Lato';
     text-align: center;
     align-items: center;
@@ -289,10 +300,10 @@ hr {
 }
 .about .bfit {
   display: flex;
+  align-items: center;
 }
 .btext{
   margin-top: 40px;
-  margin-left: 45px;
   font-family: 'Montserrat';
   padding: 5%;
 }
@@ -302,9 +313,6 @@ hr {
 
 }
 
-.points{
-  margin: 0 100px;
-}
 .pt1 p{
   font-family: 'Montserrat';
 }
@@ -409,6 +417,25 @@ hr {
   header {
     min-height: 100vh;
   }
+  #subtitle {
+    width: 80%;
+    font-size: 20px;
+  }
+  #title {
+    font-size: 2.5rem;
+  }
+  .title-button {
+    font-size: 1rem;
+    width: 150px
+  }
+  .pt-head {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .btext .baby-text {
+    font-size: 20px;
+  }
 }
 
 @media screen and (min-width: 650px) {
@@ -459,9 +486,11 @@ footer{
   }
   
   .footer-side-col{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* grid-template-columns: repeat(4,1fr);
+    width: 80%; */
   }
   
   .footer-side-col > .col{
