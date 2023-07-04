@@ -57,7 +57,7 @@
   
  1. Fork the repository to your own Github account. <br/>
  2. Clone the project to your machine. <br/>
- 3. Create a branch locally under `master` with a succinct but descriptive name. <br/>
+ 3. Create a branch locally under `main` with a succinct but descriptive name. <br/>
  4. Commit changes to that branch. <br/>
  5. Following any formatting and testing guidelines specific to this repo. <br/> 
  6. Push all committed changes to your fork. <br/>
