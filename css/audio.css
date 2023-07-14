@@ -20,14 +20,7 @@
   background-color: rgba(173, 173, 173, 0.5);
 }
 
-#load{
-	margin: auto;
-    width: 100%;
-    height: -webkit-fill-available;
-    position: fixed;
-    background: #fff url(../images/Spin-Preloader-1.gif) no-repeat center;
-    z-index: 9999999;
-}
+
 #main{
   overflow: hidden !important;
 }

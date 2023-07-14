@@ -1,0 +1,48 @@
+/*
+ Feel free to change this file's name
+ I'm planning to put repetitive css code here
+
+*/
+
+
+
+/* When a page is behind loaded */
+#load{
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 250;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Spinning  (This will apply just for the img) */
+#spin {
+  z-index: 251;
+  width: 20rem;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
