@@ -1,7 +1,21 @@
 const ham = document.getElementById("ham");
         const menu = document.getElementById("menu");
         const close = document.querySelectorAll('.close');
-    
+        const nav=document.querySelector("nav");
+
+        
+    window.addEventListener("scroll",()=>
+    {
+      if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50)
+      {
+        nav.classList.add("navOnscroll")
+      }
+      else
+      {
+        nav.classList.remove("navOnscroll")
+      }
+    })
+
         const closeMenu = () => {
           if (menu.classList.contains("open")) {
             menu.classList.remove("open");
@@ -61,3 +75,5 @@ const ham = document.getElementById("ham");
       slides[slideIndex-1].style.display = "block";
       dots[slideIndex-1].className += " active";
     }
+
+
