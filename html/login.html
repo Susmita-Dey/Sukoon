@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/images/favicon-enhanced.png" />
-    <link rel="stylesheet" href="css/login.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <title>Sukoon - Login</title>
-  </head>
-  <body onload="myfunction()">
-    <div id="load">
-      <div
-        style="
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/images/favicon-enhanced.png" />
+  <link rel="stylesheet" href="css/login.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <title>Sukoon - Login</title>
+</head>
+
+<body onload="myfunction()">
+  <div id="load">
+    <div style="
           background-color: white;
           height: 25vh;
           width: 100%;
           position: relative;
           top: -70px;
-        "
-      ></div>
-    </div>
-    <img src="/images/signupill.png" alt="" />
+        "></div>
+  </div>
+
+  <div class="container">
     <div class="login">
       <div class="welcome">
         <h1 class="titletext">Welcome Back &#x1F917</h1>
@@ -31,13 +32,13 @@
         <span>Email<br /></span>
         <input class="inputbox" placeholder="Enter your email" /><br />
         <span>Password<br /></span>
-        <input type="password" class="inputbox" placeholder="••••••••"  id="id_password">
+        <input type="password" class="inputbox" placeholder="••••••••" id="id_password">
         <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
       </div>
       <div class="forgotpass">
+        <p class="back"><a href="/index.html">&#8592; Back</a></p>
         <span>Forgot Password</span>
       </div>
-      <p class="back"><a class="tag" href="/index.html">&#8592; Back</a></p>
       <div class="button">
         <input type="button" class="signin" value="Sign in" />
       </div>
@@ -57,7 +58,7 @@
         <span>Email<br /></span>
         <input class="inputbox" placeholder="Enter your email" /><br />
         <span>Password<br /></span>
-        <input type="password" class="inputbox" placeholder="••••••••"  id="id_password">
+        <input type="password" class="inputbox" placeholder="••••••••" id="id_password">
         <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
       </div>
       <p class="back-1"><a class="tag1" href="/index.html">&#8592; Back</a></p>
@@ -69,34 +70,39 @@
         <span class="signinbutton"> Sign in</span>
       </div>
     </div>
+    <div class="image">
+      <img src="/images/signupill.png" alt="" />
+    </div>
+  </div>
+  <script>
+    const signin_btn = document.querySelector(".signinbutton");
+    const signup_btn = document.querySelector(".signupbutton");
+    const register = document.querySelector(".register");
+    const login = document.querySelector(".login");
+    signup_btn.addEventListener("click", () => {
+      register.style.display = "block";
+      login.style.display = "none";
+    });
+    signin_btn.addEventListener("click", () => {
+      register.style.display = "none";
+      login.style.display = "block";
+    });
+  </script>
+  <script>
+    var preloader = document.getElementById("load");
 
-    <script>
-      const signin_btn = document.querySelector(".signinbutton");
-      const signup_btn = document.querySelector(".signupbutton");
-      const register = document.querySelector(".register");
-      const login = document.querySelector(".login");
-      signup_btn.addEventListener("click", () => {
-        register.style.display = "block";
-        login.style.display = "none";
-      });
-      signin_btn.addEventListener("click", () => {
-        register.style.display = "none";
-        login.style.display = "block";
-      });
-    </script>
-    <script>
-      var preloader = document.getElementById("load");
-      function myfunction() {
-        preloader.style.display = "none";
-      }
-      const togglePassword = document.querySelector('#togglePassword');
-  const password = document.querySelector('#id_password');
+    function myfunction() {
+      preloader.style.display = "none";
+    }
+    const togglePassword = document.querySelector('#togglePassword');
+    const password = document.querySelector('#id_password');
 
-  togglePassword.addEventListener('click', function (e) {
-    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-    password.setAttribute('type', type);
-    this.classList.toggle('fa-eye-slash');
-});
-    </script>
-  </body>
+    togglePassword.addEventListener('click', function (e) {
+      const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+      password.setAttribute('type', type);
+      this.classList.toggle('fa-eye-slash');
+    });
+  </script>
+</body>
+
 </html>

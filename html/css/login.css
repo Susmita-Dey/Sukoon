@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap");
+
 :root {
   --main-icon-color: #5328af;
   --main-bg-color: #f3f3fb;
@@ -8,13 +9,29 @@
 body {
   overflow: hidden;
   background-color: var(--main-bg-color);
-}
-.login {
-  padding: 8em 10em;
-  padding-right: 0em;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  display: inline-block;
 }
+
+img {
+  height: 400px;
+}
+
+.login,
+.register {
+  max-width: 35rem;
+  width: 100%;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #load {
   margin: auto;
   width: 100%;
@@ -24,19 +41,13 @@ body {
   z-index: 9999999;
 }
 
-.register {
-  padding: 8em 10em;
-  padding-right: 0em;
-  box-sizing: border-box;
-  display: inline-block;
-}
-
 .welcome h1 {
   font-family: "Prompt", sans-serif;
   font-weight: 500;
   margin: 0% 0%;
   font-size: 1.8em;
 }
+
 .welcome span {
   font-family: "Poppins";
   color: #8e8d8d;
@@ -47,6 +58,7 @@ body {
   margin: 2.2em 0em;
   margin-bottom: 0em;
 }
+
 .inputs span {
   font-family: "Poppins";
   font-weight: 600;
@@ -70,13 +82,18 @@ body {
   text-overflow: clip;
 }
 
+.forgotpass {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  align-items: center;
+}
+
 .forgotpass span {
   font-family: "Poppins";
   font-weight: 650;
   font-size: small;
   color: var(--main-icon-color);
-  display: flex;
-  padding: 1em 17.6em;
   cursor: pointer;
 }
 
@@ -98,35 +115,35 @@ body {
   -o-text-overflow: clip;
   text-overflow: clip;
   background: var(--main-icon-color);
-  background: linear-gradient(
-    0deg,
-    rgba(96, 9, 240, 1) 0%,
-    var(--main-icon-color) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(96, 9, 240, 1) 0%,
+      var(--main-icon-color) 100%);
   border: none;
 }
+
 .signin:before {
   height: 0%;
   width: 2px;
 }
+
 .signin:hover {
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
     -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
     inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
     inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
-.back{
-  margin-top: -3.5%;
-}
-.back-1{
+
+.back-1 {
   margin-top: -0.6%;
 }
+
 .signupline {
   font-family: "Poppins";
   color: #8e8d8d;
   font-size: small;
   padding: 1em 5em;
 }
+
 .signupbutton,
 .signinbutton {
   font-family: "Poppins";
@@ -136,64 +153,76 @@ body {
   cursor: pointer;
 }
 
-img {
-  position: absolute;
-  margin: 6em 32em;
-  padding: 0em 10em;
-  width: 55%;
-  float: right;
-  box-sizing: border-box;
-}
 .register {
   display: none;
 }
 
 @media screen and (max-width: 1096px) {
-  img {
-    margin-top: 12%;
-    height: 50%;
-  }
-}
-@media screen and (max-width: 970px) {
-  img {
-    margin: 6em 25em;
-    width: 70%;
-  }
-}
-@media screen and (max-width: 720px) {
-  img {
-    margin: 0em 0em;
-    width: 80%;
-    height: 40%;
-    padding-bottom: 12%;
-  }
-  .login {
-    margin-top: 8%;
-  }
-}
-@media screen and (max-width: 575px) {
-  img {
+  .container {
+    flex-direction: column;
     width: 100%;
-    height: 42%;
-    padding-bottom: 20%;
+    justify-items: center;
+  }
+
+  .login,
+  .register {
+    order: 2;
+    width: 400px;
+    padding: 0 2rem;
+  }
+
+  .welcome {
+    text-align: center;
   }
 }
+
 @media screen and (max-width: 484px) {
+  .container {
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .welcome {
+    text-align: center;
+  }
+
+  .login>* {
+    padding: 0 2rem;
+  }
+
+  .register>* {
+    padding: 0 2rem;
+  }
+
+  .image {
+    margin: 0 2px;
+  }
+
   img {
-    width: 140%;
-    margin-top: 15%;
+    width: auto;
+    height: 350px;
   }
-  .login {
-    margin-top: 45%;
-  }
+
 }
+
 @media screen and (max-width: 380px) {
+  .container {
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+    justify-items: center;
+  }
+
+  .welcome {
+    text-align: center;
+  }
+
   img {
-    width: 150%;
-    height: 55%;
-    margin-top: 20%;
+    max-width: 100%;
+    height: auto;
   }
-  .login {
-    margin-top: 60%;
-  }
+
 }
