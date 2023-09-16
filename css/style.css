@@ -536,6 +536,7 @@ nav .fa {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
   padding: 2.5rem;
+  place-items: center;
 }
 @media screen and (max-width: 1336px) and (min-width: 600px)
 {
