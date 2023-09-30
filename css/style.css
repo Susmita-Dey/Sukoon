@@ -542,6 +542,7 @@ nav .fa {
   .box {
   gap: 1rem;
   padding: 2.5rem;
+  justify-items: center;
 }
 
 }
