@@ -70,7 +70,7 @@ For contributing guidelines and standards, visit [contributing.md](https://githu
 <a href="https://ssoc.devfolio.co/"><img src="https://user-images.githubusercontent.com/72400676/182021806-e7439fdd-8f9b-46a6-a1da-0bf731bbe379.png" width=100px height=100px /><br /><sub><b>Social Summer Of Code 2022</b></sub></a>
  </td>
  <td align="center">
-<a href="https://hacktoberfest.com/"><img src="https://user-images.githubusercontent.com/79099734/195970153-ee19d55b-20fc-4ddb-a91d-000773699c37.png" width=100px height=100px /><br /><sub><b>Hacktoberfest</b></sub></a>
+<a href="https://hacktoberfest.com/"><img src="https://user-images.githubusercontent.com/79099734/195970153-ee19d55b-20fc-4ddb-a91d-000773699c37.png" width=100px height=100px /><br /><sub><b>Hacktoberfest 2022</b></sub></a>
  </td>
  </tr>
 </table>
