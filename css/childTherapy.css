@@ -53,7 +53,12 @@ nav {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: transparent;
+  transition: background-color 500ms ease-in-out;
+}
+.navOnscroll
+{
+  background-color:  rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(5px);
 }
 
