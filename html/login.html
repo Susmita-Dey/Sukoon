@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE edge" />
@@ -30,13 +29,19 @@
     #emptyFieldsAlert {
       background-color: red;
     }
+    
+    input[type="password"]::-webkit-credentials-auto-fill-button,
+      input[type="password"]::-webkit-contacts-auto-fill-button,
+      input[type="password"]::-ms-reveal {
+        display: none;
+      }
   </style>
   <title>Sukoon - Login</title>
 </head>
-
-<body onload="myfunction()">
-  <div id="load">
-    <div style="
+  <body onload="myfunction()">
+    <div id="load">
+      <div
+        style="
           background-color: white;
           height: 25vh;
           width: 100%;
