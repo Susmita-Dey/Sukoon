@@ -33,12 +33,17 @@ Live a stress-free life.
 - Helps people to lead a healthy and succesful life.
 
 ## 💼 Our Services <a name = "services"></a>
-- Audio Therapy
-- Reading Therapy
-- Yoga Therapy
-- Laughing Therapy
-- Talking Therapy
-- Consult A Doctor
+- **Audio Therapy:**
+  Browse through our collections of recommended peacful music, motivational podcasts, and inspirational audiobooks. 
+- **Reading Therapy:**
+  Browse through some inspirational quotes, book summaries, videos, and reccomended books to read when your are stressed out.
+- **Yoga Therapy**
+  Discover the benefits of yoga, read about popular yoga poses, and watch video tutoroials that you can follow along with.
+- **Laughing Therapy**
+- **Talking Therapy**
+  Find out if you are someone who can benefit from talking therapy and go through our provided articles and videos about talking therapy to help manage depression, anxiety, and stress.
+- **Consult A Doctor**
+  Sukoon provides you with a list of experienced professionals that you can contact if you want to take the next step in handling your stress. 
 
 ## 🚀  Get Started <a name = "getStarted"></a>
 Every contribution counts.
@@ -99,3 +104,4 @@ For contributing guidelines and standards, visit [contributing.md](https://githu
 <p align="center">
   Made with ❤ from India.
 </p>
+
