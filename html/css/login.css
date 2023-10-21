@@ -192,6 +192,7 @@ img {
     margin-top: 8%;
   }
 }
+
 @media screen and (max-width: 575px) {
   img {
     width: 100%;
