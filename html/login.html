@@ -7,6 +7,7 @@
   <link rel="icon" href="/images/favicon-enhanced.png" />
   <link rel="stylesheet" href="css/login.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+
   <style>
     /* Custom CSS for alert messages */
     .alert {
@@ -31,8 +32,8 @@
     }
     
     input[type="password"]::-webkit-credentials-auto-fill-button,
-      input[type="password"]::-webkit-contacts-auto-fill-button,
-      input[type="password"]::-ms-reveal {
+    input[type="password"]::-webkit-contacts-auto-fill-button,
+    input[type="password"]::-ms-reveal {
         display: none;
       }
   </style>
@@ -64,7 +65,7 @@
       <input class="inputbox" placeholder="Enter your email" id="loginEmail" /><br />
       <span>Password<br /></span>
       <input type="password" class="inputbox" placeholder="••••••••" id="loginPassword" />
-      <i class="far fa-eye" id="toggleLoginPassword" style="margin-left: -30px; cursor: pointer;"></i>
+      <i class="fas fa-eye-slash" id="toggleLoginPassword" style="margin-left: -30px; cursor: pointer;"></i>
     </div>
     <div class="forgotpass">
       <span>Forgot Password</span>
@@ -90,7 +91,7 @@
       <input class="inputbox" placeholder="Enter your email" id="signupEmail" /><br />
       <span>Password<br /></span>
       <input type="password" class="inputbox" placeholder="••••••••" id="signupPassword" />
-      <i class="far fa-eye" id="toggleSignupPassword" style="margin-left: -30px; cursor: pointer;"></i>
+      <i class="fas fa-eye-slash" id="toggleSignupPassword" style="margin-left: -30px; cursor: pointer;"></i>
     </div>
     <p class="back-1"><a class="tag1" href="../index.html">&#8592; Back</a></p>
     <div class="button">
@@ -170,7 +171,7 @@
 
   </script>
   <script>
-    var preloader = document.getElementById("load");
+    const preloader = document.getElementById("load");
     function myfunction() {
       preloader.style.display = "none";
     }
@@ -178,21 +179,32 @@
     const loginPassword = document.getElementById("loginPassword");
 
     toggleLoginPassword.addEventListener("click", function (e) {
-      const type =
-        loginPassword.getAttribute("type") === "password" ? "text" : "password";
-      loginPassword.setAttribute("type", type);
-      this.classList.toggle("fa-eye-slash");
+
+      if(loginPassword.type == "text"){
+        loginPassword.type = "password";
+        toggleLoginPassword.className = "fas fa-eye-slash";
+      }
+      else if(loginPassword.type == "password"){
+        loginPassword.type = "text";
+        toggleLoginPassword.className = "fas fa-eye";
+      }
     });
 
     const toggleSignupPassword = document.querySelector("#toggleSignupPassword");
     const signupPassword = document.getElementById("signupPassword");
 
     toggleSignupPassword.addEventListener("click", function (e) {
-      const type =
-        signupPassword.getAttribute("type") === "password" ? "text" : "password";
-      signupPassword.setAttribute("type", type);
-      this.classList.toggle("fa-eye-slash");
+
+      if(signupPassword.type == "text"){
+        signupPassword.type = "password";
+        toggleSignupPassword.className = "fas fa-eye-slash";
+      }
+      else if(signupPassword.type == "password"){
+        signupPassword.type = "text";
+        toggleSignupPassword.className = "fas fa-eye";
+      }
     });
   </script>
+
 </body>
 </html>
