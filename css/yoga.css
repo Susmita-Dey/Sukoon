@@ -266,9 +266,12 @@ header {
 }
 
 .bfit img{
+    height: 25rem;
     width: 35%;
     max-width: 450px;
-    margin: 0 auto;
+    margin-top : 70px;
+    margin-left : 20px;
+    border-radius: 30px;
 }
 
 .btext{
