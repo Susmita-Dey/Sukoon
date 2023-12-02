@@ -486,11 +486,8 @@ footer{
   }
   
   .footer-side-col{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    /* grid-template-columns: repeat(4,1fr);
-    width: 80%; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
   }
   
   .footer-side-col > .col{
@@ -571,19 +568,6 @@ footer{
   
   .footer-container p {
     color: white;
-  }
-  
-  .footer-container .col ul li a:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: cyan;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
   }
   
   .footer-container .col ul li a:hover:after {
