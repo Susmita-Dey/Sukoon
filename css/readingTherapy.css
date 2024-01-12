@@ -435,6 +435,7 @@ hr {
   border-radius: 3.1rem;
   border: 5px solid #2b2b2b;
   margin: 1.4rem;
+  overflow: hidden;
 }
 
 .container {
@@ -581,7 +582,9 @@ hr {
   font-weight: 300;
   text-transform: initial;
 }
-
+.contentBx {
+  margin-top: 20px;
+}
 .container .card .sci {
   position: absolute;
   bottom: 50px;
