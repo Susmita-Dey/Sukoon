@@ -59,3 +59,8 @@ const backTop = () => {
 
 backTopElement.addEventListener("click", backTop);
 ham.addEventListener("click", toggleMenu);
+
+// Close the drawer when a link inside it is clicked
+document.querySelectorAll('.menu a').forEach(link => {
+  link.addEventListener('click',toggleMenu);
+});
