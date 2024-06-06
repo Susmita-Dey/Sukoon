@@ -54,6 +54,11 @@
     color: #00488F;
     transition: 0.3s ease-in-out;
   }
+
+  .container #card:hover{
+    transform: scale(1.05);
+    transition: 0.7s;
+  }
 </style>
 
 <body onload="myFunction()">
@@ -82,8 +87,8 @@
       <div class="hamburger" id="ham">
         <i class="cancel fa-solid fa-xmark"></i>
 
-        <svg class="burger" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em"
-          xmlns="http://www.w3.org/2000/svg">
+        <svg class="burger" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+          height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z">
           </path>
@@ -101,7 +106,9 @@
     <div class="content">
       <h1>Welcome to SUKOON</h1>
       <div class="container">
-        <h3><span class="auto-type" style="font-size: 40px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"></a></span></h3>
+        <h3><span class="auto-type"
+            style="font-size: 40px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"></a></span>
+        </h3>
       </div>
       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
       <script>
@@ -132,15 +139,6 @@
     <h3><span style="color: rgb(91, 134, 150);">MEET OUR MEMBERS</span></h3>
 
     <div class="box">
-
-      <!--         <div class="card">
-          <img src="./images/shayan.jpeg" alt="shayan" loading="lazy">
-          <h5>Shayan Pal</h5>
-          <div class="pra">
-            <p>Member</p>
-            <a href="https://bio.link/shayanpal"><button>Let's Connect</button></a>
-          </div>
-        </div> -->
       <div data-aos="fade-up" ddata-aos-duration="800" class="card">
         <img src="./images/soumyadeep.jpg" alt="soumyadeep" loading="lazy">
         <h5>Soumyadeep Dhali</h5>
@@ -184,7 +182,9 @@
   <section id="services">
     <h1>Our Services</h1>
     <div data-aos="zoom-in" data-aos-duration="800" class="container">
-      <div class="responsive audio">
+
+      <!--Audio-->
+      <div class="responsive audio" id="card">
         <div class="round-image">
           <img src="./images/audio.png" alt="audio" loading="lazy" />
         </div>
@@ -198,7 +198,8 @@
           </a>
         </div>
       </div>
-      <div data-aos="zoom-in" data-aos-duration="800" class="responsive reading">
+      <!--Reading-->
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive reading" id="card">
         <div class="round-image">
           <img src="./images/reading.png" alt="read" loading="lazy" />
         </div>
@@ -212,7 +213,8 @@
           </a>
         </div>
       </div>
-      <div data-aos="zoom-in" data-aos-duration="800" class="responsive yoga">
+      <!--Yoga-->
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive yoga" id="card">
         <div class="round-image">
           <img src="./images/yoga.png" alt="yoga" loading="lazy" />
         </div>
@@ -226,7 +228,8 @@
           </a>
         </div>
       </div>
-      <div data-aos="zoom-in" data-aos-duration="800" class="responsive laugh">
+      <!--Laugh-->
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive laugh" id="card">
         <div class="round-image">
           <img src="./images/laughing.png" alt="laughing" />
         </div>
@@ -240,7 +243,8 @@
           </a>
         </div>
       </div>
-      <div data-aos="zoom-in" data-aos-duration="800" class="responsive talk">
+      <!--Talk-->
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive talk" id="card">
         <div class="round-image">
           <img src="./images/talking.png" loading="lazy" alt="talking" />
         </div>
@@ -254,7 +258,8 @@
           </a>
         </div>
       </div>
-      <div data-aos="zoom-in" data-aos-duration="800" class="responsive doctor">
+      <!--Doctor-->
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive doctor" id="card">
         <div class="round-image">
           <img src="./images/doctor.png" alt="doctor" loading="lazy" />
         </div>
@@ -268,7 +273,8 @@
           </a>
         </div>
       </div>
-      <div class="responsive child">
+      <!--Child-->
+      <div class="responsive child" id="card">
         <div class="round-image">
           <img src="./images/child.jpg" alt="child" loading="lazy" />
         </div>
@@ -282,7 +288,8 @@
           </a>
         </div>
       </div>
-      <div class="responsive spiritual">
+      <!--Spiritual-->
+      <div class="responsive spiritual" id="card">
         <div class="round-image">
           <img src="./images/spiritualtherapy.jpg" alt="spiritual" loading="lazy" />
         </div>
@@ -296,7 +303,8 @@
           </a>
         </div>
       </div>
-      <div class="responsive special">
+      <!--Special-->
+      <div class="responsive special" id="card">
         <div class="round-image">
           <img src="./images/specialtherapy.jpg" alt="special" loading="lazy" />
         </div>
