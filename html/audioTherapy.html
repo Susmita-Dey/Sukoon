@@ -105,10 +105,14 @@
   <section id="music">
     <h1 class="section-headings">Music</h1>
     <div class="container">
+      <!-- <div id="playlist1" class="spotify-button" data-spotify-id="37i9dQZF1DWXe9gFZP0gtP"></div>
+      <div id="playlist2" class="spotify-button" data-spotify-id="37i9dQZF1DX0jgyAiPl8Af"></div>
+      <div id="playlist3" class="spotify-button" data-spotify-id="37i9dQZF1DZ06evO2pMckE"></div> -->
       <div data-aos="fade-up" data-aos-duration="1000" class="collection">
         <h2>Stress Relief Sounds</h2>
         <div class="playlist">
-          <iframe
+          <!-- <iframe
+            id="playlist1"
             style="border-radius: 12px"
             src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXe9gFZP0gtP?utm_source=generator"
             width="100%"
@@ -116,13 +120,15 @@
             frameborder="0"
             allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          ></iframe>
+          ></iframe> -->
+          <div id="embed-iframe1"></div>
         </div>
       </div>
       <div data-aos="fade-up" data-aos-duration="1500" class="collection">
         <h2>Peaceful Guitar</h2>
         <div class="playlist">
-          <iframe
+          <!-- <iframe
+            id="playlist2"
             style="border-radius: 12px"
             src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0jgyAiPl8Af?utm_source=generator"
             width="100%"
@@ -130,13 +136,15 @@
             frameborder="0"
             allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          ></iframe>
+          ></iframe> -->
+          <div id="embed-iframe2"></div>
         </div>
       </div>
       <div data-aos="fade-up" data-aos-duration="2000" class="collection">
         <h2>Calm Nature Sounds</h2>
         <div class="playlist">
-          <iframe
+          <!-- <iframe
+            id="playlist3"
             style="border-radius: 12px"
             src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO2pMckE?utm_source=generator"
             width="100%"
@@ -144,11 +152,62 @@
             frameborder="0"
             allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          ></iframe>
+          ></iframe> -->
+          <div id="embed-iframe3"></div>
         </div>
       </div>
     </div>
   </section>
+
+<!-- This is the section of code to control music control. -->
+
+<script src="https://open.spotify.com/embed-podcast/iframe-api/v1" async></script>
+<script>
+window.onSpotifyIframeApiReady = (IFrameAPI) => {
+    const playlistOptions = [
+        {
+            element: 'embed-iframe1',
+            uri: 'spotify:playlist:37i9dQZF1DWXe9gFZP0gtP' // Stress Relief Sounds
+        },
+        {
+            element: 'embed-iframe2',
+            uri: 'spotify:playlist:37i9dQZF1DX0jgyAiPl8Af' // Peaceful Guitar
+        },
+        {
+            element: 'embed-iframe3',
+            uri: 'spotify:playlist:37i9dQZF1DZ06evO2pMckE' // Calm Nature Sounds
+        }
+    ];
+
+    const embeds = [];
+
+    playlistOptions.forEach((playlist, index) => {
+        const element = document.getElementById(playlist.element);
+        const options = {
+            width: '100%',
+            height: '380',
+            uri: playlist.uri
+        };
+        
+        IFrameAPI.createController(element, options, (embeddedPlayer) => {
+            embeds.push(embeddedPlayer);
+            
+            embeddedPlayer.addListener('playback_update', e => {
+                if (e.data.isPaused === false) {
+                    embeds.forEach((player, i) => {
+                        if (i !== index) {
+                            player.pause();
+                        }
+                    });
+                }
+            });
+        });
+    });
+};
+</script>
+
+
+
   <!-- Music Section Ends Here-->
 
   <hr />
@@ -157,7 +216,7 @@
   <section id="podcasts">
     <h1 class="section-headings">Podcasts</h1>
     <div class="collection">
-      <div data-aos="fade-up" data-aos-duration="800" class="show">
+      <!-- <div data-aos="fade-up" data-aos-duration="800" class="show">
         <iframe
           src="https://open.spotify.com/embed/episode/4feTGTT8jp9e18w90mBtXc?utm_source=generator"
           width="100%"
@@ -317,8 +376,114 @@
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         ></iframe>
       </div>
+    </div> -->
+
+    <!-- This is the section of code to control podcast control. -->
+
+
+    <div data-aos="fade-up" data-aos-duration="800" class="show">
+      <div id="embed-episode1"></div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="800" class="show">
+      <div id="embed-episode2"></div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="800" class="show">
+      <div id="embed-episode3"></div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="800" class="show">
+      <div id="embed-episode4"></div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="800" class="show">
+      <div id="embed-episode5"></div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="800" class="show">
+      <div id="embed-episode6"></div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="800" class="show">
+      <div id="embed-episode7"></div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="800" class="show">
+      <div id="embed-episode8"></div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="800" class="show">
+      <div id="embed-episode9"></div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="800" class="show">
+      <div id="embed-episode10"></div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="800" class="show">
+      <div id="embed-episode11"></div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="800" class="show">
+      <div id="embed-episode12"></div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="800" class="show">
+      <div id="embed-episode13"></div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="800" class="show">
+      <div id="embed-episode14"></div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="800" class="show">
+      <div id="embed-episode15"></div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="800" class="show">
+      <div id="embed-episode16"></div>
+    </div>
     </div>
   </section>
+
+
+
+  <script src="https://open.spotify.com/embed-podcast/iframe-api/v1" async></script>
+<script>
+window.onSpotifyIframeApiReady = (IFrameAPI) => {
+    const episodeOptions = [
+        { element: 'embed-episode1', uri: 'spotify:episode:4feTGTT8jp9e18w90mBtXc' },
+        { element: 'embed-episode2', uri: 'spotify:show:5ZxgpIlnsT8kILxQItEQ5f' },
+        { element: 'embed-episode3', uri: 'spotify:episode:4ahVo34YZsDDtCgXX5KS5P' },
+        { element: 'embed-episode4', uri: 'spotify:episode:3ZvJ1jpxtjFIZ8sTghil7u' },
+        { element: 'embed-episode5', uri: 'spotify:episode:0vEWGG6S1wL6IbxJsxb3sF' },
+        { element: 'embed-episode6', uri: 'spotify:episode:0PLXymZ2KH89Ty2KGFpREP' },
+        { element: 'embed-episode7', uri: 'spotify:episode:3qZRmQtsUgHyOVNmZzxxPw' },
+        { element: 'embed-episode8', uri: 'spotify:episode:3rG0WSWKcQ4iEM4JkLQRGg' },
+        { element: 'embed-episode9', uri: 'spotify:episode:2UmljSQsLNonJRZ88b2zfx' },
+        { element: 'embed-episode10', uri: 'spotify:episode:24JEpPldCxgeqGprKO7kMI' },
+        { element: 'embed-episode11', uri: 'spotify:episode:5nWxL1XA1Jr3C3aJLem5ZK' },
+        { element: 'embed-episode12', uri: 'spotify:episode:06OxqMY33JiZ23Pxw8NmDs' },
+        { element: 'embed-episode13', uri: 'spotify:episode:1496yN5qwJAwbLB30XzrvR' },
+        { element: 'embed-episode14', uri: 'spotify:episode:54UlEUdnxJ96kGkrcskhGf' },
+        { element: 'embed-episode15', uri: 'spotify:episode:6lbYN222AInVmmLj674vKB' },
+        { element: 'embed-episode16', uri: 'spotify:episode:19XfB2nyuc1Uh3BservSyf' }
+    ];
+
+    const embeds = [];
+
+    episodeOptions.forEach((episode, index) => {
+        const element = document.getElementById(episode.element);
+        const options = {
+            width: '100%',
+            height: '152',
+            uri: episode.uri
+        };
+        
+        IFrameAPI.createController(element, options, (embeddedPlayer) => {
+            embeds.push(embeddedPlayer);
+            
+            embeddedPlayer.addListener('playback_update', e => {
+                if (e.data.isPaused === false) {
+                    embeds.forEach((player, i) => {
+                        if (i !== index) {
+                            player.pause();
+                        }
+                    });
+                }
+            });
+        });
+    });
+};
+</script>
+
+
   <!-- Podcasts Section Ends Here -->
 
   <hr />
