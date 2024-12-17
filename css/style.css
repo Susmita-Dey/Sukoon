@@ -11,12 +11,12 @@
   box-sizing: border-box;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   background: transparent;
   width: 0.4rem;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: rgba(173, 173, 173, 0.2);
   border-radius: 10px;
   transition: background-color 0.5s ease-in-out;
@@ -26,11 +26,11 @@
   background-color: rgba(173, 173, 173, 0.5);
 }
 
-html{
+html {
   overflow-y: overlay;
 }
 
-.loading-wrapper{
+.loading-wrapper {
   background-color: white;
   position: fixed;
   width: 100vw;
@@ -502,16 +502,16 @@ nav .fa {
 }
 
 @media (max-width: 1050px) {
-  .about-content{
+  .about-content {
     order: 3;
   }
 
-  .about .photo{
+  .about .photo {
     margin-bottom: 2rem;
   }
 }
 
-.about-content p{
+.about-content p {
   max-width: 700px;
   padding: 0 1.5em;
   font-size: 27px;
@@ -520,7 +520,7 @@ nav .fa {
   margin-right: 1em;
 }
 
-.text-3{
+.text-3 {
   margin-top: 2rem;
 }
 
@@ -537,13 +537,13 @@ nav .fa {
   gap: 1.5rem;
   padding: 2.5rem;
 }
-@media screen and (max-width: 1336px) and (min-width: 600px)
-{
+
+@media screen and (max-width: 1336px) and (min-width: 600px) {
   .box {
-  gap: 1rem;
-  padding: 2.5rem;
-  justify-items: center;
-}
+    gap: 1rem;
+    padding: 2.5rem;
+    justify-items: center;
+  }
 
 }
 
@@ -607,20 +607,24 @@ h5 {
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
-margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
-.p{
+
+.p {
   margin-top: -24px;
 }
+
 .pra button:hover {
   background-color: #f9004d;
   color: #fff;
   transition: 0.3s;
 }
+
 .footerpara {
   white-space: nowrap;
 }
-.he{
+
+.he {
   margin-top: -30%;
 }
 
@@ -661,7 +665,7 @@ margin-bottom: 1rem;
   margin-top: 28px;
 }
 
-.round-image{
+.round-image {
   object-fit: cover;
 }
 
@@ -764,7 +768,7 @@ figure.testimonal-Card img {
 figure.testimonal-Card blockquote {
   position: relative;
   background-color: #ffffff;
-  padding: 25px 50px;
+  padding: 35px 65px;
   font-size: 0.8em;
   font-weight: 500;
   text-align: left;
@@ -792,7 +796,7 @@ figure.testimonal-Card blockquote:before {
 figure.testimonal-Card blockquote:after {
   content: "\201D";
   right: 20px;
-  bottom: 0;
+  bottom: 0.2;
   color: #083653;
 }
 
@@ -855,14 +859,14 @@ figure.testimonal-Card .author h5 {
 .testimonial-box .quote-icon {
   font-size: 50px;
   color: #083653;
-    margin-top: 20px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .testimonial-box img.user-img {
   height: 60px;
   width: 60px;
-  border: 3px solid #083653 ;
+  border: 3px solid #083653;
   border-radius: 60px;
   object-fit: cover;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16);
@@ -914,9 +918,10 @@ figure.testimonal-Card .author h5 {
   padding: 0 !important;
   font: inherit;
 }
+
 .owl-carousel .owl-nav button.owl-next:hover,
 .owl-carousel .owl-nav button.owl-prev:hover,
-.owl-carousel button.owl-dot:hover{
+.owl-carousel button.owl-dot:hover {
   color: #f9004d !important;
 }
 
@@ -949,7 +954,8 @@ figure.testimonal-Card .author h5 {
   width: 42rem;
   padding: 1.2rem 0;
   border-radius: 1rem;
-  background: rgba(1, 59, 112, 0.4);;
+  background: rgba(1, 59, 112, 0.4);
+  ;
   margin-top: 2rem;
 }
 
@@ -1016,9 +1022,11 @@ figure.testimonal-Card .author h5 {
   transform: translateX(16px);
   transition: max-height 0.5s ease, opacity 0.5s, transform 0.5s;
 }
-.accordion__content .email{
-  color:  #ffff00;
+
+.accordion__content .email {
+  color: #ffff00;
 }
+
 .accordion__content p {
   padding: 1rem 1.8rem;
 }
@@ -1332,8 +1340,9 @@ footer a:focus {
   text-align: left;
   margin-top: 0.5rem;
 }
-.footer-container .col .social-menu ul a li{
-  transition: transform  250ms ease-out, color 250ms ease-out;
+
+.footer-container .col .social-menu ul a li {
+  transition: transform 250ms ease-out, color 250ms ease-out;
 }
 
 
@@ -1341,20 +1350,24 @@ footer a:focus {
   transform: scale(1.4) !important;
   text-decoration: none !important;
 }
-.footer-container .col .social-menu ul a li#social-twitter:hover{
-  color: 	#1DA1F2;
+
+.footer-container .col .social-menu ul a li#social-twitter:hover {
+  color: #1DA1F2;
 }
-.footer-container .col .social-menu ul a li#social-github{
-  transition: transform  250ms ease-out, color 250ms ease-out, padding 250ms ease-out !important;
+
+.footer-container .col .social-menu ul a li#social-github {
+  transition: transform 250ms ease-out, color 250ms ease-out, padding 250ms ease-out !important;
 }
-.footer-container .col .social-menu ul a li#social-github:hover{
+
+.footer-container .col .social-menu ul a li#social-github:hover {
   transform: scale(1.2) !important;
-  color:black;
+  color: black;
   background-color: whitesmoke;
   padding: 2px 2px 0px 2px;
   border-radius: 25px;
 }
-.footer-container .col .social-menu ul a li#social-linkedin:hover{
+
+.footer-container .col .social-menu ul a li#social-linkedin:hover {
   color: #0A66C2;
 }
 
