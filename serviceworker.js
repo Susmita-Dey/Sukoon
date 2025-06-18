@@ -1,7 +1,7 @@
 const CACHE_NAME = "version-1"
 const urlsToCache = ['index.html', 'offline.html']
 
-const self = this
+
 self.addEventListener('install', (event) => {
     event.waitUntil(
         caches.open(CACHE_NAME)
@@ -14,15 +14,31 @@ self.addEventListener('install', (event) => {
 }
 )
 
-self.addEventListener('fetch', (event) => {
+self.addEventListener('fetch', event => {
     event.respondWith(
         caches.match(event.request)
-            .then(() => {
+            .then(cachedResponse => {
+                // Return cached response if found
+                if (cachedResponse) return cachedResponse;
+                // Else fetch from network
                 return fetch(event.request)
-                    .catch(() => caches.match('offline.html'))
+                    .catch(() => {
+                        // If both fail, show the offline page for navigation requests
+                        if (event.request.mode === 'navigate' || (event.request.headers.get('accept') || '').includes('text/html')) {
+                            return caches.match('offline.html');
+                        }
+                    });
             })
-    )
-})
+    );
+});
+
+
+
+
+
+
+
+
 
 self.addEventListener('activate', (event) => {
     const cacheWhiteList = [];
