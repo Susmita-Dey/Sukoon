@@ -181,9 +181,10 @@ nav .fa {
 
 .card img {
   width: 200px;
-  height: 200px;
+  height: auto;
   object-fit: cover;
-  border-radius: 90px;
+  border-radius: 50%;
+  
 }
 
 .card img:hover {
