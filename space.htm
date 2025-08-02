@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Space Element - Sukoon Yoga</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #011b24;
+      color: #f7f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: rgb(30, 240, 191);
+      margin-bottom: 30px;
+    }
+
+    .asana-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    @media (max-width: 992px) {
+      .asana-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .asana-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .asana-card {
+      background-color: #022f3a;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      box-shadow: 0 0 10px rgba(30, 240, 191, 0.2);
+    }
+
+    .asana-card:hover {
+      transform: scale(1.05);
+    }
+
+    .asana-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .asana-content {
+      padding: 15px;
+    }
+
+    .asana-content h3 {
+      margin-top: 0;
+      color: rgb(30, 240, 191);
+    }
+
+    .asana-content p {
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Space Element Asanas</h1>
+    <div class="asana-grid">
+
+      <div class="asana-card">
+        <img src="https://yogajala.com/wp-content/uploads/2022/11/lotus-pose.jpg" alt="Lotus Pose">
+        <div class="asana-content">
+          <h3>Padmasana (Lotus Pose)</h3>
+          <p>Encourages silence, stillness, and space for inner awareness.</p>
+        </div>
+      </div>
+
+      <div class="asana-card">
+        <img src="https://images.squarespace-cdn.com/content/v1/55a9457de4b0e82a7749b6d3/1600105524194-P2N4ZKB7KXW509VUYUFW/YOGARU_Savasana_PB.png" alt="Corpse Pose">
+        <div class="asana-content">
+          <h3>Savasana (Corpse Pose)</h3>
+          <p>Promotes full relaxation and openness to spacious awareness.</p>
+        </div>
+      </div>
+
+      <div class="asana-card">
+        <img src="https://media.graphassets.com/resize=fit:clip,height:350,width:600/n3LberIRZC4cQYSk0nrw" alt="Hero Pose">
+        <div class="asana-content">
+          <h3>Virasana (Hero Pose)</h3>
+          <p>Helps open inner space while maintaining grounded posture.</p>
+        </div>
+      </div>
+
+      <div class="asana-card">
+        <img src="https://www.yogaindailylife.org/system/images/Level-5/Paschimottanasana/Paschimottanasana-416.jpg" alt="Seated Forward Bend">
+        <div class="asana-content">
+          <h3>Paschimottanasana</h3>
+          <p>Creates space in spine and calms the nervous system.</p>
+        </div>
+      </div>
+
+      <div class="asana-card">
+        <img src="https://pixahive.com/wp-content/uploads/2021/02/Mandukasana-Frog-Pose-356968-pixahive.jpg" alt="Frog Pose">
+        <div class="asana-content">
+          <h3>Mandukasana (Frog Pose)</h3>
+          <p>Opens inner hips and allows energy to flow through the space within.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

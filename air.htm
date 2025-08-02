@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Air Element - Sukoon Yoga</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #011b24;
+      color: #f7f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: rgb(30, 240, 191);
+      margin-bottom: 30px;
+    }
+    .asana-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+    @media (max-width: 992px) {
+      .asana-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .asana-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .asana-card {
+      background-color: #022f3a;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      box-shadow: 0 0 10px rgba(30, 240, 191, 0.2);
+    }
+    .asana-card:hover {
+      transform: scale(1.05);
+    }
+    .asana-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .asana-content {
+      padding: 15px;
+    }
+    .asana-content h3 {
+      margin-top: 0;
+      color: rgb(30, 240, 191);
+    }
+    .asana-content p {
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Air Element Asanas</h1>
+    <div class="asana-grid">
+
+      <div class="asana-card">
+        <img src="https://media.istockphoto.com/id/1297043705/photo/beautiful-young-woman-working-out-in-loft-interior-doing-yoga-exercise-standing-in-bridge-pose.jpg?s=612x612&w=0&k=20&c=zLMyGNUhHv0qlyVKzZyn8GRSlXb2YEC69Usr9mfki6A=" alt="Bridge Pose">
+        <div class="asana-content">
+          <h3>Setu Bandhasana (Bridge Pose)</h3>
+          <p>Opens the chest and invites air into the lungs.</p>
+        </div>
+      </div>
+
+      <div class="asana-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA8CrO-6wF_Gjnf-nucB-OcFz6qRF-T0Mfzg&s" alt="Cobra Pose">
+        <div class="asana-content">
+          <h3>Bhujangasana (Cobra Pose)</h3>
+          <p>Stimulates breath, opens lungs and heart center.</p>
+        </div>
+      </div>
+
+      <div class="asana-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaC8QTX4hwB-YWllzU5QOd4UDUA5Lc1HMAvw&s" alt="Shoulder Stand">
+        <div class="asana-content">
+          <h3>Salamba Sarvangasana</h3>
+          <p>Increases circulation and pranic flow through the air element.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
