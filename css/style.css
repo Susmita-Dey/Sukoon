@@ -492,13 +492,26 @@ nav .fa {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
+}
+
+#about h1.aboutHeading{
+ margin-left: -90px;
 }
 
 .about .photo {
-  border: 5px solid #f9004d;
+  border: 3px solid #f9004d;
   border-radius: 10px;
+  height: 310px;
   /* margin-right: 10%; */
   order: 2;
+}
+
+.about .photo img{
+  border-radius: 9px;
+  height:305px;
+  width:330px;
+
 }
 
 @media (max-width: 1050px) {
