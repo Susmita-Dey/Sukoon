@@ -7,7 +7,8 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   background-color: var(--main-bg-color);
   margin: 0;
   padding: 0;
@@ -15,7 +16,14 @@ body {
 }
 
 img {
-  height: 400px;
+  width: 45%;
+  height: auto;
+  max-width: 400px;
+}
+
+.login {
+  flex: 1;
+  min-width: 300px;
 }
 
 .login,
@@ -25,11 +33,11 @@ img {
 }
 
 .container {
-  height: 100vh;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
 #load {
@@ -115,9 +123,11 @@ img {
   -o-text-overflow: clip;
   text-overflow: clip;
   background: var(--main-icon-color);
-  background: linear-gradient(0deg,
-      rgba(96, 9, 240, 1) 0%,
-      var(--main-icon-color) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(96, 9, 240, 1) 0%,
+    var(--main-icon-color) 100%
+  );
   border: none;
 }
 
@@ -157,74 +167,74 @@ img {
   display: none;
 }
 
+.fullpage-container {
+  display: flex;
+  justify-content: center; /* horizontal centering */
+  align-items: center;     /* vertical centering */
+  min-height: 100vh;       /* full viewport height */
+  background-color: var(--main-bg-color);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px; /* space between image and form */
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  .welcome {
+    margin-left: 8%;
+  }
+  .forgotpass span {
+    margin-left: 230px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    width: 80%;
+    margin: 5rem auto;
+
+  }
+
+  .login {
+    margin-top: 20px;
+    margin: auto;
+  }
+}
+
 
 @media screen and (max-width: 1920px) {
-  img {
-    width: 40%;
-    height: 2%;
-    margin: -25em 45em;
-    margin-top: 8%;
-  }
-
-  .login ,.register {
-    margin-left: 8%;
-    margin-top: -5%;
-  }
-
   .forgotpass span {
     margin-left: 230px;
   }
 
-  .back{
+  .back {
     margin-top: -3.5%;
   }
 
   .welcome {
-    margin-left:8%;
+    margin-left: 8%;
   }
 
   .welcome span {
-   margin-left: 10%;
+    margin-left: 10%;
   }
 }
-@media screen and (max-width: 970px) {
-  img {
-    margin: 6em 25em;
-    width: 70%;
-  }
-}
-@media screen and (max-width: 720px) {
-  img {
-    margin: 0em 0em;
-    width: 80%;
-    height: 40%;
-    padding-bottom: 12%;
 
-  }
-  .login {
-    margin-top: 8%;
-  }
-  
-}
-@media screen and (max-width: 575px) {
-  img {
-    width: 50%;
-    height: 42%;
-    padding-bottom: 20%;
-  }
-  
-}
-@media screen and (max-width: 484px) {
-  img {
-    width: 140%;
-    margin-top: 15%;
-  }
-  .login {
-    margin-top: 45%;
-  }
-}
 @media screen and (max-width: 380px) {
-
   .welcome {
     text-align: center;
     margin-top: -20%;
@@ -257,7 +267,7 @@ img {
     margin: 2.2em 0em;
     margin-bottom: 0em;
   }
-  
+
   .inputs span {
     margin-left: 15px;
   }
@@ -265,7 +275,7 @@ img {
     width: 270px;
     margin-left: 15px;
   }
-  
+
   .forgotpass span {
     margin-left: 200px;
   }
@@ -277,7 +287,7 @@ img {
 
   .signin {
     width: 300px;
-    margin-left:12px ;
+    margin-left: 12px;
     margin-top: 0;
     align-items: center;
     justify-content: center;
