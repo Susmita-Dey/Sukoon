@@ -715,3 +715,97 @@ footer a:focus {
   display: flex;
   flex-direction: column;
 }
+
+
+/* ===== Preloader overlay (kept same look, now animated) ===== */
+#load {
+  position: fixed;
+  inset: 0;
+  background: #fff;
+  /* your original white bg */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity .3s ease;
+  /* fade-out when hidden */
+}
+
+#load.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Container spins to make orbit dots rotate */
+.dots-loader {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  animation: spin 1s linear infinite;
+}
+
+/* Center (dark blue) dot */
+.center-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 28px;
+  height: 28px;
+  background: #0067d8;
+  /* same dark blue as screenshot */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Orbit (light blue) dots */
+.orbit-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  background: #7fb8e6;
+  /* light blue as screenshot */
+  border-radius: 50%;
+  transform-origin: center;
+  /* placed around a circle by rotate + translate */
+}
+
+/* place 8 dots at 45° intervals, radius = 48px */
+.d1 {
+  transform: rotate(0deg) translate(48px) translate(-50%, -50%);
+}
+
+.d2 {
+  transform: rotate(45deg) translate(48px) translate(-50%, -50%);
+}
+
+.d3 {
+  transform: rotate(90deg) translate(48px) translate(-50%, -50%);
+}
+
+.d4 {
+  transform: rotate(135deg) translate(48px) translate(-50%, -50%);
+}
+
+.d5 {
+  transform: rotate(180deg) translate(48px) translate(-50%, -50%);
+}
+
+.d6 {
+  transform: rotate(225deg) translate(48px) translate(-50%, -50%);
+}
+
+.d7 {
+  transform: rotate(270deg) translate(48px) translate(-50%, -50%);
+}
+
+.d8 {
+  transform: rotate(315deg) translate(48px) translate(-50%, -50%);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
